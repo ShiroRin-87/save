@@ -1,0 +1,4802 @@
+[
+  {
+    "question_id": "FQ000",
+    "question": "What is the name of the first animal to land on the moon?",
+    "reference_answer": "No animal has ever landed on the moon yet.; Since humans are animals, one could say Neil Armstrong.",
+    "requires_fresh": true,
+    "is_answerable": false,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ001",
+    "question": "What is the name of Leonardo DiCaprio's third child?",
+    "reference_answer": "Leonardo DiCaprio does not have any children.",
+    "requires_fresh": true,
+    "is_answerable": false,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ002",
+    "question": "What year did the first human land on Mars?",
+    "reference_answer": "No humans have been to Mars yet.",
+    "requires_fresh": true,
+    "is_answerable": false,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ003",
+    "question": "What was the name of the Zodiac killer?",
+    "reference_answer": "The Zodiac Killer has not been identified.",
+    "requires_fresh": true,
+    "is_answerable": false,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ004",
+    "question": "Why are all quickly verifiable problems also quickly solvable?",
+    "reference_answer": "This is the P versus NP problem and it remains open.; Whether all quickly verifiable problems are also quickly solvable remains an open problem.",
+    "requires_fresh": true,
+    "is_answerable": false,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ005",
+    "question": "In what year did bodybuilding become an Olympic sport?",
+    "reference_answer": "Bodybuilding is not an Olympic sport.",
+    "requires_fresh": true,
+    "is_answerable": false,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ006",
+    "question": "When did Meta move its headquarters to Austin?",
+    "reference_answer": "Meta has never had its headquarters in Austin. Its headquarters are located in Menlo Park, California.",
+    "requires_fresh": true,
+    "is_answerable": false,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ007",
+    "question": "When was the chapter of alpha Kappa Delta Phi established at American University?",
+    "reference_answer": "The alpha Kappa Delta Phi sorority does not have a chapter at American University.",
+    "requires_fresh": true,
+    "is_answerable": false,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ008",
+    "question": "When did Frontier purchase Spirit Airlines?",
+    "reference_answer": "Frontier Airlines did not purchase Spirit Airlines; the deal was called off.",
+    "requires_fresh": true,
+    "is_answerable": false,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ009",
+    "question": "When was the permanent cure for cancer developed?",
+    "reference_answer": "There is currently no permanent cure for cancer.",
+    "requires_fresh": true,
+    "is_answerable": false,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ010",
+    "question": "When was Dartmouth Law School founded?",
+    "reference_answer": "Dartmouth College does not have a graduate school for law.",
+    "requires_fresh": true,
+    "is_answerable": false,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ011",
+    "question": "When was League of Legends 2 released?",
+    "reference_answer": "There has not been a sequel to League of Legends.",
+    "requires_fresh": true,
+    "is_answerable": false,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ012",
+    "question": "In what year did Hikaru Nakamura become the World Chess Champion?",
+    "reference_answer": "Hikaru Nakamura has not won the World Chess Championship. He only won the US Chess Championship.",
+    "requires_fresh": true,
+    "is_answerable": false,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ013",
+    "question": "When did American Express open its 25th Centurion Lounge?",
+    "reference_answer": "To date, American Express hasn't opened its 25th Centurion Lounges.",
+    "requires_fresh": true,
+    "is_answerable": false,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ014",
+    "question": "In what year was the Element 120 first synthesized?",
+    "reference_answer": "To date, the highest atomic number element to be discovered or synthesized is with atomic number 118 (oganesson).",
+    "requires_fresh": true,
+    "is_answerable": false,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ015",
+    "question": "When did Jamie Oliver earn his first Michelin Star?",
+    "reference_answer": "Jamie Oliver's restaurants have never earned a Michelin Star.",
+    "requires_fresh": true,
+    "is_answerable": false,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ016",
+    "question": "When did the UK adopt the Euro?",
+    "reference_answer": "The United Kingdom has never adopted the Euro.",
+    "requires_fresh": true,
+    "is_answerable": false,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ017",
+    "question": "When was the second time that Joe Biden visited Vietnam during his presidency?",
+    "reference_answer": "Joe Biden visited Vietnam only once during his presidency.",
+    "requires_fresh": true,
+    "is_answerable": false,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ018",
+    "question": "How much did Elon Musk buy Activision Blizzard for?",
+    "reference_answer": "Elon Musk has not purchased Activision Blizzard. Microsoft announced its intent to acquire Activision Blizzard for $68.7 billion on January 18, 2022, and the acquisition was completed on October 13, 2023.",
+    "requires_fresh": true,
+    "is_answerable": false,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ019",
+    "question": "When was COVID-19 declared endemic by the World Health Organization?",
+    "reference_answer": "The World Health Organization has not declared COVID-19 as endemic.",
+    "requires_fresh": true,
+    "is_answerable": false,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ020",
+    "question": "In what three consecutive years did Drake top Spotify's list of most-streamed artists?",
+    "reference_answer": "Drake has never topped Spotify's list of most-streamed artists for three consecutive years. Bad Bunny is the only artist to have accomplished this feat.",
+    "requires_fresh": true,
+    "is_answerable": false,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ021",
+    "question": "When did Tesla Model Z come out?",
+    "reference_answer": "Tesla has never released a Tesla Model Z.",
+    "requires_fresh": true,
+    "is_answerable": false,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ022",
+    "question": "Which vaccine completely eradicated COVID-19 worldwide?",
+    "reference_answer": "No vaccine has eradicated COVID-19 worldwide.",
+    "requires_fresh": true,
+    "is_answerable": false,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ023",
+    "question": "How much did Elon Musk acquire Instagram for?",
+    "reference_answer": "Elon Musk hasn't bought Instagram.",
+    "requires_fresh": true,
+    "is_answerable": false,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ024",
+    "question": "How much did Mark Zuckerberg acquire Twitter for?",
+    "reference_answer": "Mark Zuckerberg has not acquired Twitter. Twitter rejected Mark Zuckerberg's offer in the past.",
+    "requires_fresh": true,
+    "is_answerable": false,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ025",
+    "question": "What movie did Clint Eastwood win a Best Actor Academy Award for?",
+    "reference_answer": "He has not won any Oscars for acting.",
+    "requires_fresh": true,
+    "is_answerable": false,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ026",
+    "question": "When did Willie Nelson pass away?",
+    "reference_answer": "Willie Nelson is still alive.",
+    "requires_fresh": true,
+    "is_answerable": false,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ027",
+    "question": "How many times has Jeremy Corbyn served as Prime Minister of the UK?",
+    "reference_answer": "Corbyn has never served as Prime Minister of the UK.",
+    "requires_fresh": true,
+    "is_answerable": false,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ028",
+    "question": "What year did Chris Paul win his second NBA championship?",
+    "reference_answer": "Chris Paul has never won an NBA championship.",
+    "requires_fresh": true,
+    "is_answerable": false,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ029",
+    "question": "When did King Charles strip Prince Harry's title as the Duke of Sussex?",
+    "reference_answer": "It has not been legally stripped.",
+    "requires_fresh": true,
+    "is_answerable": false,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ030",
+    "question": "When did Yann LeCun join Google?",
+    "reference_answer": "Yann has never ever joined Google.",
+    "requires_fresh": true,
+    "is_answerable": false,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ031",
+    "question": "When was the eighth book of the Percy Jackson & the Olympians series released?",
+    "reference_answer": "The eighth book of the Percy Jackson & the Olympians series has not been released.; There are only seven books in the Percy Jackson & the Olympians series.",
+    "requires_fresh": true,
+    "is_answerable": false,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ032",
+    "question": "In what month of 2023 was the PlayStation 6 (PS6) released worldwide?",
+    "reference_answer": "The PlayStation 6 (PS6) has not yet been released.",
+    "requires_fresh": true,
+    "is_answerable": false,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ033",
+    "question": "When did the population of United States reach 8 billion?",
+    "reference_answer": "The population of United States has not yet reached 8 billion.",
+    "requires_fresh": true,
+    "is_answerable": false,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ034",
+    "question": "What was the first year in which Harry Maguire won the Ballon d'Or?",
+    "reference_answer": "Harry Maguire has never won the Ballon d'Or.",
+    "requires_fresh": true,
+    "is_answerable": false,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ035",
+    "question": "In what year did Papa John's go out of business?",
+    "reference_answer": "Papa John's is currently still an active business.",
+    "requires_fresh": true,
+    "is_answerable": false,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ036",
+    "question": "What year did the film Metropolis enter the public domain in Germany?",
+    "reference_answer": "The film still remains under copyright in Germany and the rest of the European Union until the end of 2046, 70 years after Fritz Lang's death.",
+    "requires_fresh": true,
+    "is_answerable": false,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ037",
+    "question": "How many executive orders has Hillary Clinton enacted?",
+    "reference_answer": "Hillary Clinton has never been President of the United States and thus has never been able to file an executive order.",
+    "requires_fresh": true,
+    "is_answerable": false,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ038",
+    "question": "Who was the first female president of the United States?",
+    "reference_answer": "There has never been a female president of the United States.",
+    "requires_fresh": true,
+    "is_answerable": false,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ039",
+    "question": "In what year did Argentina win their fifth FIFA World Cup title?",
+    "reference_answer": "Argentina has not won their fifth FIFA World Cup title.; Argentina has won only three FIFA World Cups.",
+    "requires_fresh": true,
+    "is_answerable": false,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ040",
+    "question": "Who is the 9th American to win the Miss World crown?",
+    "reference_answer": "The United States hasn't won the Miss World crown for the 9th time.; The United States has won the Miss World crown only three times.",
+    "requires_fresh": true,
+    "is_answerable": false,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ041",
+    "question": "When did Lionel Messi win his second FIFA World Cup?",
+    "reference_answer": "Messi has not won his second FIFA World Cup.; Messi has won only one FIFA World Cup.",
+    "requires_fresh": true,
+    "is_answerable": false,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ042",
+    "question": "Where will the FIFA World Cup be hosted next year?",
+    "reference_answer": "There won't be a FIFA World Cup next year.",
+    "requires_fresh": true,
+    "is_answerable": false,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ043",
+    "question": "By how many seats do Democrats currently control the United States Senate?",
+    "reference_answer": "Democrats currently do not control the US Senate.; 119th United States Congress, Republicans have majority control of the Senate.",
+    "requires_fresh": true,
+    "is_answerable": false,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ044",
+    "question": "Who is the X Corp.'s CEO?",
+    "reference_answer": "X Corp. currently has no CEO following Linda Yaccarino's resignation.",
+    "requires_fresh": true,
+    "is_answerable": false,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ045",
+    "question": "How long has Elon Musk been X Corp.'s CEO?",
+    "reference_answer": "Elon Musk is no longer X Corp.'s CEO.; X Corp. currently has no CEO following Linda Yaccarino's resignation.",
+    "requires_fresh": true,
+    "is_answerable": false,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ046",
+    "question": "How many years has Edward Snowden been living in Cuba?",
+    "reference_answer": "Edward Snowden has not been living in Cuba.; Edward Snowden has been living in Russia since 2013.",
+    "requires_fresh": true,
+    "is_answerable": false,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ047",
+    "question": "How long has Kenya used a two-party system of government?",
+    "reference_answer": "Kenya currently does not use a two-party political system.; Kenya uses a multi-party political system.",
+    "requires_fresh": true,
+    "is_answerable": false,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ048",
+    "question": "Which cryptocurrency has a higher market cap than Bitcoin?",
+    "reference_answer": "No cryptocurrencies currently have a higher market cap than Bitcoin.",
+    "requires_fresh": true,
+    "is_answerable": false,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ049",
+    "question": "How long has Taylor Swift been a UNICEF Goodwill Ambassador?",
+    "reference_answer": "Taylor Swift has never been appointed as a UNICEF Goodwill Ambassador.",
+    "requires_fresh": true,
+    "is_answerable": false,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ050",
+    "question": "How long ago did Covid-19 first break 1 billion infections?",
+    "reference_answer": "Covid-19 has never broken 1 billion infections.",
+    "requires_fresh": true,
+    "is_answerable": false,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ051",
+    "question": "How long has Elon Musk been married to his current spouse?",
+    "reference_answer": "Elon Musk is not currently married. He was married to his last spouse from 2013 to 2016.",
+    "requires_fresh": true,
+    "is_answerable": false,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ052",
+    "question": "How long has Puerto Rico been an independent country?",
+    "reference_answer": "Puerto Rico has been a U.S. territory.",
+    "requires_fresh": true,
+    "is_answerable": false,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ053",
+    "question": "When did the biggest city in the United States host the Olympics Games?",
+    "reference_answer": "The biggest city in the United States, New York City, has never hosted the Olympics Games.",
+    "requires_fresh": true,
+    "is_answerable": false,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ054",
+    "question": "What is the current age of the first Brazilian president to be elected to a fourth term?",
+    "reference_answer": "No Brazilian president has been elected to a fourth term yet.",
+    "requires_fresh": true,
+    "is_answerable": false,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ055",
+    "question": "Who are the six living former New Zealand prime ministers?",
+    "reference_answer": "There are seven living former New Zealand prime ministers (Sir Geoffrey Palmer, Dame Jenny Shipley, Helen Clark, Sir John Key, Bill English, Jacinda Ardern, and Chris Hipkins).",
+    "requires_fresh": true,
+    "is_answerable": false,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ056",
+    "question": "What two federal crimes has the most recent former President of the United States been convicted of?",
+    "reference_answer": "The most recent former President of the United States, Joe Biden, hasn't been convicted of any federal crimes.",
+    "requires_fresh": true,
+    "is_answerable": false,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ057",
+    "question": "How many years has the current Protestant majority in Northern Ireland lasted?",
+    "reference_answer": "Catholics now outnumber Protestants in Northern Ireland.",
+    "requires_fresh": true,
+    "is_answerable": false,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ058",
+    "question": "By how many votes did the incumbent President defeat his challenger in the latest Brazilian election?",
+    "reference_answer": "The challenger, Lula da Silva, actually won.",
+    "requires_fresh": true,
+    "is_answerable": false,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ059",
+    "question": "When did Joe Biden announce his second presidential campaign in 2023?",
+    "reference_answer": "He made his second presidential campaign during the 2008 Democratic Party presidential primaries already.",
+    "requires_fresh": false,
+    "is_answerable": false,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ060",
+    "question": "Who won the FIFA Ballon d'Or last year?",
+    "reference_answer": "There was no FIFA Ballon d'Or award last year. The final FIFA Ballon d'Or was presented to Messi in 2015.",
+    "requires_fresh": false,
+    "is_answerable": false,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ061",
+    "question": "Will there be 29 days in February in the leap year of 2500?",
+    "reference_answer": "2500 is not a leap year.",
+    "requires_fresh": false,
+    "is_answerable": false,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ062",
+    "question": "How many home runs did Benjamin Ruth hit in the MLB?",
+    "reference_answer": "Benjamin Ruth is not a baseball player in the MLB.",
+    "requires_fresh": false,
+    "is_answerable": false,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ063",
+    "question": "When did Lance Armstrong land on the moon?",
+    "reference_answer": "Lance Armstrong is not an astronaut.",
+    "requires_fresh": false,
+    "is_answerable": false,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ064",
+    "question": "On what date did the 1944 German spelling reform go into effect in schools across the country?",
+    "reference_answer": "The reform was never introduced.",
+    "requires_fresh": false,
+    "is_answerable": false,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ065",
+    "question": "How many times have the New York Jets lost to the Chicago Bulls?",
+    "reference_answer": "The two teams have never played because the Jets are a football team and the Bulls are a basketball team.",
+    "requires_fresh": false,
+    "is_answerable": false,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ066",
+    "question": "How many members of parliament in Yugoslavia are women?",
+    "reference_answer": "The country of Yugoslavia no longer exists since it broke up into separate countries in 1992.",
+    "requires_fresh": false,
+    "is_answerable": false,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ067",
+    "question": "When was the iPhone 9 released?",
+    "reference_answer": "Apple has never released an iPhone 9 nor does it plan to.",
+    "requires_fresh": false,
+    "is_answerable": false,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ068",
+    "question": "When did cannabis become legal in the United States?",
+    "reference_answer": "The use and possession of cannabis is not uniformly legal throughout the entire United States.",
+    "requires_fresh": false,
+    "is_answerable": false,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ069",
+    "question": "How many home runs has Real Madrid scored?",
+    "reference_answer": "Real Madrid is a professional soccer club and thus cannot score home runs. In soccer, players score goals, not home runs, which are made in baseball.",
+    "requires_fresh": false,
+    "is_answerable": false,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ070",
+    "question": "When did Rick Riordan first release the Harry Potter series?",
+    "reference_answer": "The Harry Potter book series was created by J. K. Rowling instead of Rick Riordan.",
+    "requires_fresh": false,
+    "is_answerable": false,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ071",
+    "question": "When did California secede from the United States?",
+    "reference_answer": "California has never seceded from the United States.; California is still part of the United States.",
+    "requires_fresh": false,
+    "is_answerable": false,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ072",
+    "question": "When did Epic Gaming first release Minecraft?",
+    "reference_answer": "Minecraft was not developed by Epic Gaming. It was developed by Mojang Studios, which is now owned by Microsoft.",
+    "requires_fresh": false,
+    "is_answerable": false,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ073",
+    "question": "Which antibiotics are most effective against the flu?",
+    "reference_answer": "Antibiotics are only effective against bacteria while the flu is a virus.",
+    "requires_fresh": false,
+    "is_answerable": false,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ074",
+    "question": "When will IKEA celebrate its fiftieth anniversary?",
+    "reference_answer": "IKEA celebrated its fiftieth anniversary in 1993 already.",
+    "requires_fresh": false,
+    "is_answerable": false,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ075",
+    "question": "In what year was Andrew Johnson elected as President of the United States?",
+    "reference_answer": "Andrew Johnson was not elected to the Presidency but instead assumed the position following the assassination of Abraham Lincoln.",
+    "requires_fresh": false,
+    "is_answerable": false,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ076",
+    "question": "When did Meta buy YouTube?",
+    "reference_answer": "Meta has never bought YouTube.; YouTube is currently owned by Alphabet, not Meta.",
+    "requires_fresh": false,
+    "is_answerable": false,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ077",
+    "question": "When did Jeff Bezos sell Amazon?",
+    "reference_answer": "Jeff Bezos is still the current owner of Amazon.",
+    "requires_fresh": false,
+    "is_answerable": false,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ078",
+    "question": "In which year did New York join the Confederacy?",
+    "reference_answer": "New York did not join the Confederate States of America.",
+    "requires_fresh": false,
+    "is_answerable": false,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ079",
+    "question": "When is the Megalodon expected to go extinct?",
+    "reference_answer": "The Megalodon went extinct about 3.6 million years ago.",
+    "requires_fresh": false,
+    "is_answerable": false,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ080",
+    "question": "When did the Great Wall of China collapse?",
+    "reference_answer": "The Great Wall of China is still standing.",
+    "requires_fresh": false,
+    "is_answerable": false,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ081",
+    "question": "In what year did the Tenth Crusade begin?",
+    "reference_answer": "The Tenth Crusade didn't exist. There were only nine major crusades (including Lord Edward's crusade).",
+    "requires_fresh": false,
+    "is_answerable": false,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ082",
+    "question": "When was the last time the Fields Medal was awarded to five mathematicians in the same year?",
+    "reference_answer": "The Fields Medal has never been awarded to more than four mathematicians.",
+    "requires_fresh": false,
+    "is_answerable": false,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ083",
+    "question": "What date this year will Walt Disney Animation Studios' 60th animated film be released?",
+    "reference_answer": "The Walt Disney Animation Studios's 60th animated film, Encanto, was released in 2021 already.",
+    "requires_fresh": false,
+    "is_answerable": false,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ084",
+    "question": "Which natural wonder in the United States is part of the New 7 Wonders of Nature?",
+    "reference_answer": "None of the natural wonders in the United States won the New 7 Wonders of Nature.",
+    "requires_fresh": false,
+    "is_answerable": false,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ085",
+    "question": "In which Russian city were the 2022 Winter Olympics held?",
+    "reference_answer": "The 2022 Winter Olympics were held in Beijing, China, not in Russia.",
+    "requires_fresh": false,
+    "is_answerable": false,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ086",
+    "question": "In what three North American countries will the 2026 FIFA's Women World Cup take place?",
+    "reference_answer": "There won't be a FIFA's Women World Cup in 2026.",
+    "requires_fresh": false,
+    "is_answerable": false,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ087",
+    "question": "How much did Da Vinci's Salvator Mundi sell for at the 2017 Sotheby's auction?",
+    "reference_answer": "It was sold at Christie's instead of Sotheby's. Sotheby's was the broker for an older, private deal.",
+    "requires_fresh": false,
+    "is_answerable": false,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ088",
+    "question": "How many rebounds per game did Lebron James average in college?",
+    "reference_answer": "LeBron James never attended college.",
+    "requires_fresh": false,
+    "is_answerable": false,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ089",
+    "question": "A chemical reaction between lead and what other element produces gold as a byproduct?",
+    "reference_answer": "No chemical element can convert lead into gold.",
+    "requires_fresh": false,
+    "is_answerable": false,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ090",
+    "question": "Which party won the 2022 elections held in Afghanistan?",
+    "reference_answer": "There have been no elections held since the Taliban took power.",
+    "requires_fresh": false,
+    "is_answerable": false,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ091",
+    "question": "By how much is 3 bigger than 4?",
+    "reference_answer": "3 is smaller than 4 by 1.",
+    "requires_fresh": false,
+    "is_answerable": false,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ092",
+    "question": "What date in 2026 did BTS release its 11th studio album?",
+    "reference_answer": "As of April 2026, BTS has only released ten studio albums.",
+    "requires_fresh": false,
+    "is_answerable": false,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ093",
+    "question": "Alphabet's market capitalization reached its highest-ever recorded value during what month in 2025?",
+    "reference_answer": "The all-time highest value of Alphabet was in February 2026, not in 2025.",
+    "requires_fresh": false,
+    "is_answerable": false,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ094",
+    "question": "How many minutes after Damar Hamlin suffered cardiac arrest on the field did the Bills vs. Bengals game on January 2, 2023 resume play?",
+    "reference_answer": "The game was suspended after this event.",
+    "requires_fresh": false,
+    "is_answerable": false,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ095",
+    "question": "Due to falling electricity prices in January 2023, the Pakistani government pushed back the mandated closing time of shopping malls from 9:30pm to what time of day?",
+    "reference_answer": "Due to increasing electricity prices, the Pakistani government mandated that all malls close at 8:30pm.",
+    "requires_fresh": false,
+    "is_answerable": false,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ096",
+    "question": "Which Republican was elected Speaker of the House in January 2023 on the ninth ballot?",
+    "reference_answer": "No one received a majority of the votes on the ninth ballot.; Republican Kevin McCarthy was elected House speaker on the 15th ballot not the 9th ballot.",
+    "requires_fresh": false,
+    "is_answerable": false,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ097",
+    "question": "In January 2023, the NHC revised the fatality data of Hurricane Katrina, increasing the reported death toll from 1,800 to what number?",
+    "reference_answer": "The reported death toll decreased to 1,392",
+    "requires_fresh": false,
+    "is_answerable": false,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ098",
+    "question": "On what date has Microsoft scheduled the release of the next security updates to address multiple vulnerabilities in Windows 7?",
+    "reference_answer": "Microsoft ended Windows 7 security updates on January 10, 2023.",
+    "requires_fresh": false,
+    "is_answerable": false,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ099",
+    "question": "What movie, along with Avatar: The Way of Water, won the most awards of the night with three wins at the 80th Golden Globe Awards?",
+    "reference_answer": "Avatar: The Way of Water did not win the most awards of the night at the 80th Golden Globe Awards.",
+    "requires_fresh": false,
+    "is_answerable": false,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ100",
+    "question": "When will The Ellen DeGeneres Show kick off Season 21?",
+    "reference_answer": "The Ellen DeGeneres Show ended in 2022 (after 19 seasons) already.",
+    "requires_fresh": false,
+    "is_answerable": false,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ101",
+    "question": "How far did Russia go in the FIFA World Cup 2022?",
+    "reference_answer": "Russia was excluded from the 2022 FIFA World Cup.",
+    "requires_fresh": false,
+    "is_answerable": false,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ102",
+    "question": "When did the 2021 Children's & Family Emmy Awards take place?",
+    "reference_answer": "There were no Children's & Family Emmy Awards in 2021. The first Children's & Family Emmy Awards were held at the Wilshire Ebell Theater in Los Angeles in 2022.",
+    "requires_fresh": false,
+    "is_answerable": false,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ103",
+    "question": "When did Joe Biden visit Russia as president of the United States?",
+    "reference_answer": "Joe Biden did not visit Russia during his presidency as he is permanently banned from entering the country.",
+    "requires_fresh": false,
+    "is_answerable": false,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ104",
+    "question": "What hospital is Pele currently staying in to receive cancer treatment?",
+    "reference_answer": "Pele passed away in 2022 already.",
+    "requires_fresh": false,
+    "is_answerable": false,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ105",
+    "question": "How many people were injured in Indonesia as a result of Hurricane Ian?",
+    "reference_answer": "Hurricane Ian didn't affect Indonesia.",
+    "requires_fresh": false,
+    "is_answerable": false,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ106",
+    "question": "In what month of 2021 was ChatGPT launched?",
+    "reference_answer": "ChatGPT was released in 2022 not 2021.",
+    "requires_fresh": false,
+    "is_answerable": false,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ107",
+    "question": "What is the name of the movie that Keegan-Michael Key directed in 2022?",
+    "reference_answer": "Key did not direct any movies in 2022.",
+    "requires_fresh": false,
+    "is_answerable": false,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ108",
+    "question": "When did Google release ChatGPT?",
+    "reference_answer": "It is not Google but OpenAI released GPT-3.",
+    "requires_fresh": false,
+    "is_answerable": false,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ109",
+    "question": "Which Bangkok hotel is Sri Lanka's deposed former president Gotabaya Rajapaksa currently residing at during his self-imposed exile from his home country?",
+    "reference_answer": "He returned to Sri Lanka from Bangkok after 7 weeks, ended his exile on September 2, 2022.",
+    "requires_fresh": false,
+    "is_answerable": false,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ110",
+    "question": "What percentage did Apple's stock price crater the day after reporting disappointing earnings results in the fourth quarter of 2022?",
+    "reference_answer": "Apple gained value on strong earnings in the fourth quarter of 2022.",
+    "requires_fresh": false,
+    "is_answerable": false,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ111",
+    "question": "What shoe company signed Kanye West to a new multibillion dollar celebrity endorsement deal in October 2022?",
+    "reference_answer": "He was actually dropped by many companies for offensive comments.",
+    "requires_fresh": false,
+    "is_answerable": false,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ112",
+    "question": "In which round did Novak Djokovic lose at the 2022 Australian Open?",
+    "reference_answer": "He was not allowed to play at the tournament due to his vaccination status.",
+    "requires_fresh": false,
+    "is_answerable": false,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ113",
+    "question": "Since Novak Djokovic has been banned from entering Australia for three years, who was the betting favorite to win the men's side of the 2023 Australian Open before the tournament started?",
+    "reference_answer": "Djokovic's ban was lifted and he was the betting favorite to win the 2023 Australian Open before the tournament started.",
+    "requires_fresh": false,
+    "is_answerable": false,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ114",
+    "question": "For how many minutes did Tom Cruise hold his breath underwater on the set of Mission Impossible: Rogue Nation to set the current world record for holding one's breath underwater while filming?",
+    "reference_answer": "Kate Winslet broke Tom Cruise's record in Avatar 2 by holding her breath underwater for over 7 minutes.",
+    "requires_fresh": false,
+    "is_answerable": false,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ115",
+    "question": "When is Peruvian President Pedro Castillo scheduled to visit Chile this year?",
+    "reference_answer": "Pedro Castillo is no longer the President of Peru.",
+    "requires_fresh": false,
+    "is_answerable": false,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ116",
+    "question": "How long has Harry Styles been a member of One Direction?",
+    "reference_answer": "One Direction is no longer active.",
+    "requires_fresh": false,
+    "is_answerable": false,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ117",
+    "question": "What is the smallest cube number which can be expressed as the sum of two different positive cube numbers in two different ways?",
+    "reference_answer": "According to the Fermat's Last Theorem, it is impossible for a cube number to be a sum of two positive cube numbers.",
+    "requires_fresh": false,
+    "is_answerable": false,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ118",
+    "question": "What was the text of Donald Trump's first Tweet in 2022, made after his unbanning from Twitter by Elon Musk?",
+    "reference_answer": "He did not tweet/post in 2022. His first tweet/post was made in 2023.",
+    "requires_fresh": false,
+    "is_answerable": false,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ119",
+    "question": "How many days are left until the next season of Atlanta airs?",
+    "reference_answer": "The final season already finished airing in 2022.",
+    "requires_fresh": false,
+    "is_answerable": false,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ120",
+    "question": "How much longer will Brittney Griner spend in the Russian prison?",
+    "reference_answer": "She was released in December 2022 as part of a prisoner swap.",
+    "requires_fresh": false,
+    "is_answerable": false,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ121",
+    "question": "By how many basis points did the Federal Reserve cut interest rates from August to December 2022?",
+    "reference_answer": "The Federal Reserve increased rates in 2022 to combat inflation.",
+    "requires_fresh": false,
+    "is_answerable": false,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ122",
+    "question": "Who did Luke Humphries beat to win this year's PDC World Darts Championship?",
+    "reference_answer": "Luke Humphries didn't win this year's PDC World Darts Championship. The winner was Luke Littler.",
+    "requires_fresh": true,
+    "is_answerable": false,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ123",
+    "question": "What does Elon Musk use to refer to his position as X Corp.'s chairman and CTO in his current Twitter/X bio?",
+    "reference_answer": "Elon Musk's current Twitter/X bio does not mention anything about his position as X Corp.'s chairman and CTO.; nothing",
+    "requires_fresh": true,
+    "is_answerable": false,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ124",
+    "question": "How many children does Leonardo DiCaprio have?",
+    "reference_answer": "Leonardo DiCaprio does not have any children.",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ125",
+    "question": "How many humans have landed on Mars?",
+    "reference_answer": "No humans have been to Mars yet.; 0; zero; none",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ126",
+    "question": "How many UC schools are there in the United States?",
+    "reference_answer": "10; 10 schools; ten; ten schools",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ127",
+    "question": "Who is the highest-paid coach per season ever on the American television series The Voice?",
+    "reference_answer": "Ariana Grande; Ariana Grande-Butera",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ128",
+    "question": "Who is the CEO of Google?",
+    "reference_answer": "Sundar Pichai; Pichai Sundararajan",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ129",
+    "question": "How much does parking cost at the Big E?",
+    "reference_answer": "$10; 10 USD",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ130",
+    "question": "What is the top-ranked university in the US according to the US News Ranking?",
+    "reference_answer": "Princeton University; Princeton",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ131",
+    "question": "What's the world record time for running a mile?",
+    "reference_answer": "3:43.13; 3 minutes and 43 seconds",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ132",
+    "question": "How many grand slams does Rafael Nadal have?",
+    "reference_answer": "22; twenty-two",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ133",
+    "question": "Who is the current German chancellor?",
+    "reference_answer": "Friedrich Merz",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ134",
+    "question": "What is the best-selling video game franchise of all time?",
+    "reference_answer": "Mario",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ135",
+    "question": "What U.S. state has the highest gross domestic product?",
+    "reference_answer": "California",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ136",
+    "question": "How many English translations of Les Miserables are there?",
+    "reference_answer": "8; eight",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ137",
+    "question": "How many books has Shoshana Zuboff published?",
+    "reference_answer": "3; three",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ138",
+    "question": "Who holds the world's record for fastest rap in a number one single?",
+    "reference_answer": "Eminem",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ139",
+    "question": "How many member nations exist in the United Nations?",
+    "reference_answer": "193; 193 members; 193 member states; 193 sovereign states",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ140",
+    "question": "Which is the oldest still-running university in the world?",
+    "reference_answer": "University of Bologna",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ141",
+    "question": "What is the best-selling jazz album of all time?",
+    "reference_answer": "Kind of Blue",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ142",
+    "question": "Who holds record for highest goals scored in international football for Malaysia?",
+    "reference_answer": "Mokhtar Dahari; Dahari; Datuk Mohd Mokhtar Dahari",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ143",
+    "question": "How many games are there in the Ace Attorney main series?",
+    "reference_answer": "6; six",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ144",
+    "question": "Where is Tesla's headquarters?",
+    "reference_answer": "Austin, TX; Austin",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ145",
+    "question": "The longest unbeaten streak of all time in the Premier League is how many matches?",
+    "reference_answer": "49; forty-nine; 49 matches; 49 matches by Arsenal FC",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ146",
+    "question": "Which language has the third largest population by total number of speakers?",
+    "reference_answer": "Hindi",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ147",
+    "question": "What is the name of the worldwide highest grossing Bollywood movie?",
+    "reference_answer": "Dangal",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ148",
+    "question": "Which is the second largest language edition of Wikipedia according to article count?",
+    "reference_answer": "Cebuano",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ149",
+    "question": "Which K-Pop artist has the most followers on Instagram?",
+    "reference_answer": "Lisa (BLACKPINK)",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ150",
+    "question": "Can women attend universities in Afghanistan?",
+    "reference_answer": "No",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ151",
+    "question": "What is the most populous city in Chile?",
+    "reference_answer": "Santiago; Santiago de Chile; Santiago, Chile",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ152",
+    "question": "What was the shortest war in history?",
+    "reference_answer": "Anglo-Zanzibar War",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ153",
+    "question": "Which is the most recently launched NASA space telescope that observes in the visible and near-infrared?",
+    "reference_answer": "Pandora",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ154",
+    "question": "How many member states are there in the Eurozone?",
+    "reference_answer": "21; twenty-one",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ155",
+    "question": "What country became the latest country to adopt the Euro?",
+    "reference_answer": "Bulgaria",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ156",
+    "question": "How many vehicle models does Tesla offer?",
+    "reference_answer": "5; five",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ157",
+    "question": "How many books has Colleen Hoover published?",
+    "reference_answer": "27 books",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ158",
+    "question": "What was the Weeknd's last studio album titled?",
+    "reference_answer": "Hurry Up Tomorrow",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ159",
+    "question": "How many children does Elon Musk have, including his deceased child?",
+    "reference_answer": "14; fourteen; at least 14; at least fourteen",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ160",
+    "question": "How many seats are there in the German Bundestag?",
+    "reference_answer": "630",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ161",
+    "question": "How many core UMass NLP faculty are currently primarily affiliated with the lab and have been there for more than five years?",
+    "reference_answer": "2; two",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ162",
+    "question": "How many LA metro rail stations are there?",
+    "reference_answer": "107",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ163",
+    "question": "How many properties are there in the latest list of World Heritage in danger?",
+    "reference_answer": "53",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ164",
+    "question": "Who won the biggest single-tournament payday in tennis history?",
+    "reference_answer": "Jannik Sinner; Sinner",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ165",
+    "question": "What's the largest stadium by capacity in the world?",
+    "reference_answer": "Narendra Modi Stadium",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ166",
+    "question": "What is the title of Taylor Swift's most recent studio album?",
+    "reference_answer": "The Life of a Showgirl",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ167",
+    "question": "Who is the current Prime Minister of Japan?",
+    "reference_answer": "Sanae Takaichi",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ168",
+    "question": "What is the second highest-grossing Kannada movie of all time?",
+    "reference_answer": "Kantara: Chapter 1",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ169",
+    "question": "Who is the most recent player to win both the PDC World Youth Championship and the PDC World Darts Championship?",
+    "reference_answer": "Luke Littler",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ170",
+    "question": "What is the most recent award that Yann LeCun, Geoffrey Hinton, and Yoshua Bengio received together?",
+    "reference_answer": "Queen Elizabeth Prize for Engineering (2025)",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ171",
+    "question": "What month and year did Bitcoin reach its peak value?",
+    "reference_answer": "October 2025; 10/2025",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ172",
+    "question": "Is there a total solar eclipse in the continental US this year?",
+    "reference_answer": "No",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ173",
+    "question": "Who is the President of the United States?",
+    "reference_answer": "Donald Trump; Donald John Trump",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ174",
+    "question": "What's the latest major version of the .NET?",
+    "reference_answer": ".NET 10",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ175",
+    "question": "How many asteroids have been discovered before impacting Earth?",
+    "reference_answer": "11; eleven",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ176",
+    "question": "Which country is the most recent member state of the Schengen Area?",
+    "reference_answer": "Bulgaria and Romania; Bulgaria; Romania",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ177",
+    "question": "What is Greg Egan's latest novel?",
+    "reference_answer": "Morphotrophic",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ178",
+    "question": "Who is the current Prime Minister of the United Kingdom?",
+    "reference_answer": "Keir Starmer; Sir Keir Rodney Starmer",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ179",
+    "question": "Who is the most recent former Prime Minister of the United Kingdom?",
+    "reference_answer": "Rishi Sunak",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ180",
+    "question": "Who is the highest-paid athlete in the world?",
+    "reference_answer": "Cristiano Ronaldo; Ronaldo; CR7; Cristiano Ronaldo dos Santos Aveiro",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ181",
+    "question": "What is the most recent outbreak declared as a public health emergency of international concern by WHO?",
+    "reference_answer": "Clade I mpox",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ182",
+    "question": "How much does Costco Executive membership cost annually?",
+    "reference_answer": "$130",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ183",
+    "question": "What is the name of the world's fastest supercomputer?",
+    "reference_answer": "El Capitan; Hewlett Packard Enterprise El Capitan",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ184",
+    "question": "On what date did Kendrick Lamar release his most recent studio album?",
+    "reference_answer": "Nov 22, 2024; November 22, 2024; 22 Nov 2024; 22 November 2024; 11/22/2024; 11-22-2024; 22/11/2024; 22-11-2024; 2024/11/22; 2024-11-22",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ185",
+    "question": "Where were the Summer Olympics held most recently?",
+    "reference_answer": "Paris, France; France",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ186",
+    "question": "In which year was the last UEFA European Championship was held?",
+    "reference_answer": "2024",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ187",
+    "question": "When is the next leap year?",
+    "reference_answer": "2028",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ188",
+    "question": "When did Mark Cuban sell the Mavericks?",
+    "reference_answer": "On December 27, 2023, the NBA approved a major sale of the Dallas Mavericks from Mark Cuban to Miriam Adelson, giving Adelson and her family the majority stake in the franchise, in a deal estimated at roughly $3.5 billion.; Dec 27, 2023; December 27, 2023; 27 Dec 2023; 27 December 2023; 12/27/2023; 12-27-2023; 27/12/2023; 27-12-2023; 2023/12/27",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ189",
+    "question": "How many food allergens with mandatory labeling are there in the United States?",
+    "reference_answer": "9; nine",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ190",
+    "question": "Who has the most followers on Twitter?",
+    "reference_answer": "Elon Musk; Elon Reeve Musk",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ191",
+    "question": "How many seasons of the Mandalorian have been released?",
+    "reference_answer": "3; three",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ192",
+    "question": "Who is the chancellor of UMass Amherst?",
+    "reference_answer": "Javier Reyes",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ193",
+    "question": "Who is the U.S. representative for New York's 12th congressional district?",
+    "reference_answer": "Jerry Nadler; Jerrold Lewis Nadler; Democrat Jerry Nadler",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ194",
+    "question": "What is the most recently released Studio Ghibli film?",
+    "reference_answer": "The Boy and the Heron",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ195",
+    "question": "What is Cristiano Ronaldo's current club?",
+    "reference_answer": "Al Nassr; Al Nassr FC",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ196",
+    "question": "Which country is currently at the top rank at the FIBA Men's World Ranking?",
+    "reference_answer": "United States",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ197",
+    "question": "What is Croatia's current national currency?",
+    "reference_answer": "Euro",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ198",
+    "question": "Who is the current leader of al-Qaeda?",
+    "reference_answer": "Saif al-Adel",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ199",
+    "question": "Tom Brady holds the NFL's single-season record for completions by successfully throwing how many passes?",
+    "reference_answer": "490",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ200",
+    "question": "Which country won the latest World Pastry Cup?",
+    "reference_answer": "Japan",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ201",
+    "question": "What is the largest lottery jackpot for a single ticket in history?",
+    "reference_answer": "$2.04 billion Powerball jackpot; $2.04 billion",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ202",
+    "question": "How many World Series titles have the Houston Astros won?",
+    "reference_answer": "two; 2",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ203",
+    "question": "Who was the most recent woman to become President of Peru?",
+    "reference_answer": "Dina Boluarte; Dina Ercilia Boluarte Zegarra",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ204",
+    "question": "Which country has been invading Ukraine?",
+    "reference_answer": "Russia",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ205",
+    "question": "Who is the English monarch?",
+    "reference_answer": "King Charles III; Charles III",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ206",
+    "question": "What club does Lewandowski play for?",
+    "reference_answer": "Barcelona; FC Barcelona; La Liga club Barcelona",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ207",
+    "question": "Who was the last person to buy Twitter?",
+    "reference_answer": "Elon Musk; Elon Reeve Musk FRS",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ208",
+    "question": "Who is the LA county sheriff?",
+    "reference_answer": "Robert Luna; Robert G. Luna; Sheriff Robert Luna; Sheriff Robert G. Luna",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ209",
+    "question": "How many Women's Rugby World Cup titles has New Zealand won?",
+    "reference_answer": "six",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ210",
+    "question": "How many total Nazca geoglyphs have been discovered so far?",
+    "reference_answer": "358",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ211",
+    "question": "What is the most expensive page of a comic book ever sold at auction?",
+    "reference_answer": "Original artwork of Spider-Man in a black suit, by Mike Zeck",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ212",
+    "question": "Where was the world's oldest DNA found?",
+    "reference_answer": "Greenland",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ213",
+    "question": "Which team holds the record for largest deficit overcome to win an NFL game?",
+    "reference_answer": "Minnesota Vikings",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ214",
+    "question": "What is Amazon Prime Video's most watched premiere ever?",
+    "reference_answer": "The Lord of the Rings: The Rings of Power; The Rings of Power",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ215",
+    "question": "What is the name of Indonesia's future capital city?",
+    "reference_answer": "Nusantara",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ216",
+    "question": "When will be the next common year starting on Saturday?",
+    "reference_answer": "2033",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ217",
+    "question": "Who is the oldest Brazilian president at the time of inauguration?",
+    "reference_answer": "Luiz InÃ¡cio Lula da Silva; Luiz InÃ¡cio da Silva; Lula",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ218",
+    "question": "Who is the most recent female recipient of the Fields Medal?",
+    "reference_answer": "Maryna Viazovska",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ219",
+    "question": "How many FIFA World Cups has Argentina won?",
+    "reference_answer": "3; three; 3 titles; three titles",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ220",
+    "question": "Which is the most recent team to advance to consecutive FIFA World Cup finals?",
+    "reference_answer": "France",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ221",
+    "question": "What is the total height of the tallest building in the world?",
+    "reference_answer": "829.8 m; 2,722 ft",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ222",
+    "question": "The UN Secretary general is from which country?",
+    "reference_answer": "Portugal; Timor-Leste; Portugal and Timor-Leste",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ223",
+    "question": "Which actress' husband is a partial owner of Mint Mobile?",
+    "reference_answer": "Blake Lively; Blake Ellender Lively",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ224",
+    "question": "Which country has President Joe Biden visited the most during his presidency so far?",
+    "reference_answer": "United Kingdom",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ225",
+    "question": "What is the seating capacity of the largest stadium by capacity in the world?",
+    "reference_answer": "132,000; 132K",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ226",
+    "question": "How many presidents of the United States have lost reelection?",
+    "reference_answer": "10; ten",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ227",
+    "question": "How many publicly traded American companies have, at any point, had a market capitalization in excess of $4 trillion?",
+    "reference_answer": "4; four",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ228",
+    "question": "How many presidents has Peru had in the last 5 years?",
+    "reference_answer": "4; four",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ229",
+    "question": "How many flights of the Space Launch System have been successfully launched?",
+    "reference_answer": "2; two",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ230",
+    "question": "How many public health emergency of international concern declarations have been made by WHO in the last 5 years?",
+    "reference_answer": "2; two",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ231",
+    "question": "In what country was the current World's Strongest Man born?",
+    "reference_answer": "South Africa",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ232",
+    "question": "How many federal crimes has the most recent former president of the United States been convicted of?",
+    "reference_answer": "Joe Biden, the most recent former president of the United States, hasn't been convicted of any federal crimes.; 0; zero; none",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ233",
+    "question": "Who is the spouse of the President of the United States?",
+    "reference_answer": "Melania Trump; Melania Knauss Trump; Melanija Knavs",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ234",
+    "question": "Who is the vice-chancellor of the largest university by enrollment in the world?",
+    "reference_answer": "Uma Kanjilal; Prof. Uma Kanjilal has been appointed as the Acting Vice Chancellor of Indira Gandhi National Open University.",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ235",
+    "question": "Do Tesla and X Corp. have the same CEO?",
+    "reference_answer": "No; No, Elon Musk is CEO of Tesla, while X Corp. currently has no CEO following Linda Yaccarino's recent resignation.",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ236",
+    "question": "In what city was the person currently acting as the U.S. speaker of house born?",
+    "reference_answer": "Shreveport, Louisiana; Shreveport",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ237",
+    "question": "Which was the first country to detect a case of mpox in the most recent outbreak?",
+    "reference_answer": "DR Congo; Democratic Republic of the Congo",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ238",
+    "question": "How many times has The PokÃ©mon World Championships been held in Asia?",
+    "reference_answer": "one",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ239",
+    "question": "Who has the most liked post on Instagram?",
+    "reference_answer": "Lionel Messi",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ240",
+    "question": "When was the most recent eruption of the world's largest active volcano?",
+    "reference_answer": "November 27, 2022 - December 13, 2022; November 27, 2022; December 13, 2022; 2022",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ241",
+    "question": "How many active players have won at least five ATP Finals singles titles?",
+    "reference_answer": "1; one",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ242",
+    "question": "Who directed the most films in the top 15 highest-grossing films of all time?",
+    "reference_answer": "James Cameron",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ243",
+    "question": "Who bought the most expensive 20th century artwork sold in a public sale?",
+    "reference_answer": "Larry Gagosian; Larry Gagosian bought Andy Warhol's silk-screen painting Sage Blue Shot Marilyn (1964) at Christie's in New York City for $195.04 million",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ244",
+    "question": "What is the best ever result by an African team at a FIFA World Cup?",
+    "reference_answer": "fourth-place; one of the four semi-finalists; semi-final",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ245",
+    "question": "What was the first animal to orbit the Earth?",
+    "reference_answer": "Laika",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ246",
+    "question": "What is the largest model size of GPT-3?",
+    "reference_answer": "175 billion parameters; 175B parameters; 175 billion; 175B",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ247",
+    "question": "Which country has a red flag with one yellow star?",
+    "reference_answer": "Vietnam",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ248",
+    "question": "What city was connected with the earliest cases of COVID-19?",
+    "reference_answer": "Wuhan; Wuhan, China; Huanan Seafood Wholesale Market; Huanan Market; China",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ249",
+    "question": "What country has the most similar flag to that of Romania?",
+    "reference_answer": "Chad; Republic of Chad",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ250",
+    "question": "What state is known as the Aloha State?",
+    "reference_answer": "Hawaii; Hawai'i",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ251",
+    "question": "In what year will Google celebrate its 30th birthday?",
+    "reference_answer": "2028; Sep 4, 2028; September 4, 2028; 4 Sep 2028; 4 September 2028; 09/4/2028; 09-4-2028; 4/09/2028; 4-09-2028; 2028/09/4",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ252",
+    "question": "Where did Jeff Dean get his Ph.D. from?",
+    "reference_answer": "University of Washington; The University of Washington; UW; U. of Washington",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ253",
+    "question": "What is the largest mammal in the world?",
+    "reference_answer": "blue whale",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ254",
+    "question": "What is the tallest mountain in Alaska?",
+    "reference_answer": "Mount Denali; Mount McKinley",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ255",
+    "question": "What breed of dog was Queen Elizabeth II of England famous for keeping?",
+    "reference_answer": "Corgi; Pembroke Welsh Corgi",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ256",
+    "question": "What class of beer is top-fermenting?",
+    "reference_answer": "ales; ale",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ257",
+    "question": "Which country won the 2017 Eurovision Song Contest?",
+    "reference_answer": "Portugal",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ258",
+    "question": "What year did Intel go public?",
+    "reference_answer": "1971; Oct 13, 1971; October 13, 1971; 13 Oct 1971; 13 October 1971; 10/13/1971; 10-13-1971; 13/10/1971; 13-10-1971; 1971/10/13",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ259",
+    "question": "Who wrote the book titled Orientalism?",
+    "reference_answer": "Edward W. SaÃ¯d; Edward W. Said; Edward Said",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ260",
+    "question": "Sandstones are categorized into what type of sedimentary rocks?",
+    "reference_answer": "clastic; clastic rocks; clastic sedimentary rocks; siliciclastic sedimentary rocks",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ261",
+    "question": "Did Queen Elizabeth II visit Rhode Island, USA?",
+    "reference_answer": "Yes",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ262",
+    "question": "In Greek mythology, what is the name of Menelaus' wife?",
+    "reference_answer": "Helen of Troy; Helen; Helena; Helen of Sparta",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ263",
+    "question": "Who won the 2020 Formula 1 world driver's championship?",
+    "reference_answer": "Lewis Hamilton; Hamilton",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ264",
+    "question": "What was the real name of the Unabomber?",
+    "reference_answer": "Ted Kacsynzki; Theodore John Kaczynski",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ265",
+    "question": "What are the starter pokemon available in Pokemon Diamond?",
+    "reference_answer": "Turtwig, Chimchar, and Piplup; Turtwig, Piplup, and Chimchar; Chimchar, Turtwig, and Piplup; Chimchar, Piplup, and Turtwig; Piplup, Turtwig, and Chimchar; Piplup, Chimchar, and Turtwig",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ266",
+    "question": "Where did the first atomic bomb test take place in the United States?",
+    "reference_answer": "Jornada del Muerto Desert, New Mexico; Alamogordo Bombing Range; New Mexico; Alamogordo Bombing and Gunnery Range; White Sands Proving Ground",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ267",
+    "question": "How many lungs do slugs have?",
+    "reference_answer": "1; one; single",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ268",
+    "question": "On what date did the Berlin Wall fall?",
+    "reference_answer": "Nov 9, 1989; November 9, 1989; 9 Nov 1989; 9 November 1989; 11/9/1989; 11-9-1989; 9/11/1989; 9-11-1989; 1989/11/9; 1989-11-9",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ269",
+    "question": "On what date did Elvis Presley die?",
+    "reference_answer": "Aug 16, 1977; August 16, 1977; 16 Aug 1977; 16 August 1977; 08/16/1977; 08-16-1977; 16/08/1977; 16-08-1977; 1977/08/16; 1977-08-16",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ270",
+    "question": "Which Polish president died in a plane crash near Smolensk?",
+    "reference_answer": "Lech KaczyÅski; Lech Kaczynski; President Lech KaczyÅski; President KaczyÅski; KaczyÅski; Kaczynski",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ271",
+    "question": "What year did Japan bomb Pearl Harbor?",
+    "reference_answer": "1941",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ272",
+    "question": "When did David Bowie die?",
+    "reference_answer": "2016; Jan 10, 2016; January 10, 2016; 10 Jan 2016; 10 January 2016; 01/10/2016; 01-10-2016; 10/01/2016; 10-01-2016; 2016/01/10",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ273",
+    "question": "Who is the creator of Super Smash Bros.?",
+    "reference_answer": "Masahiro Sakurai; Sakurai; Sakurai-san",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ274",
+    "question": "On what date was Lunar New Year 2023?",
+    "reference_answer": "Jan 22, 2023; January 22, 2023; 22 Jan 2023; 22 January 2023; 01/22/2023; 01-22-2023; 22/01/2023; 22-01-2023; 2023/01/22; 2023-01-22",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ275",
+    "question": "Is Sunderland, MA to the north or south of Amherst, MA?",
+    "reference_answer": "north",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ276",
+    "question": "What city was Emily Dickinson born in?",
+    "reference_answer": "Amherst, Massachusetts; Amherst, MA; United States; Amherst",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ277",
+    "question": "Who wrote Between the World and Me?",
+    "reference_answer": "Ta-Nehisi Coates; Coates; Ta-Nehisi Paul Coates",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ278",
+    "question": "Who founded Amazon?",
+    "reference_answer": "Jeff Bezos; Bezos; Jeffrey Preston Bezos",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ279",
+    "question": "What is the capital of the commonwealth of Massachusetts?",
+    "reference_answer": "Boston; City of Boston",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ280",
+    "question": "Which team won the 2021 FIFA Club World Cup?",
+    "reference_answer": "Chelsea; Chelsea Football Club; Chelsea F.C.",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ281",
+    "question": "During the recording of which Beatles album did Ringo Starr temporarily quit the band?",
+    "reference_answer": "White Album; the White Album sessions; The Beatles",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ282",
+    "question": "In what city is the Louvre Museum?",
+    "reference_answer": "Paris, France; Paris; France; Rue de Rivoli, 75001 Paris, France",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ283",
+    "question": "In what month and year did the Tulip mania bubble collapse?",
+    "reference_answer": "February 1637; February, 1637; 02/1637; 02-1637",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ284",
+    "question": "Which character arrives late to the titular banquet in Plato's Symposium?",
+    "reference_answer": "Socrates",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ285",
+    "question": "What was the kanji of the year in 2021?",
+    "reference_answer": "gold; money; é; kin",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ286",
+    "question": "The 1939 German invasion of Poland began soon after Germany signed a non-aggression pact with what other nation?",
+    "reference_answer": "Soviet Union",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ287",
+    "question": "What was the real name of the author George Eliot?",
+    "reference_answer": "Mary Ann Evans; Mary; Mary Ann",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ288",
+    "question": "Where is Gil Evans from?",
+    "reference_answer": "Toronto, Canada; Toronto; Toronto, Ontario, Canada; Ontario, Canada; Canada",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ289",
+    "question": "Who is the director of the movie The Room?",
+    "reference_answer": "Tommy Wiseau; Thomas P. Wiseau; Thomas Wiseau",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ290",
+    "question": "How many years did the Hundred Years' War last?",
+    "reference_answer": "116 years; 116; 116 years, 4 months, 3 weeks and 4 days; 116 years, 4 months, and 3 weeks; 116 years and 4 months",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ291",
+    "question": "On which side do people stand on the escalator in Tokyo?",
+    "reference_answer": "left; left side",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ292",
+    "question": "In which month does the Japanese school year start?",
+    "reference_answer": "April",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ293",
+    "question": "Who was the first football player to score one hundred international goals?",
+    "reference_answer": "Ali Daei",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ294",
+    "question": "In which municipality did Typhoon Haiyan make its first eye landfall?",
+    "reference_answer": "Guiuan, Eastern Samar; Guiuan",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ295",
+    "question": "What time of day on August 15, 1947 did India become an independent nation?",
+    "reference_answer": "12:02 am; 12:02; 00:02",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ296",
+    "question": "Where was Emily Joanna Carey born?",
+    "reference_answer": "Barnet; The London Borough of Barnet; London; North London",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ297",
+    "question": "Along with streptococcus thermophilus, what other bacteria is used to make Bulgarian yogurt?",
+    "reference_answer": "Lactobacillus bulgaricus; L. bulgaricus; L. d. bulgaricus; Lactobacillus delbrueckii subsp. bulgaricus; Lactobacillus delbrueckii subspecies bulgaricus",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ298",
+    "question": "When did Blackpink make their debut?",
+    "reference_answer": "2016; Aug 8, 2016; August 8, 2016; 8 Aug 2016; 8 August 2016; 08/8/2016; 08-8-2016; 8/08/2016; 8-08-2016; 2016/08/8",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ299",
+    "question": "Which company developed Overwatch?",
+    "reference_answer": "Blizzard Entertainment; Blizzard",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ300",
+    "question": "What is the heaviest reptile in the world?",
+    "reference_answer": "saltwater crocodile; crocodylus porosus",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ301",
+    "question": "Who first proposed the idea that all matter exhibits wave-particle duality?",
+    "reference_answer": "Louis de Broglie; De Broglie; physicist Louis de Broglie",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ302",
+    "question": "What state of Germany is the University of Konstanz located in?",
+    "reference_answer": "Baden-WÃ¼rttemberg",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ303",
+    "question": "What film starred Brad Pitt's first leading role?",
+    "reference_answer": "The Dark Side of the Sun",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ304",
+    "question": "What was the date of Led Zeppelin's last UK concert?",
+    "reference_answer": "Aug 11, 1979; August 11, 1979; 11 Aug 1979; 11 August 1979; 08/11/1979; 08-11-1979; 11/08/1979; 11-08-1979; 1979/08/11; 1979-08-11",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ305",
+    "question": "Which countries will host FIFA World Cup 2026?",
+    "reference_answer": "USA, Canada, and Mexico; Canada, Mexico, and the United States; the US, Canada and Mexico; Mexico, Canada, and the United States; U.S., Mexico, Canada",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ306",
+    "question": "How many property cards are in Monopoly Deal's dark blue set?",
+    "reference_answer": "2; two",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ307",
+    "question": "In what year was the UMass Outing Club founded?",
+    "reference_answer": "1922",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ308",
+    "question": "How many players are on a basketball court at once including both teams?",
+    "reference_answer": "10; ten; 10 players; ten players",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ309",
+    "question": "What country is Kiwifruit native to?",
+    "reference_answer": "China; mainland China; central and eastern China",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ310",
+    "question": "What two things did Benjamin Franklin claim to be certain in this world?",
+    "reference_answer": "Death and Taxes; Taxes and Death; death and taxes",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ311",
+    "question": "When did the Chinese Tang Dynasty end?",
+    "reference_answer": "907 AD; 907; Tianyou 4",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ312",
+    "question": "Which mountain is at the north end of the Appalachian Trail?",
+    "reference_answer": "Mount Katahdin; Mt. Katahdin; Katahdin; Mount Katahdin, Baxter Peak",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ313",
+    "question": "Which city does Disco Elysium take place in?",
+    "reference_answer": "Revachol",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ314",
+    "question": "Which countries border the largest lake on Earth?",
+    "reference_answer": "Kazakhstan, Turkmenistan, Iran, Azerbaijan, and Russia; Russia, Iran, Azerbaijan, Kazakhstan, and Turkmenistan; Iran, Russia, Azerbaijan, Turkmenistan, and Kazakhstan; Iran, Azerbaijan, Kazakhstan, Turkmenistan, and Russia; Kazakhstan, Iran, Azerbaijan, Russia, and Turkmenistan; Russian Federation",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ315",
+    "question": "Who is Elrond's father in J. R. R. Tolkien's Middle Earth stories?",
+    "reference_answer": "EÃ¤rendil; Earendil; EÃ¤rendil the Blessed; Bright EÃ¤rendil",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ316",
+    "question": "On what month, day, and year was the Declaration of Independence signed?",
+    "reference_answer": "August 2, 1776. It is not July 4, 1776, which is when it was published.; Aug 2, 1776; August 2, 1776; 2 Aug 1776; 2 August 1776; 08/02/1776; 08-02-1776; 02/08/1776; 02-08-1776; 1776/08/02",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ317",
+    "question": "Who was the first American president to defeat an incumbent president in a presidential election?",
+    "reference_answer": "Thomas Jefferson",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ318",
+    "question": "Who is currently holding the copyright to the short-story collection \"The Case-Book of Sherlock Holmes\" in the United States?",
+    "reference_answer": "No one as all books, films, and other works published in 1927 entered the public domain on 1 January 2023.",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ319",
+    "question": "Which famous soccer player of Brazil passed away in 2022?",
+    "reference_answer": "PelÃ©; Pele; Edson Arantes do Nascimento",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ320",
+    "question": "Whom did Magnus Carlsen accuse of cheating in chess in 2022?",
+    "reference_answer": "Hans Niemann; Hans Moke Niemann; grandmaster Hans Moke Niemann",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ321",
+    "question": "How many public payphones are left in New York City?",
+    "reference_answer": "No official public payphones are left in New York City. The city removed its last public payphone in 2022.",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ322",
+    "question": "When did Elon Musk officially become Twitter's owner?",
+    "reference_answer": "Oct 27, 2022; October 27, 2022; 27 Oct 2022; 27 October 2022; 10/27/2022; 10-27-2022; 27/10/2022; 27-10-2022; 2022/10/27; 2022-10-27",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ323",
+    "question": "Who killed the former Japanese Prime Minister Shinzo Abe?",
+    "reference_answer": "Tetsuya Yamagami",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ324",
+    "question": "What was the first operational image taken by the James Webb Space Telescope?",
+    "reference_answer": "Webb's First Deep Field",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ325",
+    "question": "Who revealed to the public the first operational image taken by NASA's James Webb Space Telescope at the White House?",
+    "reference_answer": "Joe Biden; Joseph Robinette Biden Jr; President Joe Biden; President Biden; U.S. President Joe Biden",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ326",
+    "question": "Who was the first elected female Governor of Massachusetts?",
+    "reference_answer": "Maura Healey; Maura Tracy Healey",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ327",
+    "question": "On what date did Queen Elizabeth II of England die?",
+    "reference_answer": "Sep 8, 2022; September 8, 2022; 8 Sep 2022; 8 September 2022; 09/8/2022; 09-8-2022; 8/09/2022; 8-09-2022; 2022/09/8; 2022-09-8",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ328",
+    "question": "Who won the 2022 Nobel Prize in Chemistry from University of Copenhagen, Denmark?",
+    "reference_answer": "Morten Meldal; Morten Peter Meldal; Morten Peter Meldal",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ329",
+    "question": "Who wrote the best novelette of the 2022 Hugo Awards?",
+    "reference_answer": "Suzanne Palmer",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ330",
+    "question": "Who was the first player to win more than one FIFA World Cup Golden Ball?",
+    "reference_answer": "Lionel Messi",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ331",
+    "question": "Who was the first player to score a goal at five FIFA Men's World Cup tournaments?",
+    "reference_answer": "Cristiano Ronaldo; Ronaldo; CR7; Cristiano Ronaldo dos Santos Aveiro GOIH ComM",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ332",
+    "question": "When was the Day of Eight Billion?",
+    "reference_answer": "Nov 15, 2022; November 15, 2022; 15 Nov 2022; 15 November 2022; 11/15/2022; 11-15-2022; 15/11/2022; 15-11-2022; 2022/11/15; 2022-11-15",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ333",
+    "question": "Who was the first female president of Slovenia?",
+    "reference_answer": "NataÅ¡a Pirc Musar",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ334",
+    "question": "How many Chinese paddlefish are left in the wild?",
+    "reference_answer": "zero; none; Chinese paddlefish was declared extinct by the International Union for Conservation of Nature in 2022.",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ335",
+    "question": "Which university did Taylor Swift receive her honorary Doctor of Fine Arts degree from?",
+    "reference_answer": "New York University",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ336",
+    "question": "What was the first episode of The Simpsons to have all female creative leads?",
+    "reference_answer": "You Won't Believe What This Episode Is About â Act Three Will Shock You!; the 14th episode of the 33rd season; Episode 14 Season 33",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ337",
+    "question": "What episode of The Simpsons marked the first time a deaf actor was cast on the show?",
+    "reference_answer": "The Sound of Bleeding Gums; the 17th episode of the 33rd season; Episode 17 Season 33",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ338",
+    "question": "What was the first film franchise to gross $28 billion?",
+    "reference_answer": "Marvel Cinematic Universe",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ339",
+    "question": "Who was the first African American woman to appear on a quarter in the United States?",
+    "reference_answer": "Maya Angelou",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ340",
+    "question": "How old was the youngest passenger on board the Titanic?",
+    "reference_answer": "two months old; nine weeks old; 72 days old",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ341",
+    "question": "Which country will host the most matches at the FIFA World Cup 2026?",
+    "reference_answer": "the USA; USA; the United States; United States; U.S.; the U.S.; the US",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ342",
+    "question": "Who is the last player to win the Ballon D'or before the MessiâRonaldo dominance of the award?",
+    "reference_answer": "Kaka; KakÃ¡; Ricardo Kaka; Ricardo KakÃ¡; Ricardo Izecson dos Santos Leite",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ343",
+    "question": "Who was the only student author of the paper that introduced the LSTM neural network architecture?",
+    "reference_answer": "Sepp Hochreiter; Josef \"Sepp\" Hochreiter; Hochreiter",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ344",
+    "question": "What's the capital of the largest state in America?",
+    "reference_answer": "Juneau",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ345",
+    "question": "Which city was the capital of California the year it became a state?",
+    "reference_answer": "San Jose; San JosÃ©; San Jose, California; San JosÃ©, California",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ346",
+    "question": "Where is the 8th president of the United States buried?",
+    "reference_answer": "Kinderhook, NY; Kinderhook, New York; Kinderhook; New York",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ347",
+    "question": "Where was the author of the book \"A Game of Thrones\" born?",
+    "reference_answer": "Bayonne, NJ; Bayonne; New Jersey",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ348",
+    "question": "Who was the emperor of China when the American Revolutionary War ended?",
+    "reference_answer": "Qianlong; Qianlong Emperor; Qian Long; Long Qian",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ349",
+    "question": "When did Naughty Dog release its first game on the PS1?",
+    "reference_answer": "1996; Sep 9, 1996; September 9, 1996; 9 Sep 1996; 9 September 1996; 09/9/1996; 09-9-1996; 9/09/1996; 9-09-1996; 1996/09/9",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ350",
+    "question": "The town that Sigmund Freud was born in is currently called by what name?",
+    "reference_answer": "PÅÃ­bor; PÅÃ­bor, Czech Republic; Pribor",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ351",
+    "question": "Along what tectonic plate boundary were yeti crabs first discovered?",
+    "reference_answer": "Pacific-Antarctic Ridge; Pacific Antarctic Ridge; PAR",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ352",
+    "question": "Which province borders Shanghai to the north?",
+    "reference_answer": "Jiangsu; Jiangsu province",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ353",
+    "question": "Where was the primary designer of AlexNet born?",
+    "reference_answer": "Ukraine; Soviet",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ354",
+    "question": "What is the main character's name in the last novel Jane Austen published while alive?",
+    "reference_answer": "Emma; Emma Woodhouse",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ355",
+    "question": "After which country did Marie Curie name the first element that she discovered?",
+    "reference_answer": "Poland",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ356",
+    "question": "When was the bass player of Miles Davis's first quintet born?",
+    "reference_answer": "1935; Apr 22, 1935; April 22, 1935; 22 Apr 1935; 22 April 1935; 04/22/1935; 04-22-1935; 22/04/1935; 22-04-1935; 1935/04/22",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ357",
+    "question": "What organization handles the equivalent of the Nobel prize for computer science?",
+    "reference_answer": "Association for Computing Machinery (ACM)",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ358",
+    "question": "Who is the highest-earning woman in music on the Forbes' Celebrity 100 list in 2020?",
+    "reference_answer": "Ariana Grande; Ariana Grande-Butera",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ359",
+    "question": "How many athletes are there in the top 10 of the Forbes' Celebrity 100 list in 2020?",
+    "reference_answer": "5; five",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ360",
+    "question": "Has Virginia Woolf's novel about the Ramsay family entered the public domain in the United States?",
+    "reference_answer": "Yes",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ361",
+    "question": "How old was Roger Federer when he retired from tennis?",
+    "reference_answer": "41; 41 years old",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ362",
+    "question": "What is the name of the 2022 Atlantic hurricane season's first major hurricane?",
+    "reference_answer": "Hurricane Fiona; Fiona",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ363",
+    "question": "In what city did the first successful heart transplant from a pig to a human patient take place?",
+    "reference_answer": "Baltimore; Baltimore, Maryland; Baltimore, MD; Baltimore, Maryland, United States; Baltimore, MD, USA",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ364",
+    "question": "Which football player has a personal logo with the same initials as those in King Charles IIIâs Royal cypher?",
+    "reference_answer": "Cristiano Ronaldo; Ronaldo; CR7; Cristiano Ronaldo dos Santos Aveiro GOIH ComM",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ365",
+    "question": "How old was Queen Elizabeth II when she died?",
+    "reference_answer": "96 years old; 96",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ366",
+    "question": "What killed the King of Soccer?",
+    "reference_answer": "multiple organ failure, a complication of colon cancer; colon cancer; cancer",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ367",
+    "question": "How many years did it take for the population of the world to reach 8 billion from 7 billion?",
+    "reference_answer": "10 years",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ368",
+    "question": "In what city did the first rail line entirely run by hydrogen-powered trains debut?",
+    "reference_answer": "BremervÃ¶rde; BremervÃ¶rde, Lower Saxony, Germany",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ369",
+    "question": "Did Emeritus Benedict XVI and Queen Elizabeth II die in the same year?",
+    "reference_answer": "Yes",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ370",
+    "question": "What was the most-viewed music video in the first 24 hours on YouTube?",
+    "reference_answer": "BTS (ë°©íìëë¨) 'Butter' Official MV; Butter",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ371",
+    "question": "According to the WHOâs latest reported 28-day figures, which country had the second-highest number of COVID-19 cases per 100,000 population?",
+    "reference_answer": "Lithuania",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ372",
+    "question": "According to the WHOâs latest reported 28-day figures, which country had the second-highest number of COVID-19 cases?",
+    "reference_answer": "Greece",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ373",
+    "question": "Who is the latest winner of the Formula 1 world championship?",
+    "reference_answer": "Lando Norris",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ374",
+    "question": "Who was the winner of The Voice US this year?",
+    "reference_answer": "Alexia Jayy",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ375",
+    "question": "How many exoplanets have been discovered?",
+    "reference_answer": "6,160 confirmed exoplanets; 6,160",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ376",
+    "question": "How many goals has Erling Haaland scored in the UEFA Champion League?",
+    "reference_answer": "57 goals; 57",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ377",
+    "question": "What is the latest highest-grossing movie of the week at the Box office?",
+    "reference_answer": "The Super Mario Galaxy Movie",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ378",
+    "question": "How many tornadoes have been confirmed by Enhanced Fujita rating in the United States so far this year?",
+    "reference_answer": "1,429; There have been 1,429 confirmed tornadoes in the United States.",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ379",
+    "question": "How many citations does Geoffrey Hinton have according to Google Scholar?",
+    "reference_answer": "1029825; one million",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ380",
+    "question": "What date was the last time it rained in New York City?",
+    "reference_answer": "Apr 17, 2026; April 17, 2026; 17 Apr 2026; 17 April 2026; 04/17/2026; 04-17-2026; 17/04/2026; 17-04-2026; 2026/04/17; 2026-04-17",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ381",
+    "question": "What is the current best-selling children's book on Amazon?",
+    "reference_answer": "Harry Potter and the Half-Blood Prince",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ382",
+    "question": "What is the current most popular Wikipedia article of the Week?",
+    "reference_answer": "Artemis II",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ383",
+    "question": "How much does the Netflix standard plan without ads cost in the US?",
+    "reference_answer": "$19.99; $19.99 / month; $19.99 a month; $19.99 per month",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ384",
+    "question": "Who is the current No. 1 on the Billboard Artist 100?",
+    "reference_answer": "BTS",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ385",
+    "question": "What's the most popular film on Letterboxd this week?",
+    "reference_answer": "The Drama; The Drama (2026) directed by Kristoffer Borgli",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ386",
+    "question": "What is Geoff Hintonâs h-index?",
+    "reference_answer": "190",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ387",
+    "question": "Who is the most recent NBA player to score 60 or more points in a single game?",
+    "reference_answer": "Luka DonÄiÄ; Luka Doncic",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ388",
+    "question": "Who is the latest winner of The Voice US?",
+    "reference_answer": "Alexia Jayy",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ389",
+    "question": "When was Coldplay's last concert?",
+    "reference_answer": "Apr 17, 2026; April 17, 2026; 17 Apr 2026; 17 April 2026; 04/17/2026; 04-17-2026; 17/04/2026; 17-04-2026; 2026/04/17; 2026-04-17",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ390",
+    "question": "Who is the current ATP top-ranked men's singles tennis player?",
+    "reference_answer": "Jannik Sinner",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ391",
+    "question": "On what date did the Patriots last play the Miami Dolphins?",
+    "reference_answer": "Jan 4, 2026; January 4, 2026; 4 Jan 2026; 4 January 2026; 01/4/2026; 01-4-2026; 4/01/2026; 4-01-2026; 2026/01/4; 2026-01-4",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ392",
+    "question": "What is the most recent country that President Donald Trump visited during his second presidency?",
+    "reference_answer": "Switzerland",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ393",
+    "question": "Who won the latest Grammy Award for Best Jazz Performance?",
+    "reference_answer": "Chick Corea, Christian McBride & Brian Blade",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ394",
+    "question": "Who won the most recent Super Bowl?",
+    "reference_answer": "Seattle Seahawks",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ395",
+    "question": "Where will NeurIPS be located this year?",
+    "reference_answer": "Sydney; Sydney, Austraila; Austraila",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ396",
+    "question": "What were this year's Coachella festival dates?",
+    "reference_answer": "April 10â12 and April 17-19",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ397",
+    "question": "When is this year's Black Friday?",
+    "reference_answer": "November 27; Nov 27, 2026; November 27, 2026; 27 Nov 2026; 27 November 2026; 11/27/2026; 11-27-2026; 27/11/2026; 27-11-2026; 2026/11/27",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ398",
+    "question": "When did this year's Passover start?",
+    "reference_answer": "April 1; Apr 1, 2026; April 1, 2026; 1 Apr 2026; 1 April 2026; 04/1/2026; 04-1-2026; 1/04/2026; 1-04-2026; 2026/04/1",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ399",
+    "question": "Who were the finalists in the US Open women's singles last year?",
+    "reference_answer": "Aryna Sabalenka and Amanda Anisimova; Amanda Anisimova and Aryna Sabalenka",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ400",
+    "question": "How many papers (including both long and short papers) were accepted into the main conference of ACL last year?",
+    "reference_answer": "1,699 papers were accepted into the Main Conference.",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ401",
+    "question": "What date is mother's day in the United States this year?",
+    "reference_answer": "Sunday, May 10; May 10, 2026; May 10, 2026; 10 May 2026; 10 May 2026; 05/10/2026; 05-10-2026; 10/05/2026; 10-05-2026; 2026/05/10",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ402",
+    "question": "What date is father's day in the United States this year?",
+    "reference_answer": "Sunday, June 21; Jun 21, 2026; June 21, 2026; 21 Jun 2026; 21 June 2026; 06/21/2026; 06-21-2026; 21/06/2026; 21-06-2026; 2026/06/21",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ403",
+    "question": "Where is EMNLP this year?",
+    "reference_answer": "Budapest, Hungary; Budapest; Hungary",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ404",
+    "question": "Which broadcast network was this year's Super Bowl broadcaster?",
+    "reference_answer": "NBC and Peacock; Peacock and NBC",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ405",
+    "question": "What was the highest-grossing film in the United States last year?",
+    "reference_answer": "Zootopia 2",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ406",
+    "question": "What Berber year corresponds to the present year?",
+    "reference_answer": "2976",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ407",
+    "question": "When was this year's Ramadan?",
+    "reference_answer": "Feb 18, 2026 â Mar 19, 2026; February 18, 2026 â March 19, 2026; Feb 18, 2026 â Mar 19, 2026; February 18, 2026 â March 19, 2026",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ408",
+    "question": "What date is Thanksgiving this year?",
+    "reference_answer": "November 26; Nov 26, 2026; November 26, 2026; 26 Nov 2026; 26 November 2026; 11/26/2026; 11-26-2026; 26/11/2026; 26-11-2026; 2026/11/26",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ409",
+    "question": "What date is this year's Labor day?",
+    "reference_answer": "September 7; Sep 7, 2026; September 7, 2026; 7 Sep 2026; 7 September 2026; 09/7/2026; 09-7-2026; 7/09/2026; 7-09-2026; 2026/09/7",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ410",
+    "question": "What was the host stadium of this year's Super Bowl?",
+    "reference_answer": "Levi's Stadium",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ411",
+    "question": "What date was the State of the Union Address delivered in the previous calendar year?",
+    "reference_answer": "Mar 4, 2025; March 4, 2025; 4 Mar 2025; 4 March 2025; 03/4/2025; 03-4-2025; 4/03/2025; 4-03-2025; 2025/03/4; 2025-03-4",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ412",
+    "question": "What won the latest Academy Award for Best Animated Feature?",
+    "reference_answer": "KPop Demon Hunters",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ413",
+    "question": "Which movie won the latest Academy Award for Best Picture?",
+    "reference_answer": "One Battle After Another",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ414",
+    "question": "How many novels has Stephen King published?",
+    "reference_answer": "68 novels; 68 (\"Other Worlds Than These\" has not been released yet)",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ415",
+    "question": "What is the title of Stephen King's most recent novel?",
+    "reference_answer": "The End Times",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ416",
+    "question": "What season is it in the northern hemisphere?",
+    "reference_answer": "spring",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ417",
+    "question": "When is the next U.S. federal holiday?",
+    "reference_answer": "Memorial Day; May 25, 2026; May 25, 2026; 25 May 2026; 25 May 2026; 05/25/2026; 05-25-2026; 25/05/2026; 25-05-2026; 2026/05/25",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ418",
+    "question": "On what date in North America did the most recent Microsoft's Patch Tuesday come out?",
+    "reference_answer": "Apr 14, 2026; April 14, 2026; 14 Apr 2026; 14 April 2026; 04/14/2026; 04-14-2026; 14/04/2026; 14-04-2026; 2026/04/14; 2026-04-14",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ419",
+    "question": "The upcoming Microsoft's Patch Tuesday will come out on what date in North America?",
+    "reference_answer": "May 12, 2026; May 12, 2026; 12 May 2026; 12 May 2026; 05/12/2026; 05-12-2026; 12/05/2026; 12-05-2026; 2026/05/12; 2026-05-12",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ420",
+    "question": "Who was the winner of American Idol this year?",
+    "reference_answer": "This year's American Idol is still airing",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ421",
+    "question": "How many countries have recognized same-sex marriage?",
+    "reference_answer": "38 countries; 38",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ422",
+    "question": "Who is the starting running back for the San Francisco 49ers?",
+    "reference_answer": "Christian McCaffrey",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ423",
+    "question": "What is the base price of the new Tesla Model Y Premium All-Wheel Drive?",
+    "reference_answer": "$48,990",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ424",
+    "question": "What is the latest version of Android?",
+    "reference_answer": "Android 16",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ425",
+    "question": "Who is the richest man on earth?",
+    "reference_answer": "Elon Musk; Elon Reeve Musk",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ426",
+    "question": "Which team is at the top of the latest Premier League season?",
+    "reference_answer": "Arsenal; Arsenal F.C.",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ427",
+    "question": "Is Arsenal on the top of the latest Premier League standings?",
+    "reference_answer": "Yes",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ428",
+    "question": "Who was the most recent incumbent president worldwide who ran for re-election but was not reelected?",
+    "reference_answer": "Lazarus Chakwera",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ429",
+    "question": "What is the release name of the latest version of the macOS operating system?",
+    "reference_answer": "Tahoe; macOS 26 Tahoe",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ430",
+    "question": "Who is the latest MotoGP World Riders' Champion?",
+    "reference_answer": "Marc MÃ¡rquez; Marc MÃ¡rquez AlentÃ",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ431",
+    "question": "Who won the latest Nobel Prize in Literature?",
+    "reference_answer": "LÃ¡szlÃ³ Krasznahorkai",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ432",
+    "question": "Who won the most recent Time Magazine's Athlete of the Year?",
+    "reference_answer": "A'ja Wilson",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ433",
+    "question": "What is the next Walt Disney Animation Studios film?",
+    "reference_answer": "Hexed",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ434",
+    "question": "What is the most recent Walt Disney Animation Studios's animated film?",
+    "reference_answer": "Zootopia 2",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ435",
+    "question": "What video game won the most recent Game Award for Game of the Year?",
+    "reference_answer": "Clair Obscur: Expedition 33",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ436",
+    "question": "When did the latest NFL season begin?",
+    "reference_answer": "Sep 4, 2025; September 4, 2025; 4 Sep 2025; 4 September 2025; 09/4/2025; 09-4-2025; 4/09/2025; 4-09-2025; 2025/09/4; 2025-09-4",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ437",
+    "question": "How many undergraduate students enrolled in Reed College in the most recent fall semester?",
+    "reference_answer": "1267",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ438",
+    "question": "Who won the latest Ballon D'or?",
+    "reference_answer": "DembÃ©lÃ©; Ousmane DembÃ©lÃ©; Masour Ousmane DembÃ©lÃ©",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ439",
+    "question": "Which drama series won the most recent Primetime Emmy Award for Outstanding Drama Series?",
+    "reference_answer": "The Pitt; The Pitt (Season 1)",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ440",
+    "question": "Where was the most recent IJCAI conference held?",
+    "reference_answer": "Montreal; Montreal, QuÃ©bec, Canada; QuÃ©bec, Canada; Canada",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ441",
+    "question": "Where will the upcoming International Mathematical Olympiad (IMO) be hosted?",
+    "reference_answer": "Shanghai; Shanghai, China; China",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ442",
+    "question": "Which game won the Spiel des Jahres award most recently?",
+    "reference_answer": "Bomb Busters",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ443",
+    "question": "How old is President Donald Trump?",
+    "reference_answer": "79; 79 years old",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ444",
+    "question": "What book won the latest Nebula award for Best Novel?",
+    "reference_answer": "Someone You Can Build a Nest In",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ445",
+    "question": "Who won the latest NBA championship?",
+    "reference_answer": "Oklahoma City Thunder",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ446",
+    "question": "How many goals did Kylian MbappÃ© score in the UEFA Champion League last season?",
+    "reference_answer": "7 goals; 7; seven goals; seven",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ447",
+    "question": "The longest winning streak in the last season of the Premier League consisted of how many matches?",
+    "reference_answer": "6; 6 matches",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ448",
+    "question": "Who is the latest winner of American Idol?",
+    "reference_answer": "Jamal Roberts",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ449",
+    "question": "Who was the guest of honor at the most recent state dinner hosted by the President of the United States?",
+    "reference_answer": "Mohammed bin Salman",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ450",
+    "question": "What album holds the record for the most Spotify streams reached in a single day?",
+    "reference_answer": "The Tortured Poets Department",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ451",
+    "question": "Who is the number 1 ranked female tennis player in the world?",
+    "reference_answer": "Aryna Sabalenka; Aryna SiarhiejeÅ­na Sabalenka",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ452",
+    "question": "Is Apple's stock price above $170 per share?",
+    "reference_answer": "Yes",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ453",
+    "question": "What is the name of the most recent episode of The Lord of the Rings: The Rings of Power?",
+    "reference_answer": "Shadow and Flame",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ454",
+    "question": "How much does the new Apple HomePod cost?",
+    "reference_answer": "$299",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ455",
+    "question": "What is the latest United States jurisdiction to legalize the recreational use of cannabis?",
+    "reference_answer": "Ohio",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ456",
+    "question": "What is the youngest age eligible for COVID-19 vaccination in the United States?",
+    "reference_answer": "6 months",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ457",
+    "question": "What's the latest game released by Puppet Combo on Steam?",
+    "reference_answer": "Stay out of the House",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ458",
+    "question": "How many countries has President Donald Trump visited during his current presidency?",
+    "reference_answer": "14; President Donald Trump has made 9 international trips to 14 countries during his second presidency, which began on January 20, 2025.",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ459",
+    "question": "How many goals did Bukayo Saka score in the most recent match between Arsenal and Liverpool?",
+    "reference_answer": "0; zero",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ460",
+    "question": "How many times has a player scored 60 or more points in a single game in NBA history?",
+    "reference_answer": "93; 91 times",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ461",
+    "question": "What's the current Tomatometer score of the most recent season of The Lord of the Rings: The Rings of Power on Rotten Tomatoes?",
+    "reference_answer": "85%; 84",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ462",
+    "question": "What's the current audience score of the most recent season of The Lord of the Rings: The Rings of Power on Rotten Tomatoes?",
+    "reference_answer": "58%; 59",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ463",
+    "question": "Do the Toronto Raptors have a winning record in the latest NBA season?",
+    "reference_answer": "Yes",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ464",
+    "question": "Is the average regular gasoline price in Massachusetts under $3.70 a gallon?",
+    "reference_answer": "No",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ465",
+    "question": "How many years ago did John Paul II die?",
+    "reference_answer": "21; 21 years",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ466",
+    "question": "How long has it been since the Eiffel Tower's inauguration?",
+    "reference_answer": "137; 137 years; more than 137 years",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ467",
+    "question": "How old is the most-followed user on TikTok?",
+    "reference_answer": "26 years old; 26",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ468",
+    "question": "How old is David Beckham's oldest son?",
+    "reference_answer": "27 years old; 27",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ469",
+    "question": "When will the largest marathon in the world start this year?",
+    "reference_answer": "Nov 1, 2026; November 1, 2026; 1 Nov 2026; 1 November 2026; 11/1/2026; 11-1-2026; 1/11/2026; 1-11-2026; 2026/11/1; 2026-11-1",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ470",
+    "question": "Which author had the most bestselling novels in the United States last year according to Publishers Weekly?",
+    "reference_answer": "Dav Pilkey and Rebecca Yarros; Rebecca Yarros and Dav Pilkey",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ471",
+    "question": "Who posted the most-liked Instagram post last year?",
+    "reference_answer": "Lionel Messi",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ472",
+    "question": "In what month and year was the price of Bitcoin last above $40,000?",
+    "reference_answer": "April 2026",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ473",
+    "question": "How many novels has Stephen King published under his real name?",
+    "reference_answer": "61 novels; 61 novels (King has published 68 novels/novellas, including seven under the pen name Richard Bachman); 61",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ474",
+    "question": "What is Brad Pitt's most recent movie as an actor?",
+    "reference_answer": "F1",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ475",
+    "question": "How long has Mauna Loa been a dormant volcano since its most recent eruption?",
+    "reference_answer": "more than 3 years",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ476",
+    "question": "How many Southeast Asian countries has President Donald Trump visited during his current presidency?",
+    "reference_answer": "1",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ477",
+    "question": "Is Tesla's stock price above $250 a share?",
+    "reference_answer": "Yes",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ478",
+    "question": "How old is the world's oldest verified living person?",
+    "reference_answer": "116 years old; 116",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ479",
+    "question": "In what country was the current Miss World born?",
+    "reference_answer": "Thailand",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ480",
+    "question": "How many years it has been since the last Major League Baseball perfect game?",
+    "reference_answer": "more than 2 years",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ481",
+    "question": "How old is the richest person in the world?",
+    "reference_answer": "54 years old; 54",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ482",
+    "question": "What country does the Wimbledon women's champion play for?",
+    "reference_answer": "Poland; Republic of Poland",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ483",
+    "question": "In how many years will Netflix celebrate its thirtieth anniversary?",
+    "reference_answer": "more than 1 year",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ484",
+    "question": "In what country was the most recent winner of the Nobel Prize for Literature born?",
+    "reference_answer": "Hungary",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ485",
+    "question": "Who are the current champions of the NBA, NHL, and MLB?",
+    "reference_answer": "Oklahoma City Thunder, Florida Panthers, and Los Angeles Dodgers",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ486",
+    "question": "What country does the most recent Time Magazine's Entertainer of the Year come from?",
+    "reference_answer": "the USA; USA; the United States; United States; U.S.; the U.S.; the US",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ487",
+    "question": "How old is the latest American Nobel laureate in Physics?",
+    "reference_answer": "67 or 68; 67; 68",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ488",
+    "question": "What is the current age of the oldest person to sail solo across the Pacific Ocean?",
+    "reference_answer": "87; 87 years old; eighty-seven",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ489",
+    "question": "How far did the United States representative go at the last Miss World?",
+    "reference_answer": "Top 20",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ490",
+    "question": "How old is David Beckham's daughter?",
+    "reference_answer": "14; 14 years; 14 years old; fourteen",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ491",
+    "question": "How many American companies were there in the Fortune Global 500 list last year?",
+    "reference_answer": "138",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ492",
+    "question": "How old is the current Miss Universe?",
+    "reference_answer": "25 years old; 25",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ493",
+    "question": "Who are the latest champions of the North America's oldest professional sports trophy?",
+    "reference_answer": "Florida Panthers (EC)",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ494",
+    "question": "In which country was the richest woman in the world born?",
+    "reference_answer": "the USA; USA; the United States; United States; U.S.; the U.S.; the US",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ495",
+    "question": "In what country was the most recent individual recipient of Time Person of the Year born?",
+    "reference_answer": "the USA; USA; the United States; United States; U.S.; the U.S.; the US",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ496",
+    "question": "Is one US dollar worth more than 82 Indian rupees?",
+    "reference_answer": "Yes",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ497",
+    "question": "Is the platinum price to palladium price ratio currently above 0.7?",
+    "reference_answer": "Yes",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ498",
+    "question": "Who posted the most-liked TikTok video?",
+    "reference_answer": "Bella Poarch",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ499",
+    "question": "How many LauncherOne's flights have successfully reached the Low Earth orbit?",
+    "reference_answer": "4; four",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ500",
+    "question": "Who is the current Canadian president?",
+    "reference_answer": "Canada does not have a president but rather has a prime minister.",
+    "requires_fresh": true,
+    "is_answerable": false,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ501",
+    "question": "In what year did Russia finish disposing of all of its nuclear weapons?",
+    "reference_answer": "Russia has not disposed of all of its nuclear weapons.",
+    "requires_fresh": true,
+    "is_answerable": false,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ502",
+    "question": "When did Taylor Swift win her first Golden Globe?",
+    "reference_answer": "Taylor Swift has never won a Golden Globe award.",
+    "requires_fresh": true,
+    "is_answerable": false,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ503",
+    "question": "When did Denmark adopt the euro as its currency?",
+    "reference_answer": "Denmark has not yet adopted the euro.",
+    "requires_fresh": true,
+    "is_answerable": false,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ504",
+    "question": "When did OpenAI release GPT-5.5?",
+    "reference_answer": "To date, OpenAI has not yet released GPT-5.5.",
+    "requires_fresh": true,
+    "is_answerable": false,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ505",
+    "question": "What role did Eddie Murphy win an Oscar for?",
+    "reference_answer": "Eddie Murphy has never won an Oscar.",
+    "requires_fresh": true,
+    "is_answerable": false,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ506",
+    "question": "What year was Election Day in the United States made into a federal holiday?",
+    "reference_answer": "It has never been made into a federal holiday.",
+    "requires_fresh": true,
+    "is_answerable": false,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ507",
+    "question": "When did the Pokemon Franchise celebrate its thirtieth anniversary?",
+    "reference_answer": "The Pokemon Franchise will celebrate its thirtieth anniversary in 2026.",
+    "requires_fresh": true,
+    "is_answerable": false,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ508",
+    "question": "Where was the funeral for Pope Leo XIV held?",
+    "reference_answer": "Pope Leo XIV is still alive.",
+    "requires_fresh": true,
+    "is_answerable": false,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ509",
+    "question": "Canada currently requires arriving travelers to provide proof of COVID vaccination via what app?",
+    "reference_answer": "Canada dropped all COVID-19 border rules (in September 2022).",
+    "requires_fresh": true,
+    "is_answerable": false,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ510",
+    "question": "Who is the only female recipient of the Fields Medal?",
+    "reference_answer": "The Fields Medal has had two female recipients: Maryam Mirzakhani from Iran in 2014, and Maryna Viazovska from Ukraine in 2022.",
+    "requires_fresh": true,
+    "is_answerable": false,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ511",
+    "question": "How long has abortion been illegal in the United States?",
+    "reference_answer": "Abortion is not uniformly illegal throughout the entire United States; however, it is currently restricted by law in certain states.",
+    "requires_fresh": true,
+    "is_answerable": false,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ512",
+    "question": "How many days after Sam Bankman-Fried was extradited to the United States did he plead guilty to federal fraud charges?",
+    "reference_answer": "He pleaded not guilty.",
+    "requires_fresh": true,
+    "is_answerable": false,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ513",
+    "question": "What city hosted the Summer Olympics in 1940?",
+    "reference_answer": "The Olympics in 1940 were cancelled.",
+    "requires_fresh": false,
+    "is_answerable": false,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ514",
+    "question": "What dedicated graphics processing unit does the M1 Macbook Air have?",
+    "reference_answer": "The M1 Macbook Air does not have a dedicated graphics processing unit (instead, the M1 chip contains its own CPU and GPU).",
+    "requires_fresh": false,
+    "is_answerable": false,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ515",
+    "question": "When did Mark Zuckerberg graduate from college?",
+    "reference_answer": "Mark Zuckerberg has not graduated from college. He dropped out of Harvard and founded Facebook.",
+    "requires_fresh": false,
+    "is_answerable": false,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ516",
+    "question": "How many humans have been killed by dinosaurs?",
+    "reference_answer": "Dinosaurs went extinct (millions of years ago) before humans appeared on Earth (homo sapiens only emerged around 300,000 years ago).",
+    "requires_fresh": false,
+    "is_answerable": false,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ517",
+    "question": "What is the name of Venus' smallest moon?",
+    "reference_answer": "Venus has no moons.",
+    "requires_fresh": false,
+    "is_answerable": false,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ518",
+    "question": "In 2021, which astronomer successfully lobbied the IAU to change Pluto's planetary classification from \"dwarf planet\" back to \"planet\"?",
+    "reference_answer": "This never happened and Pluto is still considered a dwarf planet.",
+    "requires_fresh": false,
+    "is_answerable": false,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ519",
+    "question": "How many days are left until the 2022 FIFA World Cup begins?",
+    "reference_answer": "It happened in 2022.",
+    "requires_fresh": false,
+    "is_answerable": false,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ520",
+    "question": "What is Daddy Yankee's next studio album?",
+    "reference_answer": "Daddy Yankee announced his final studio album in 2022 already.",
+    "requires_fresh": false,
+    "is_answerable": false,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ521",
+    "question": "In what month of this year will Netflix celebrate its twenty-fifth anniversary?",
+    "reference_answer": "Netflix celebrated its twenty-fifth anniversary in 2022 already.",
+    "requires_fresh": false,
+    "is_answerable": false,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ522",
+    "question": "In what month of 2022 was the inflation in the United States at its lowest rate since 1982?",
+    "reference_answer": "In 2022, the US inflation did not reach its lowest rate since 1982. Instead, it peaked at 9.1% in June 2022, its highest rate since 1982.",
+    "requires_fresh": false,
+    "is_answerable": false,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ523",
+    "question": "How many days are left until the coronation of Charles III and his wife?",
+    "reference_answer": "The event took place on May 6, 2023 already.",
+    "requires_fresh": false,
+    "is_answerable": false,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ524",
+    "question": "After anti-COVID measures were further increased in December 2022 to help support China's \"zero COVID\" policy, by how many days was the quarantine time for international travelers to China extended?",
+    "reference_answer": "Anti-COVID measures (including quarantine time) were dramatically reduced following widespread protests.",
+    "requires_fresh": false,
+    "is_answerable": false,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ525",
+    "question": "What team does LeBron James play for?",
+    "reference_answer": "Los Angeles Lakers; LA Lakers; The Lakers",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ526",
+    "question": "What is the largest passenger airplane?",
+    "reference_answer": "Airbus A380; Airbus A380-800; A380; A380-800",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ527",
+    "question": "Where is the deepest place on Earth?",
+    "reference_answer": "Challenger Deep; Challenger Deep, Marianas Trench; Marianas Trench; The Mariana Trench",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ528",
+    "question": "Which language has the third largest population by number of native speakers?",
+    "reference_answer": "English",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ529",
+    "question": "When did the United States last win the FIFA Women's World Cup?",
+    "reference_answer": "2019",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ530",
+    "question": "Which team is the most recent team to win back-to-back FIFA World Cups?",
+    "reference_answer": "Brazil 1962; Brazil",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ531",
+    "question": "Which GitHub repo has the most stars?",
+    "reference_answer": "sindresorhus/awesome",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ532",
+    "question": "What is the hottest year on record?",
+    "reference_answer": "2024",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ533",
+    "question": "Which club does Angel Di Maria play for?",
+    "reference_answer": "Rosario Central",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ534",
+    "question": "What is the minimum hourly wage in Tokyo right now?",
+    "reference_answer": "Â¥1,226; Â¥1,226/hour; Â¥1,226 per hour; 1,226",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ535",
+    "question": "Who is the current Jeopardy! host?",
+    "reference_answer": "Ken Jennings",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ536",
+    "question": "Who holds the record for most hundreds in one day international men's cricket?",
+    "reference_answer": "Virat Kohli",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ537",
+    "question": "Is London Marilyn Hilton Reum the name of Paris Hilton's daughter?",
+    "reference_answer": "Yes",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ538",
+    "question": "What is the minimum hourly wage in Massachusetts right now?",
+    "reference_answer": "$15; $15/hour; $15 per hour; 15",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ539",
+    "question": "What was the largest acquisition deal of a tech company in history?",
+    "reference_answer": "Microsoft purchases Activision Blizzard for US$68.7 billion.",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ540",
+    "question": "Who is the shortest-serving Prime Minister in the history of the United Kingdom?",
+    "reference_answer": "Liz Truss; Mary Elizabeth Truss; Elizabeth Truss",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ541",
+    "question": "What is the largest armed conflict in Europe since World War II?",
+    "reference_answer": "The Russian invasion of Ukraine",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ542",
+    "question": "Will Will Smith attend the next Academy Awards show?",
+    "reference_answer": "No, he is banned from show until 2032.",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ543",
+    "question": "How many people from Princeton University have won the Fields Medal?",
+    "reference_answer": "9; nine",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ544",
+    "question": "How old is the oldest planet known to have life on it?",
+    "reference_answer": "4.54 billion years; four and a half billion years; 4.5 billion years",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ545",
+    "question": "Who is the star of the international series \"It's me or the dog\" married to?",
+    "reference_answer": "Van Zeiler",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ546",
+    "question": "How much did the most expensive movie ever made cost?",
+    "reference_answer": "$490 million",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ547",
+    "question": "Who was the first spouse of the current President of the United States?",
+    "reference_answer": "Ivana ZelnÃ­ÄkovÃ¡",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ548",
+    "question": "Who is the latest French player to win the Ballon d'Or?",
+    "reference_answer": "DembÃ©lÃ©; Ousmane DembÃ©lÃ©; Masour Ousmane DembÃ©lÃ©",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ549",
+    "question": "How many public health emergency of international concern declarations have been made by WHO between 2009 and now?",
+    "reference_answer": "8; eight",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ550",
+    "question": "Who is the owner of the account that has the second most-liked Instagram post?",
+    "reference_answer": "Chris Godfrey",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ551",
+    "question": "How many cyclists have won all three of women's cycling Grand Tours equivalents?",
+    "reference_answer": "one; one (Annemiek van Vleuten)",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "slow-changing"
+  },
+  {
+    "question_id": "FQ552",
+    "question": "What is the title of the first film about the Titanic disaster?",
+    "reference_answer": "Saved from the Titanic",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ553",
+    "question": "How many fantasy novels are there in the Harry Potter series?",
+    "reference_answer": "7; seven",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ554",
+    "question": "Who created Internet Relay Chat?",
+    "reference_answer": "Jarkko Oikarinen; Oikarinen",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ555",
+    "question": "Who invented the Perceptron?",
+    "reference_answer": "Warren McCulloch and Walter Pitts; McCulloch and Pitts",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ556",
+    "question": "What is the capital of Costa Rica?",
+    "reference_answer": "San JosÃ©; San Jose",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ557",
+    "question": "When did Leo Szilard invent the nuclear chain reaction?",
+    "reference_answer": "1933",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ558",
+    "question": "Who is the founder of Boeing?",
+    "reference_answer": "William Edward Boeing; William Boeing; William E. Boeing",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ559",
+    "question": "Who painted The Starry Night?",
+    "reference_answer": "Vincent van Gogh; Vincent Willem van Gogh; Van Gogh",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ560",
+    "question": "What is the name of the main character in Great Expectations?",
+    "reference_answer": "Pip; Philip Pirrip",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ561",
+    "question": "What airbase is currently the headquarters of United States Forces Japan?",
+    "reference_answer": "Yokota Air Base; Yokota Air Base in Tokyo; Yokota Air Base, Fussa, Western Tokyo",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ562",
+    "question": "What was the name of the university where Meta was founded?",
+    "reference_answer": "Harvard University; Harvard",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ563",
+    "question": "Who played piano in Miles Davis' first quintet?",
+    "reference_answer": "Red Garland; William McKinley \"Red\" Garland Jr.; William âRedâ Garland; William McKinley Garland Jr.",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ564",
+    "question": "What is the brightest star in the sky?",
+    "reference_answer": "Sirius",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ565",
+    "question": "Who directed the movie Jaws?",
+    "reference_answer": "Steven Spielberg; Steven Allan Spielberg KBE",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ566",
+    "question": "How many Premier League goals has Paul Scholes scored in his senior career?",
+    "reference_answer": "107",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ567",
+    "question": "What is the city flower of Shanghai?",
+    "reference_answer": "Magnolia denudata; Yulan magnolia; lilytree",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ568",
+    "question": "Is the Great Pyramid of Giza one of the New 7 Wonders of the World?",
+    "reference_answer": "No; No. It was added as an honorary candidate though.",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ569",
+    "question": "Which state in the U.S. had the highest death rate of COVID-19 per 100,000 total population in 2023?",
+    "reference_answer": "Kentucky",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ570",
+    "question": "Who was the first woman to gain 300 million followers on Instagram?",
+    "reference_answer": "Kylie Jenner; Kylie Kristen Jenner",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ571",
+    "question": "What date was The Lord of the Rings: The Rings of Power (Season 1) premiered on?",
+    "reference_answer": "Sep 1, 2022; September 1, 2022; 1 Sep 2022; 1 September 2022; 09/1/2022; 09-1-2022; 1/09/2022; 1-09-2022; 2022/09/1; 2022-09-1",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ572",
+    "question": "What city was the first ever to host both the Summer Olympics and Winter Olympics?",
+    "reference_answer": "Beijing; Beijing, China",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ573",
+    "question": "How many episodes of The Lord of the Rings: The Rings of Power season 1 have been released?",
+    "reference_answer": "8; eight",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ574",
+    "question": "What killed the student inventor of the Perceptron?",
+    "reference_answer": "esophageal varices; alcoholism; cirrhosis",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ575",
+    "question": "Which member of The Beatles was born first?",
+    "reference_answer": "Ringo Starr; R. Starr; Starr; Sir Ringo Starr; Ringo; Sir Richard Starke; Richard Starkey",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ576",
+    "question": "Who was the emperor of China when Sweet Dew incident happened?",
+    "reference_answer": "Emperor Wenzong; Emperor Wenzong of the Chinese Tang dynasty; Emperor Wenzong of the Tang dynasty; Emperor Wenzong of Tang; Li Ang; Li Han",
+    "requires_fresh": false,
+    "is_answerable": true,
+    "fact_type": "never-changing"
+  },
+  {
+    "question_id": "FQ577",
+    "question": "How many people have been on the International Space Station?",
+    "reference_answer": "Over 290; 292",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ578",
+    "question": "How many people are there in the world?",
+    "reference_answer": "8.2 billion; 8.3 billion",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ579",
+    "question": "According to the WHOâs latest reported 28-day figures, which country had the highest number of COVID-19 deaths, excluding the United States?",
+    "reference_answer": "Sweden",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ580",
+    "question": "What won the latest Academy Award for Best Animated Short Film?",
+    "reference_answer": "The Girl Who Cried Pearls",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ581",
+    "question": "When is the next Lunar New Year?",
+    "reference_answer": "Feb 6, 2027; February 6, 2027; 6 Feb 2027; 6 February 2027; 02/6/2027; 02-6-2027; 6/02/2027; 6-02-2027; 2027/02/6; 2027-02-6",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ582",
+    "question": "When will this year's Rosh Hashanah start?",
+    "reference_answer": "Sep 11, 2026; September 11, 2026; 11 Sep 2026; 11 September 2026; 09/11/2026; 09-11-2026; 11/09/2026; 11-09-2026; 2026/09/11; 2026-09-11",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ583",
+    "question": "What is the next Columbia Pictures film?",
+    "reference_answer": "Spider-Man: Brand New Day",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ584",
+    "question": "When is the next full moon?",
+    "reference_answer": "May 1, 2026; May 1, 2026; 1 May 2026; 1 May 2026; 05/1/2026; 05-1-2026; 1/05/2026; 1-05-2026; 2026/05/1; 2026-05-1",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ585",
+    "question": "What month is it?",
+    "reference_answer": "April",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ586",
+    "question": "What is King Gizzardâs most recent studio album?",
+    "reference_answer": "Phantom Island",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ587",
+    "question": "What is the name of the most recent hurricane that affected the Southeastern United States?",
+    "reference_answer": "Imelda",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ588",
+    "question": "What institution won the most recent ACM-ICPC World Finals?",
+    "reference_answer": "Saint Petersburg State University",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ589",
+    "question": "Who won the most recent season of America's Got Talent?",
+    "reference_answer": "Jessica Sanchez",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ590",
+    "question": "Which comedy series won the most recent Primetime Emmy Award for Outstanding Comedy Series?",
+    "reference_answer": "The Studio; The Studio (Season 1)",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ591",
+    "question": "What is the host city of the upcoming International Olympiad in Informatics (IOI)?",
+    "reference_answer": "Tashkent; Tashkent, Uzbekistan",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ592",
+    "question": "What is the most recent movie in the Marvel Cinematic Universe?",
+    "reference_answer": "The Fantastic Four: First Steps",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ593",
+    "question": "How many official goals has Erling Haaland scored for his current club?",
+    "reference_answer": "158; 158 goals",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ594",
+    "question": "What was max temperature this month in the most populated US city?",
+    "reference_answer": "90 degrees; 90 Â°F",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ595",
+    "question": "How many accounts have exceeded 100 million followers on Instagram?",
+    "reference_answer": "40; 40 accounts",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ596",
+    "question": "Is the current water level of Lake Powell above 3550 feet?",
+    "reference_answer": "No",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ597",
+    "question": "What is the most powerful processor on the latest iPhone models?",
+    "reference_answer": "Apple A19 Pro",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ598",
+    "question": "When was the most recent winner of the Tour de France born?",
+    "reference_answer": "1998; Sep 21, 1998; September 21, 1998; 21 Sep 1998; 21 September 1998; 09/21/1998; 09-21-1998; 21/09/1998; 21-09-1998; 1998/09/21",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  },
+  {
+    "question_id": "FQ599",
+    "question": "What is the current age of the oldest singles champion of The ATP Finals?",
+    "reference_answer": "38 years old; 38",
+    "requires_fresh": true,
+    "is_answerable": true,
+    "fact_type": "fast-changing"
+  }
+]

@@ -1,0 +1,57 @@
+{
+  "FQ070": {
+    "question": "When did Rick Riordan first release the Harry Potter series?",
+    "answer": "根据提供的结构化知识表，当前信息不足以确定雷克·莱尔顿（Rick Riordan）何时发布了《哈利·波特》系列，因为知识表显示该系列并非由他创作。\n\n具体信息如下：\n1. **关于雷克·莱尔顿的作品**：据 Texas Monthly 和 Reddit，雷克·莱尔顿在 2005 年推出了《波西·杰克逊与奥林匹斯众神》系列（包括《神火之盗》）[1][2]。据 Wikipedia，他因《混血营英雄》系列和《波西·杰克逊》系列而闻名 [3]。\n2. **关于《哈利·波特》的出版**：据 Runestone Journal，《哈利·波特》系列的第一部《哈利·波特与魔法石》于 1997 年出版 [5]，该系列的最后一本书是《哈利·波特与死亡圣器》 [6]。\n3. **两者关系**：据雷克·莱尔顿的博客，《波西·杰克逊》与《哈利·波特》有许多相似元素，是因为这些小说都汲取了相同的民俗与神话素材 [4]。",
+    "citation_map": {
+      "1": "https://www.reddit.com/r/harrypotter/comments/7lea7p/how_might_the_harry_potter_series_be_different_if/",
+      "2": "https://www.texasmonthly.com/articles/rick-riordan-2/",
+      "3": "https://en.wikipedia.org/wiki/Rick_Riordan",
+      "4": "http://rickriordan.blogspot.com/2005/11/",
+      "5": "https://runestonejournal.com/j-k-rowling-vs-rick-riordan-how-to-add-representation-to-your-fictional-universe/",
+      "6": "https://runestonejournal.com/j-k-rowling-vs-rick-riordan-how-to-add-representation-to-your-fictional-universe/"
+    },
+    "method": "ablation_wo_rev_verify",
+    "search_available": true
+  },
+  "FQ130": {
+    "question": "What is the top-ranked university in the US according to the US News Ranking?",
+    "answer": "根据U.S. News的排名，排名第一的美国大学在不同榜单中存在差异 [冲突]：\n\n*   据 https://www.usnews.com/best-colleges，在**U.S. News全美最佳大学排名**中，普林斯顿大学位列第1 [1]。\n*   据 https://www.usnews.com/education/best-global-universities/search，在**U.S. News全球最佳大学排名**中，哈佛大学位列第1 [4]。",
+    "citation_map": {
+      "1": "https://www.usnews.com/best-colleges",
+      "2": "https://www.usnews.com/best-colleges",
+      "3": "https://www.usnews.com/best-colleges",
+      "4": "https://www.usnews.com/education/best-global-universities/search",
+      "5": "https://www.usnews.com/education/best-global-universities/search",
+      "6": "https://www.usnews.com/education/best-global-universities/search",
+      "7": "https://www.timeshighereducation.com/student/best-universities/best-universities-united-states",
+      "8": "https://www.timeshighereducation.com/student/best-universities/best-universities-united-states",
+      "9": "https://www.timeshighereducation.com/student/best-universities/best-universities-united-states",
+      "10": "https://www.timeshighereducation.com/student/best-universities/best-universities-united-states",
+      "11": "https://www.niche.com/colleges/search/best-colleges/",
+      "12": "https://www.niche.com/colleges/search/best-colleges/",
+      "13": "https://www.topuniversities.com/where-to-study/north-america/united-states/ranked-top-100-us-universities"
+    },
+    "method": "ablation_wo_rev_verify",
+    "search_available": true
+  },
+  "FQ398": {
+    "question": "When did this year's Passover start?",
+    "answer": "当前信息不足以确定今年（2024年）逾越节的开始时间，因为结构化知识表中仅包含2025年、2026年及2027年的具体日期信息 [8][9]。\n\n针对知识表中包含的年份，相关信息如下：\n\n*   **2026年（存在多方说法差异 [冲突]）：**\n    *   据 Chabad.org，2026年逾越节在2026年4月1日周三日落前开始 [2]。\n    *   据 ReformJudaism.org，2026年逾越节的观察时间为4月1日至4月8日 [3]。\n    *   ",
+    "citation_map": {
+      "1": "https://www.chabad.org/holidays/passover/pesach_cdo/aid/671901/jewish/When-Is-Passover-in-2026-2027-2028-2029-and-2030.htm",
+      "2": "https://www.chabad.org/holidays/passover/pesach_cdo/aid/671901/jewish/When-Is-Passover-in-2026-2027-2028-2029-and-2030.htm",
+      "3": "https://reformjudaism.org/jewish-holidays/passover",
+      "4": "https://reformjudaism.org/jewish-holidays/passover",
+      "5": "https://en.wikipedia.org/wiki/Passover",
+      "6": "https://en.wikipedia.org/wiki/Passover",
+      "7": "https://www.timeanddate.com/holidays/us/first-day-of-passover",
+      "8": "https://www.timeanddate.com/holidays/us/first-day-of-passover",
+      "9": "https://www.timeanddate.com/holidays/us/first-day-of-passover",
+      "10": "https://www.almanac.com/passover",
+      "11": "https://www.almanac.com/passover",
+      "12": "https://www.almanac.com/passover"
+    },
+    "method": "ablation_wo_rev_verify",
+    "search_available": true
+  }
+}

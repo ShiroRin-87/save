@@ -1,0 +1,188 @@
+{
+  "FQ070": {
+    "question": "When did Rick Riordan first release the Harry Potter series?",
+    "claims": [
+      {
+        "id": 1,
+        "claim": "Rick Riordan在2005年通过发布《神火之盗》介绍了波西·杰克逊和混血营的世界。",
+        "snippet": "Rick Riordan introduced us to the world of Percy Jackson and Camp Half-Blood with the release of 'The Lightning Thief'.",
+        "url": "https://www.reddit.com/r/harrypotter/comments/7lea7p/how_might_the_harry_potter_series_be_different_if/",
+        "has_conflict": false
+      },
+      {
+        "id": 2,
+        "claim": "Rick Riordan是圣安东尼奥的作家和教师。",
+        "snippet": "the San Antonio writer and teacher",
+        "url": "https://www.texasmonthly.com/articles/rick-riordan-2/",
+        "has_conflict": false
+      },
+      {
+        "id": 3,
+        "claim": "2005年，Rick Riordan推出了面向儿童的系列丛书《波西·杰克逊与奥林匹斯众神》。",
+        "snippet": "launched a series for kids: Percy Jackson and the Olympians.",
+        "url": "https://www.texasmonthly.com/articles/rick-riordan-2/",
+        "has_conflict": false
+      },
+      {
+        "id": 4,
+        "claim": "2005年时，Rick Riordan已有七部成人推理小说作品。",
+        "snippet": "In 2005, with seven adult mysteries under his belt",
+        "url": "https://www.texasmonthly.com/articles/rick-riordan-2/",
+        "has_conflict": false
+      },
+      {
+        "id": 5,
+        "claim": "Richard Russell Riordan Jr是一位美国作家。",
+        "snippet": "Richard Russell Riordan Jr is an American author",
+        "url": "https://en.wikipedia.org/wiki/Rick_Riordan",
+        "has_conflict": false
+      },
+      {
+        "id": 6,
+        "claim": "Richard Russell Riordan Jr以其《混血营英雄》系列（Camp Half-Blood Chronicles）最为知名。",
+        "snippet": "best known for his Camp Half-Blood Chronicles",
+        "url": "https://en.wikipedia.org/wiki/Rick_Riordan",
+        "has_conflict": false
+      },
+      {
+        "id": 7,
+        "claim": "《混血营英雄》系列包括《波西·杰克逊与奥林匹斯众神》系列。",
+        "snippet": "which includes the Percy Jackson & the Olympians series",
+        "url": "https://en.wikipedia.org/wiki/Rick_Riordan",
+        "has_conflict": false
+      },
+      {
+        "id": 8,
+        "claim": "《波西·杰克逊》的许多元素与《哈利·波特》相似。",
+        "snippet": "Many other elements of Percy Jackson are similar to Harry Potter",
+        "url": "http://rickriordan.blogspot.com/2005/11/",
+        "has_conflict": false
+      },
+      {
+        "id": 9,
+        "claim": "这些小说（波西·杰克逊与哈利·波特）都借鉴了相同的民间传说和神话。",
+        "snippet": "the novels draw from the same well of folklore and mythology.",
+        "url": "http://rickriordan.blogspot.com/2005/11/",
+        "has_conflict": false
+      },
+      {
+        "id": 10,
+        "claim": "《哈利·波特与魔法石》是该系列的第一部，于1997年出版。",
+        "snippet": "Harry Potter and the Sorcerer's Stone, the first of the series, was published in 1997.",
+        "url": "https://runestonejournal.com/j-k-rowling-vs-rick-riordan-how-to-add-representation-to-your-fictional-universe/",
+        "has_conflict": false
+      },
+      {
+        "id": 11,
+        "claim": "该系列的最后一本书是《哈利·波特与死亡圣器》（原文拼写为Deathly Hollows）。",
+        "snippet": "The final book, Harry Potter and the Deathly Hollows",
+        "url": "https://runestonejournal.com/j-k-rowling-vs-rick-riordan-how-to-add-representation-to-your-fictional-universe/",
+        "has_conflict": false
+      }
+    ],
+    "num_claims": 11
+  },
+  "FQ130": {
+    "question": "What is the top-ranked university in the US according to the US News Ranking?",
+    "claims": [
+      {
+        "id": 1,
+        "claim": "在U.S. News 2026年最佳大学排名中，普林斯顿大学位列第1。",
+        "snippet": "Princeton University. #1",
+        "url": "https://www.usnews.com/best-colleges",
+        "has_conflict": false
+      },
+      {
+        "id": 2,
+        "claim": "在U.S. News 2026年最佳大学排名中，麻省理工学院位列第2。",
+        "snippet": "Massachusetts Institute of Technology. #2",
+        "url": "https://www.usnews.com/best-colleges",
+        "has_conflict": false
+      }
+    ],
+    "num_claims": 2
+  },
+  "FQ398": {
+    "question": "When did this year's Passover start?",
+    "claims": [
+      {
+        "id": 1,
+        "claim": "逾越节（Pesach）在希伯来历中的日期为尼散月（Nissan）15-22日",
+        "snippet": "The holiday of Pesach, or Passover, falls on the Hebrew calendar dates of Nissan 15-22.",
+        "url": "https://www.chabad.org/holidays/passover/pesach_cdo/aid/671901/jewish/When-Is-Passover-in-2026-2027-2028-2029-and-2030.htm",
+        "has_conflict": false
+      },
+      {
+        "id": 2,
+        "claim": "2026年逾越节在2026年4月1日周三日落前开始",
+        "snippet": "Pesach 2026 (Passover) begins before sundown on Wednesday April 1, 2026,",
+        "url": "https://www.chabad.org/holidays/passover/pesach_cdo/aid/671901/jewish/When-Is-Passover-in-2026-2027-2028-2029-and-2030.htm",
+        "has_conflict": false
+      },
+      {
+        "id": 3,
+        "claim": "2026年逾越节的观察日期为4月1日至4月8日",
+        "snippet": "Passover will be observed this year from April 1 to April 8, 2026.",
+        "url": "https://reformjudaism.org/jewish-holidays/passover",
+        "has_conflict": true
+      },
+      {
+        "id": 4,
+        "claim": "逾越节是庆祝自由与家庭的犹太春季节日",
+        "snippet": "It is the Jewish spring festival celebrating freedom and family",
+        "url": "https://reformjudaism.org/jewish-holidays/passover",
+        "has_conflict": false
+      },
+      {
+        "id": 5,
+        "claim": "逾越节是为了纪念出埃及记（Exodus）",
+        "snippet": "as we remember the Exodus",
+        "url": "https://reformjudaism.org/jewish-holidays/passover",
+        "has_conflict": false
+      },
+      {
+        "id": 6,
+        "claim": "逾越节始于尼散月（Nisan）的第15天",
+        "snippet": "The Passover begins on the 15th day of the month of Nisan",
+        "url": "https://en.wikipedia.org/wiki/Passover",
+        "has_conflict": false
+      },
+      {
+        "id": 7,
+        "claim": "古以色列传统确保逾越节不会在春天之前开始",
+        "snippet": "To ensure that Passover did not start before spring, the tradition in ancient Israel held that the",
+        "url": "https://en.wikipedia.org/wiki/Passover",
+        "has_conflict": false
+      },
+      {
+        "id": 8,
+        "claim": "2026年逾越节（第一天）是2026年4月2日星期四",
+        "snippet": "This year: Thu, Apr 2, 2026 ; ... English, Passover (first day).",
+        "url": "https://www.timeanddate.com/holidays/us/first-day-of-passover",
+        "has_conflict": true
+      },
+      {
+        "id": 9,
+        "claim": "2026年逾越节的庆祝时间为4月1日至4月9日",
+        "snippet": "Passover 2026 will be celebrated from April 1 to April 9.",
+        "url": "https://www.almanac.com/passover",
+        "has_conflict": true
+      },
+      {
+        "id": 10,
+        "claim": "2026年第一次逾越节家宴（seder）在4月1日入夜后举行",
+        "snippet": "The first seder will be on April 1 after nightfall",
+        "url": "https://www.almanac.com/passover",
+        "has_conflict": false
+      },
+      {
+        "id": 11,
+        "claim": "2026年第二次逾越节家宴（seder）在4月2日入夜后举行",
+        "snippet": "and the second seder will be on April 2 after nightfall",
+        "url": "https://www.almanac.com/passover",
+        "has_conflict": false
+      }
+    ],
+    "num_claims": 11
+  }
+}

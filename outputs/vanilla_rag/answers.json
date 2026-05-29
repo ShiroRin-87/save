@@ -1,0 +1,20 @@
+{
+  "FQ070": {
+    "question": "When did Rick Riordan first release the Harry Potter series?",
+    "answer": "Rick Riordan did not release the Harry Potter series. He launched the *Percy Jackson* series in 2005 [1][2]. The *Harry Potter* series was first published in 1997 [5].",
+    "method": "vanilla_rag",
+    "search_available": true
+  },
+  "FQ130": {
+    "question": "What is the top-ranked university in the US according to the US News Ranking?",
+    "answer": "According to the U.S. News Best Colleges ranking, **Princeton University** is the top-ranked university in the United States [1].",
+    "method": "vanilla_rag",
+    "search_available": true
+  },
+  "FQ398": {
+    "question": "When did this year's Passover start?",
+    "answer": "Passover 2026 begins before sundown on **Wednesday, April 1, 2026** [1][2][5]. The first full day of the holiday is Thursday, April 2, 2026 [4][5], which corresponds to the 15th day of the month of Nisan on the Hebrew calendar [1][3].",
+    "method": "vanilla_rag",
+    "search_available": true
+  }
+}

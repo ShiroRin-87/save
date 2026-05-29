@@ -1,0 +1,44 @@
+{
+  "FQ070": {
+    "question": "When did Rick Riordan first release the Harry Potter series?",
+    "answer": "当前信息不足以确定。\n\n根据提供的知识表，Rick Riordan在2005年推出了《波西·杰克逊与奥林匹斯众神》系列 [1][3]，而《哈利·波特》系列的第一部《哈利·波特与魔法石》于1997年出版 [10]。知识表中并未提及Rick Riordan发布过《哈利·波特》系列。",
+    "citation_map": {
+      "1": "https://www.reddit.com/r/harrypotter/comments/7lea7p/how_might_the_harry_potter_series_be_different_if/",
+      "2": "https://www.texasmonthly.com/articles/rick-riordan-2/",
+      "3": "https://www.texasmonthly.com/articles/rick-riordan-2/",
+      "4": "https://www.texasmonthly.com/articles/rick-riordan-2/",
+      "5": "https://en.wikipedia.org/wiki/Rick_Riordan",
+      "6": "https://en.wikipedia.org/wiki/Rick_Riordan",
+      "7": "https://en.wikipedia.org/wiki/Rick_Riordan",
+      "8": "http://rickriordan.blogspot.com/2005/11/",
+      "9": "http://rickriordan.blogspot.com/2005/11/",
+      "10": "https://runestonejournal.com/j-k-rowling-vs-rick-riordan-how-to-add-representation-to-your-fictional-universe/",
+      "11": "https://runestonejournal.com/j-k-rowling-vs-rick-riordan-how-to-add-representation-to-your-fictional-universe/"
+    }
+  },
+  "FQ130": {
+    "question": "What is the top-ranked university in the US according to the US News Ranking?",
+    "answer": "According to https://www.usnews.com/best-colleges, Princeton University is ranked number 1 in the U.S. News 2026 Best Colleges ranking [1].",
+    "citation_map": {
+      "1": "https://www.usnews.com/best-colleges",
+      "2": "https://www.usnews.com/best-colleges"
+    }
+  },
+  "FQ398": {
+    "question": "When did this year's Passover start?",
+    "answer": "根据提供的结构化知识表，关于2026年逾越节（Passover）的开始时间存在多方说法和日期冲突，具体如下：\n\n1. **开始日期 [冲突]**：\n   - 据 **chabad.org**，2026年逾越节在2026年4月1日（周三）日落前开始 [2]。\n   - 据 **reformjudaism.org**，该节日的观察日期从4月1日开始 [3]。\n   - 据 **almanac.com**，第一次逾越节家宴（seder）在4月1日入夜后举行 [10]。\n   - 然而，据 **timeanddate.com**，2026年逾越节的第一天是2026年4月2日（星期四） [8]。\n\n2. **历法背景**：\n   - 逾越节在希伯来历中的日期为尼散月（Nissan/Nisan）的第15天开始 [1][6]。\n   - 这是一个纪念出埃及记（Exodus）的节日 [5]，也是一个庆祝自由与家庭的犹太春季节日 [4]。古以色列传统确保该节日不会在春天之前开始 [7]。\n\n3. **结束日期与持续时间 [冲突]**：\n   - 据 **chabad.org**，逾越节在希伯来历中持续至尼散月22日 [1]。\n   - 据 **reformjudaism.org**，2026年的观察日期为4月1日至4月8日 [3]。\n   - 据 **almanac.com**，2026年的庆祝时间为4月1日至4月9日 [9]。\n\n**总结**：\n根据现有信息，2026年逾越节的庆祝活动大多被认为从4月1日傍晚（家宴时间）开始 [2][3][10]，但也有来源将4月2日标注为节日的第一天 [8]。关于节日的结束时间，不同来源在4月8日与4月9日之间存在分歧 [3][9]。当前信息不足以确定除2026年以外其他年份的开始日期。",
+    "citation_map": {
+      "1": "https://www.chabad.org/holidays/passover/pesach_cdo/aid/671901/jewish/When-Is-Passover-in-2026-2027-2028-2029-and-2030.htm",
+      "2": "https://www.chabad.org/holidays/passover/pesach_cdo/aid/671901/jewish/When-Is-Passover-in-2026-2027-2028-2029-and-2030.htm",
+      "3": "https://reformjudaism.org/jewish-holidays/passover",
+      "4": "https://reformjudaism.org/jewish-holidays/passover",
+      "5": "https://reformjudaism.org/jewish-holidays/passover",
+      "6": "https://en.wikipedia.org/wiki/Passover",
+      "7": "https://en.wikipedia.org/wiki/Passover",
+      "8": "https://www.timeanddate.com/holidays/us/first-day-of-passover",
+      "9": "https://www.almanac.com/passover",
+      "10": "https://www.almanac.com/passover",
+      "11": "https://www.almanac.com/passover"
+    }
+  }
+}

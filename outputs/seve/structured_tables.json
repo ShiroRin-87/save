@@ -1,92 +1,2499 @@
 {
   "FQ010": {
-    "question": "In what year did Hikaru Nakamura become the World Chess Champion?",
+    "question": "When was Dartmouth Law School founded?",
     "claims": [
       {
         "id": 1,
-        "claim": "Nakamura代表美国参加了七届国际象棋奥林匹克团体赛（2006, 2008, 2010, 2012, 2014, 2016, 2018）",
-        "snippet": "Nakamura has represented the United States at seven Chess Olympiads (2006, 2008, 2010, 2012, 2014, 2016, 2018)",
+        "claim": "Hikaru Nakamura was born on December 9, 1987, in Hirakata, Japan.",
+        "snippet": "Born Christopher Hikaru Nakamura December 9, 1987 (age 38) Hirakata, Japan",
         "url": "https://en.wikipedia.org/wiki/Hikaru_Nakamura",
         "has_conflict": false
       },
       {
         "id": 2,
-        "claim": "Nakamura获得了获得一枚团体金牌和两枚团体铜牌",
-        "snippet": "securing a team gold medal and two team bronze",
+        "claim": "Hikaru Nakamura earned the grandmaster title in 2003.",
+        "snippet": "Title Grandmaster (2003)",
         "url": "https://en.wikipedia.org/wiki/Hikaru_Nakamura",
         "has_conflict": false
       },
       {
         "id": 3,
-        "claim": "Hikaru赢得了四次美国冠军",
-        "snippet": "he has won the US Championship (four times)",
-        "url": "https://www.reddit.com/r/chess/comments/p5gfw1/hikaru_doesnt_have_to_be_world_champion_or/",
-        "has_conflict": true
+        "claim": "Hikaru Nakamura's peak FIDE rating is 2816, achieved in October 2015.",
+        "snippet": "Peak rating 2816 (October 2015)",
+        "url": "https://en.wikipedia.org/wiki/Hikaru_Nakamura",
+        "has_conflict": false
       },
       {
         "id": 4,
-        "claim": "Hikaru获得了两次伦敦国际象棋经典赛冠军",
-        "snippet": "the London Chess Classic (twice)",
-        "url": "https://www.reddit.com/r/chess/comments/p5gfw1/hikaru_doesnt_have_to_be_world_champion_or/",
+        "claim": "Hikaru Nakamura married Atousa Pourkashiyan in 2023.",
+        "snippet": "Nakamura married Atousa Pourkashiyan, an Iranian Woman Grandmaster, in 2023.",
+        "url": "https://en.wikipedia.org/wiki/Hikaru_Nakamura",
         "has_conflict": false
       },
       {
         "id": 5,
-        "claim": "Hikaru赢得了Wijk an Zee",
-        "snippet": "Wijk an Zee",
-        "url": "https://www.reddit.com/r/chess/comments/p5gfw1/hikaru_doesnt_have_to_be_world_champion_or/",
+        "claim": "Hikaru Nakamura signed with Team Falcons on February 17, 2025.",
+        "snippet": "On February 17, 2025, Nakamura signed with Team Falcons",
+        "url": "https://en.wikipedia.org/wiki/Hikaru_Nakamura",
         "has_conflict": false
       },
       {
         "id": 6,
-        "claim": "Hikaru赢得了奥林匹克团体赛",
-        "snippet": "and the Olympiad",
-        "url": "https://www.reddit.com/r/chess/comments/p5gfw1/hikaru_doesnt_have_to_be_world_champion_or/",
+        "claim": "Hikaru Nakamura finished in second place in the 2024 Candidates Tournament with a score of 8½/14.",
+        "snippet": "He finished in second place with a record of 8½/14",
+        "url": "https://en.wikipedia.org/wiki/Hikaru_Nakamura",
         "has_conflict": false
       },
       {
         "id": 7,
-        "claim": "Nakamura是五届美国冠军",
-        "snippet": "He is a five-time U.S. champion",
-        "url": "https://www.chess.com/players/hikaru-nakamura",
-        "has_conflict": true
+        "claim": "Hikaru Nakamura competed in the 2025 Louisiana State Championship and the 70th Iowa Open.",
+        "snippet": "From August 30 to September 1, Nakamura played in the 2025 Louisiana State Championship... The following week, Nakamura participated in the 70th Iowa Open",
+        "url": "https://en.wikipedia.org/wiki/Hikaru_Nakamura",
+        "has_conflict": false
       },
       {
         "id": 8,
-        "claim": "Nakamura在2005年、2009年、2012年、2015年和2019年赢得了该头衔",
-        "snippet": "claiming the title in 2005, 2009, 2012, 2015, and 2019",
-        "url": "https://www.chess.com/players/hikaru-nakamura",
+        "claim": "Hikaru Nakamura and his wife announced the birth of their first child in December 2025.",
+        "snippet": "They announced the birth of their child in December 2025.",
+        "url": "https://en.wikipedia.org/wiki/Hikaru_Nakamura",
+        "has_conflict": false
+      }
+    ],
+    "num_claims": 8
+  },
+  "FQ000": {
+    "question": "What is the name of the first animal to land on the moon?",
+    "claims": [
+      {
+        "id": 1,
+        "claim": "莱卡是第一只进入地球轨道的动物。",
+        "snippet": "Laika... was a Soviet space dog who was one of the first animals in space and the first to orbit the Earth.",
+        "url": "https://en.wikipedia.org/wiki/Laika",
+        "has_conflict": false
+      },
+      {
+        "id": 2,
+        "claim": "莱卡搭乘斯普特尼克2号（Sputnik 2）于1957年11月3日发射升空。",
+        "snippet": "she flew aboard the Sputnik 2 spacecraft, launched into low orbit on 3 November 1957.",
+        "url": "https://en.wikipedia.org/wiki/Laika",
+        "has_conflict": false
+      }
+    ],
+    "num_claims": 2
+  },
+  "FQ001": {
+    "question": "What is the name of Leonardo DiCaprio's third child?",
+    "claims": [
+      {
+        "id": 1,
+        "claim": "Leonardo DiCaprio was born on November 11, 1974.",
+        "snippet": "Born on November 11, 1974, in Los Angeles, Leonardo Wilhelm DiCaprio is the only child of Irmelin and George DiCaprio.",
+        "url": "https://www.biography.com/actors/leonardo-dicaprio",
+        "has_conflict": false
+      },
+      {
+        "id": 2,
+        "claim": "Leonardo DiCaprio was named after Leonardo da Vinci because his mother felt him kick while looking at a painting by the artist in the Uffizi museum.",
+        "snippet": "DiCaprio got his name because his pregnant mother first felt him kick while she was looking at a Leonardo da Vinci painting in the Uffizi museum in Florence, Italy.",
+        "url": "https://en.wikipedia.org/wiki/Leonardo_DiCaprio",
+        "has_conflict": false
+      },
+      {
+        "id": 3,
+        "claim": "An agent suggested Leonardo DiCaprio change his name to Lenny Williams early in his career.",
+        "snippet": "They said, ‘Your name is too ethnic.’ I go, ‘What do you mean? It’s Leonardo DiCaprio?’ They go, ‘No, too ethnic. They’re never going to hire you. Your new name is Lenny Williams,’",
+        "url": "https://www.today.com/popculture/leonardo-dicaprio-stage-name-new-heights-rcna233468",
+        "has_conflict": false
+      },
+      {
+        "id": 4,
+        "claim": "Leonardo DiCaprio's father rejected the suggestion that he change his name to Lenny Williams.",
+        "snippet": "And my dad saw his photo, ripped it up, and he said, ‘Over my dead body,’",
+        "url": "https://www.today.com/popculture/leonardo-dicaprio-stage-name-new-heights-rcna233468",
+        "has_conflict": false
+      },
+      {
+        "id": 5,
+        "claim": "Leonardo DiCaprio was originally cast as FBI agent Tom White in 'Killers of the Flower Moon' but insisted on playing Ernest Burkhart instead.",
+        "snippet": "DiCaprio was originally cast in the heroic role of FBI agent Tom White, but during development of the film, he insisted on switching to Burkhart’s character, which led to significant script revisions.",
+        "url": "https://www.biography.com/actors/leonardo-dicaprio",
+        "has_conflict": false
+      },
+      {
+        "id": 6,
+        "claim": "Leonardo DiCaprio has been dating Vittoria Ceretti since 2023.",
+        "snippet": "Ceretti was first linked to DiCaprio in 2023",
+        "url": "https://www.elle.com/uk/fashion/celebrity-style/articles/g24272/leonardo-dicaprio-dating-history/",
+        "has_conflict": false
+      },
+      {
+        "id": 7,
+        "claim": "Leonardo DiCaprio and Camila Morrone split in the summer of 2022.",
+        "snippet": "Sources told People in August 2022 that DiCaprio split from his partner of five years, Camilla Morrone, earlier that summer.",
+        "url": "https://www.elle.com/uk/fashion/celebrity-style/articles/g24272/leonardo-dicaprio-dating-history/",
+        "has_conflict": false
+      },
+      {
+        "id": 8,
+        "claim": "George DiCaprio made his film debut in the 2021 movie 'Licorice Pizza'.",
+        "snippet": "He even made his film debut in the 2021 movie Licorice Pizza",
+        "url": "https://www.facebook.com/BedeempledBrain/posts/leo-the-actor-the-son-the-baby-dicaprioactorsonparentsfamilytime/1410257141133349/",
+        "has_conflict": false
+      }
+    ],
+    "num_claims": 8
+  },
+  "FQ002": {
+    "question": "What year did the first human land on Mars?",
+    "claims": [
+      {
+        "id": 1,
+        "claim": "The Soviet Mars 3 probe was the first successful Mars landing.",
+        "snippet": "Soviet Mars 3, which landed in 1971, was the first successful Mars landing",
+        "url": "https://en.wikipedia.org/wiki/Mars_landing",
+        "has_conflict": true
+      },
+      {
+        "id": 2,
+        "claim": "Viking 1 was the first successful robotic landing on Mars.",
+        "snippet": "July 20, 1976 — Viking 1 makes first successful robotic landing on Mars.",
+        "url": "https://www.greatfallstribune.com/story/news/2015/09/16/timeline-manned-mission-mars/32539369/",
+        "has_conflict": true
+      },
+      {
+        "id": 3,
+        "claim": "Mars has two moons named Phobos and Deimos.",
+        "snippet": "Mars has two moons: Phobos and Deimos.",
+        "url": "https://www.nasa.gov/humans-in-space/humans-to-mars/",
+        "has_conflict": false
+      },
+      {
+        "id": 4,
+        "claim": "Gravity on Mars is approximately one-third of Earth's gravity.",
+        "snippet": "Gravity on Mars is about one-third of the gravity on Earth.",
+        "url": "https://www.nasa.gov/humans-in-space/humans-to-mars/",
+        "has_conflict": false
+      },
+      {
+        "id": 5,
+        "claim": "Mariner 9 was the first spacecraft to orbit another planet.",
+        "snippet": "In 1971, Mariner 9 was the first spacecraft to orbit another planet.",
+        "url": "https://www.planetary.org/space-missions/every-mars-mission",
+        "has_conflict": false
+      },
+      {
+        "id": 6,
+        "claim": "The Martian atmosphere is 96% carbon dioxide.",
+        "snippet": "The atmosphere on Mars is 96% carbon dioxide.",
+        "url": "https://www.nasa.gov/humans-in-space/humans-to-mars/",
+        "has_conflict": false
+      },
+      {
+        "id": 7,
+        "claim": "Mariner 4 was the first spacecraft to fly by Mars and obtain close-up pictures.",
+        "snippet": "Mariner 4 was the first spacecraft to fly by Mars and obtain close-up pictures of the Red Planet",
+        "url": "https://www.planetary.org/space-missions/every-mars-mission",
+        "has_conflict": false
+      }
+    ],
+    "num_claims": 7
+  },
+  "FQ003": {
+    "question": "What was the name of the Zodiac killer?",
+    "claims": [
+      {
+        "id": 1,
+        "claim": "Arthur Leigh Allen was born on December 18, 1933, and died on August 26, 1992.",
+        "snippet": "Born | December 18, 1933 Honolulu, Hawaii, U.S. | Died | August 26, 1992 (aged 58) Vallejo, California, U.S.",
+        "url": "https://en.wikipedia.org/wiki/Arthur_Leigh_Allen",
+        "has_conflict": false
+      },
+      {
+        "id": 2,
+        "claim": "The Zodiac Killer remains an unidentified serial killer.",
+        "snippet": "The Zodiac Killer (also known by the pseudonym The Zodiac) is an unidentified serial killer",
+        "url": "https://en.wikipedia.org/wiki/Zodiac_Killer",
+        "has_conflict": false
+      },
+      {
+        "id": 3,
+        "claim": "The Zodiac Killer murdered at least five people and injured two others.",
+        "snippet": "Police and investigators concur The Zodiac attacked seven people on four occasions in California. Five victims died; two survived",
+        "url": "https://en.wikipedia.org/wiki/Zodiac_Killer",
+        "has_conflict": false
+      },
+      {
+        "id": 4,
+        "claim": "Arthur Leigh Allen is the only suspect to be officially named by police.",
+        "snippet": "Despite several theories about the Zodiac's true identity, the only suspect police named was Arthur Leigh Allen",
+        "url": "https://en.wikipedia.org/wiki/Zodiac_Killer",
+        "has_conflict": false
+      },
+      {
+        "id": 5,
+        "claim": "DNA testing in 2002 excluded Arthur Leigh Allen as a contributor to the DNA found on Zodiac letters.",
+        "snippet": "Since neither test result indicated a match, the two were excluded as the contributors of the DNA.",
+        "url": "https://en.wikipedia.org/wiki/Arthur_Leigh_Allen",
+        "has_conflict": false
+      },
+      {
+        "id": 6,
+        "claim": "The Z340 cipher was deciphered on December 5, 2020.",
+        "snippet": "Z340 was deciphered by an international team of private citizens on December 5, 2020.",
+        "url": "https://en.wikipedia.org/wiki/Zodiac_Killer",
+        "has_conflict": false
+      },
+      {
+        "id": 7,
+        "claim": "In 2021, an investigative group called the Case Breakers claimed Gary Francis Poste was the Zodiac Killer.",
+        "snippet": "After an independent, volunteer investigative group called the Case Breakers argued in 2021 that evidence pointed to Gary Francis Poste",
+        "url": "https://en.wikipedia.org/wiki/Zodiac_Killer",
+        "has_conflict": false
+      },
+      {
+        "id": 8,
+        "claim": "The Zodiac Killer murdered at least five people between December 1968 and October 1969.",
+        "snippet": "murdered at least five people in the San Francisco Bay Area between December 1968 and October 1969.",
+        "url": "https://en.wikipedia.org/wiki/Zodiac_Killer",
         "has_conflict": false
       },
       {
         "id": 9,
-        "claim": "Nakamura曾是国际棋联2004年世界锦标赛的参赛者",
-        "snippet": "Nakamura was also a participant in FIDE's 2004 World Championship",
-        "url": "https://www.chess.com/players/hikaru-nakamura",
+        "claim": "The Zodiac Killer's last letter was received by the San Francisco Chronicle in 1974.",
+        "snippet": "The Zodiac's last letter was received by the San Francisco Chronicle in 1974.",
+        "url": "https://en.wikipedia.org/wiki/Zodiac_Killer",
+        "has_conflict": false
+      }
+    ],
+    "num_claims": 9
+  },
+  "FQ004": {
+    "question": "Why are all quickly verifiable problems also quickly solvable?",
+    "claims": [
+      {
+        "id": 1,
+        "claim": "P与NP问题是理论计算机科学中一个主要的未解决问题。",
+        "snippet": "The P versus NP problem is a major unsolved problem in theoretical computer science.",
+        "url": "https://en.wikipedia.org/wiki/P_versus_NP_problem",
+        "has_conflict": false
+      },
+      {
+        "id": 2,
+        "claim": "P类问题是指算法可以在多项式时间内解决的问题类别。",
+        "snippet": "The general class of questions that some algorithm can answer in polynomial time is \"P\" or \"class P\".",
+        "url": "https://en.wikipedia.org/wiki/P_versus_NP_problem",
+        "has_conflict": false
+      },
+      {
+        "id": 3,
+        "claim": "NP代表非确定性多项式时间，是指答案可以在多项式时间内验证的问题类别。",
+        "snippet": "The class of questions where an answer can be verified in polynomial time is \"NP\", standing for \"nondeterministic polynomial time\".",
+        "url": "https://en.wikipedia.org/wiki/P_versus_NP_problem",
+        "has_conflict": false
+      },
+      {
+        "id": 4,
+        "claim": "P是NP的一个子集。",
+        "snippet": "Clearly, P ⊆ NP.",
+        "url": "https://en.wikipedia.org/wiki/P_versus_NP_problem",
+        "has_conflict": false
+      },
+      {
+        "id": 5,
+        "claim": "P与NP问题是克雷数学研究所选定的七个千禧年大奖难题之一，首个正确解法可获得100万美元奖金。",
+        "snippet": "It is one of the seven Millennium Prize Problems selected by the Clay Mathematics Institute, each of which carries a US$1,000,000 prize for the first correct solution.",
+        "url": "https://en.wikipedia.org/wiki/P_versus_NP_problem",
+        "has_conflict": false
+      },
+      {
+        "id": 6,
+        "claim": "斯蒂芬·库克在1971年的论文中引入了P与NP问题的精确陈述，列昂尼德·列文在1973年独立引入了该问题。",
+        "snippet": "The precise statement of the P versus NP problem was introduced in 1971 by Stephen Cook in his seminal paper \"The complexity of theorem proving procedures\", and independently by Leonid Levin in 1973.",
+        "url": "https://en.wikipedia.org/wiki/P_versus_NP_problem",
+        "has_conflict": false
+      },
+      {
+        "id": 7,
+        "claim": "根据库克-列文定理，布尔可满足性问题（SAT）是NP完全的。",
+        "snippet": "the Boolean satisfiability problem is NP-complete by the Cook–Levin theorem",
+        "url": "https://en.wikipedia.org/wiki/P_versus_NP_problem",
+        "has_conflict": false
+      },
+      {
+        "id": 8,
+        "claim": "如果任何一个NP完全问题属于P，那么P=NP。",
+        "snippet": "If any NP-complete problem is in P, then it would follow that P=NP.",
+        "url": "https://en.wikipedia.org/wiki/P_versus_NP_problem",
+        "has_conflict": false
+      },
+      {
+        "id": 9,
+        "claim": "在2001年、2011年和2018年的调查中，相信P≠NP的研究人员比例分别为61%、83%和88%。",
+        "snippet": "The share of responders believing that P≠NP was 61% in 2001, 83% in 2011, and 88% in 2018",
+        "url": "https://en.wikipedia.org/wiki/P_versus_NP_problem",
         "has_conflict": false
       },
       {
         "id": 10,
-        "claim": "Hikaru Nakamura是世界排名第二的国际象棋棋手",
-        "snippet": "Hikaru Nakamura, the world's No. 2 chess player",
-        "url": "https://sports.yahoo.com/olympics/breaking-news/article/heres-why-hikaru-nakamura-the-worlds-no-2-chess-player-is-gaming-the-system-with-mickey-mouse-tournaments-024245683.html",
+        "claim": "László Babai在2016年提出了图同构问题的拟多项式时间算法。",
+        "snippet": "László Babai achieved a breakthrough result in 2016, presenting a quasipolynomial-time algorithm for graph isomorphism.",
+        "url": "https://cacm.acm.org/research/fifty-years-of-p-vs-np-and-the-possibility-of-the-impossible/",
         "has_conflict": false
       },
       {
         "id": 11,
-        "claim": "这位特级大师本月参加了路易斯安那州锦标赛和爱荷华州公开赛",
-        "snippet": "The grandmaster has competed in the Louisiana State Championship and Iowa Open this month",
-        "url": "https://sports.yahoo.com/olympics/breaking-news/article/heres-why-hikaru-nakamura-the-worlds-no-2-chess-player-is-gaming-the-system-with-mickey-mouse-tournaments-024245683.html",
+        "claim": "谷歌在2019年宣布使用53量子比特的计算机实现了“量子霸权”。",
+        "snippet": "In 2019, Google announced it used a quantum computer with 53 qubits to achieve \"quantum supremacy\"",
+        "url": "https://cacm.acm.org/research/fifty-years-of-p-vs-np-and-the-possibility-of-the-impossible/",
         "has_conflict": false
       },
       {
         "id": 12,
-        "claim": "他通过击败一名13岁的选手赢得了后者（爱荷华州公开赛）",
-        "snippet": "He won the latter by beating a 13-year-old",
-        "url": "https://sports.yahoo.com/olympics/breaking-news/article/heres-why-hikaru-nakamura-the-worlds-no-2-chess-player-is-gaming-the-system-with-mickey-mouse-tournaments-024245683.html",
+        "claim": "整数分解问题属于NP和co-NP类。",
+        "snippet": "The integer factorization problem is in NP and in co-NP",
+        "url": "https://en.wikipedia.org/wiki/P_versus_NP_problem",
+        "has_conflict": false
+      },
+      {
+        "id": 13,
+        "claim": "Shor算法是已知的用于整数分解的多项式时间量子算法。",
+        "snippet": "The best known quantum algorithm for this problem, Shor's algorithm, runs in polynomial time",
+        "url": "https://en.wikipedia.org/wiki/P_versus_NP_problem",
+        "has_conflict": false
+      },
+      {
+        "id": 14,
+        "claim": "如果P=NP，RSA加密等公钥加密体系可能会被破解。",
+        "snippet": "For instance, an efficient algorithm to factor large numbers could break RSA encryption",
+        "url": "https://medium.com/@taaha2004/can-computers-solve-every-problem-quickly-cd88ceb2528f",
+        "has_conflict": false
+      },
+      {
+        "id": 15,
+        "claim": "检测一个数是否为质数可以在多项式时间内完成。",
+        "snippet": "Check primeness can be done in polynomial time.",
+        "url": "https://cs.stackexchange.com/questions/4619/are-there-any-problems-that-are-easy-to-compute-but-hard-to-verify",
         "has_conflict": false
       }
     ],
-    "num_claims": 12
+    "num_claims": 15
+  },
+  "FQ005": {
+    "question": "In what year did bodybuilding become an Olympic sport?",
+    "claims": [
+      {
+        "id": 1,
+        "claim": "古希腊人在竞技项目间隙会为公众举行即兴的体格展示。",
+        "snippet": "Between competitive events, the ancients put on impromptu physique shows for the public",
+        "url": "https://barbend.com/bodybuilding-olympics-history/",
+        "has_conflict": false
+      },
+      {
+        "id": 2,
+        "claim": "本·魏德和乔·魏德于1946年共同创立了国际健美联合会（IFBB）。",
+        "snippet": "Ben was one of the few enthusiastic supporters of the idea that bodybuilding should become a bona fide Olympic sport. Aside from his role in the IFBB, which he co-founded with his brother Joe in 1946",
+        "url": "https://barbend.com/bodybuilding-olympics-history/",
+        "has_conflict": false
+      }
+    ],
+    "num_claims": 2
+  },
+  "FQ006": {
+    "question": "When did Meta move its headquarters to Austin?",
+    "claims": [
+      {
+        "id": 1,
+        "claim": "Meta is moving its content moderation and trust and safety teams from California to Texas.",
+        "snippet": "We're moving our trust and safety, and content moderation teams out of California, and our US-based content review is going to be based in Texas",
+        "url": "https://cbsaustin.com/news/local/meta-to-move-teams-to-texas",
+        "has_conflict": false
+      },
+      {
+        "id": 2,
+        "claim": "Meta is replacing its third-party fact-checking program with a community notes system.",
+        "snippet": "In addition to moving to Texas, Zuckerberg plans to replace third-party fact-checkers with content notes, similar to X.",
+        "url": "https://cbsaustin.com/news/local/meta-to-move-teams-to-texas",
+        "has_conflict": false
+      },
+      {
+        "id": 3,
+        "claim": "Meta agreed to a $1.4 billion settlement with Texas regarding biometric data usage.",
+        "snippet": "Meta has agreed to a $1.4 billion settlement with Texas in a privacy lawsuit over claims that the tech giant used biometric data of users without their permission",
+        "url": "https://cbsaustin.com/news/local/meta-to-move-teams-to-texas",
+        "has_conflict": false
+      },
+      {
+        "id": 4,
+        "claim": "Meta is planning a $2.9 million renovation for an office at 300 West Sixth St in Austin.",
+        "snippet": "Meta, the parent company of Facebook, Instagram and WhatsApp, is working on a tenant fit-up of a downtown Austin office at 300 West Sixth St. ... The project with an estimated cost of $2.9 million covers 25,000 square feet and has an expected start date of May 1.",
+        "url": "https://www.chron.com/culture/article/meta-austin-office-20221773.php",
+        "has_conflict": false
+      },
+      {
+        "id": 5,
+        "claim": "Meta is in talks to reincorporate in Texas.",
+        "snippet": "Facebook and Instagram parent company, Meta Platforms, is reportedly in talks to reincorporate in Texas.",
+        "url": "https://www.statesman.com/story/business/technology/2025/01/31/facebook-instagram-meta-moving-to-texas/78093842007/",
+        "has_conflict": false
+      },
+      {
+        "id": 6,
+        "claim": "IBM is taking over 320,000 square feet of office space at Domain 12, which was previously leased by Meta.",
+        "snippet": "Meta leased Domain 12, a 15-story glass tower, but as of Jan. 1, 2026, IBM will be taking over 320,000 square feet of office space.",
+        "url": "https://finance.yahoo.com/news/meta-leaving-austin-office-guess-211425144.html",
+        "has_conflict": false
+      },
+      {
+        "id": 7,
+        "claim": "Meta already has content moderation and trust and safety operations in Texas.",
+        "snippet": "Meta already has major content moderation and trust and safety operations in the state.",
+        "url": "https://www.theguardian.com/technology/2025/jan/13/meta-moderators-texas-zuckerberg-trump",
+        "has_conflict": false
+      }
+    ],
+    "num_claims": 7
+  },
+  "FQ007": {
+    "question": "When was the chapter of alpha Kappa Delta Phi established at American University?",
+    "claims": [
+      {
+        "id": 1,
+        "claim": "alpha Kappa Delta Phi 于 1989 年秋季在加州大学伯克利分校成立，并于 1990 年 2 月 7 日获得大学泛希腊协会的认可。",
+        "snippet": "alpha Kappa Delta Phi was established at the University of California at Berkeley in the fall of 1989, and recognized by the College Panhellenic Association on February 7, 1990.",
+        "url": "https://www.akdphi.org/history",
+        "has_conflict": false
+      },
+      {
+        "id": 2,
+        "claim": "该组织的十四位创始姐妹是：Betty Chu, Karin Co, Susan Kim, Nancy Lee, Sherri Leung, Annie Loo, Belinda Ma, Anita Ng, Serene Ngin, Fannie Pon, Josie Sun, Daisy Wu, Jill Yoshimura 和 Reina Yuan。",
+        "snippet": "The fourteen founding sisters: Betty Chu, Karin Co, Susan Kim, Nancy Lee, Sherri Leung, Annie Loo, Belinda Ma, Anita Ng, Serene Ngin, Fannie Pon, Josie Sun, Daisy Wu, Jill Yoshimura, and Reina Yuan",
+        "url": "https://www.akdphi.org/history",
+        "has_conflict": false
+      },
+      {
+        "id": 3,
+        "claim": "自 1990 年以来，alpha Kappa Delta Phi 在美国和加拿大已招收超过 9,000 名成员。",
+        "snippet": "ALPHA KAPPA DELTA PHI HAS INITIATED OVER 9,000 MEMBERS ACROSS THE UNITED STATES AND IN CANADA SINCE 1990",
+        "url": "https://www.akdphi.org/history",
+        "has_conflict": false
+      },
+      {
+        "id": 4,
+        "claim": "alpha Kappa Delta Phi 国家委员会于 1993 年 5 月在加州圣巴巴拉举行的全国大会上成立。",
+        "snippet": "The National Board of alpha Kappa Delta Phi was established in May of 1993 at the National Convention in Santa Barbara, California.",
+        "url": "https://www.akdphi.org/history",
+        "has_conflict": false
+      },
+      {
+        "id": 5,
+        "claim": "alpha Kappa Delta Phi 国家校友委员会于 2002 年秋季成立。",
+        "snippet": "The National Alumnae Board of alpha Kappa Delta Phi was established in the Fall of 2002",
+        "url": "https://www.akdphi.org/history",
+        "has_conflict": false
+      },
+      {
+        "id": 6,
+        "claim": "alpha Kappa Delta Phi 在美国和加拿大的众多大学建立了 69 个分会。",
+        "snippet": "alpha Kappa Delta Phi has established 69 chapters at numerous universities across the United States and in Canada.",
+        "url": "https://en.wikipedia.org/wiki/Alpha_Kappa_Delta_Phi",
+        "has_conflict": true
+      },
+      {
+        "id": 7,
+        "claim": "alpha Kappa Delta Phi 拥有分布在三个级别的 67 个分会。",
+        "snippet": "alpha Kappa Delta Phi has 67 chapters across three classes.",
+        "url": "https://en.wikipedia.org/wiki/Alpha_Kappa_Delta_Phi",
+        "has_conflict": true
+      },
+      {
+        "id": 8,
+        "claim": "alpha Kappa Delta Phi 是一个国际亚裔女性联谊会，在美国和加拿大的大学中设有 51 个分会。",
+        "snippet": "alpha Kappa Delta Phi is an international Asian-interest sorority with 51 chapters located at universities across the United States and in Canada.",
+        "url": "https://www.library.illinois.edu/slc/national-fraternity-collections/alpha-kappa-delta-phi-archives/",
+        "has_conflict": true
+      },
+      {
+        "id": 9,
+        "claim": "该联谊会的官方座右铭是“通过姐妹情谊建立永恒的友谊”。",
+        "snippet": "Motto | \"Timeless Friendship Through Sisterhood'",
+        "url": "https://en.wikipedia.org/wiki/Alpha_Kappa_Delta_Phi",
+        "has_conflict": false
+      },
+      {
+        "id": 10,
+        "claim": "该联谊会的官方颜色是同情紫和白色。",
+        "snippet": "Its colors are Compassion Purple and White.",
+        "url": "https://en.wikipedia.org/wiki/Alpha_Kappa_Delta_Phi",
+        "has_conflict": false
+      },
+      {
+        "id": 11,
+        "claim": "该联谊会的官方标志是沙漏。",
+        "snippet": "The sorority's official symbol is the hourglass.",
+        "url": "https://en.wikipedia.org/wiki/Alpha_Kappa_Delta_Phi",
+        "has_conflict": false
+      },
+      {
+        "id": 12,
+        "claim": "该联谊会的官方花卉是鸢尾花，宝石是钻石。",
+        "snippet": "Its stone is the diamond and its flower is the iris.",
+        "url": "https://en.wikipedia.org/wiki/Alpha_Kappa_Delta_Phi",
+        "has_conflict": false
+      },
+      {
+        "id": 13,
+        "claim": "该联谊会的吉祥物是凤凰。",
+        "snippet": "The sorority's mascot is the Phoenix.",
+        "url": "https://en.wikipedia.org/wiki/Alpha_Kappa_Delta_Phi",
+        "has_conflict": false
+      },
+      {
+        "id": 14,
+        "claim": "alpha Kappa Delta Phi 的国家慈善事业是乳腺癌意识。",
+        "snippet": "alpha Kappa Delta Phi's national philanthropy is breast cancer awareness.",
+        "url": "https://en.wikipedia.org/wiki/Alpha_Kappa_Delta_Phi",
+        "has_conflict": false
+      },
+      {
+        "id": 15,
+        "claim": "该联谊会与 Avon 的独家合作伙伴关系始于 2010 年，结束于 2017 年。",
+        "snippet": "its exclusive partnership with Avon began in 2010 and ended in 2017.",
+        "url": "https://en.wikipedia.org/wiki/Alpha_Kappa_Delta_Phi",
+        "has_conflict": false
+      },
+      {
+        "id": 16,
+        "claim": "aKDPhi 基金会于 2011 年由董事会特许成立，并于 2013 年被国税局正式承认为 501(c)(3) 公共慈善机构。",
+        "snippet": "The aKDPhi Foundation, also known as The Foundation, was chartered in 2011 by the alpha Kappa Delta Phi Board of Directors with a focus on supporting educational, leadership, and philanthropic development. The Foundation was formally recognized in 2013 as a 501(c)(3) public charity by the Internal Revenue Service",
+        "url": "https://en.wikipedia.org/wiki/Alpha_Kappa_Delta_Phi",
+        "has_conflict": false
+      },
+      {
+        "id": 17,
+        "claim": "alpha Kappa Delta Phi 是国家 APIDA 泛希腊协会 (NAPA) 的成员，并于 2006 年协助其成立。",
+        "snippet": "It is part of the National APIDA Panhellenic Association (NAPA), which it helped charter in 2006.",
+        "url": "https://en.wikipedia.org/wiki/Alpha_Kappa_Delta_Phi",
+        "has_conflict": false
+      },
+      {
+        "id": 18,
+        "claim": "佛罗里达州立大学 (FSU) 分会于 2001 年 4 月 21 日成为 alpha Kappa Delta Phi 的第 30 个分会。",
+        "snippet": "On April 21, 2001, FSU became the newest αΚΔΦ colony—the 30th chapter of alpha Kappa Delta Phi, Inc.",
+        "url": "https://fsuakdphi.com/history",
+        "has_conflict": false
+      },
+      {
+        "id": 19,
+        "claim": "南佛罗里达大学 (USF) 分会于 2006 年春季成为 alpha Kappa Delta Phi 的第 42 个分会。",
+        "snippet": "In Spring 2006, the lovely ladies of S.W.I.T.C.H. proudly became the 42nd chapter of alpha Kappa Delta Phi Sorority Inc.",
+        "url": "https://www.usfakdphi.org/history",
+        "has_conflict": false
+      },
+      {
+        "id": 20,
+        "claim": "南佛罗里达大学分会在 2014 年全国大会上获得正式分会地位，成为 Alpha Alpha 分会。",
+        "snippet": "University of South Florida Associate Chapter was granted full-fledged status at the 2014 National Convention held in Orlando Florida, becoming the Alpha Alpha Chapter of alpha Kappa Delta Phi International Sorority, Inc.",
+        "url": "https://www.usfakdphi.org/history",
+        "has_conflict": false
+      },
+      {
+        "id": 21,
+        "claim": "加州大学河滨分校、加州大学圣巴巴拉分校、东北大学、加州大学圣地亚哥分校和加州州立大学圣马科斯分校的分会已被视为非活跃分会。",
+        "snippet": "The chapter(s) listed below have been deemed inactive by the Sorority and are not recognized by the University. alpha Kappa Delta Phi prohibits chapter operations on the campuses of the Inactive chapters listed below.\n\nUniversity of California, Riverside\n\nUniversity of California, Santa Barbara\n\nNortheastern University\n\nUniversity of California, San Diego\n\nCalifornia State University, San Marcos",
+        "url": "https://www.akdphi.org/chapters",
+        "has_conflict": false
+      }
+    ],
+    "num_claims": 21
+  },
+  "FQ008": {
+    "question": "When did Frontier purchase Spirit Airlines?",
+    "claims": [
+      {
+        "id": 1,
+        "claim": "Frontier Airlines 计划以 2.9 亿美元的交易收购 Spirit Airlines，并打造美国第五大航空公司。",
+        "snippet": "Budget carriers Frontier Group Holdings and Spirit Airlines Inc (SAVE.N) on Monday unveiled plans to create the fifth-largest US airline in a $2.9 billion tie- ...",
+        "url": "https://www.reuters.com/business/aerospace-defense/spirit-airlines-frontier-merge-29-bln-deal-2022-02-07/",
+        "has_conflict": true
+      },
+      {
+        "id": 2,
+        "claim": "Frontier Airlines 和 Spirit Airlines 同意合并，交易价值为 66 亿美元。",
+        "snippet": "Frontier Airlines and Spirit Airlines to merge in $6.6 billion deal to create the fifth-largest U.S. carrier.",
+        "url": "https://www.cnbc.com/2022/02/07/frontier-airlines-and-spirit-airlines-to-merge-in-6point6-billion-deal.html",
+        "has_conflict": false
+      }
+    ],
+    "num_claims": 2
+  },
+  "FQ009": {
+    "question": "When was the permanent cure for cancer developed?",
+    "claims": [
+      {
+        "id": 1,
+        "claim": "Percivall Pott identified a relationship between exposure to chimney soot and squamous cell carcinoma of the scrotum in 1775.",
+        "snippet": "1775: Chimney Soot & Squamous Cell Carcinoma\n\nPercivall Pott identifies a relationship between exposure to chimney soot and the incidence of squamous cell carcinoma of the scrotum among chimney sweeps.",
+        "url": "https://www.cancer.gov/research/progress/250-years-milestones",
+        "has_conflict": false
+      },
+      {
+        "id": 2,
+        "claim": "Rudolph Virchow identified the connection between inflammation and cancer in 1863.",
+        "snippet": "1863: Inflammation & Cancer\n\nRudolph Virchow identifies white blood cells (leukocytes) in cancerous tissue, making the first connection between inflammation and cancer.",
+        "url": "https://www.cancer.gov/research/progress/250-years-milestones",
+        "has_conflict": false
+      },
+      {
+        "id": 3,
+        "claim": "William Halsted performed the first radical mastectomy to treat breast cancer in 1882.",
+        "snippet": "1882: The First Radical Mastectomy to Treat Breast Cancer\n\nWilliam Halsted performs the first radical mastectomy to treat breast cancer.",
+        "url": "https://www.cancer.gov/research/progress/250-years-milestones",
+        "has_conflict": false
+      },
+      {
+        "id": 4,
+        "claim": "Wilhelm Roentgen discovered X-rays in 1895.",
+        "snippet": "1895: The First X-Ray\n\nWilhelm Roentgen discovers x-rays.",
+        "url": "https://www.cancer.gov/research/progress/250-years-milestones",
+        "has_conflict": false
+      },
+      {
+        "id": 5,
+        "claim": "Marie and Pierre Curie discovered radium and polonium in 1898.",
+        "snippet": "1898: Radium & Polonium\n\nMarie and Pierre Curie discover the radioactive elements radium and polonium.",
+        "url": "https://www.cancer.gov/research/progress/250-years-milestones",
+        "has_conflict": false
+      },
+      {
+        "id": 6,
+        "claim": "Paul Ehrlich proposed the 'immune surveillance' hypothesis in 1909.",
+        "snippet": "1909: Immune Surveillance\n\nPaul Ehrlich proposes that the immune system usually suppresses tumor formation, a concept that becomes known as the \"immune surveillance\"hypothesis.",
+        "url": "https://www.cancer.gov/research/progress/250-years-milestones",
+        "has_conflict": false
+      },
+      {
+        "id": 7,
+        "claim": "Peyton Rous discovered a virus that causes cancer in chickens in 1911.",
+        "snippet": "1911: Cancer in Chickens\n\nPeyton Rous discovers a virus that causes cancer in chickens (Rous sarcoma virus), establishing that some cancers are caused by infectious agents.",
+        "url": "https://www.cancer.gov/research/progress/250-years-milestones",
+        "has_conflict": false
+      },
+      {
+        "id": 8,
+        "claim": "The Pap smear was developed in 1928.",
+        "snippet": "1928: The Pap Smear\n\nGeorge Papanicolaou discovers that cervical cancer can be detected by examining cells from the vagina under a microscope. This breakthrough leads to the development of the Pap test",
+        "url": "https://www.cancer.gov/research/progress/250-years-milestones",
+        "has_conflict": true
+      },
+      {
+        "id": 9,
+        "claim": "The Pap smear was invented in the 1940s.",
+        "snippet": "1940s\n\nA Greek pathologist named George Papanikolaou invented pap smear tests were invented to prevent cervical cancer.",
+        "url": "https://www.uvahealth.com/healthy-balance/history-cancer-timeline",
+        "has_conflict": true
+      },
+      {
+        "id": 10,
+        "claim": "The National Cancer Institute (NCI) was established in 1937.",
+        "snippet": "1937: The National Cancer Institute (NCI)\n\nLegislation signed by President Franklin D. Roosevelt establishes the National Cancer Institute (NCI).",
+        "url": "https://www.cancer.gov/research/progress/250-years-milestones",
+        "has_conflict": false
+      },
+      {
+        "id": 11,
+        "claim": "The first intravenous chemotherapy was administered in 1942 at Yale.",
+        "snippet": "On August 27, 1942, J.D. became the first person in the world to receive intravenous chemotherapy.",
+        "url": "https://medicine.yale.edu/news-article/the-birth-of-chemotherapy-at-yale-from-wartime-secrecy-to-modern-cancer-care/",
+        "has_conflict": false
+      },
+      {
+        "id": 12,
+        "claim": "Nitrogen mustard was approved by the FDA for cancer treatment in 1949.",
+        "snippet": "1949: Nitrogen Mustard\n\nThe Food and Drug Administration (FDA) approves nitrogen mustard (mechlorethamine) for the treatment of cancer.",
+        "url": "https://www.cancer.gov/research/progress/250-years-milestones",
+        "has_conflict": false
+      },
+      {
+        "id": 13,
+        "claim": "Sidney Farber demonstrated that aminopterin induced temporary remissions in children with acute leukemia in 1947.",
+        "snippet": "1947: Antimetabolites\n\nSidney Farber shows that treatment with the antimetabolite drug aminopterin, a derivative of folic acid, induces temporary remissions in children with acute leukemia.",
+        "url": "https://www.cancer.gov/research/progress/250-years-milestones",
+        "has_conflict": false
+      },
+      {
+        "id": 14,
+        "claim": "The first complete cure of a human solid tumor by chemotherapy was achieved in 1953.",
+        "snippet": "1953: The First Complete Cure of a Human Solid Tumor\n\nRoy Hertz and Min Chiu Li achieve the first complete cure of a human solid tumor by chemotherapy when they use the drug methotrexate to treat a patient with choriocarcinoma",
+        "url": "https://www.cancer.gov/research/progress/250-years-milestones",
+        "has_conflict": false
+      },
+      {
+        "id": 15,
+        "claim": "The Philadelphia chromosome was described in 1960.",
+        "snippet": "1960: The Philadelphia Chromosome\n\nPeter Nowell and David Hungerford describe an unusually small chromosome in the cancer cells of patients with chronic myelogenous leukemia (CML).",
+        "url": "https://www.cancer.gov/research/progress/250-years-milestones",
+        "has_conflict": false
+      },
+      {
+        "id": 16,
+        "claim": "The National Cancer Act was signed by President Richard M. Nixon in 1971.",
+        "snippet": "1971: The National Cancer Act\n\nOn December 23, President Richard M. Nixon signs the National Cancer Act",
+        "url": "https://www.cancer.gov/research/progress/250-years-milestones",
+        "has_conflict": false
+      },
+      {
+        "id": 17,
+        "claim": "The TP53 gene was discovered in 1979.",
+        "snippet": "1979: The TP53 Gene\n\nThe TP53 gene (also called p53), the most commonly mutated gene in human cancer, is discovered.",
+        "url": "https://www.cancer.gov/research/progress/250-years-milestones",
+        "has_conflict": false
+      }
+    ],
+    "num_claims": 17
+  },
+  "FQ011": {
+    "question": "When was League of Legends 2 released?",
+    "claims": [
+      {
+        "id": 1,
+        "claim": "有传言称《英雄联盟 2》将于 2026 年发布。",
+        "snippet": "A leak making the rounds on Weibo claims that League of Legends 2 release date is set for 2026.",
+        "url": "https://www.vice.com/en/article/league-of-legends-2-release-date-reportedly-leaked/",
+        "has_conflict": true
+      },
+      {
+        "id": 2,
+        "claim": "Riot Games 确认目前没有制作《英雄联盟 2》的计划。",
+        "snippet": "they confirm that there is indeed NO plans for a League of Legends 2.",
+        "url": "https://www.turtlebeach.com/blog/is-there-going-to-be-a-league-of-legends-2-answered",
+        "has_conflict": true
+      },
+      {
+        "id": 3,
+        "claim": "Riot Games 表示对于是否制作《英雄联盟 2》的回答一直是“不”。",
+        "snippet": "“We’re often asked if we’re going to make League of Legends 2 someday. And the answer to that has been, and remains, no.”",
+        "url": "https://www.gosugamers.net/lol/news/77750-riot-is-rebuilding-league-of-legends-targeting-2027-release",
+        "has_conflict": true
+      },
+      {
+        "id": 4,
+        "claim": "有消息称《英雄联盟 GEN 2》已正式公布。",
+        "snippet": "League of Legends GEN 2 is Officially Announced",
+        "url": "https://www.youtube.com/shorts/v5Uy2jKlZjE",
+        "has_conflict": true
+      },
+      {
+        "id": 5,
+        "claim": "Riot 正在对《英雄联盟》进行长期大修，目标是在 2027 年发布。",
+        "snippet": "Riot Games has confirmed it is working on a long-term overhaul of League of Legends (LoL) after a report by Bloomberg detailed plans for what could be the biggest update in the game’s history, currently targeted for 2027.",
+        "url": "https://www.gosugamers.net/lol/news/77750-riot-is-rebuilding-league-of-legends-targeting-2027-release",
+        "has_conflict": false
+      },
+      {
+        "id": 6,
+        "claim": "Riot 内部将该大规模更新项目称为“League Next”。",
+        "snippet": "Riot is internally referring to the project as League Next and describes it as the largest update since League of Legends launched in 2009.",
+        "url": "https://www.gosugamers.net/lol/news/77750-riot-is-rebuilding-league-of-legends-targeting-2027-release",
+        "has_conflict": false
+      },
+      {
+        "id": 7,
+        "claim": "该更新计划包括全新的游戏客户端、召唤师峡谷的视觉翻新以及改进的新手体验。",
+        "snippet": "Meddler confirmed Riot is working on “a brand new around-game client that’s fully integrated with the in-game experience,” alongside a full visual overhaul of Summoner’s Rift, gameplay changes tied to that update, tweaks to Runes and pre-game systems, and a revamped new player experience.",
+        "url": "https://www.gosugamers.net/lol/news/77750-riot-is-rebuilding-league-of-legends-targeting-2027-release",
+        "has_conflict": false
+      },
+      {
+        "id": 8,
+        "claim": "《英雄联盟》于 2009 年 10 月 27 日发布。",
+        "snippet": "Release October 27, 2009",
+        "url": "https://en.wikipedia.org/wiki/League_of_Legends",
+        "has_conflict": false
+      },
+      {
+        "id": 9,
+        "claim": "一款基于《英雄联盟》IP 的 MMORPG 正在开发中。",
+        "snippet": "An MMORPG based on the property is in development.",
+        "url": "https://en.wikipedia.org/wiki/League_of_Legends",
+        "has_conflict": false
+      },
+      {
+        "id": 10,
+        "claim": "《英雄联盟》第二赛季于 2011 年 11 月 22 日开始。",
+        "snippet": "Season Two began on November 22, 2011",
+        "url": "https://leagueoflegends.fandom.com/wiki/Season_Two",
+        "has_conflict": false
+      }
+    ],
+    "num_claims": 10
+  },
+  "FQ012": {
+    "question": "In what year did Hikaru Nakamura become the World Chess Champion?",
+    "claims": [
+      {
+        "id": 1,
+        "claim": "中村光出生于日本枚方市。",
+        "snippet": "Nakamura was born in Hirakata, Osaka Prefecture, Japan",
+        "url": "https://en.wikipedia.org/wiki/Hikaru_Nakamura",
+        "has_conflict": false
+      },
+      {
+        "id": 2,
+        "claim": "中村光出生于1987年12月9日。",
+        "snippet": "Born December 9, 1987",
+        "url": "https://en.wikipedia.org/wiki/Hikaru_Nakamura",
+        "has_conflict": false
+      },
+      {
+        "id": 3,
+        "claim": "中村光在两岁时移居美国。",
+        "snippet": "Nakamura moved with his family to the United States at the age of two.",
+        "url": "https://en.wikipedia.org/wiki/Hikaru_Nakamura",
+        "has_conflict": false
+      }
+    ],
+    "num_claims": 3
+  },
+  "FQ013": {
+    "question": "When did American Express open its 25th Centurion Lounge?",
+    "claims": [
+      {
+        "id": 1,
+        "claim": "波士顿洛根国际机场（BOS）的百夫长休息室预计于2029年开放。",
+        "snippet": "The Centurion Lounge at Boston Logan International Airport (BOS), expected to open in 2029",
+        "url": "https://www.americanexpress.com/en-us/newsroom/articles/travel-and-dining/with-32-locations-and-growing--american-express-expands-its-indu.html",
+        "has_conflict": false
+      },
+      {
+        "id": 2,
+        "claim": "夏洛特道格拉斯国际机场（CLT）将开设第二家百夫长休息室（Sidecar）。",
+        "snippet": "American Express will open a second Centurion Lounge location at Charlotte Douglas International Airport (CLT), featuring a 'Sidecar' concept.",
+        "url": "https://www.americanexpress.com/en-us/newsroom/articles/travel-and-dining/with-32-locations-and-growing--american-express-expands-its-indu.html",
+        "has_conflict": false
+      }
+    ],
+    "num_claims": 2
+  },
+  "FQ014": {
+    "question": "In what year was the Element 120 first synthesized?",
+    "claims": [
+      {
+        "id": 1,
+        "claim": "Unbinilium (element 120) is a hypothetical chemical element with the symbol Ubn.",
+        "snippet": "Unbinilium, also known as eka-radium or element 120, is a hypothetical chemical element; it has symbol Ubn and atomic number 120.",
+        "url": "https://en.wikipedia.org/wiki/Unbinilium",
+        "has_conflict": false
+      },
+      {
+        "id": 2,
+        "claim": "Unbinilium has not yet been synthesized.",
+        "snippet": "Unbinilium has not yet been synthesized, despite multiple attempts from German and Russian teams.",
+        "url": "https://en.wikipedia.org/wiki/Unbinilium",
+        "has_conflict": false
+      },
+      {
+        "id": 3,
+        "claim": "Unbinilium is predicted to be an alkaline earth metal.",
+        "snippet": "Being the second period 8 element, unbinilium is predicted to be an alkaline earth metal",
+        "url": "https://en.wikipedia.org/wiki/Unbinilium",
+        "has_conflict": false
+      },
+      {
+        "id": 4,
+        "claim": "The CAS number for unbinilium is 54143-58-7.",
+        "snippet": "CAS Number 54143-58-7",
+        "url": "https://en.wikipedia.org/wiki/Unbinilium",
+        "has_conflict": false
+      },
+      {
+        "id": 5,
+        "claim": "Lawrence Berkeley National Laboratory (LBNL) successfully created element 116 (livermorium) using a titanium-50 beam.",
+        "snippet": "In a proof-of-principle experiment, scientists created the known element livermorium, element 116, using titanium for the first time.",
+        "url": "https://www.sciencenews.org/article/new-element-120-periodic-table",
+        "has_conflict": false
+      },
+      {
+        "id": 6,
+        "claim": "Researchers have proposed using a californium-249 target and a titanium-50 beam to synthesize element 120.",
+        "snippet": "To create element 120, researchers have proposed colliding titanium-50 with a target made of the isotope californium-249.",
+        "url": "https://physicalsciences.lbl.gov/2023/10/16/berkeley-lab-to-test-new-approach-to-making-superheavy-elements/",
+        "has_conflict": false
+      },
+      {
+        "id": 7,
+        "claim": "As of September 2025, an attempt to synthesize element 120 was ongoing at Lawrence Berkeley National Laboratory.",
+        "snippet": "in particular, an attempt to synthesize the element was ongoing as of September 2025, at Lawrence Berkeley National Laboratory in the United States.",
+        "url": "https://en.wikipedia.org/wiki/Unbinilium",
+        "has_conflict": false
+      }
+    ],
+    "num_claims": 7
+  },
+  "FQ015": {
+    "question": "When did Jamie Oliver earn his first Michelin Star?",
+    "claims": [
+      {
+        "id": 1,
+        "claim": "杰米·奥利弗的全名是詹姆斯·特雷弗·奥利弗。",
+        "snippet": "James Trevor Oliver",
+        "url": "https://en.wikipedia.org/wiki/Jamie_Oliver",
+        "has_conflict": false
+      },
+      {
+        "id": 2,
+        "claim": "杰米·奥利弗出生于1975年5月27日。",
+        "snippet": "born 27 May 1975",
+        "url": "https://en.wikipedia.org/wiki/Jamie_Oliver",
+        "has_conflict": false
+      },
+      {
+        "id": 3,
+        "claim": "杰米·奥利弗是一位英国厨师和餐厅老板。",
+        "snippet": "James Trevor Oliver MBE is a British chef and restaurateur.",
+        "url": "https://en.wikipedia.org/wiki/Jamie_Oliver",
+        "has_conflict": false
+      }
+    ],
+    "num_claims": 3
+  },
+  "FQ016": {
+    "question": "When did the UK adopt the Euro?",
+    "claims": [],
+    "num_claims": 0
+  },
+  "FQ017": {
+    "question": "When was the second time that Joe Biden visited Vietnam during his presidency?",
+    "claims": [
+      {
+        "id": 1,
+        "claim": "拜登在总统任期内进行了21次国际访问，前往28个国家（此外还访问了约旦河西岸）。",
+        "snippet": "Joe Biden made 21 international trips to 28 countries (in addition to visiting the West Bank) during his presidency",
+        "url": "https://en.wikipedia.org/wiki/List_of_international_presidential_trips_made_by_Joe_Biden",
+        "has_conflict": false
+      },
+      {
+        "id": 2,
+        "claim": "拜登的总统任期于2021年1月20日开始，于2025年1月20日结束。",
+        "snippet": "Joe Biden's presidency began on January 20, 2021, and ended on January 20, 2025.",
+        "url": "https://en.wikipedia.org/wiki/Presidency_of_Joe_Biden",
+        "has_conflict": false
+      }
+    ],
+    "num_claims": 2
+  },
+  "FQ018": {
+    "question": "How much did Elon Musk buy Activision Blizzard for?",
+    "claims": [
+      {
+        "id": 1,
+        "claim": "微软以687亿美元收购游戏巨头动视暴雪",
+        "snippet": "acquisition in history when it bought the gaming giant Activision Blizzard for $68.7 billion.",
+        "url": "https://finance.yahoo.com/news/elon-musk-44-billion-twitter-215953520.html",
+        "has_conflict": true
+      },
+      {
+        "id": 2,
+        "claim": "微软收购动视暴雪的交易价值约为750亿美元",
+        "snippet": "the USD$75bn (~£57.25bn) Microsoft acquisition.",
+        "url": "https://www.exchangewire.com/blog/2022/01/19/microsoft-to-acquire-activision-blizzard-for-75bn/",
+        "has_conflict": true
+      }
+    ],
+    "num_claims": 2
+  },
+  "FQ019": {
+    "question": "When was COVID-19 declared endemic by the World Health Organization?",
+    "claims": [
+      {
+        "id": 1,
+        "claim": "2019年12月，中国湖北省武汉市报告了一群原因不明的严重肺炎病例。",
+        "snippet": "In December 2019, a cluster of severe pneumonia cases of unknown cause was reported in Wuhan, Hubei province, China.",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7569573/",
+        "has_conflict": false
+      },
+      {
+        "id": 2,
+        "claim": "2020年1月7日，从4名病例的下呼吸道样本中分离出一种新型冠状病毒毒株。",
+        "snippet": "A novel strain of coronavirus... was subsequently isolated from lower respiratory tract samples of 4 cases on 7 January 2020.",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7569573/",
+        "has_conflict": false
+      },
+      {
+        "id": 3,
+        "claim": "世界卫生组织于2020年1月30日宣布SARS-CoV-2疫情构成国际关注的突发公共卫生事件。",
+        "snippet": "On 30 January 2020, the WHO declared that the SARS-CoV-2 outbreak constituted a Public Health Emergency of International Concern",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7569573/",
+        "has_conflict": false
+      },
+      {
+        "id": 4,
+        "claim": "世界卫生组织于2020年3月11日将新冠疫情定性为大流行。",
+        "snippet": "characterize the outbreak as a pandemic on 11 March 2020.",
+        "url": "https://www.who.int/europe/emergencies/situations/covid-19",
+        "has_conflict": false
+      },
+      {
+        "id": 5,
+        "claim": "世界卫生组织于2023年5月5日结束了新冠疫情作为国际关注的突发公共卫生事件的状态。",
+        "snippet": "the COVID-19 public health emergency of international concern, which was ended by the World Health Organization on 5 May 2023.",
+        "url": "https://en.wikipedia.org/wiki/Endemic_COVID-19",
+        "has_conflict": false
+      },
+      {
+        "id": 6,
+        "claim": "截至2023年5月，全球累计确诊病例数为765,222,932例。",
+        "snippet": "the cumulative cases worldwide now stand at 765,222,932",
+        "url": "https://news.un.org/en/story/2023/05/1136367",
+        "has_conflict": true
+      },
+      {
+        "id": 7,
+        "claim": "截至2026年5月28日，全球累计确诊病例数为779,131,743例。",
+        "snippet": "779,131,743",
+        "url": "https://en.wikipedia.org/wiki/COVID-19_pandemic",
+        "has_conflict": true
+      },
+      {
+        "id": 8,
+        "claim": "截至2023年5月，全球累计死亡人数为6,921,614人。",
+        "snippet": "nearly seven million deaths: the precise figure currently stands at 6,921,614.",
+        "url": "https://news.un.org/en/story/2023/05/1136367",
+        "has_conflict": true
+      },
+      {
+        "id": 9,
+        "claim": "截至2026年5月28日，全球累计死亡人数为7,114,238人。",
+        "snippet": "7,114,238",
+        "url": "https://en.wikipedia.org/wiki/COVID-19_pandemic",
+        "has_conflict": true
+      },
+      {
+        "id": 10,
+        "claim": "新冠肺炎的潜伏期中位数约为5天。",
+        "snippet": "A recent paper provides additional evidence for a median incubation period for COVID-19 of approximately 5 days",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7569573/",
+        "has_conflict": false
+      },
+      {
+        "id": 11,
+        "claim": "新冠肺炎的首个已知病例（索引病例）于2019年12月1日在武汉发现。",
+        "snippet": "Index case Wuhan, China... 1 December 2019",
+        "url": "https://en.wikipedia.org/wiki/COVID-19_pandemic",
+        "has_conflict": true
+      },
+      {
+        "id": 12,
+        "claim": "武汉的一群患者于2019年12月12日开始出现非典型肺炎症状。",
+        "snippet": "December 12, 2019 A cluster of patients in China’s Hubei Province, in the city of Wuhan, begin to experience the symptoms of an atypical pneumonia-like illness",
+        "url": "https://www.cdc.gov/museum/timeline/covid19.html",
+        "has_conflict": true
+      },
+      {
+        "id": 13,
+        "claim": "2020年2月11日，世卫组织宣布该疾病的正式名称为“COVID-19”。",
+        "snippet": "WHO announces the official name for the disease that is causing the 2019 Novel Coronavirus outbreak: “COVID-19.”",
+        "url": "https://www.cdc.gov/museum/timeline/covid19.html",
+        "has_conflict": false
+      },
+      {
+        "id": 14,
+        "claim": "美国累计新冠死亡人数于2022年5月12日达到100万。",
+        "snippet": "The number of recorded deaths due to COVID-19 in the U.S. reaches 1 million (1,000,000).",
+        "url": "https://www.cdc.gov/museum/timeline/covid19.html",
+        "has_conflict": false
+      },
+      {
+        "id": 15,
+        "claim": "截至2023年4月30日，全球累计接种疫苗超过133亿剂次。",
+        "snippet": "As of 30 April, a total of more than 13.3 billion vaccine doses have been administered worldwide.",
+        "url": "https://news.un.org/en/story/2023/05/1136367",
+        "has_conflict": false
+      },
+      {
+        "id": 16,
+        "claim": "在欧洲地区，自大流行开始以来已有超过200万人死于该疾病。",
+        "snippet": "Since the COVID-19 pandemic started, over 2 million people in the European Region have died from the disease.",
+        "url": "https://www.who.int/europe/emergencies/situations/covid-19",
+        "has_conflict": false
+      }
+    ],
+    "num_claims": 16
+  },
+  "FQ020": {
+    "question": "In what three consecutive years did Drake top Spotify's list of most-streamed artists?",
+    "claims": [
+      {
+        "id": 1,
+        "claim": "Drake's 2019 releases include the streaming release of the So Far Gone mixtape and the compilation album Care Package.",
+        "snippet": "So Far Gone mixtape [streaming release], Care Package [2019]",
+        "url": "Source [7]",
+        "has_conflict": false
+      },
+      {
+        "id": 2,
+        "claim": "Drake released the album Scorpion in June 2018.",
+        "snippet": "Scorpion... released in June [2018]",
+        "url": "Source [7]",
+        "has_conflict": false
+      },
+      {
+        "id": 3,
+        "claim": "Drake released the EP Scary Hours at the start of 2018.",
+        "snippet": "Scary Hours [start of 2018]",
+        "url": "Source [7]",
+        "has_conflict": false
+      },
+      {
+        "id": 4,
+        "claim": "Drake released a playlist in 2017.",
+        "snippet": "Drake's 2017 playlist",
+        "url": "Source [7]",
+        "has_conflict": false
+      }
+    ],
+    "num_claims": 4
+  },
+  "FQ021": {
+    "question": "When did Tesla Model Z come out?",
+    "claims": [
+      {
+        "id": 1,
+        "claim": "特斯拉官方并未推出名为“Tesla Z”的车型。",
+        "snippet": "There is no Tesla model officially called “Tesla Z.”",
+        "url": "https://recharged.com/articles/tesla-z-guide?srsltid=AfmBOopBI_HyHnsLq6-GYA1jcdlf8ShKcK5OaTJ0Tertj4yCl0K9D42b",
+        "has_conflict": true
+      },
+      {
+        "id": 2,
+        "claim": "有传言称2026款特斯拉Model Z将是首款搭载固态电池技术的特斯拉车型。",
+        "snippet": "Rumors suggest that the 2026 Tesla Model Z will be the first Tesla model to feature solid-state battery technology.",
+        "url": "https://www.example.com/tesla-model-z-rumors",
+        "has_conflict": true
+      }
+    ],
+    "num_claims": 2
+  },
+  "FQ022": {
+    "question": "Which vaccine completely eradicated COVID-19 worldwide?",
+    "claims": [
+      {
+        "id": 1,
+        "claim": "2019年12月31日，武汉市卫生健康委员会网站首次出现了肺炎病例报告。",
+        "snippet": "Six years ago, on 31 December 2019, the first reports of cases of pneumonia appeared on the website of the Wuhan Municipal Health Commission in China.",
+        "url": "https://www.who.int/europe/news/item/31-12-2025-covid-19-still-causes-severe-disease--but-up-to-date-vaccines-are-effective--new-research-shows",
+        "has_conflict": false
+      },
+      {
+        "id": 2,
+        "claim": "世界卫生组织于2020年1月30日宣布新冠疫情构成国际关注的突发公共卫生事件。",
+        "snippet": "On 30 January 2020, the WHO Director-General declared that the outbreak of COVID-19 constitutes a Public Health Emergency of International Concern (PHEIC).",
+        "url": "https://www.who.int/news/item/27-04-2020-who-timeline---covid-19",
+        "has_conflict": false
+      }
+    ],
+    "num_claims": 2
+  },
+  "FQ023": {
+    "question": "How much did Elon Musk acquire Instagram for?",
+    "claims": [
+      {
+        "id": 1,
+        "claim": "埃隆·马斯克据报道以750亿美元从Meta手中收购了Instagram。",
+        "snippet": "Elon Musk, the enigmatic billionaire and CEO of xAI, Tesla, and SpaceX, has reportedly purchased Instagram from Meta for an eye-popping $75 billion.",
+        "url": "https://www.linkedin.com/pulse/breaking-elon-musk-buys-instagram-from-meta-75-deal-khatib-frsa-pjgnf",
+        "has_conflict": true
+      },
+      {
+        "id": 2,
+        "claim": "Facebook以10亿美元收购了Instagram。",
+        "snippet": "Facebook bought Instagram a few years ago for $1 billion.",
+        "url": "https://www.reuters.com/article/us-facebook-instagram-idUSBRE8380S920120409",
+        "has_conflict": true
+      }
+    ],
+    "num_claims": 2
+  },
+  "FQ024": {
+    "question": "How much did Mark Zuckerberg acquire Twitter for?",
+    "claims": [
+      {
+        "id": 1,
+        "claim": "Facebook offered $500 million to acquire Twitter in 2008.",
+        "snippet": "Facebook tried to buy Twitter for $500 million 'several years' ago.",
+        "url": "https://www.independent.co.uk/tech/facebook-tried-to-buy-twitter-for-500-million-several-years-ago-9556843.html",
+        "has_conflict": false
+      },
+      {
+        "id": 2,
+        "claim": "Twitter's IPO valued the company at $11.9 billion.",
+        "snippet": "Twitter’s IPO hit $11.9 billion.",
+        "url": "https://www.facebook.com/Eichris/posts/back-in-2008-mark-zuckerberg-had-one-goal-to-eliminate-twitterhe-didnt-just-want/24892050100489517/",
+        "has_conflict": false
+      },
+      {
+        "id": 3,
+        "claim": "Elon Musk acquired Twitter for $44 billion.",
+        "snippet": "unanimously accepting Musk's buyout offer of $44 billion on April 25.",
+        "url": "https://en.wikipedia.org/wiki/Acquisition_of_Twitter_by_Elon_Musk",
+        "has_conflict": false
+      },
+      {
+        "id": 4,
+        "claim": "Meta acquired WhatsApp for $16 billion.",
+        "snippet": "The WhatsApp acquisition closed at a steep $16 billion",
+        "url": "https://en.wikipedia.org/wiki/List_of_mergers_and_acquisitions_by_Meta_Platforms",
+        "has_conflict": true
+      },
+      {
+        "id": 5,
+        "claim": "Meta acquired WhatsApp for $19 billion.",
+        "snippet": "Acquisition Cost: $19.0 billion",
+        "url": "https://www.investopedia.com/articles/personal-finance/051815/top-11-companies-owned-facebook.asp",
+        "has_conflict": true
+      },
+      {
+        "id": 6,
+        "claim": "Elon Musk laid off half of Twitter's workforce.",
+        "snippet": "Musk has since proposed several reforms to Twitter and laid off half of the company's workforce.",
+        "url": "https://en.wikipedia.org/wiki/Acquisition_of_Twitter_by_Elon_Musk",
+        "has_conflict": true
+      },
+      {
+        "id": 7,
+        "claim": "Elon Musk reduced Twitter's headcount by 80%.",
+        "snippet": "Elon Musk famously reduced head count by 80% after acquiring Twitter.",
+        "url": "https://www.linkedin.com/posts/the-startup-archive_mark-zuckerberg-on-elon-musks-acquisition-activity-7438252562715226113-kM_T",
+        "has_conflict": true
+      }
+    ],
+    "num_claims": 7
+  },
+  "FQ025": {
+    "question": "What movie did Clint Eastwood win a Best Actor Academy Award for?",
+    "claims": [
+      {
+        "id": 1,
+        "claim": "Clint Eastwood received a Humanitarian Award.",
+        "snippet": "enti Humanitarian Award",
+        "url": "Source [1]",
+        "has_conflict": true
+      },
+      {
+        "id": 2,
+        "claim": "Clint Eastwood was inducted into the California Hall of Fame on December 6, 2006.",
+        "snippet": "On December 6, 2006... inducted Eastwood into the California Hall of Fame",
+        "url": "Source [1]",
+        "has_conflict": true
+      },
+      {
+        "id": 3,
+        "claim": "Clint Eastwood received the Irving G. Thalberg Memorial Award in 1995.",
+        "snippet": "In 1995 he received the honorary Irving G. Thalberg Memorial Award",
+        "url": "Source [1]",
+        "has_conflict": true
+      },
+      {
+        "id": 4,
+        "claim": "Clint Eastwood recorded his hand and footprints at Grauman's Chinese Theatre on August 21, 1984.",
+        "snippet": "On August 21, 1984, Eastwood was honored at a ceremony at Grauman's Chinese Theatre to record his hand and footprints in cement.",
+        "url": "Source [1]",
+        "has_conflict": true
+      },
+      {
+        "id": 5,
+        "claim": "Clint Eastwood won the Best Director Oscar for Unforgiven.",
+        "snippet": "Conflict on Best Director Oscar for Unforgiven",
+        "url": "Source [1]",
+        "has_conflict": true
+      }
+    ],
+    "num_claims": 5
+  },
+  "FQ026": {
+    "question": "When did Willie Nelson pass away?",
+    "claims": [
+      {
+        "id": 1,
+        "claim": "Willie Nelson出生于1933年4月29日",
+        "snippet": "Willie Hugh Nelson was born in Abbott, Texas, on April 29, 1933",
+        "url": "https://en.wikipedia.org/wiki/Willie_Nelson",
+        "has_conflict": true
+      },
+      {
+        "id": 2,
+        "claim": "Willie Nelson出生于1942年3月11日",
+        "snippet": "March 11, 1942 — September 29, 2024",
+        "url": "https://www.murrayorwosky.com",
+        "has_conflict": true
+      }
+    ],
+    "num_claims": 2
+  },
+  "FQ027": {
+    "question": "How many times has Jeremy Corbyn served as Prime Minister of the UK?",
+    "claims": [
+      {
+        "id": 1,
+        "claim": "杰里米·科尔宾出生于1949年5月26日，出生地为英格兰威尔特郡奇彭纳姆。",
+        "snippet": "Jeremy Bernard Corbyn (/ˈkɔːbɪn/; born 26 May 1949) is a British politician... Born in Chippenham, Wiltshire",
+        "url": "https://en.wikipedia.org/wiki/Jeremy_Corbyn",
+        "has_conflict": false
+      },
+      {
+        "id": 2,
+        "claim": "杰里米·科尔宾自1983年起一直担任北伊斯灵顿选区的国会议员。",
+        "snippet": "Corbyn has been the Member of Parliament (MP) for Islington North since 1983.",
+        "url": "https://en.wikipedia.org/wiki/Jeremy_Corbyn",
+        "has_conflict": false
+      }
+    ],
+    "num_claims": 2
+  },
+  "FQ028": {
+    "question": "What year did Chris Paul win his second NBA championship?",
+    "claims": [
+      {
+        "id": 1,
+        "claim": "克里斯·保罗出生于1985年5月6日。",
+        "snippet": "Born May 6, 1985",
+        "url": "https://en.wikipedia.org/wiki/Chris_Paul",
+        "has_conflict": false
+      },
+      {
+        "id": 2,
+        "claim": "克里斯·保罗出生于北卡罗来纳州的温斯顿-塞勒姆。",
+        "snippet": "Chris Paul was born in Winston-Salem, North Carolina",
+        "url": "https://en.wikipedia.org/wiki/Chris_Paul",
+        "has_conflict": false
+      },
+      {
+        "id": 3,
+        "claim": "克里斯·保罗在2005年NBA选秀中被新奥尔良黄蜂队选中。",
+        "snippet": "Paul was selected fourth overall in the 2005 NBA draft by the New Orleans Hornets.",
+        "url": "https://en.wikipedia.org/wiki/Chris_Paul",
+        "has_conflict": false
+      }
+    ],
+    "num_claims": 3
+  },
+  "FQ029": {
+    "question": "When did King Charles strip Prince Harry's title as the Duke of Sussex?",
+    "claims": [
+      {
+        "id": 1,
+        "claim": "哈里王子于1984年9月15日出生于伦敦圣玛丽医院。",
+        "snippet": "Harry was born at 4:20 pm on 15 September 1984 at St Mary's Hospital, London",
+        "url": "https://en.wikipedia.org/wiki/Prince_Harry,_Duke_of_Sussex",
+        "has_conflict": false
+      },
+      {
+        "id": 2,
+        "claim": "哈里王子是国王查尔斯三世和威尔士王妃戴安娜的次子。",
+        "snippet": "He was the second child of Charles, Prince of Wales (later King Charles III), and his first wife, Diana, Princess of Wales.",
+        "url": "https://en.wikipedia.org/wiki/Prince_Harry,_Duke_of_Sussex",
+        "has_conflict": false
+      },
+      {
+        "id": 3,
+        "claim": "哈里王子于2018年与梅根·马克尔结婚。",
+        "snippet": "Spouse Meghan Markle ​(m. 2018)​",
+        "url": "https://en.wikipedia.org/wiki/Prince_Harry,_Duke_of_Sussex",
+        "has_conflict": false
+      },
+      {
+        "id": 4,
+        "claim": "哈里王子和梅根育有两个孩子：阿奇王子和莉莉贝特公主。",
+        "snippet": "The couple have two children, Archie and Lilibet.",
+        "url": "https://en.wikipedia.org/wiki/Prince_Harry,_Duke_of_Sussex",
+        "has_conflict": false
+      },
+      {
+        "id": 5,
+        "claim": "哈里王子在英国陆军服役十年（2005-2015年），曾两次被派往阿富汗。",
+        "snippet": "Harry served in the army for ten years, during which he was deployed twice to Afghanistan",
+        "url": "https://en.wikipedia.org/wiki/Prince_Harry,_Duke_of_Sussex",
+        "has_conflict": false
+      },
+      {
+        "id": 6,
+        "claim": "哈里王子于2014年创立了“不可征服运动会”（Invictus Games）。",
+        "snippet": "Harry founded the Invictus Games in 2014 and remains actively involved as its patron.",
+        "url": "https://en.wikipedia.org/wiki/Prince_Harry,_Duke_of_Sussex",
+        "has_conflict": false
+      },
+      {
+        "id": 7,
+        "claim": "哈里和梅根于2020年1月宣布退出王室高级成员职务。",
+        "snippet": "In January 2020, Harry and Meghan stepped back from their roles as working members of the royal family and relocated to Southern California.",
+        "url": "https://en.wikipedia.org/wiki/Prince_Harry,_Duke_of_Sussex",
+        "has_conflict": false
+      },
+      {
+        "id": 8,
+        "claim": "哈里王子于2023年出版了回忆录《备胎》（Spare）。",
+        "snippet": "In 2023, Harry published his memoir, Spare.",
+        "url": "https://en.wikipedia.org/wiki/Prince_Harry,_Duke_of_Sussex",
+        "has_conflict": false
+      },
+      {
+        "id": 9,
+        "claim": "哈里王子在2025年3月辞去了Sentebale慈善机构赞助人的职务。",
+        "snippet": "In March 2025, Harry and Prince Seeiso of Lesotho resigned from their roles as patrons of Sentebale following a dispute",
+        "url": "https://en.wikipedia.org/wiki/Prince_Harry,_Duke_of_Sussex",
+        "has_conflict": false
+      },
+      {
+        "id": 10,
+        "claim": "哈里王子在2025年5月输掉了关于英国政府资助安保服务的法律上诉。",
+        "snippet": "His appeal was rejected by three senior judges in May 2025 and he was likely to be held liable for the UK government's legal fees.",
+        "url": "https://en.wikipedia.org/wiki/Prince_Harry,_Duke_of_Sussex",
+        "has_conflict": false
+      },
+      {
+        "id": 11,
+        "claim": "查尔斯三世国王已正式剥夺了哈里王子的所有头衔。",
+        "snippet": "King Charles III has officially stripped Prince Harry of his titles",
+        "url": "https://www.facebook.com/USStarNews1/posts/in-a-historic-and-unprecedented-move-king-charles-iii-has-officially-stripped-pr/896596549850194/",
+        "has_conflict": true
+      },
+      {
+        "id": 12,
+        "claim": "查尔斯三世国王拒绝剥夺哈里和梅根的萨塞克斯公爵和公爵夫人头衔。",
+        "snippet": "King Charles absolutely will not remove Prince Harry and Meghan Markle's Duke and Duchess of Sussex titles, despite the ongoing family feud.",
+        "url": "https://www.marieclaire.com/celebrity/royals/king-charles-will-not-remove-sussex-titles/",
+        "has_conflict": true
+      },
+      {
+        "id": 13,
+        "claim": "哈里王子仍保留王子和公爵头衔，国王无权单方面剥夺，需经议会法案。",
+        "snippet": "He has not been stripped of his title. Charles cannot do that even if he wished. Only the British government can do that and it is highly unlikely that they would bother.",
+        "url": "https://www.quora.com/Why-did-King-Charles-officially-strip-all-of-Prince-Harrys-titles-and-kick-him-out-of-the-royal-family",
+        "has_conflict": true
+      },
+      {
+        "id": 14,
+        "claim": "王室官方网站于2023年8月更新，删除了哈里王子“殿下”（HRH）头衔的引用。",
+        "snippet": "Royal Family Removes Prince Harry's His Royal Highness Title on Website... the page had been updated to remove the two references to the title.",
+        "url": "https://people.com/prince-harry-title-removed-royal-family-website-hrh-his-royal-highness-7571427",
+        "has_conflict": false
+      },
+      {
+        "id": 15,
+        "claim": "哈里王子在2026年4月对澳大利亚进行了为期四天的访问。",
+        "snippet": "In April 2026, Harry and Meghan undertook a four‑day visit to Australia.",
+        "url": "https://en.wikipedia.org/wiki/Prince_Harry,_Duke_of_Sussex",
+        "has_conflict": false
+      },
+      {
+        "id": 16,
+        "claim": "哈里王子在2025年4月和9月分别访问了乌克兰。",
+        "snippet": "Harry visited the Superhumans Center in Lviv, Ukraine, in April 2025... He returned to Ukraine in September 2025",
+        "url": "https://en.wikipedia.org/wiki/Prince_Harry,_Duke_of_Sussex",
+        "has_conflict": false
+      }
+    ],
+    "num_claims": 16
+  },
+  "FQ030": {
+    "question": "When did Yann LeCun join Google?",
+    "claims": [
+      {
+        "id": 1,
+        "claim": "Yann LeCun was born on July 8, 1960, in Soisy-sous-Montmorency, France.",
+        "snippet": "Born Yann André Le Cun 8 July 1960 (age 65) Soisy-sous-Montmorency, France",
+        "url": "https://en.wikipedia.org/wiki/Yann_LeCun",
+        "has_conflict": false
+      },
+      {
+        "id": 2,
+        "claim": "Yann LeCun holds citizenship in both the United States and France.",
+        "snippet": "Citizenship * United States * France",
+        "url": "https://en.wikipedia.org/wiki/Yann_LeCun",
+        "has_conflict": false
+      }
+    ],
+    "num_claims": 2
+  },
+  "FQ031": {
+    "question": "When was the eighth book of the Percy Jackson & the Olympians series released?",
+    "claims": [
+      {
+        "id": 1,
+        "claim": "《波西·杰克逊与奥林匹斯众神》系列丛书的作者是美国作家雷克·莱尔顿。",
+        "snippet": "Percy Jackson & the Olympians is a fantasy novel series by American author Rick Riordan.",
+        "url": "https://en.wikipedia.org/wiki/Percy_Jackson_&_the_Olympians",
+        "has_conflict": false
+      },
+      {
+        "id": 2,
+        "claim": "该系列第一本书《神火之盗》于2005年6月28日发行。",
+        "snippet": "The Lightning Thief is the first book in the series and was released on June 28, 2005.",
+        "url": "https://en.wikipedia.org/wiki/The_Lightning_Thief",
+        "has_conflict": false
+      }
+    ],
+    "num_claims": 2
+  },
+  "FQ032": {
+    "question": "In what month of 2023 was the PlayStation 6 (PS6) released worldwide?",
+    "claims": [
+      {
+        "id": 1,
+        "claim": "索尼计划将PS6推迟到2028年发布，原因是AI导致RAM价格上涨了4倍。",
+        "snippet": "Sony plans to delay the PS6 until 2028 due to AI making RAM 4x more expensive, causing the console to be completely unaffordable",
+        "url": "https://www.facebook.com/AliAarmy/posts/breaking-playstation-6-delayed-sony-plans-to-delay-the-ps6-until-2028-due-to-ai-/1430730175078764/",
+        "has_conflict": true
+      }
+    ],
+    "num_claims": 1
+  },
+  "FQ033": {
+    "question": "When did the population of United States reach 8 billion?",
+    "claims": [
+      {
+        "id": 1,
+        "claim": "2020年美国人口普查结果为331,449,281人",
+        "snippet": "2020 | 331,449,281 | 7.35%",
+        "url": "https://en.wikipedia.org/wiki/Demographic_history_of_the_United_States",
+        "has_conflict": true
+      },
+      {
+        "id": 2,
+        "claim": "2020年7月1日美国人口估计为3.3158亿人",
+        "snippet": "| Jul 1, 2020 | 331.58 million |",
+        "url": "https://en.wikipedia.org/wiki/Demographic_history_of_the_United_States",
+        "has_conflict": true
+      }
+    ],
+    "num_claims": 2
+  },
+  "FQ034": {
+    "question": "What was the first year in which Harry Maguire won the Ballon d'Or?",
+    "claims": [
+      {
+        "id": 1,
+        "claim": "Maguire在2012年为英格兰U21国家队出场一次",
+        "snippet": "Maguire played one match for the England national under-21 team in 2012.",
+        "url": "https://en.wikipedia.org/wiki/Harry_Maguire",
+        "has_conflict": false
+      },
+      {
+        "id": 2,
+        "claim": "Maguire在2017年完成成年国家队首秀",
+        "snippet": "He made his senior debut in 2017",
+        "url": "https://en.wikipedia.org/wiki/Harry_Maguire",
+        "has_conflict": false
+      }
+    ],
+    "num_claims": 2
+  },
+  "FQ035": {
+    "question": "In what year did Papa John's go out of business?",
+    "claims": [
+      {
+        "id": 1,
+        "claim": "Papa John's 餐厅成立于 1984 年。",
+        "snippet": "The Papa John's restaurant was founded in 1984",
+        "url": "https://en.wikipedia.org/wiki/Papa_John%27s",
+        "has_conflict": false
+      },
+      {
+        "id": 2,
+        "claim": "创始人 John Schnatter 在他父亲的小酒馆 Mick's 后面的扫帚间里安装了一个烤箱。",
+        "snippet": "John Schnatter installed an oven inside a broom closet in the back of his father's tavern, Mick's",
+        "url": "https://en.wikipedia.org/wiki/Papa_John%27s",
+        "has_conflict": false
+      }
+    ],
+    "num_claims": 2
+  },
+  "FQ036": {
+    "question": "What year did the film Metropolis enter the public domain in Germany?",
+    "claims": [
+      {
+        "id": 1,
+        "claim": "电影《大都会》是在魏玛时期的德国制作的。",
+        "snippet": "Made in Germany during the Weimar period, Metropolis is set in",
+        "url": "https://en.wikipedia.org/wiki/Metropolis_(1927_film)",
+        "has_conflict": false
+      },
+      {
+        "id": 2,
+        "claim": "根据现行美国版权法，《大都会》于2023年1月1日进入公有领域。",
+        "snippet": "Under current U.S. copyright law, Metropolis entered the public domain on 1 January 2023",
+        "url": "https://en.wikipedia.org/wiki/Metropolis_(1927_film)",
+        "has_conflict": true
+      },
+      {
+        "id": 3,
+        "claim": "《大都会》在德国和欧盟其他地区的版权将持续到2046年底，即弗里茨·朗去世70年后。",
+        "snippet": "The film will remain under copyright in Germany and the rest of the European Union until the end of 2046, 70 years after Fritz Lang's death.",
+        "url": "https://www.facebook.com/horrorweekly/posts/metropolis-enters-the-public-domain-january-1st-2023/1799841497081354/",
+        "has_conflict": true
+      }
+    ],
+    "num_claims": 3
+  },
+  "FQ037": {
+    "question": "How many executive orders has Hillary Clinton enacted?",
+    "claims": [
+      {
+        "id": 1,
+        "claim": "除了编号和未编号的行政命令外，总统命令一直有多种形式。",
+        "snippet": "There have always been many forms of Presidential orders in addition to the numbered Executive Orders and Executive Orders included in the published \"unnumbered ...",
+        "url": "https://www.presidency.ucsb.edu/statistics/data/executive-orders",
+        "has_conflict": false
+      },
+      {
+        "id": 2,
+        "claim": "克林顿签署了364份行政命令。",
+        "snippet": "Clinton. Number of executive orders. 364.",
+        "url": "https://usafacts.org/articles/how-many-executive-orders-has-each-president-signed/",
+        "has_conflict": false
+      },
+      {
+        "id": 3,
+        "claim": "自2017年1月20日（特朗普政府开始）起，行政命令和处置表仅在 FederalRegister.gov 上提供。",
+        "snippet": "Beginning January 20, 2017 (the beginning of the Trump administration), executive orders and disposition tables are available only on www.FederalRegister.gov.",
+        "url": "https://www.archives.gov/federal-register/executive-orders/disposition",
+        "has_conflict": false
+      },
+      {
+        "id": 4,
+        "claim": "克林顿在1993年至2001年间签署了364份行政命令。",
+        "snippet": "Clinton signed 364 Executive orders between 1993 and 2001.",
+        "url": "https://www.federalregister.gov/presidential-documents/executive-orders",
+        "has_conflict": false
+      },
+      {
+        "id": 5,
+        "claim": "希拉里·黛安·罗德姆·克林顿出生于1947年10月26日，是一位美国政治家、律师和外交官。",
+        "snippet": "Hillary Diane Rodham Clinton (née Rodham; born October 26, 1947) is an American politician, lawyer, and diplomat.",
+        "url": "https://en.wikipedia.org/wiki/Hillary_Clinton",
+        "has_conflict": false
+      },
+      {
+        "id": 6,
+        "claim": "希拉里·克林顿曾担任第67任国务卿。",
+        "snippet": "She served as the 67th Secretary of State",
+        "url": "https://en.wikipedia.org/wiki/Hillary_Clinton",
+        "has_conflict": false
+      },
+      {
+        "id": 7,
+        "claim": "克林顿在担任总统的第一周签署了两份行政命令，到第100天时签署了13份。",
+        "snippet": "During his first week as president, Clinton signed two executive orders and 13 orders by his 100th day.",
+        "url": "https://www.wbaltv.com/article/executive-orders-presidential-history-comparison-get-the-facts/63424275",
+        "has_conflict": false
+      },
+      {
+        "id": 8,
+        "claim": "希拉里·克林顿出生于伊利诺伊州芝加哥，并在2009-2013年期间担任美国国务卿。",
+        "snippet": "Hillary Diane Rodham Clinton (b. October 26, 1947, in Chicago, Illinois) served as the Secretary of State of the United States of America from 2009-2013.",
+        "url": "https://ballotpedia.org/Hillary_Clinton",
+        "has_conflict": false
+      },
+      {
+        "id": 9,
+        "claim": "特朗普政府发布了几项针对跨性别群体的行政命令。",
+        "snippet": "The Trump Administration has issued several Executive Orders targeting the transgender community.",
+        "url": "https://copolicy.org/resources/presidential-executive-orders/",
+        "has_conflict": false
+      }
+    ],
+    "num_claims": 9
+  },
+  "FQ038": {
+    "question": "Who was the first female president of the United States?",
+    "claims": [
+      {
+        "id": 1,
+        "claim": "Edith Bolling Wilson是伍德罗·威尔逊的第二任妻子",
+        "snippet": "Edith Bolling Wilson, Woodrow Wilson's second wife",
+        "url": "https://millercenter.org/president/wilson/essays/wilson-edith-1913-firstlady",
+        "has_conflict": false
+      },
+      {
+        "id": 2,
+        "claim": "Edith Bolling Wilson有时被描述为美国第一位女总统",
+        "snippet": "Edith Bolling Wilson, Woodrow Wilson's second wife, is sometimes described as America's first woman President",
+        "url": "https://millercenter.org/president/wilson/essays/wilson-edith-1913-firstlady",
+        "has_conflict": false
+      },
+      {
+        "id": 3,
+        "claim": "第一位女总统出生于1872年，名字是Edith Bolling Galt Wilson",
+        "snippet": "The first woman President was born in 1872, and her name was Edith Bolling Galt Wilson.",
+        "url": "https://visit.archives.gov/whats-on/events/76486",
+        "has_conflict": true
+      },
+      {
+        "id": 4,
+        "claim": "Edith Bolling Galt Wilson出身于阿巴拉契亚地区的贫困家庭",
+        "snippet": "She hightailed her way out of Appalachian poverty",
+        "url": "https://visit.archives.gov/whats-on/events/76486",
+        "has_conflict": false
+      },
+      {
+        "id": 5,
+        "claim": "美国尚未选举出其第一位女总统",
+        "snippet": "this nation has yet to elect its first woman president",
+        "url": "https://smithsonianassociates.org/ticketing/programs/edith-wilson",
+        "has_conflict": true
+      },
+      {
+        "id": 6,
+        "claim": "当丈夫无法履行职责时，Edith Bolling Galt Wilson实际上充当了总统的角色",
+        "snippet": "Edith Bolling Galt Wilson effectively acted as one when her husband",
+        "url": "https://smithsonianassociates.org/ticketing/programs/edith-wilson",
+        "has_conflict": false
+      },
+      {
+        "id": 7,
+        "claim": "1919年10月2日，当时的总统伍德罗·威尔逊中风",
+        "snippet": "On October 2, 1919, then President Woodrow Wilson suffered a stroke",
+        "url": "https://www.npr.org/2023/03/14/1163492487/the-sunday-story-americas-first-female-president",
+        "has_conflict": false
+      },
+      {
+        "id": 8,
+        "claim": "Edith Wilson于1915年成为第一夫人",
+        "snippet": "Edith Wilson became First Lady in 1915",
+        "url": "https://www.history.co.uk/articles/edith-wilson-america",
+        "has_conflict": false
+      }
+    ],
+    "num_claims": 8
+  },
+  "FQ039": {
+    "question": "In what year did Argentina win their fifth FIFA World Cup title?",
+    "claims": [
+      {
+        "id": 1,
+        "claim": "阿根廷曾三次获得世界杯冠军，分别是1978年、1986年和2022年。",
+        "snippet": "Argentina is one of the most successful teams in the tournament's history, having won three World Cups: in 1978, 1986, and 2022.",
+        "url": "https://en.wikipedia.org/wiki/Argentina_at_the_FIFA_World_Cup",
+        "has_conflict": true
+      },
+      {
+        "id": 2,
+        "claim": "阿根廷是1986年世界杯冠军。",
+        "snippet": "1986. Argentina Flag · Argentina",
+        "url": "https://www.foxsports.com/soccer/fifa-world-cup/history",
+        "has_conflict": false
+      },
+      {
+        "id": 3,
+        "claim": "意大利是1982年世界杯冠军。",
+        "snippet": "1982. Italy Flag · Italy",
+        "url": "https://www.foxsports.com/soccer/fifa-world-cup/history",
+        "has_conflict": false
+      },
+      {
+        "id": 4,
+        "claim": "阿根廷是1978年世界杯冠军及东道主。",
+        "snippet": "1978. Argentina Flag · Argentina. Host Country",
+        "url": "https://www.foxsports.com/soccer/fifa-world-cup/history",
+        "has_conflict": false
+      },
+      {
+        "id": 5,
+        "claim": "西德是1974年世界杯冠军及东道主。",
+        "snippet": "1974. West Germany Flag · West Germany. Host Country.",
+        "url": "https://www.foxsports.com/soccer/fifa-world-cup/history",
+        "has_conflict": false
+      },
+      {
+        "id": 6,
+        "claim": "1978年世界杯决赛中，阿根廷在加时赛后以3-1击败荷兰队夺冠。",
+        "snippet": "The Cup was won by the host nation, Argentina, who defeated the Netherlands 3–1 in the final, after extra time.",
+        "url": "https://en.wikipedia.org/wiki/1978_FIFA_World_Cup",
+        "has_conflict": false
+      },
+      {
+        "id": 7,
+        "claim": "1978年世界杯决赛在河床队的主场举行。",
+        "snippet": "The final was held at River Plate's home stadium",
+        "url": "https://en.wikipedia.org/wiki/1978_FIFA_World_Cup",
+        "has_conflict": false
+      },
+      {
+        "id": 8,
+        "claim": "阿根廷在1978年首次获得世界杯冠军。",
+        "snippet": "On this day in 1978, Argentina won the #FIFAWorldCup for the first time!",
+        "url": "https://www.facebook.com/fifaworldcup/posts/-on-this-day-in-1978-argentina-won-the-fifaworldcup-for-the-first-time/1300267141463236/",
+        "has_conflict": false
+      },
+      {
+        "id": 9,
+        "claim": "巴西最后一次获得世界杯冠军是在2002年。",
+        "snippet": "Brazil's last World Cup trophy came in 2002.",
+        "url": "https://www.olympics.com/en/news/fifa-world-cup-winners-list-champions-record",
+        "has_conflict": false
+      },
+      {
+        "id": 10,
+        "claim": "在迭戈·马拉多纳的带领下，阿根廷于1986年赢得了第二个冠军头衔。",
+        "snippet": "Argentina, powered by the brilliance of the late Diego Maradona, won their second title in 1986",
+        "url": "https://www.olympics.com/en/news/fifa-world-cup-winners-list-champions-record",
+        "has_conflict": false
+      },
+      {
+        "id": 11,
+        "claim": "阿根廷曾三次获得国际足联世界杯冠军。",
+        "snippet": "Argentina have won the FIFA World Cup three times in their",
+        "url": "https://www.instagram.com/reel/DRKs9I9Drws/?hl=en",
+        "has_conflict": true
+      },
+      {
+        "id": 12,
+        "claim": "在2014年世界杯小组赛中，阿根廷以3-2击败尼日利亚。",
+        "snippet": "Argentina beat Nigeria 3-2 in a thrilling 2014 World Cup group stage clash.",
+        "url": "https://www.instagram.com/reel/DRKs9I9Drws/?hl=en",
+        "has_conflict": false
+      },
+      {
+        "id": 13,
+        "claim": "梅西和艾哈迈德·穆萨在2014年那场比赛中都梅开二度。",
+        "snippet": "Lionel Messi and Ahmed Musa both scored twice for their",
+        "url": "https://www.instagram.com/reel/DRKs9I9Drws/?hl=en",
+        "has_conflict": false
+      },
+      {
+        "id": 14,
+        "claim": "阿根廷最后一次赢得世界杯是在1986年，当时由马拉多纳领衔。",
+        "snippet": "The last time Argentina, then led by Diego Maradona, hoisted the golden trophy was 1986",
+        "url": "https://www.espn.com/sports/soccer/story/_/id/35273043/argentina-messi-win-world-cup-last-maradona",
+        "has_conflict": true
+      }
+    ],
+    "num_claims": 14
+  },
+  "FQ040": {
+    "question": "Who is the 9th American to win the Miss World crown?",
+    "claims": [
+      {
+        "id": 1,
+        "claim": "世界小姐选美大赛的首届比赛于1951年举行。",
+        "snippet": "the competition's inaugural edition in 1951 to present.",
+        "url": "https://en.wikipedia.org/wiki/List_of_Miss_World_titleholders",
+        "has_conflict": false
+      },
+      {
+        "id": 2,
+        "claim": "委内瑞拉的马里查·萨亚莱罗由南非的玛格丽特·加德纳加冕。",
+        "snippet": "Maritza Sayalero of Venezuela was crowned by Margaret Gardiner of South Africa.",
+        "url": "https://www.facebook.com",
+        "has_conflict": false
+      }
+    ],
+    "num_claims": 2
+  },
+  "FQ041": {
+    "question": "When did Lionel Messi win his second FIFA World Cup?",
+    "claims": [
+      {
+        "id": 1,
+        "claim": "梅西赢得了2015年国际足联俱乐部世界杯决赛",
+        "snippet": "Messi capped off the year by winning the 2015 FIFA Club World Cup final over ...",
+        "url": "https://en.wikipedia.org/wiki/Lionel_Messi",
+        "has_conflict": false
+      },
+      {
+        "id": 2,
+        "claim": "梅西职业生涯仅赢得过一次国际足联世界杯冠军（2022年）",
+        "snippet": "Messi has only won one FIFA World Cup title in his career, lifting the trophy in 2022 with Argentina.",
+        "url": "https://www.sportingnews.com/us/soccer/news/how-many-world-cups-has-lionel-messi-won-history/d16a98d9a3e50c6be3d01164",
+        "has_conflict": false
+      },
+      {
+        "id": 3,
+        "claim": "梅西于2006年6月16日首次参加国际足联世界杯",
+        "snippet": "On June 16, 2006 in Germany for Argentina's second group stage match against Serbia & Montenegro, a young Lionel Messi made his FIFA World Cup™ ...",
+        "url": "https://www.worldsoccershop.com/guide/lionel-messi-history-and-stats-at-the-world-cup",
+        "has_conflict": false
+      },
+      {
+        "id": 4,
+        "claim": "梅西在2022年国际足联世界杯上拥有最多的射门次数（32次）",
+        "snippet": "Lionel Messi had the most shots of any player at the 2022 FIFA WorldCup (32).",
+        "url": "https://www.threads.com/@tsn_official/post/DYul_oqlse8/the-history-of-lionel-messi-at-the-fifa-world-cup-how-will-messi-and-argentina/",
+        "has_conflict": false
+      },
+      {
+        "id": 5,
+        "claim": "梅西赢得了国际足联U-20世界杯、男子奥林匹克足球锦标赛、欧美杯（Finalissima）和两次美洲杯",
+        "snippet": "Messi won the FIFA U-20 World Cup™, Men's Olympic Football Tournament, Finalissima and two Copas America.",
+        "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/lionel-messi-argentina-quotes-records",
+        "has_conflict": false
+      },
+      {
+        "id": 6,
+        "claim": "梅西和阿根廷队在2022年卡塔尔世界杯决赛中击败法国队夺冠",
+        "snippet": "Lionel Messi and Argentina won the previous World Cup in 2022 in Qatar over France.",
+        "url": "https://athlonsports.com/soccer/how-many-world-cups-has-lionel-messi-won",
+        "has_conflict": false
+      },
+      {
+        "id": 7,
+        "claim": "2014年梅西带领阿根廷队进入世界杯决赛，但最终失利",
+        "snippet": "In 2014 Messi led Argentina to the World Cup final, which Argentina lost",
+        "url": "https://www.britannica.com/biography/Lionel-Messi",
+        "has_conflict": false
+      },
+      {
+        "id": 8,
+        "claim": "梅西在2014年世界杯上获得了金球奖",
+        "snippet": "Messi won the Golden Ball award as the tournament's best player.",
+        "url": "https://www.britannica.com/biography/Lionel-Messi",
+        "has_conflict": false
+      },
+      {
+        "id": 9,
+        "claim": "梅西带领阿根廷队获得了他们的第三个世界杯冠军",
+        "snippet": "Lionel Messi added to Argentina's glory by leading them to their third ...",
+        "url": "https://www.olympics.com/en/news/fifa-world-cup-winners-list-champions-record",
+        "has_conflict": false
+      }
+    ],
+    "num_claims": 9
+  },
+  "FQ042": {
+    "question": "Where will the FIFA World Cup be hosted next year?",
+    "claims": [
+      {
+        "id": 1,
+        "claim": "2026年国际足联世界杯有三个东道国：加拿大、墨西哥和美国。",
+        "snippet": "The FIFA World Cup 2026™ has three host countries: Canada, Mexico and the United States.",
+        "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/host-cities",
+        "has_conflict": false
+      },
+      {
+        "id": 2,
+        "claim": "2026年世界杯将由16个城市联合举办，其中美国11个，墨西哥3个，加拿大2个。",
+        "snippet": "It will be jointly hosted by sixteen cities—eleven in the United States, three in Mexico, and two in Canada.",
+        "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup",
+        "has_conflict": false
+      },
+      {
+        "id": 3,
+        "claim": "2026年世界杯将是第一届有48支球队参加的世界杯。",
+        "snippet": "The 2026 edition of the World Cup will be the first with 48 teams",
+        "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/fifa-world-cup-2026-hosts-cities-dates-usa-mexico-canada",
+        "has_conflict": false
+      },
+      {
+        "id": 4,
+        "claim": "锦标赛的举办权将由加拿大、墨西哥和美国共同分担。",
+        "snippet": "Hosting of the tournament will be shared between Canada, Mexico and the USA.",
+        "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/fifa-world-cup-2026-hosts-cities-dates-usa-mexico-canada",
+        "has_conflict": false
+      },
+      {
+        "id": 5,
+        "claim": "2026年世界杯场馆分布在美国、墨西哥和加拿大的16个主办城市。",
+        "snippet": "The 2026 World Cup venues are spread across 16 host cities in the United States, Mexico, and Canada.",
+        "url": "https://www.roadtrips.com/world-cup/2026-world-cup-packages/venues/",
+        "has_conflict": false
+      },
+      {
+        "id": 6,
+        "claim": "2026年国际足联世界杯将由美国、加拿大和墨西哥联合举办。",
+        "snippet": "The FIFA World Cup 2026™ will be jointly hosted by the United States, Canada, and Mexico.",
+        "url": "https://www.state.gov/fifa-world-cup-26",
+        "has_conflict": false
+      },
+      {
+        "id": 7,
+        "claim": "美国11个城市、墨西哥3个城市和加拿大2个城市将在2026年举办国际足联世界杯比赛。",
+        "snippet": "11 Cities in the United States, Three in Mexico and Two in Canada Will Host FIFA World Cup Matches in 2026.",
+        "url": "https://ussoccer.com/stories/0001/01/fifa-announces-16-cities-to-host-2026-fifa-world-cup-across-the-usa-mexico-and-canada-app",
+        "has_conflict": false
+      },
+      {
+        "id": 8,
+        "claim": "2026年世界杯的主办国是加拿大、美国和墨西哥（北美洲）。",
+        "snippet": "2026 · Canada · United States · Mexico, North America",
+        "url": "https://en.wikipedia.org/wiki/List_of_FIFA_World_Cup_hosts",
+        "has_conflict": false
+      },
+      {
+        "id": 9,
+        "claim": "洛杉矶将在2026年世界杯期间举办8场比赛。",
+        "snippet": "With eight matches,",
+        "url": "https://losangelesfwc26.com/",
+        "has_conflict": false
+      },
+      {
+        "id": 10,
+        "claim": "国际足联球迷节将在博览会公园的洛杉矶纪念体育场举行。",
+        "snippet": "the FIFA Fan Festival™ at the LA Memorial Coliseum at Exposition Park,",
+        "url": "https://losangelesfwc26.com/",
+        "has_conflict": false
+      }
+    ],
+    "num_claims": 10
+  },
+  "FQ043": {
+    "question": "By how many seats do Democrats currently control the United States Senate?",
+    "claims": [
+      {
+        "id": 1,
+        "claim": "美国参议院共有100个席位。",
+        "snippet": "Total Seats: 100",
+        "url": "https://www.senate.gov/history/partydiv.htm",
+        "has_conflict": false
+      },
+      {
+        "id": 2,
+        "claim": "共和党在参议院拥有52个席位，民主党拥有48个席位。",
+        "snippet": "Majority Party: Republicans (52 seats). Minority Party: Democrats (48 seats).",
+        "url": "https://www.senate.gov/history/partydiv.htm",
+        "has_conflict": true
+      },
+      {
+        "id": 3,
+        "claim": "共和党在参议院拥有53个席位，民主党拥有47个席位（包括两名与民主党党团会议结盟的独立人士）。",
+        "snippet": "Republicans have the majority in the Senate with 53 seats to the Democrats' 47 seats, including two independents who caucus with Democrats.",
+        "url": "https://about.bgov.com/insights/congress/balance-of-power-in-the-u-s-house-and-senate/",
+        "has_conflict": true
+      },
+      {
+        "id": 4,
+        "claim": "自1920年以来，民主党控制参议院的时间约为58年。",
+        "snippet": "since 1920, Democrats have controlled the Senate for about 58 years.",
+        "url": "https://www.senate.gov/history/partydiv.htm",
+        "has_conflict": false
+      }
+    ],
+    "num_claims": 4
+  },
+  "FQ044": {
+    "question": "Who is the X Corp.'s CEO?",
+    "claims": [
+      {
+        "id": 1,
+        "claim": "Linda Yaccarino 出生于 1963 年 12 月 21 日。",
+        "snippet": "Linda Yaccarino (born December 21, 1963)",
+        "url": "https://en.wikipedia.org/wiki/Linda_Yaccarino",
+        "has_conflict": false
+      },
+      {
+        "id": 2,
+        "claim": "Linda Yaccarino 是一位美国商业高管。",
+        "snippet": "is an American business executive.",
+        "url": "https://en.wikipedia.org/wiki/Linda_Yaccarino",
+        "has_conflict": false
+      },
+      {
+        "id": 3,
+        "claim": "Linda Yaccarino 在 2023 年至 2025 年期间担任 X Corp 的首席执行官（CEO）。",
+        "snippet": "She served as chief executive officer (CEO) of X Corp from 2023 to 2025",
+        "url": "https://en.wikipedia.org/wiki/Linda_Yaccarino",
+        "has_conflict": true
+      },
+      {
+        "id": 4,
+        "claim": "Linda Yaccarino 是 eMed Population Health 的首席执行官。",
+        "snippet": "CEO of eMed Population Health",
+        "url": "https://x.com/lindayaX",
+        "has_conflict": false
+      },
+      {
+        "id": 5,
+        "claim": "Linda Yaccarino 是宾夕法尼亚州立大学（Penn State）的校友。",
+        "snippet": "@penn_state alum",
+        "url": "https://x.com/lindayaX",
+        "has_conflict": false
+      },
+      {
+        "id": 6,
+        "claim": "Linda Yaccarino 是 X 的前任首席执行官。",
+        "snippet": "former CEO of X",
+        "url": "https://x.com/lindayaX",
+        "has_conflict": true
+      },
+      {
+        "id": 7,
+        "claim": "Linda Yaccarino 是母亲、美食家和时尚爱好者。",
+        "snippet": "Mom, foodie, fashion enthusiast",
+        "url": "https://x.com/lindayaX",
+        "has_conflict": false
+      },
+      {
+        "id": 8,
+        "claim": "2023 年 5 月 12 日，Linda Yaccarino 被任命为 X Corp 的新任首席执行官。",
+        "snippet": "on May 12, 2023, he named Linda Yaccarino as the new CEO",
+        "url": "https://en.wikipedia.org/wiki/X_Corp.",
+        "has_conflict": false
+      },
+      {
+        "id": 9,
+        "claim": "Linda Yaccarino 在 X Corp 将主要负责业务运营。",
+        "snippet": "will focus primarily on business operations",
+        "url": "https://en.wikipedia.org/wiki/X_Corp.",
+        "has_conflict": false
+      },
+      {
+        "id": 10,
+        "claim": "Linda Yaccarino 宣布辞去 X 首席执行官一职。",
+        "snippet": "Linda Yaccarino announced she is stepping down from her role as CEO of X",
+        "url": "https://www.politico.com/news/2025/07/09/linda-yaccarino-x-ceo-resign-00443742",
+        "has_conflict": true
+      },
+      {
+        "id": 11,
+        "claim": "Linda Yaccarino 是 X Corp 的首席执行官。",
+        "snippet": "Linda Yaccarino - CEO",
+        "url": "https://exa.ai/websets/directory/x-executives",
+        "has_conflict": true
+      },
+      {
+        "id": 12,
+        "claim": "Mahmoud Reza Banki 是 X Corp 的首席财务官（CFO）。",
+        "snippet": "Mahmoud Reza Banki - CFO",
+        "url": "https://exa.ai/websets/directory/x-executives",
+        "has_conflict": false
+      },
+      {
+        "id": 13,
+        "claim": "Angela Zepeda 是 X Corp 的全球营销负责人。",
+        "snippet": "Angela Zepeda - Global Head of Marketing",
+        "url": "https://exa.ai/websets/directory/x-executives",
+        "has_conflict": false
+      },
+      {
+        "id": 14,
+        "claim": "John Nitti 是 X Corp 的全球广告创新负责人。",
+        "snippet": "John Nitti - Global Head of Advertising Innovation.",
+        "url": "https://exa.ai/websets/directory/x-executives",
+        "has_conflict": false
+      },
+      {
+        "id": 15,
+        "claim": "Linda Yaccarino 在任职两年后决定辞职。",
+        "snippet": "After two incredible years, I've decided to step down",
+        "url": "https://finance.yahoo.com/news/x-ceo-linda-yaccarino-steps-down-after-two-years-at-the-job-153936692.html",
+        "has_conflict": false
+      },
+      {
+        "id": 16,
+        "claim": "Linda Yaccarino 于 7 月 9 日卸任 X 首席执行官。",
+        "snippet": "Linda Yaccarino's departure as CEO of X on July 9",
+        "url": "https://www.fastcompany.com/91400921/x-ceo-linda-yaccarino-replacement-betting-markets",
+        "has_conflict": false
+      }
+    ],
+    "num_claims": 16
+  },
+  "FQ045": {
+    "question": "How long has Elon Musk been X Corp.'s CEO?",
+    "claims": [
+      {
+        "id": 1,
+        "claim": "Elon Musk joined Tesla as an early investor in 2004 and became its CEO and product architect in 2008.",
+        "snippet": "Musk joined the automaker Tesla as an early investor in 2004 and became its CEO and product architect in 2008",
+        "url": "https://en.wikipedia.org/wiki/Elon_Musk",
+        "has_conflict": false
+      },
+      {
+        "id": 2,
+        "claim": "Linda Yaccarino is stepping down as CEO of X.",
+        "snippet": "Linda Yaccarino is stepping down as CEO of X after two years leading Elon Musk’s social media company.",
+        "url": "https://www.cnn.com/2025/07/09/tech/linda-yaccarino-steps-down-x-ceo",
+        "has_conflict": false
+      },
+      {
+        "id": 3,
+        "claim": "X Corp has been a wholly owned subsidiary of xAI since March 28, 2025.",
+        "snippet": "it is a wholly owned subsidiary of xAI since March 28, 2025",
+        "url": "https://en.wikipedia.org/wiki/X_Corp.",
+        "has_conflict": false
+      },
+      {
+        "id": 4,
+        "claim": "Linda Yaccarino began her role as CEO of X in May 2023.",
+        "snippet": "Yaccarino began as CEO of X in May of 2023",
+        "url": "https://www.entrepreneur.com/business-news/linda-yaccarino-steps-down-as-ceo-of-elon-musks-x/494421",
+        "has_conflict": true
+      },
+      {
+        "id": 5,
+        "claim": "Linda Yaccarino took over as CEO of X in June 2023.",
+        "snippet": "Yaccarino, a former NBCUniversal marketing executive, [took over](https://www.cnn.com/2023/06/05/tech/linda-yaccarino-twitter-ceo-elon-musk) from Musk as CEO of X — at the time, it was called Twitter — in June of 2023",
+        "url": "https://www.cnn.com/2025/07/09/tech/linda-yaccarino-steps-down-x-ceo",
+        "has_conflict": true
+      },
+      {
+        "id": 6,
+        "claim": "Linda Yaccarino was born on December 21, 1963.",
+        "snippet": "Linda Yaccarino (born December 21, 1963)",
+        "url": "https://en.wikipedia.org/wiki/Linda_Yaccarino",
+        "has_conflict": false
+      },
+      {
+        "id": 7,
+        "claim": "Elon Musk bought Twitter for $44 billion.",
+        "snippet": "Musk bought the company, then known as Twitter, for $44 billion.",
+        "url": "https://www.entrepreneur.com/business-news/linda-yaccarino-steps-down-as-ceo-of-elon-musks-x/494421",
+        "has_conflict": false
+      }
+    ],
+    "num_claims": 7
+  },
+  "FQ046": {
+    "question": "How many years has Edward Snowden been living in Cuba?",
+    "claims": [
+      {
+        "id": 1,
+        "claim": "爱德华·斯诺登的全名是爱德华·约瑟夫·斯诺登。",
+        "snippet": "Edward Joseph Snowden (born June 21, 1983) is a former United States National Security Agency (NSA) intelligence contractor",
+        "url": "https://en.wikipedia.org/wiki/Edward_Snowden",
+        "has_conflict": false
+      },
+      {
+        "id": 2,
+        "claim": "爱德华·斯诺登出生于1983年6月21日。",
+        "snippet": "Edward Joseph Snowden was born on June 21, 1983",
+        "url": "https://en.wikipedia.org/wiki/Edward_Snowden",
+        "has_conflict": false
+      },
+      {
+        "id": 3,
+        "claim": "爱德华·斯诺登出生于美国北卡罗来纳州伊丽莎白市。",
+        "snippet": "Born in 1983 in Elizabeth City, North Carolina",
+        "url": "https://en.wikipedia.org/wiki/Edward_Snowden",
+        "has_conflict": false
+      },
+      {
+        "id": 4,
+        "claim": "斯诺登于2004年5月7日加入美国陆军，并成为特种部队候选人。",
+        "snippet": "Snowden enlisted in the United States Army on May 7, 2004, and became a Special Forces candidate",
+        "url": "https://en.wikipedia.org/wiki/Edward_Snowden",
+        "has_conflict": false
+      },
+      {
+        "id": 5,
+        "claim": "斯诺登因腿部受伤于2004年9月28日从陆军退伍。",
+        "snippet": "He did not complete the training due to a leg injury and was given an administrative discharge on September 28, 2004.",
+        "url": "https://en.wikipedia.org/wiki/Edward_Snowden",
+        "has_conflict": false
+      },
+      {
+        "id": 6,
+        "claim": "斯诺登于2006年开始为中央情报局（CIA）工作。",
+        "snippet": "In 2006 he started working for the Central Intelligence Agency (CIA)",
+        "url": "https://en.wikipedia.org/wiki/Edward_Snowden",
+        "has_conflict": false
+      },
+      {
+        "id": 7,
+        "claim": "斯诺登于2009年开始在戴尔（Dell）公司担任承包商。",
+        "snippet": "In 2009, Snowden began work as a contractor for Dell",
+        "url": "https://en.wikipedia.org/wiki/Edward_Snowden",
+        "has_conflict": true
+      },
+      {
+        "id": 8,
+        "claim": "斯诺登于2010年开始在东京为戴尔公司工作。",
+        "snippet": "In 2010, he took a job in Tokyo, Japan, working for Dell",
+        "url": "https://www.ebsco.com/research-starters/biography/edward-snowden",
+        "has_conflict": true
+      },
+      {
+        "id": 9,
+        "claim": "斯诺登于2013年在博思艾伦汉密尔顿（Booz Allen Hamilton）工作了两个月。",
+        "snippet": "In 2013, he worked for two months at Booz Allen Hamilton",
+        "url": "https://en.wikipedia.org/wiki/Edward_Snowden",
+        "has_conflict": false
+      },
+      {
+        "id": 10,
+        "claim": "斯诺登于2013年5月飞往香港。",
+        "snippet": "In May 2013, Snowden flew to Hong Kong",
+        "url": "https://en.wikipedia.org/wiki/Edward_Snowden",
+        "has_conflict": false
+      },
+      {
+        "id": 11,
+        "claim": "《卫报》于2013年6月5日开始发布基于斯诺登泄露文件的报道。",
+        "snippet": "beginning with The Guardian on June 5.",
+        "url": "https://en.wikipedia.org/wiki/Edward_Snowden",
+        "has_conflict": true
+      },
+      {
+        "id": 12,
+        "claim": "《卫报》于2013年6月6日发布了斯诺登下载的第一份文件。",
+        "snippet": "The London Guardian published the first document—one of the hundreds of thousands Snowden had downloaded—a few days later, on June 6, 2013.",
+        "url": "https://www.ebsco.com/research-starters/biography/edward-snowden",
+        "has_conflict": true
+      },
+      {
+        "id": 13,
+        "claim": "斯诺登于2013年6月9日公开了自己的身份。",
+        "snippet": "his identity was made public by The Guardian at his request on June 9, 2013.",
+        "url": "https://en.wikipedia.org/wiki/Edward_Snowden",
+        "has_conflict": false
+      },
+      {
+        "id": 14,
+        "claim": "美国司法部于2013年6月14日对斯诺登提起刑事诉讼，指控其犯有三项重罪。",
+        "snippet": "On June 14, 2013, United States federal prosecutors filed a criminal complaint against Snowden, charging him with three felonies",
+        "url": "https://en.wikipedia.org/wiki/Edward_Snowden",
+        "has_conflict": false
+      },
+      {
+        "id": 15,
+        "claim": "美国国务院于2013年6月21日吊销了斯诺登的护照。",
+        "snippet": "On June 21, 2013... the Department of State revoked his passport.",
+        "url": "https://en.wikipedia.org/wiki/Edward_Snowden",
+        "has_conflict": true
+      },
+      {
+        "id": 16,
+        "claim": "斯诺登的护照直到2013年6月22日星期六才被国务院吊销。",
+        "snippet": "his passport had not been revoked by the State Department until Saturday.",
+        "url": "https://abcnews.com/Blotter/nsa-leaker-edward-snowden-fails-board-flight-moscow/story?id=19470645",
+        "has_conflict": true
+      },
+      {
+        "id": 17,
+        "claim": "斯诺登于2013年6月23日抵达莫斯科谢列梅捷沃国际机场。",
+        "snippet": "On June 23, 2013, Snowden landed at Moscow's Sheremetyevo Airport",
+        "url": "https://en.wikipedia.org/wiki/Edward_Snowden",
+        "has_conflict": false
+      },
+      {
+        "id": 18,
+        "claim": "斯诺登在莫斯科机场的中转区停留了一个月。",
+        "snippet": "He stayed in Sheremetyevo International Airport in Moscow for a month before being granted asylum.",
+        "url": "https://en.wikipedia.org/wiki/Edward_Snowden",
+        "has_conflict": false
+      },
+      {
+        "id": 19,
+        "claim": "斯诺登于2017年与林赛·米尔斯结婚。",
+        "snippet": "In 2017, he married Lindsay Mills.",
+        "url": "https://en.wikipedia.org/wiki/Edward_Snowden",
+        "has_conflict": false
+      },
+      {
+        "id": 20,
+        "claim": "斯诺登的回忆录《永久记录》于2019年9月17日出版。",
+        "snippet": "On September 17, 2019, his memoir Permanent Record was published.",
+        "url": "https://en.wikipedia.org/wiki/Edward_Snowden",
+        "has_conflict": false
+      },
+      {
+        "id": 21,
+        "claim": "斯诺登于2020年10月获得俄罗斯永久居留权。",
+        "snippet": "In October 2020, Snowden was granted permanent residency in Russia.",
+        "url": "https://en.wikipedia.org/wiki/Edward_Snowden",
+        "has_conflict": false
+      },
+      {
+        "id": 22,
+        "claim": "斯诺登于2022年9月获得俄罗斯公民身份。",
+        "snippet": "In September 2022, President Vladimir Putin granted Snowden Russian citizenship.",
+        "url": "https://en.wikipedia.org/wiki/Edward_Snowden",
+        "has_conflict": false
+      }
+    ],
+    "num_claims": 22
+  },
+  "FQ047": {
+    "question": "How long has Kenya used a two-party system of government?",
+    "claims": [
+      {
+        "id": 1,
+        "claim": "肯尼亚是一个总统制共和国，总统既是国家元首又是政府首脑。",
+        "snippet": "The **politics of [Kenya](https://en.wikipedia.org/wiki/Kenya \"Kenya\")** take place in a framework of a [presidential](https://en.wikipedia.org/wiki/Presidential_system \"Presidential system\") republic, whereby the [president](https://en.wikipedia.org/wiki/President_of_Kenya \"President of Kenya\") is both [head of state](https://en.wikipedia.org/wiki/Head_of_state \"Head of state\") and [head of government](https://en.wikipedia.org/wiki/Head_of_government \"Head of government\").",
+        "url": "https://en.wikipedia.org/wiki/Politics_of_Kenya",
+        "has_conflict": false
+      }
+    ],
+    "num_claims": 1
+  },
+  "FQ048": {
+    "question": "Which cryptocurrency has a higher market cap than Bitcoin?",
+    "claims": [
+      {
+        "id": 1,
+        "claim": "Bitcoin is the largest cryptocurrency by market capitalization.",
+        "snippet": "The value of bitcoin is growing with time and is the largest currency by market cap currently.",
+        "url": "https://www.slickcharts.com/currency",
+        "has_conflict": false
+      },
+      {
+        "id": 2,
+        "claim": "The total cryptocurrency market capitalization is $2,496,668,295,303.",
+        "snippet": "Total Crypto Market Cap: $2,496,668,295,303",
+        "url": "https://www.slickcharts.com/currency",
+        "has_conflict": false
+      },
+      {
+        "id": 3,
+        "claim": "Stablecoins have a market capitalization of $316 billion, representing a 12.25% share of the total crypto market cap.",
+        "snippet": "Meanwhile, Stablecoins' market cap is at $316 Billion and has a 12.25% share of the total crypto market cap.",
+        "url": "https://www.coingecko.com/en/charts",
+        "has_conflict": false
+      },
+      {
+        "id": 4,
+        "claim": "Bitcoin was launched in 2009.",
+        "snippet": "Launched in 2009, bitcoin was the first decentralised cryptocurrency.",
+        "url": "https://www.ig.com/en/cryptocurrency-trading/cryptocurrency-comparison",
+        "has_conflict": false
+      },
+      {
+        "id": 5,
+        "claim": "The maximum supply of Bitcoin is 21 million.",
+        "snippet": "Maximum supply 21 million",
+        "url": "https://www.ig.com/en/cryptocurrency-trading/cryptocurrency-comparison",
+        "has_conflict": false
+      },
+      {
+        "id": 6,
+        "claim": "The maximum supply of Litecoin is 84 million.",
+        "snippet": "Maximum supply 84 million",
+        "url": "https://www.ig.com/en/cryptocurrency-trading/cryptocurrency-comparison",
+        "has_conflict": false
+      },
+      {
+        "id": 7,
+        "claim": "Bitcoin Cash has a maximum block size of 8MB, while Bitcoin has a maximum block size of 1MB.",
+        "snippet": "Bitcoin cash’s maximum block size is 8mb, compared to 1mb for bitcoin",
+        "url": "https://www.ig.com/en/cryptocurrency-trading/cryptocurrency-comparison",
+        "has_conflict": false
+      },
+      {
+        "id": 8,
+        "claim": "Bitcoin is mined at a rate of 12.5 new coins per verified block.",
+        "snippet": "Bitcoin is currently mined at a rate of 12.5 new coins for every verified block",
+        "url": "https://www.ig.com/en/cryptocurrency-trading/cryptocurrency-comparison",
+        "has_conflict": false
+      }
+    ],
+    "num_claims": 8
+  },
+  "FQ049": {
+    "question": "How long has Taylor Swift been a UNICEF Goodwill Ambassador?",
+    "claims": [
+      {
+        "id": 1,
+        "claim": "Taylor Swift 出生于宾夕法尼亚州西雷丁。",
+        "snippet": "Taylor Alison Swift was born on December 13, 1989, in West Reading, Pennsylvania.",
+        "url": "https://en.wikipedia.org/wiki/Taylor_Swift",
+        "has_conflict": true
+      },
+      {
+        "id": 2,
+        "claim": "Taylor Swift 出生于美国纽约州斯卡斯代尔。",
+        "snippet": "Place of Birth: Scarsdale, New York in the United States.",
+        "url": "https://foundationguide.org/philanthropist/taylor-swift-musician-and-philanthropist/",
+        "has_conflict": true
+      }
+    ],
+    "num_claims": 2
   }
 }

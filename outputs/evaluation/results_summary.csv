@@ -1,0 +1,5 @@
+method,factscore,hall_rate,cit_precision,ans_accuracy,ans_recall,refusal_acc
+vanilla_rag,0.0000,1.0000,0.0000,0.0000,0.0000,0.0000
+self_rag,0.0000,1.0000,0.0000,0.0000,0.0000,0.0652
+seve,0.0000,1.0000,0.0000,0.0000,0.0000,0.4889
+ablation_wo_rev_verify,0.0000,1.0000,0.0000,0.0000,0.0000,1.0000

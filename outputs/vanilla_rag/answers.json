@@ -18,8 +18,8 @@
     "search_available": true
   },
   "FQ010": {
-    "question": "In what year did Hikaru Nakamura become the World Chess Champion?",
-    "answer": "根据提供的搜索结果，中村光（Hikaru Nakamura）并未获得过世界国际象棋冠军（World Chess Champion）。他仅在2004年作为选手参加过国际棋联世界锦标赛（FIDE's 2004 World Championship）[4]。",
+    "question": "When was Dartmouth Law School founded?",
+    "answer": "提供的搜索结果中没有关于达特茅斯法学院（Dartmouth Law School）成立时间的信息。",
     "method": "vanilla_rag",
     "search_available": true
   },
@@ -44,6 +44,300 @@
   "CUSTOM_ANEMOI2": {
     "question": "新岛夕在anemoi中负责了哪些线路的内容？",
     "answer": "在《anemoi》中，新岛夕主要负责了主线剧情的编写 [3]。由于他在本作中承担的制作事务过多，主线以外的大部分剧本内容均委托给了其他剧本家处理 [3]。",
+    "method": "vanilla_rag",
+    "search_available": true
+  },
+  "FQ000": {
+    "question": "What is the name of the first animal to land on the moon?",
+    "answer": "Based on the provided search results, there is no record of any animal landing on the moon. While Russian tortoises orbited the moon and returned to Earth in 1968 [4][6], and a dog named Snoopy reportedly traveled to the moon during the Apollo 15 mission, he did not land on the lunar surface [3].",
+    "method": "vanilla_rag",
+    "search_available": true
+  },
+  "FQ001": {
+    "question": "What is the name of Leonardo DiCaprio's third child?",
+    "answer": "Based on the provided search results, there is no information indicating that Leonardo DiCaprio has any children. The provided biography notes that he is an only child himself [1].",
+    "method": "vanilla_rag",
+    "search_available": true
+  },
+  "FQ002": {
+    "question": "What year did the first human land on Mars?",
+    "answer": "截至目前，**人类尚未登陆过火星** [1][2]。\n\n目前所有在火星表面的成功着陆均由无人探测器完成 [1]。以下是相关事实：\n\n*   **首次成功着陆：** 1971年，苏联的“火星3号”（Mars 3）实现了人类历史上首次火星表面软着陆，但该探测器在着陆后仅110秒便发生故障 [1][2]。\n*   **首次成功运行：** 美国国家航空航天局（NASA）的“海盗1号”（Viking 1）和“海盗2号”于1976年成功着陆，并首次传回了大量科学数据和彩色图像 [1][10]。\n*   **未来计划：** NASA及其他机构已开展载人登陆火星的研究，目前提议的首次载人任务时间多设定在**2030年代或2040年代** [2][6][8]。\n\n截至2026年，人类离开地球最远的距离仍仅限于月球及其附近 [2]。",
+    "method": "vanilla_rag",
+    "search_available": true
+  },
+  "FQ003": {
+    "question": "What was the name of the Zodiac killer?",
+    "answer": "The true identity of the Zodiac Killer remains **officially unidentified** [3][7]. While the case is one of the most famous unsolved mysteries in American history, several individuals have been named as suspects by law enforcement or independent investigators:\n\n*   **Arthur Leigh Allen:** The only suspect ever officially named by the police [3]. He was a former teacher and convicted sex offender who died in 1992 [1][7]. Although he was considered the prime suspect for decades, DNA profiles, fingerprints, and handwriting samples did not provide a definitive match [1][7].\n*   **Gary Francis Poste:** In 2021, an independent group of investigators called the \"Case Breakers\" claimed that Poste, who died in 2018, was the killer, citing forensic evidence and photos [3][7][8]. However, law enforcement has stated the case remains open and the evidence is not conclusive [3][7].\n*   **Earl Van Best Jr.:** In 2014, Gary L. Stewart claimed his biological father, Earl Van Best Jr., was the Zodiac, noting a strong resemblance to police sketches and alleged clues in the killer's ciphers [7].\n*   **Other Suspects:** Various researchers and amateur sleuths have proposed other names, including **Paul Doerr**, **Lawrence Kane**, **Richard Gaikowski**, and **Ross Sullivan** [3][7].\n\nDespite these theories, the San Francisco Police Department, the FBI, and other California agencies continue to maintain the investigation as an open case [3].",
+    "method": "vanilla_rag",
+    "search_available": true
+  },
+  "FQ004": {
+    "question": "Why are all quickly verifiable problems also quickly solvable?",
+    "answer": "实际上，目前并没有证据表明所有“快速可验证”的问题（NP类问题）都能“快速求解”（P类问题）。这正是计算机科学中最著名的未解难题——**P vs. NP问题** [2][4]。\n\n以下是这两个概念的正确关系：\n\n*   **P (Polynomial Time)**：指可以在多项式时间内（即“快速”）**求解**的问题 [2][4]。\n*   **NP (Nondeterministic Polynomial Time)**：指给出一个解后，可以在多项式时间内（即“快速”）**验证**其正确性的问题 [2][4]。\n\n**关于它们的关系：**\n*   **所有 P 问题都是 NP 问题 (P ⊆ NP)**：这是成立的。如果你能快速求解一个问题，那么你自然也能快速验证它的解（只需自己求解一遍即可）[8]。\n*   **所有 NP 问题是否都是 P 问题 (P = NP?)**：这是未知的。大多数计算机科学家认为 P ≠ NP，这意味着存在一些问题，虽然验证其解很容易，但找到解却非常困难 [2][4]。\n\n因此，你的问题中提到的“所有快速可验证的问题都能快速求解”这一前提在科学界目前被广泛认为是错误的 [2]。",
+    "method": "vanilla_rag",
+    "search_available": true
+  },
+  "FQ005": {
+    "question": "In what year did bodybuilding become an Olympic sport?",
+    "answer": "健美运动（Bodybuilding）目前**尚未成为正式的奥林匹克运动项目** [1][6]。\n\n尽管该运动曾多次尝试加入奥运会，但其进程如下：\n\n*   **1998年：** 国际奥委会（IOC）执行委员会授予国际健美总会（IFBB）“认可联合会”地位，并给予健美运动**临时认可项目**的地位 [1][3]。\n*   **2000年：** 健美运动曾被批准作为2000年悉尼奥运会的表演项目，但最终未能成为正式比赛项目 [6]。\n*   **2002年：** 国际奥委会撤回了对健美运动的官方认可，相关努力陷入停滞 [1]。\n\n目前，健美运动虽已进入一些由国际奥委会附属的区域性赛事（如2019年的泛美运动会），但在奥林匹克运动会层面仍处于“尚未入选”的状态 [1]。",
+    "method": "vanilla_rag",
+    "search_available": true
+  },
+  "FQ006": {
+    "question": "When did Meta move its headquarters to Austin?",
+    "answer": "Meta has not moved its headquarters to Austin; the company remains headquartered in Menlo Park, California [3].\n\nHowever, Meta has relocated specific operations to Texas, including its trust and safety and content moderation teams [1][4][6]. While the company has a significant presence in Austin, reports indicate that it has no plans to move its corporate headquarters from California [9].",
+    "method": "vanilla_rag",
+    "search_available": true
+  },
+  "FQ007": {
+    "question": "When was the chapter of alpha Kappa Delta Phi established at American University?",
+    "answer": "Based on the provided search results, there is no record of an alpha Kappa Delta Phi sorority chapter being established at American University [10].\n\nPlease note that while search results indicate a chapter of the sociology honor society \"Alpha Kappa Delta\" was established at American University in 1983, this is a different organization from the sorority alpha Kappa Delta Phi [9].",
+    "method": "vanilla_rag",
+    "search_available": true
+  },
+  "FQ008": {
+    "question": "When did Frontier purchase Spirit Airlines?",
+    "answer": "Frontier Airlines did not purchase Spirit Airlines. Although Frontier announced plans to acquire Spirit in February 2022 [2][4], Spirit's shareholders rejected the offer in July 2022 [3]. Frontier made a subsequent offer to purchase the airline in January 2025, which Spirit also rejected [3]. Spirit Airlines ultimately ceased all operations on May 2, 2026 [3].",
+    "method": "vanilla_rag",
+    "search_available": true
+  },
+  "FQ009": {
+    "question": "When was the permanent cure for cancer developed?",
+    "answer": "目前并没有针对所有癌症的单一“永久性治愈方法”，因为癌症并非单一疾病，而是由许多不同类型的疾病组成的 [2]。\n\n虽然医学界尚未开发出一种通用的癌症治愈方法，但在治疗特定类型的癌症方面已经取得了重大进展 [5]。例如：\n*   1953年，医学界实现了首次通过化疗完全治愈人类实体瘤（绒毛膜癌）的突破 [1][8]。\n*   随后，针对霍奇金淋巴瘤、儿童白血病和睾丸癌等特定癌症的治疗也取得了显著成效，实现了长期缓解或治愈 [4][8]。\n\n现代医学通过手术、放疗、化疗、靶向治疗和免疫疗法等多种手段的结合，显著提高了许多癌症患者的生存率 [5][6]。",
+    "method": "vanilla_rag",
+    "search_available": true
+  },
+  "FQ011": {
+    "question": "When was League of Legends 2 released?",
+    "answer": "《League of Legends 2》尚未发布，且 Riot Games 已明确表示没有制作该续作的计划 [6][9]。\n\n相反，Riot Games 目前正在对现有的《League of Legends》进行大规模更新（内部代号为“League Next”），预计于 2027 年推出 [4][9]。此次更新将包括全新的游戏客户端、视觉重制以及游戏性调整 [4][9]。",
+    "method": "vanilla_rag",
+    "search_available": true
+  },
+  "FQ012": {
+    "question": "In what year did Hikaru Nakamura become the World Chess Champion?",
+    "answer": "希卡鲁·中村（Hikaru Nakamura）**从未获得过古典国际象棋世界冠军（Classical World Chess Champion）** [1][7]。\n\n不过，他在相关领域获得过以下世界级冠军头衔：\n*   **世界菲舍尔任意制象棋冠军（World Fischer Random Chess Champion）：** 他在 **2022年** 击败伊恩·涅波姆尼亚奇（Ian Nepomniachtchi）夺得该头衔 [1][2][5]。\n*   **菲舍尔任意制960世界冠军（Fischer Random 960 World Champion）：** 他曾于 **2009年** 获得这一非官方性质的世界冠军 [9]。\n\n此外，他是五届美国国际象棋锦标赛冠军（2005、2009、2012、2015和2019年），并多次参加世界冠军候选人赛 [1][2]。",
+    "method": "vanilla_rag",
+    "search_available": true
+  },
+  "FQ013": {
+    "question": "When did American Express open its 25th Centurion Lounge?",
+    "answer": "The provided search results do not contain information regarding when American Express opened its 25th Centurion Lounge. The available documents only note that the network currently includes 32 locations [1][4].",
+    "method": "vanilla_rag",
+    "search_available": true
+  },
+  "FQ014": {
+    "question": "In what year was the Element 120 first synthesized?",
+    "answer": "Element 120 (Unbinilium) has not yet been synthesized [1]. Despite multiple attempts by research teams in Germany and Russia, no atoms of the element have been successfully created or confirmed [1]. New attempts to synthesize the element are planned or ongoing as of the mid-2020s [1][7][8].",
+    "method": "vanilla_rag",
+    "search_available": true
+  },
+  "FQ015": {
+    "question": "When did Jamie Oliver earn his first Michelin Star?",
+    "answer": "杰米·奥利弗（Jamie Oliver）**从未获得过米其林指南的星级认证** [3][4]。\n\n尽管他是一位享誉全球的明星厨师、畅销书作家和成功的餐饮企业家，但截至目前，他尚未获得米其林星级 [4][9]。获得米其林星级曾被提及是他个人的职业目标之一 [7]。",
+    "method": "vanilla_rag",
+    "search_available": true
+  },
+  "FQ016": {
+    "question": "When did the UK adopt the Euro?",
+    "answer": "[无搜索结果]",
+    "method": "vanilla_rag",
+    "search_available": false
+  },
+  "FQ017": {
+    "question": "When was the second time that Joe Biden visited Vietnam during his presidency?",
+    "answer": "根据搜索结果，乔·拜登在总统任期内**仅访问过越南一次**，因此不存在第二次访问 [1][4]。\n\n以下是关于该次访问的详细信息：\n*   **访问日期**：2023年9月10日至11日 [1][9]。\n*   **访问地点**：河内 [1][2]。\n*   **访问性质**：这是拜登总统任期内唯一一次访问越南，也是他有史以来第一次访问该国 [4][5]。\n*   **主要活动**：拜登会见了越南共产党总书记阮富仲、国家主席武文赏和总理范明政，并签署了将两国关系提升为“全面战略伙伴关系”的协议 [1][4][9]。\n\n此外，拜登曾于2024年9月在**纽约**会见了越南总书记苏林，以纪念两国建立全面战略伙伴关系一周年，但这并非对越南的国事访问 [7]。",
+    "method": "vanilla_rag",
+    "search_available": true
+  },
+  "FQ018": {
+    "question": "How much did Elon Musk buy Activision Blizzard for?",
+    "answer": "埃隆·马斯克（Elon Musk）并没有收购动视暴雪（Activision Blizzard）[5]。\n\n实际上，收购动视暴雪的是**微软（Microsoft）**，成交价格为 **687 亿美元** [1][6][9]。虽然在微软收购期间，曾有粉丝敦促马斯克考虑收购该公司，但由于马斯克当时已斥资 440 亿美元收购推特（Twitter），且动视暴雪市值巨大，相关分析认为他不太可能进行此项收购 [5][8]。",
+    "method": "vanilla_rag",
+    "search_available": true
+  },
+  "FQ019": {
+    "question": "When was COVID-19 declared endemic by the World Health Organization?",
+    "answer": "The World Health Organization (WHO) **has not officially declared** COVID-19 to be endemic [2][8][9].\n\nWhile the WHO ended the Public Health Emergency of International Concern (PHEIC) on **May 5, 2023**, officials clarified that this did not mean the pandemic was over or that the disease had become endemic [3][8][9]. Instead, the WHO transitioned to managing COVID-19 as an \"established and ongoing health issue\" [3][8].\n\nKey points regarding COVID-19's status include:\n*   **No Official Category:** The WHO does not have a formal process or category for \"declaring\" a disease endemic; such determinations are typically made by epidemiologists based on whether the number of infections becomes predictable and manageable [2][8][9].\n*   **Expert Consensus:** By 2025, most experts generally believed the disease had transitioned into an endemic phase [2][8].\n*   **Continued Threat:** Despite the end of the global emergency in 2023, the WHO continues to caution that the virus remains a global health threat that causes acute disease and death [2][4][8].",
+    "method": "vanilla_rag",
+    "search_available": true
+  },
+  "FQ020": {
+    "question": "In what three consecutive years did Drake top Spotify's list of most-streamed artists?",
+    "answer": "根据搜索结果，德雷克（Drake）曾三次登顶 Spotify 年度全球最受关注艺人榜单，但**并非连续三年**。他夺冠的年份分别是 **2015年、2016年和2018年** [1]。\n\n搜索结果明确指出，波多黎各歌手 **Bad Bunny** 是唯一一位曾连续三年（2020年至2022年）蝉联该榜单冠军的艺人 [1]。\n\n不过，在特定类别中，德雷克展现了更强的连续性：\n*   截至2024年，德雷克已**连续8年**蝉联 Spotify 全球及全美“**最受关注说唱歌手**”（most-streamed rapper）称号 [2]。\n*   他是 2010 年代（2010s）以及 Spotify 推出前十年（2008-2018年）累计流媒体播放量最高的艺人 [1]。",
+    "method": "vanilla_rag",
+    "search_available": true
+  },
+  "FQ021": {
+    "question": "When did Tesla Model Z come out?",
+    "answer": "As of late 2025, a **Tesla Model Z does not exist** and has never been officially released or announced by Tesla [1][2].\n\nThe \"Model Z\" name is considered \"fan fiction\" or internet folklore, often appearing in rumors, speculative blogs, and AI-generated content [2]. There are several reasons why the name frequently appears in searches:\n\n*   **Confusion with Toyota:** Shoppers often mix up Tesla with Toyota’s electric \"bZ\" series (such as the **Toyota bZ4X**), leading to the hybrid name \"Tesla Z\" [1].\n*   **Rumored Future Models:** Speculation regarding Tesla’s upcoming affordable compact car (often nicknamed the **Model 2** or **Model Q**) sometimes leads fans to use \"Model Z\" as a placeholder name [1][2].\n*   **Search Shorthand:** \"Z\" is sometimes used online as shorthand for \"zero-emission,\" causing users to search for \"Tesla Z\" when looking for compact electric crossovers like the Model 3 or Model Y [1].\n\nTesla’s actual current and confirmed future vehicle lineup includes the **Model S, 3, X, and Y**, the **Cybertruck**, the **Semi**, and upcoming projects like the **Cybercab** (robotaxi), **Robovan**, and the second-generation **Roadster** [1][3][6].",
+    "method": "vanilla_rag",
+    "search_available": true
+  },
+  "FQ022": {
+    "question": "Which vaccine completely eradicated COVID-19 worldwide?",
+    "answer": "目前没有任何疫苗能够彻底根除新冠病毒（COVID-19）[6][7]。事实上，专家指出新冠病毒很可能会长期在全球范围内持续传播，完全根除的可能性极低 [6][7]。虽然疫苗在预防重症、住院和死亡方面非常有效，但它们并未消除该病毒 [3][8]。迄今为止，人类唯一彻底根除的传染病只有天花 [6][7]。",
+    "method": "vanilla_rag",
+    "search_available": true
+  },
+  "FQ023": {
+    "question": "How much did Elon Musk acquire Instagram for?",
+    "answer": "Elon Musk did not acquire Instagram. The report claiming that he purchased Instagram for $75 billion is an April Fools' prank [1].\n\nIn reality, Instagram was acquired by Facebook (now Meta) in 2012 for $1 billion [5][9]. Elon Musk did acquire Twitter in 2022 for $44 billion [2][3][9].",
+    "method": "vanilla_rag",
+    "search_available": true
+  },
+  "FQ024": {
+    "question": "How much did Mark Zuckerberg acquire Twitter for?",
+    "answer": "马克·扎克伯格（Mark Zuckerberg）**并未成功收购 Twitter** [1][4][7]。\n\n虽然扎克伯格曾多次尝试收购 Twitter，但均以失败告终：\n*   **2008年的报价：** 扎克伯格曾提出以 **5亿美元** 的价格收购 Twitter，但被 Twitter 联合创始人埃文·威廉姆斯（Ev Williams）和比兹·斯通（Biz Stone）拒绝 [1][4][6]。\n*   **拒绝原因：** Twitter 董事会当时认为公司价值远超 10 亿美元，且威廉姆斯对 Facebook 的业务方式和企业文化持有疑虑 [1][4][6]。\n\n最终，Twitter 在 2022 年被**埃隆·马斯克（Elon Musk）**以 **440 亿美元**的价格收购 [3][6]。",
+    "method": "vanilla_rag",
+    "search_available": true
+  },
+  "FQ025": {
+    "question": "What movie did Clint Eastwood win a Best Actor Academy Award for?",
+    "answer": "Clint Eastwood has **never won** an Academy Award for Best Actor [1][9].\n\nWhile he is a four-time Oscar winner, his awards were for **Best Director** and **Best Picture** for the following movies:\n*   ***Unforgiven*** (1992) [1][8]\n*   ***Million Dollar Baby*** (2004) [1][9]\n\nHe received Best Actor nominations for both of those films but did not win in that category [1][2][5]. He is one of only two people (along with Warren Beatty) to be nominated for Best Actor and Best Director for the same film twice [1][9].",
+    "method": "vanilla_rag",
+    "search_available": true
+  },
+  "FQ026": {
+    "question": "When did Willie Nelson pass away?",
+    "answer": "Willie Nelson, the country music icon, has not passed away [5][6][7]. He has frequently been the subject of false death hoaxes throughout his career [6].\n\nConfusion regarding his status may stem from an obituary for a different individual named Willie Nelson (born 1942, died 2024) [2].",
+    "method": "vanilla_rag",
+    "search_available": true
+  },
+  "FQ027": {
+    "question": "How many times has Jeremy Corbyn served as Prime Minister of the UK?",
+    "answer": "Jeremy Corbyn has **never** served as the Prime Minister of the United Kingdom [1][4].\n\nHis major political roles include:\n*   **Leader of the Labour Party:** Served from September 2015 to April 2020 [1][2].\n*   **Leader of the Opposition:** Served during the same period (2015–2020) under the premierships of David Cameron, Theresa May, and Boris Johnson [1][4].\n*   **Member of Parliament (MP):** He has represented Islington North since 1983, originally as a Labour MP and currently as an independent [1][6].\n\nAlthough he led the Labour Party through the 2017 and 2019 general elections, he did not win either contest, and was succeeded as party leader by Keir Starmer in 2020 [1][4].",
+    "method": "vanilla_rag",
+    "search_available": true
+  },
+  "FQ028": {
+    "question": "What year did Chris Paul win his second NBA championship?",
+    "answer": "克里斯·保罗（Chris Paul）在职业生涯中**从未获得过NBA总冠军** [2][6]。\n\n尽管他被公认为NBA历史上最伟大的控球后卫之一，并拥有12次入选全明星、11次入选最佳阵容等众多荣誉，但总冠军是他职业生涯中极少数未能获得的奖项之一 [1][6]。他最接近冠军的一次是在2021年效力于菲尼克斯太阳队时打入NBA总决赛，但最终以2-4负于密尔沃基雄鹿队 [1][6]。\n\n保罗已于2026年2月正式宣布退役，结束了其21年的职业生涯 [4][6]。",
+    "method": "vanilla_rag",
+    "search_available": true
+  },
+  "FQ029": {
+    "question": "When did King Charles strip Prince Harry's title as the Duke of Sussex?",
+    "answer": "King Charles has **not stripped** Prince Harry of his title as the Duke of Sussex [4][8]. Harry remains the Duke of Sussex, a title granted to him by Queen Elizabeth II in 2018 [1].\n\nWhile the title remains, there have been changes to how he is styled:\n\n*   **HRH Style:** Following their decision to step back as senior members of the royal family in 2020, Harry and Meghan agreed to **no longer use their \"His/Her Royal Highness\" (HRH) styles** in practice or publicly [1][5].\n*   **Website Update:** In August 2023, the official Royal Family website was updated to remove \"HRH\" references from Prince Harry's biography, replacing them with \"the Duke\" or \"the Duke of Sussex\" [5].\n*   **Legal Authority:** Removing a peerage title (such as a dukedom) would require an **Act of Parliament**, as the King does not have the unilateral power to revoke it [4].\n*   **Military Appointments:** In February 2021, it was confirmed that Harry would relinquish his honorary military appointments and royal patronages, which were returned to the Crown [1].",
+    "method": "vanilla_rag",
+    "search_available": true
+  },
+  "FQ030": {
+    "question": "When did Yann LeCun join Google?",
+    "answer": "根据搜索结果，**杨立昆（Yann LeCun）从未加入过谷歌（Google）工作** [1][9]。\n\n他的主要职业生涯路径如下：\n*   **贝尔实验室（Bell Labs）：** 1988年至1996年担任研究员 [1][9]。\n*   **AT&T 实验室：** 1996年至2002年担任图像处理研究部门负责人 [1][9]。\n*   **纽约大学（NYU）：** 2003年加入并担任教授至今 [1][3][9]。\n*   **Meta（原 Facebook）：** 2013年12月加入并担任首席人工智能科学家，直至2025年11月离职 [1][6][9]。\n*   **AMI Labs：** 2025年11月离开 Meta 后，他联合创立了 Advanced Machine Intelligence Labs (AMI Labs) 并担任执行主席 [1][9]。\n\n虽然他本人未在谷歌任职，但搜索结果提到他的**弟弟在谷歌工作** [1]。此外，谷歌等公司在其产品和服务中广泛使用了他所发明的卷积神经网络（CNN）技术 [3]。",
+    "method": "vanilla_rag",
+    "search_available": true
+  },
+  "FQ031": {
+    "question": "When was the eighth book of the Percy Jackson & the Olympians series released?",
+    "answer": "As of the latest information, there is no eighth book in the *Percy Jackson & the Olympians* series. The series currently consists of the original five books and the two books in *The Senior Year Adventures* (*The Chalice of the Gods* and *Wrath of the Triple Goddess*) [1][2].\n\nSome book sets marketed as containing \"8 books\" include companion works, such as *Percy Jackson's Greek Gods* and *Percy Jackson's Greek Heroes*, rather than a narrative eighth installment [10].",
+    "method": "vanilla_rag",
+    "search_available": true
+  },
+  "FQ032": {
+    "question": "In what month of 2023 was the PlayStation 6 (PS6) released worldwide?",
+    "answer": "PlayStation 6 (PS6) **并未在 2023 年发布** [1][7]。\n\n根据现有的搜索结果和行业分析，关于 PS6 的发布信息如下：\n\n*   **当前状态**：截至 2023 年，PlayStation 5 (PS5) 仍是索尼旗下的最新一代旗舰游戏机 [8]。\n*   **预计发布时间**：索尼官方尚未公布 PS6 的具体发布日期 [7][9]。根据以往主机约 7 年的生命周期规律（如 PS4 到 PS5 间隔 7 年），业界普遍预测 PS6 最早可能在 **2027 年底至 2028 年间**推出 [1][7][9][10]。\n*   **近期动态**：索尼在 2024 年 11 月发布了性能增强版的 **PlayStation 5 Pro**，作为过渡时期的硬件升级 [8][9]。",
+    "method": "vanilla_rag",
+    "search_available": true
+  },
+  "FQ033": {
+    "question": "When did the population of United States reach 8 billion?",
+    "answer": "根据搜索结果，**美国人口尚未达到 8 亿，且在可预见的未来也不会达到这一数字**。\n\n以下是相关事实：\n*   **当前人口：** 2020年美国人口普查记录的居民人口约为 3.31 亿 [1][4]。截至 2024 年 7 月，估计人口约为 3.40 亿 [6]。\n*   **未来预测：** 根据预测，美国人口预计在 2043 年左右达到 4 亿 [8]，到 2100 年预计约为 4.21 亿 [9]。\n*   **全球人口：** 8 亿这一数字通常与**全球人口**里程碑混淆。全球人口在 2021 年达到了 80 亿 [5]。\n\n总结来说，美国人口目前仅处于 3 亿多阶段，距离 8 亿仍有巨大差距。",
+    "method": "vanilla_rag",
+    "search_available": true
+  },
+  "FQ034": {
+    "question": "What was the first year in which Harry Maguire won the Ballon d'Or?",
+    "answer": "Harry Maguire has never won the Ballon d'Or. The claims suggesting he has are based on internet memes and satirical content [6][7][8][9].",
+    "method": "vanilla_rag",
+    "search_available": true
+  },
+  "FQ035": {
+    "question": "In what year did Papa John's go out of business?",
+    "answer": "根据提供的搜索结果，**Papa John's（棒!约翰）并未倒闭**。\n\n目前，该公司仍在运营，但正在进行战略调整：\n*   **门店关闭计划**：公司宣布计划在2027年底前关闭北美约300家业绩不佳的餐厅 [5][6][8]。\n*   **近期动态**：由于消费者支出减少和业绩压力，公司在上一季度后决定关闭部分门店 [4]。去年，该公司已因业绩不佳关闭了英国的40多家餐厅 [7]。\n*   **历史背景**：该公司由John Schnatter于1984年创立 [1]。虽然他在2018年辞去了首席执行官职务 [2]，且公司在2000年代初曾放缓扩张速度以提高盈利能力 [9]，但品牌目前依然存在。",
+    "method": "vanilla_rag",
+    "search_available": true
+  },
+  "FQ036": {
+    "question": "What year did the film Metropolis enter the public domain in Germany?",
+    "answer": "电影《大都会》（Metropolis）目前在德国尚未进入公有领域。根据德国及欧盟的版权法，该电影的版权将持续到导演弗里茨·朗（Fritz Lang）去世后的70年，即**2046年底** [2]。因此，该片预计将于 **2047年1月1日** 在德国进入公有领域 [2][8]。\n\n需要注意的是，虽然该电影已于2023年1月1日在美国进入公有领域，但在其原产国德国仍受版权保护 [1][3][8][9]。",
+    "method": "vanilla_rag",
+    "search_available": true
+  },
+  "FQ037": {
+    "question": "How many executive orders has Hillary Clinton enacted?",
+    "answer": "希拉里·克林顿（Hillary Clinton）没有发布过任何行政命令（Executive Orders），因为她从未担任过美国总统 [5][8]。\n\n行政命令是由美国总统签署并发布的 [2][7]。搜索结果中提到的“克林顿”签署了364条行政命令，是指比尔·克林顿（Bill Clinton）在1993年至2001年担任总统期间的行为 [2][4][6]。希拉里·克林顿曾担任过美国国务卿、参议员及第一夫人，但这些职位并不具备发布行政命令的权力 [5][8]。",
+    "method": "vanilla_rag",
+    "search_available": true
+  },
+  "FQ038": {
+    "question": "Who was the first female president of the United States?",
+    "answer": "虽然美国尚未正式选举出第一位女性总统 [3]，但历史上常有两位女性与这一头衔相关：\n\n*   **伊迪丝·威尔逊 (Edith Bolling Galt Wilson)**：她常被称为美国“第一位女总统”或“代理总统” [1][2]。1919年，她的丈夫伍德罗·威尔逊总统因中风瘫痪，在随后的一年多时间里，伊迪丝实际上代行了许多总统职权并进行决策 [3][4][9]。\n*   **维多利亚·伍德哈尔 (Victoria Woodhull)**：她是美国历史上第一位竞选总统的女性，于1872年作为平等权利党的候选人参选 [7]。",
+    "method": "vanilla_rag",
+    "search_available": true
+  },
+  "FQ039": {
+    "question": "In what year did Argentina win their fifth FIFA World Cup title?",
+    "answer": "Argentina has not won a fifth FIFA World Cup title. According to the search results, Argentina has won the tournament a total of **three** times, in the following years:\n\n*   **1978:** Their first title, won as the host nation [1][4][5].\n*   **1986:** Their second title, led by Diego Maradona [1][6][9].\n*   **2022:** Their third and most recent title [1].",
+    "method": "vanilla_rag",
+    "search_available": true
+  },
+  "FQ040": {
+    "question": "Who is the 9th American to win the Miss World crown?",
+    "answer": "提供的搜索结果中未包含关于“第九位获得世界小姐冠军的美国人”的相关信息。虽然搜索结果 [3] 的标题中提到了该问题，但其内容并未提供具体答案。",
+    "method": "vanilla_rag",
+    "search_available": true
+  },
+  "FQ041": {
+    "question": "When did Lionel Messi win his second FIFA World Cup?",
+    "answer": "Lionel Messi has only won **one** FIFA World Cup title in his career, which he achieved in **2022** with Argentina [2][7]. He has not won a second FIFA World Cup [2].\n\nWhile he has won other titles with \"World Cup\" in the name, such as the FIFA U-20 World Cup and the FIFA Club World Cup, these are distinct from the senior international FIFA World Cup [1][5]. He previously reached the final in 2014 but lost to Germany [8].",
+    "method": "vanilla_rag",
+    "search_available": true
+  },
+  "FQ042": {
+    "question": "Where will the FIFA World Cup be hosted next year?",
+    "answer": "The 2026 FIFA World Cup will be jointly hosted by Canada, Mexico, and the United States [1][3][5][7]. The tournament will take place across 16 host cities: 11 in the United States, three in Mexico, and two in Canada [2][4][6].",
+    "method": "vanilla_rag",
+    "search_available": true
+  },
+  "FQ043": {
+    "question": "By how many seats do Democrats currently control the United States Senate?",
+    "answer": "目前，民主党以 **50 个席位**控制着美国参议院 [7]。\n\n具体情况如下：\n*   **席位构成**：在总共 100 个参议院席位中，民主党占有 48 席，另有 2 名独立议员加入民主党党团（caucus），总计 50 席 [6][7]。\n*   **控制权归属**：虽然民主党与共和党各占 50 席，形成平分僵局，但由于副总统（兼任参议院议长）拥有打破平局的投票权，因此民主党获得了参议院的控制权 [6][7]。\n*   **多数党领袖**：现任参议院多数党领袖为民主党人查克·舒默（Chuck Schumer）[7]。",
+    "method": "vanilla_rag",
+    "search_available": true
+  },
+  "FQ044": {
+    "question": "Who is the X Corp.'s CEO?",
+    "answer": "Linda Yaccarino is the former CEO of X Corp [1][2]. She served in the role from 2023 to 2025 [1] and announced her departure on July 9 [7].",
+    "method": "vanilla_rag",
+    "search_available": true
+  },
+  "FQ045": {
+    "question": "How long has Elon Musk been X Corp.'s CEO?",
+    "answer": "埃隆·马斯克（Elon Musk）在2022年底收购该公司（当时称为Twitter）后担任X的首席执行官，直到2023年6月琳达·亚卡里诺（Linda Yaccarino）接任该职位 [6][10]。",
+    "method": "vanilla_rag",
+    "search_available": true
+  },
+  "FQ046": {
+    "question": "How many years has Edward Snowden been living in Cuba?",
+    "answer": "Edward Snowden has never lived in Cuba. Although he had a seat reserved for a flight to Havana, Cuba, in June 2013, he did not board the plane [1][2][8]. Instead, he has been living in Russia since June 2013 [1].",
+    "method": "vanilla_rag",
+    "search_available": true
+  },
+  "FQ047": {
+    "question": "How long has Kenya used a two-party system of government?",
+    "answer": "根据搜索结果，肯尼亚官方并不实行“两党制”，而是实行**多党制（multi-party system）** [1][2]。肯尼亚的政党体制演变过程如下：\n\n*   **多党制时期（1963年–1969年）：** 肯尼亚在1963年独立之初是一个多党制民主国家 [2]。\n*   **一党制时期（1969年–1991年）：** 1969年，肯尼亚政府禁止了活跃的多党政治，成为事实上的（de facto）一党制国家 [2][4]。1982年，肯尼亚通过宪法修正案正式确立为法律上的（de jure）一党制国家 [2][4][9]。\n*   **恢复多党制（1991年至今）：** 在国内外的压力下，肯尼亚于1991年12月废除了宪法中关于一党制的条款，恢复了多党政治 [2][4][9]。2010年通过的新宪法进一步确立了多党制框架 [1]。\n\n**关于“两党”现象的说明：**\n虽然法律上是多党制，但自2002年以来，肯尼亚的政治竞争往往呈现出**两大主要联盟（coalitions）**对抗的局面 [8]。例如，2013年的大选主要在“朱比利联盟”（Jubilee Coalition）和“改革与民主联盟”（CORD）之间展开 [8]。这种现象是因为单一政党通常难以独立赢得全国大选，因此倾向于通过跨党派联盟来整合不同族群和地区的选票 [8]。",
+    "method": "vanilla_rag",
+    "search_available": true
+  },
+  "FQ048": {
+    "question": "Which cryptocurrency has a higher market cap than Bitcoin?",
+    "answer": "根据提供的搜索结果，目前**没有任何加密货币的市值高于比特币（Bitcoin）** [1][9]。\n\n比特币目前是全球市值最大的加密货币 [1][2][8]。截至搜索结果更新时，其市值约为 1.48 万亿美元，占据了约 59.20% 的市场份额 [1]。排名紧随其后的主要加密货币包括以太坊（Ethereum）、泰达币（Tether）和币安币（BNB），但它们的市值均远低于比特币 [1][5][7]。",
+    "method": "vanilla_rag",
+    "search_available": true
+  },
+  "FQ049": {
+    "question": "How long has Taylor Swift been a UNICEF Goodwill Ambassador?",
+    "answer": "根据搜索结果，泰勒·斯威夫特（Taylor Swift）**并不是**联合国儿童基金会（UNICEF）的亲善大使 [6][7]。\n\n虽然她不是亲善大使，但她多年来一直支持该组织：\n*   **参与项目：** 2011年，她参加了联合国儿童基金会的“水龙头推广计划”（Tap Project），通过提供自家饮用水进行筹款，为全球缺乏清洁饮用水的人群提供帮助 [5][6][9]。\n*   **慈善合作：** 她长期与包括联合国儿童基金会、红十字会和仁人家园在内的知名慈善机构合作 [4]。\n*   **身份区别：** 搜索结果明确提到她的好友赛琳娜·戈麦斯（Selena Gomez）担任联合国儿童基金会大使，而斯威夫特则是以独立名人的身份参与相关活动 [6][7]。",
     "method": "vanilla_rag",
     "search_available": true
   }

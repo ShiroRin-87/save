@@ -139,7 +139,8 @@ def generate_answer(question: str, claims: list[dict]) -> tuple[str, dict]:
 def verify_claims(answer: str, claims: list[dict], search_results: list[dict]) -> list[dict]:
     """Step 4: Reverse-verify cited claims against original search cache text.
 
-    Uses a single batch prompt to verify all cited claims at once.
+    Uses a single batch prompt with JSON output. Falls back to single-claim
+    verification for any claims that fail to parse from the batch response.
     """
     cited_ids = set()
     for m in re.finditer(r"\[(\d+)\]", answer):
@@ -148,7 +149,7 @@ def verify_claims(answer: str, claims: list[dict], search_results: list[dict]) -
     claim_by_id = {str(c["id"]): c for c in claims}
     url_to_result = {r["url"]: r for r in (search_results or [])}
 
-    pairs = []
+    items = []
     ordered_ids = []
     for cid in cited_ids:
         claim = claim_by_id.get(cid)
@@ -156,43 +157,68 @@ def verify_claims(answer: str, claims: list[dict], search_results: list[dict]) -
             continue
         original_result = url_to_result.get(claim["url"])
         original_text = (original_result.get("full_text") or original_result.get("snippet", "")) if original_result else claim["snippet"]
-        pairs.append(f"[{cid}] 声明：{claim['claim']}\n    原文：{original_text}")
+        items.append({"id": cid, "claim": claim["claim"], "original": original_text})
         ordered_ids.append(cid)
 
-    if not pairs:
+    if not items:
         return []
 
-    batch_text = "\n\n".join(pairs)
-    prompt = f"""对以下每组"声明-原文"，判断原文是否包含声明中声称的信息。
-对每组仅输出一行：ID YES 或 ID PARTIAL 或 ID NO
+    # Batch verification with JSON output
+    items_json = json.dumps(items, ensure_ascii=False, indent=2)
+    batch_prompt = f"""对以下 JSON 数组中的每组声明和原文，判断原文是否包含声明中声称的信息。
+为每个元素添加 "verdict" 字段，值为 YES/PARTIAL/NO。
+只输出 JSON 数组，不要输出任何其他文字。
 
-{batch_text}
+输入：
+{items_json}
 
-判断结果（每行格式：ID VERDICT）："""
-
-    try:
-        result_text = generate(prompt)
-    except Exception:
-        result_text = ""
+输出 JSON："""
 
     verdict_map = {}
-    for line in result_text.strip().split("\n"):
-        m = re.match(r"(\d+)\s+(YES|PARTIAL|NO)", line, re.IGNORECASE)
-        if m:
-            verdict_map[m.group(1)] = m.group(2).upper()
+    try:
+        result_text = generate(batch_prompt)
+        batch_results = _parse_json_claims(result_text)
+        for r in batch_results:
+            cid_key = str(r.get("id", ""))
+            raw_verdict = str(r.get("verdict", "")).upper()
+            if raw_verdict in ("YES", "PARTIAL", "NO"):
+                verdict_map[cid_key] = raw_verdict
+    except Exception:
+        pass
 
+    # Build results, falling back to single-claim for any UNKNOWN
     verifications = []
     for cid in ordered_ids:
         claim = claim_by_id.get(cid)
-        verdict = verdict_map.get(cid, "UNKNOWN")
         original_result = url_to_result.get(claim["url"]) if claim else None
         original_text = (original_result.get("full_text") or original_result.get("snippet", "")) if original_result else (claim["snippet"] if claim else "")
+        claim_text = claim["claim"] if claim else ""
+        url = claim["url"] if claim else ""
+
+        verdict = verdict_map.get(cid, "UNKNOWN")
+
+        # Fallback: single-claim verification for UNKNOWN results
+        if verdict == "UNKNOWN" and claim:
+            try:
+                fallback_prompt = f"""请判断以下引用原文是否包含生成声明中声称的信息。
+
+生成声明：{claim_text}
+引用原文：{original_text}
+
+仅回答一个词：YES / PARTIAL / NO
+
+你的判断："""
+                fb = generate(fallback_prompt).strip().upper()
+                if fb in ("YES", "PARTIAL", "NO"):
+                    verdict = fb
+            except Exception:
+                pass
 
         verifications.append({
             "claim_id": cid,
-            "claim_text": claim["claim"] if claim else "",
+            "claim_text": claim_text,
             "original_text": original_text,
-            "url": claim["url"] if claim else "",
+            "url": url,
             "verdict": verdict,
         })
 

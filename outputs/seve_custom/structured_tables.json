@@ -1,0 +1,50 @@
+{
+  "CUSTOM_ANEMOI2": {
+    "question": "新岛夕在anemoi中负责了哪些线路的内容？",
+    "claims": [
+      {
+        "id": 1,
+        "claim": "《anemoi》是Key于2026年4月24日发售的恋爱冒险游戏",
+        "snippet": "《anemoi》（日语：アネモイ）是Key于2026年4月24日发售的恋爱冒险游戏",
+        "url": "https://zh.wikipedia.org/zh-cn/Anemoi",
+        "has_conflict": false
+      },
+      {
+        "id": 2,
+        "claim": "《anemoi》描述主角速川麦与妹妹六花在10年前埋下的时间胶囊开封日即将到来之时来到位于北方之地的真澄町",
+        "snippet": "描述主角速川麦与妹妹六花在10年前埋下的时间胶囊开封日即将到来之时来到位于北方之地的真澄町",
+        "url": "https://zh.wikipedia.org/zh-cn/Anemoi",
+        "has_conflict": false
+      },
+      {
+        "id": 3,
+        "claim": "新岛夕的职业为游戏剧本作者、脚本家、作词家，活跃年代为2007年至今",
+        "snippet": "职业, 游戏剧本作者、脚本家、作词家 ; 活跃年代, 2007年至今",
+        "url": "https://mzh.moegirl.org.cn/%E6%96%B0%E5%B2%9B%E5%A4%95",
+        "has_conflict": false
+      },
+      {
+        "id": 4,
+        "claim": "新岛夕的代表作品包括《夏梦渚》、《初雪樱》、《魔女恋爱日记》、《想要传达给你的爱恋》、《Summer Pockets》、《anemoi》",
+        "snippet": "代表作品 ; 夏梦渚、初雪樱、魔女恋爱日记、想要传达给你的爱恋、Summer Pockets、anemoi",
+        "url": "https://mzh.moegirl.org.cn/%E6%96%B0%E5%B2%9B%E5%A4%95",
+        "has_conflict": false
+      },
+      {
+        "id": 5,
+        "claim": "《anemoi》的进线方法是直接点击角色去见她，不需要复杂选项",
+        "snippet": "本作的進線方法似乎也是新島夕傳統，像Summer Pockets一樣直接點角色去見她就行了，不用複雜的選項。",
+        "url": "https://www.instagram.com/p/DSfvU1RkzQQ/",
+        "has_conflict": false
+      },
+      {
+        "id": 6,
+        "claim": "《anemoi》中主角与某角色会一起种小麦和烤披萨吃",
+        "snippet": "但主角合得來，會一起種小麥和烤披薩吃",
+        "url": "https://www.facebook.com/NineASMR/posts/key%E7%A4%BE%E6%96%B0%E4%BD%9Canemoi%E7%9A%84%E6%96%B0%E6%83%85%E5%A0%B1%E9%80%99%E5%B9%BE%E5%A4%A9visual-arts%E5%AE%98%E7%B6%B2%E9%87%8B%E5%87%BA%E4%BA%86c103%E6%99%82%E7%99%BC%E5%94%AE%E7%9A%84%E5%B0%8F%E5%86%8A%E5%AD%90%E5%AE%8C%E6%95%B4%E7%89%88%E9%9B%BB%E5%AD%90%E6%AA%94%E6%9C%AC%E7%AF%87%E5%85%A7%E5%AE%B9%E6%98%AF%E5%8F%83%E8%80%83%E5%85%A7%E6%96%87%E5%AE%8C%E6%95%B4%E9%9B%BB%E5%AD%90%E6%AA%94%E4%BB%A5%E5%8F%8A%E6%96%87%E7%AB%A0%E8%BD%89%E8%BC%89%E4%BE%86%E6%BA%90%E9%99%84%E6%96%B0%E9%80%A3%E7%B5%90-%E6%9C%AC/215346518317208/",
+        "has_conflict": false
+      }
+    ],
+    "num_claims": 6
+  }
+}

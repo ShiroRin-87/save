@@ -1,188 +1,92 @@
 {
-  "FQ070": {
-    "question": "When did Rick Riordan first release the Harry Potter series?",
+  "FQ010": {
+    "question": "In what year did Hikaru Nakamura become the World Chess Champion?",
     "claims": [
       {
         "id": 1,
-        "claim": "Rick Riordan在2005年通过发布《神火之盗》介绍了波西·杰克逊和混血营的世界。",
-        "snippet": "Rick Riordan introduced us to the world of Percy Jackson and Camp Half-Blood with the release of 'The Lightning Thief'.",
-        "url": "https://www.reddit.com/r/harrypotter/comments/7lea7p/how_might_the_harry_potter_series_be_different_if/",
+        "claim": "Nakamura代表美国参加了七届国际象棋奥林匹克团体赛（2006, 2008, 2010, 2012, 2014, 2016, 2018）",
+        "snippet": "Nakamura has represented the United States at seven Chess Olympiads (2006, 2008, 2010, 2012, 2014, 2016, 2018)",
+        "url": "https://en.wikipedia.org/wiki/Hikaru_Nakamura",
         "has_conflict": false
       },
       {
         "id": 2,
-        "claim": "Rick Riordan是圣安东尼奥的作家和教师。",
-        "snippet": "the San Antonio writer and teacher",
-        "url": "https://www.texasmonthly.com/articles/rick-riordan-2/",
+        "claim": "Nakamura获得了获得一枚团体金牌和两枚团体铜牌",
+        "snippet": "securing a team gold medal and two team bronze",
+        "url": "https://en.wikipedia.org/wiki/Hikaru_Nakamura",
         "has_conflict": false
       },
       {
         "id": 3,
-        "claim": "2005年，Rick Riordan推出了面向儿童的系列丛书《波西·杰克逊与奥林匹斯众神》。",
-        "snippet": "launched a series for kids: Percy Jackson and the Olympians.",
-        "url": "https://www.texasmonthly.com/articles/rick-riordan-2/",
-        "has_conflict": false
-      },
-      {
-        "id": 4,
-        "claim": "2005年时，Rick Riordan已有七部成人推理小说作品。",
-        "snippet": "In 2005, with seven adult mysteries under his belt",
-        "url": "https://www.texasmonthly.com/articles/rick-riordan-2/",
-        "has_conflict": false
-      },
-      {
-        "id": 5,
-        "claim": "Richard Russell Riordan Jr是一位美国作家。",
-        "snippet": "Richard Russell Riordan Jr is an American author",
-        "url": "https://en.wikipedia.org/wiki/Rick_Riordan",
-        "has_conflict": false
-      },
-      {
-        "id": 6,
-        "claim": "Richard Russell Riordan Jr以其《混血营英雄》系列（Camp Half-Blood Chronicles）最为知名。",
-        "snippet": "best known for his Camp Half-Blood Chronicles",
-        "url": "https://en.wikipedia.org/wiki/Rick_Riordan",
-        "has_conflict": false
-      },
-      {
-        "id": 7,
-        "claim": "《混血营英雄》系列包括《波西·杰克逊与奥林匹斯众神》系列。",
-        "snippet": "which includes the Percy Jackson & the Olympians series",
-        "url": "https://en.wikipedia.org/wiki/Rick_Riordan",
-        "has_conflict": false
-      },
-      {
-        "id": 8,
-        "claim": "《波西·杰克逊》的许多元素与《哈利·波特》相似。",
-        "snippet": "Many other elements of Percy Jackson are similar to Harry Potter",
-        "url": "http://rickriordan.blogspot.com/2005/11/",
-        "has_conflict": false
-      },
-      {
-        "id": 9,
-        "claim": "这些小说（波西·杰克逊与哈利·波特）都借鉴了相同的民间传说和神话。",
-        "snippet": "the novels draw from the same well of folklore and mythology.",
-        "url": "http://rickriordan.blogspot.com/2005/11/",
-        "has_conflict": false
-      },
-      {
-        "id": 10,
-        "claim": "《哈利·波特与魔法石》是该系列的第一部，于1997年出版。",
-        "snippet": "Harry Potter and the Sorcerer's Stone, the first of the series, was published in 1997.",
-        "url": "https://runestonejournal.com/j-k-rowling-vs-rick-riordan-how-to-add-representation-to-your-fictional-universe/",
-        "has_conflict": false
-      },
-      {
-        "id": 11,
-        "claim": "该系列的最后一本书是《哈利·波特与死亡圣器》（原文拼写为Deathly Hollows）。",
-        "snippet": "The final book, Harry Potter and the Deathly Hollows",
-        "url": "https://runestonejournal.com/j-k-rowling-vs-rick-riordan-how-to-add-representation-to-your-fictional-universe/",
-        "has_conflict": false
-      }
-    ],
-    "num_claims": 11
-  },
-  "FQ130": {
-    "question": "What is the top-ranked university in the US according to the US News Ranking?",
-    "claims": [
-      {
-        "id": 1,
-        "claim": "在U.S. News 2026年最佳大学排名中，普林斯顿大学位列第1。",
-        "snippet": "Princeton University. #1",
-        "url": "https://www.usnews.com/best-colleges",
-        "has_conflict": false
-      },
-      {
-        "id": 2,
-        "claim": "在U.S. News 2026年最佳大学排名中，麻省理工学院位列第2。",
-        "snippet": "Massachusetts Institute of Technology. #2",
-        "url": "https://www.usnews.com/best-colleges",
-        "has_conflict": false
-      }
-    ],
-    "num_claims": 2
-  },
-  "FQ398": {
-    "question": "When did this year's Passover start?",
-    "claims": [
-      {
-        "id": 1,
-        "claim": "逾越节（Pesach）在希伯来历中的日期为尼散月（Nissan）15-22日",
-        "snippet": "The holiday of Pesach, or Passover, falls on the Hebrew calendar dates of Nissan 15-22.",
-        "url": "https://www.chabad.org/holidays/passover/pesach_cdo/aid/671901/jewish/When-Is-Passover-in-2026-2027-2028-2029-and-2030.htm",
-        "has_conflict": false
-      },
-      {
-        "id": 2,
-        "claim": "2026年逾越节在2026年4月1日周三日落前开始",
-        "snippet": "Pesach 2026 (Passover) begins before sundown on Wednesday April 1, 2026,",
-        "url": "https://www.chabad.org/holidays/passover/pesach_cdo/aid/671901/jewish/When-Is-Passover-in-2026-2027-2028-2029-and-2030.htm",
-        "has_conflict": false
-      },
-      {
-        "id": 3,
-        "claim": "2026年逾越节的观察日期为4月1日至4月8日",
-        "snippet": "Passover will be observed this year from April 1 to April 8, 2026.",
-        "url": "https://reformjudaism.org/jewish-holidays/passover",
+        "claim": "Hikaru赢得了四次美国冠军",
+        "snippet": "he has won the US Championship (four times)",
+        "url": "https://www.reddit.com/r/chess/comments/p5gfw1/hikaru_doesnt_have_to_be_world_champion_or/",
         "has_conflict": true
       },
       {
         "id": 4,
-        "claim": "逾越节是庆祝自由与家庭的犹太春季节日",
-        "snippet": "It is the Jewish spring festival celebrating freedom and family",
-        "url": "https://reformjudaism.org/jewish-holidays/passover",
+        "claim": "Hikaru获得了两次伦敦国际象棋经典赛冠军",
+        "snippet": "the London Chess Classic (twice)",
+        "url": "https://www.reddit.com/r/chess/comments/p5gfw1/hikaru_doesnt_have_to_be_world_champion_or/",
         "has_conflict": false
       },
       {
         "id": 5,
-        "claim": "逾越节是为了纪念出埃及记（Exodus）",
-        "snippet": "as we remember the Exodus",
-        "url": "https://reformjudaism.org/jewish-holidays/passover",
+        "claim": "Hikaru赢得了Wijk an Zee",
+        "snippet": "Wijk an Zee",
+        "url": "https://www.reddit.com/r/chess/comments/p5gfw1/hikaru_doesnt_have_to_be_world_champion_or/",
         "has_conflict": false
       },
       {
         "id": 6,
-        "claim": "逾越节始于尼散月（Nisan）的第15天",
-        "snippet": "The Passover begins on the 15th day of the month of Nisan",
-        "url": "https://en.wikipedia.org/wiki/Passover",
+        "claim": "Hikaru赢得了奥林匹克团体赛",
+        "snippet": "and the Olympiad",
+        "url": "https://www.reddit.com/r/chess/comments/p5gfw1/hikaru_doesnt_have_to_be_world_champion_or/",
         "has_conflict": false
       },
       {
         "id": 7,
-        "claim": "古以色列传统确保逾越节不会在春天之前开始",
-        "snippet": "To ensure that Passover did not start before spring, the tradition in ancient Israel held that the",
-        "url": "https://en.wikipedia.org/wiki/Passover",
-        "has_conflict": false
+        "claim": "Nakamura是五届美国冠军",
+        "snippet": "He is a five-time U.S. champion",
+        "url": "https://www.chess.com/players/hikaru-nakamura",
+        "has_conflict": true
       },
       {
         "id": 8,
-        "claim": "2026年逾越节（第一天）是2026年4月2日星期四",
-        "snippet": "This year: Thu, Apr 2, 2026 ; ... English, Passover (first day).",
-        "url": "https://www.timeanddate.com/holidays/us/first-day-of-passover",
-        "has_conflict": true
+        "claim": "Nakamura在2005年、2009年、2012年、2015年和2019年赢得了该头衔",
+        "snippet": "claiming the title in 2005, 2009, 2012, 2015, and 2019",
+        "url": "https://www.chess.com/players/hikaru-nakamura",
+        "has_conflict": false
       },
       {
         "id": 9,
-        "claim": "2026年逾越节的庆祝时间为4月1日至4月9日",
-        "snippet": "Passover 2026 will be celebrated from April 1 to April 9.",
-        "url": "https://www.almanac.com/passover",
-        "has_conflict": true
+        "claim": "Nakamura曾是国际棋联2004年世界锦标赛的参赛者",
+        "snippet": "Nakamura was also a participant in FIDE's 2004 World Championship",
+        "url": "https://www.chess.com/players/hikaru-nakamura",
+        "has_conflict": false
       },
       {
         "id": 10,
-        "claim": "2026年第一次逾越节家宴（seder）在4月1日入夜后举行",
-        "snippet": "The first seder will be on April 1 after nightfall",
-        "url": "https://www.almanac.com/passover",
+        "claim": "Hikaru Nakamura是世界排名第二的国际象棋棋手",
+        "snippet": "Hikaru Nakamura, the world's No. 2 chess player",
+        "url": "https://sports.yahoo.com/olympics/breaking-news/article/heres-why-hikaru-nakamura-the-worlds-no-2-chess-player-is-gaming-the-system-with-mickey-mouse-tournaments-024245683.html",
         "has_conflict": false
       },
       {
         "id": 11,
-        "claim": "2026年第二次逾越节家宴（seder）在4月2日入夜后举行",
-        "snippet": "and the second seder will be on April 2 after nightfall",
-        "url": "https://www.almanac.com/passover",
+        "claim": "这位特级大师本月参加了路易斯安那州锦标赛和爱荷华州公开赛",
+        "snippet": "The grandmaster has competed in the Louisiana State Championship and Iowa Open this month",
+        "url": "https://sports.yahoo.com/olympics/breaking-news/article/heres-why-hikaru-nakamura-the-worlds-no-2-chess-player-is-gaming-the-system-with-mickey-mouse-tournaments-024245683.html",
+        "has_conflict": false
+      },
+      {
+        "id": 12,
+        "claim": "他通过击败一名13岁的选手赢得了后者（爱荷华州公开赛）",
+        "snippet": "He won the latter by beating a 13-year-old",
+        "url": "https://sports.yahoo.com/olympics/breaking-news/article/heres-why-hikaru-nakamura-the-worlds-no-2-chess-player-is-gaming-the-system-with-mickey-mouse-tournaments-024245683.html",
         "has_conflict": false
       }
     ],
-    "num_claims": 11
+    "num_claims": 12
   }
 }

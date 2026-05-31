@@ -1,0 +1,21 @@
+{
+  "CUSTOM_ANEMOI2": {
+    "question": "新岛夕在anemoi中负责了哪些线路的内容？",
+    "verifications": [
+      {
+        "claim_id": "3",
+        "claim_text": "新岛夕的职业为游戏剧本作者、脚本家、作词家，活跃年代为2007年至今",
+        "original_text": "新岛夕 ; 国籍, 日本 ; 职业, 游戏剧本作者、脚本家、作词家 ; 活跃年代, 2007年至今 ; 代表作品 ; 夏梦渚、初雪樱、魔女恋爱日记、想要传达给你的爱恋、Summer Pockets、anemoi ...",
+        "url": "https://mzh.moegirl.org.cn/%E6%96%B0%E5%B2%9B%E5%A4%95",
+        "verdict": "YES"
+      },
+      {
+        "claim_id": "4",
+        "claim_text": "新岛夕的代表作品包括《夏梦渚》、《初雪樱》、《魔女恋爱日记》、《想要传达给你的爱恋》、《Summer Pockets》、《anemoi》",
+        "original_text": "新岛夕 ; 国籍, 日本 ; 职业, 游戏剧本作者、脚本家、作词家 ; 活跃年代, 2007年至今 ; 代表作品 ; 夏梦渚、初雪樱、魔女恋爱日记、想要传达给你的爱恋、Summer Pockets、anemoi ...",
+        "url": "https://mzh.moegirl.org.cn/%E6%96%B0%E5%B2%9B%E5%A4%95",
+        "verdict": "YES"
+      }
+    ]
+  }
+}

@@ -1,113 +1,19 @@
 {
-  "FQ070": {
-    "question": "When did Rick Riordan first release the Harry Potter series?",
+  "FQ010": {
+    "question": "In what year did Hikaru Nakamura become the World Chess Champion?",
     "verifications": [
-      {
-        "claim_id": "1",
-        "claim_text": "Rick Riordan在2005年通过发布《神火之盗》介绍了波西·杰克逊和混血营的世界。",
-        "original_text": "On this day in 2005, Rick Riordan introduced us to the world of Percy Jackson and Camp Half-Blood with the release of 'The Lightning Thief'. The ...",
-        "url": "https://www.reddit.com/r/harrypotter/comments/7lea7p/how_might_the_harry_potter_series_be_different_if/",
-        "verdict": "YES"
-      },
       {
         "claim_id": "10",
-        "claim_text": "《哈利·波特与魔法石》是该系列的第一部，于1997年出版。",
-        "original_text": "Harry Potter and the Sorcerer's Stone, the first of the series, was published in 1997. The final book, Harry Potter and the Deathly Hollows ...",
-        "url": "https://runestonejournal.com/j-k-rowling-vs-rick-riordan-how-to-add-representation-to-your-fictional-universe/",
-        "verdict": "YES"
-      },
-      {
-        "claim_id": "3",
-        "claim_text": "2005年，Rick Riordan推出了面向儿童的系列丛书《波西·杰克逊与奥林匹斯众神》。",
-        "original_text": "In 2005, with seven adult mysteries under his belt, the San Antonio writer and teacher launched a series for kids: Percy Jackson and the Olympians.",
-        "url": "https://www.texasmonthly.com/articles/rick-riordan-2/",
-        "verdict": "YES"
-      }
-    ]
-  },
-  "FQ130": {
-    "question": "What is the top-ranked university in the US according to the US News Ranking?",
-    "verifications": [
-      {
-        "claim_id": "1",
-        "claim_text": "在U.S. News 2026年最佳大学排名中，普林斯顿大学位列第1。",
-        "original_text": "U.S. News Best Colleges ; Princeton University. #1 ; Massachusetts Institute of Technology. #2 ; Harvard University. #3 ...",
-        "url": "https://www.usnews.com/best-colleges",
-        "verdict": "PARTIAL"
-      }
-    ]
-  },
-  "FQ398": {
-    "question": "When did this year's Passover start?",
-    "verifications": [
-      {
-        "claim_id": "4",
-        "claim_text": "逾越节是庆祝自由与家庭的犹太春季节日",
-        "original_text": "Passover will be observed this year from April 1 to April 8, 2026. It is the Jewish spring festival celebrating freedom and family as we remember the Exodus ...",
-        "url": "https://reformjudaism.org/jewish-holidays/passover",
-        "verdict": "YES"
-      },
-      {
-        "claim_id": "10",
-        "claim_text": "2026年第一次逾越节家宴（seder）在4月1日入夜后举行",
-        "original_text": "Passover 2026 will be celebrated from April 1 to April 9. The first seder will be on April 1 after nightfall, and the second seder will be on April 2 after ...",
-        "url": "https://www.almanac.com/passover",
-        "verdict": "YES"
-      },
-      {
-        "claim_id": "8",
-        "claim_text": "2026年逾越节（第一天）是2026年4月2日星期四",
-        "original_text": "This year: Thu, Apr 2, 2026 ; Next year: Thu, Apr 22, 2027 ; Last year: Sun, Apr 13, 2025 ; Type: Jewish holiday ; English, Passover (first day).",
-        "url": "https://www.timeanddate.com/holidays/us/first-day-of-passover",
-        "verdict": "YES"
+        "claim_text": "Hikaru Nakamura是世界排名第二的国际象棋棋手",
+        "original_text": "The grandmaster has competed in the Louisiana State Championship and Iowa Open this month. He won the latter by beating a 13-year-old.",
+        "url": "https://sports.yahoo.com/olympics/breaking-news/article/heres-why-hikaru-nakamura-the-worlds-no-2-chess-player-is-gaming-the-system-with-mickey-mouse-tournaments-024245683.html",
+        "verdict": "NO"
       },
       {
         "claim_id": "9",
-        "claim_text": "2026年逾越节的庆祝时间为4月1日至4月9日",
-        "original_text": "Passover 2026 will be celebrated from April 1 to April 9. The first seder will be on April 1 after nightfall, and the second seder will be on April 2 after ...",
-        "url": "https://www.almanac.com/passover",
-        "verdict": "YES"
-      },
-      {
-        "claim_id": "2",
-        "claim_text": "2026年逾越节在2026年4月1日周三日落前开始",
-        "original_text": "The holiday of Pesach, or Passover, falls on the Hebrew calendar dates of Nissan 15-22. Pesach 2026 (Passover) begins before sundown on Wednesday April 1, 2026, ...",
-        "url": "https://www.chabad.org/holidays/passover/pesach_cdo/aid/671901/jewish/When-Is-Passover-in-2026-2027-2028-2029-and-2030.htm",
-        "verdict": "YES"
-      },
-      {
-        "claim_id": "3",
-        "claim_text": "2026年逾越节的观察日期为4月1日至4月8日",
-        "original_text": "Passover will be observed this year from April 1 to April 8, 2026. It is the Jewish spring festival celebrating freedom and family as we remember the Exodus ...",
-        "url": "https://reformjudaism.org/jewish-holidays/passover",
-        "verdict": "YES"
-      },
-      {
-        "claim_id": "7",
-        "claim_text": "古以色列传统确保逾越节不会在春天之前开始",
-        "original_text": "The Passover begins on the 15th day of the month of Nisan ; To ensure that Passover did not start before spring, the tradition in ancient Israel held that the ...",
-        "url": "https://en.wikipedia.org/wiki/Passover",
-        "verdict": "YES"
-      },
-      {
-        "claim_id": "6",
-        "claim_text": "逾越节始于尼散月（Nisan）的第15天",
-        "original_text": "The Passover begins on the 15th day of the month of Nisan ; To ensure that Passover did not start before spring, the tradition in ancient Israel held that the ...",
-        "url": "https://en.wikipedia.org/wiki/Passover",
-        "verdict": "YES"
-      },
-      {
-        "claim_id": "1",
-        "claim_text": "逾越节（Pesach）在希伯来历中的日期为尼散月（Nissan）15-22日",
-        "original_text": "The holiday of Pesach, or Passover, falls on the Hebrew calendar dates of Nissan 15-22. Pesach 2026 (Passover) begins before sundown on Wednesday April 1, 2026, ...",
-        "url": "https://www.chabad.org/holidays/passover/pesach_cdo/aid/671901/jewish/When-Is-Passover-in-2026-2027-2028-2029-and-2030.htm",
-        "verdict": "YES"
-      },
-      {
-        "claim_id": "5",
-        "claim_text": "逾越节是为了纪念出埃及记（Exodus）",
-        "original_text": "Passover will be observed this year from April 1 to April 8, 2026. It is the Jewish spring festival celebrating freedom and family as we remember the Exodus ...",
-        "url": "https://reformjudaism.org/jewish-holidays/passover",
+        "claim_text": "Nakamura曾是国际棋联2004年世界锦标赛的参赛者",
+        "original_text": "He is a five-time U.S. champion, claiming the title in 2005, 2009, 2012, 2015, and 2019. Nakamura was also a participant in FIDE's 2004 World Championship ...",
+        "url": "https://www.chess.com/players/hikaru-nakamura",
         "verdict": "YES"
       }
     ]

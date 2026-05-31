@@ -9,7 +9,7 @@ MODEL_NAME = "gemini-3-flash-preview"
 API_BASE_URL = "https://www.ai-wave.org"
 
 # Search
-SEARCH_TOP_K = 5
+SEARCH_TOP_K = 10
 SERPAPI_ENDPOINT = "https://serpapi.com/search"
 
 # Generation

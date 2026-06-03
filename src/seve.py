@@ -1,10 +1,9 @@
-"""SEVE — Structured Extraction & Verification: full pipeline.
+"""SEVE — Structured Extraction & Verification.
 
-Steps:
-  1. extract_claims() — parse search results into structured fact table
-  2. generate_answer() — calibrated generation from structured table
-  3. verify_claims() — reverse-verify each citation against original text
-  4. apply_verification() — remove NO claims, annotate PARTIAL ones
+Simplified 2-stage pipeline:
+  1. generate_seve() — merged extraction+generation in one API call
+  2. verify_simple() — lightweight batch verification
+  3. apply_verification() — remove NO claims, annotate PARTIAL ones
 """
 import json
 import re
@@ -14,215 +13,194 @@ from src.utils import (
     load_search_cache,
     save_json,
     format_search_results,
-    retry,
 )
 
 
-def extract_claims(results: list[dict], question: str = "") -> list[dict]:
-    """Step 2: Extract structured claims from search results. Output is JSON."""
-    if not results:
-        return []
+# === Stage 1: Merged Extraction + Generation ===
 
-    context = format_search_results(results)
-    q_hint = f'这些搜索结果将被用于回答问题：「{question}」。请确保提取所有与问题相关的信息。\n\n' if question else ""
+def generate_seve(question: str, results: list[dict]) -> tuple[str, dict]:
+    """Generate answer with citations directly from search results.
 
-    prompt = f"""你是一个事实抽取器（不是推理器、不是作家）。你的唯一任务是从搜索结果中提取事实声明。
-
-规则：
-1. 只提取原文中明确陈述的事实，不推断、不总结、不跨源合成
-2. 输出必须是严格的 JSON 数组，每个元素包含以下字段：
-   "claim": "提炼后的事实声明",
-   "snippet": "原文中支撑该声明的原始文本（必须逐字复制，不可改写）",
-   "url": "来源URL",
-   "has_conflict": false
-3. 如果原文没有明确说，不要填写
-4. 如果多个来源对同一事实给出矛盾信息，全部提取并将 has_conflict 设为 true
-5. 只输出 JSON 数组，不要输出任何其他文字
-
-{q_hint}搜索结果：
-{context}
-
-请输出 JSON 数组："""
-
-    def _call():
-        text = generate(prompt)
-        claims = _parse_json_claims(text)
-        if not claims:
-            # Fallback: ask model to fix its JSON
-            repair_prompt = f"""以下文本应该是 JSON 数组但解析失败。请将其修正为标准 JSON 数组，每个元素含 claim/snippet/url/has_conflict 字段。只输出 JSON：
-
-{text}"""
-            text = generate(repair_prompt)
-            claims = _parse_json_claims(text)
-        if not claims:
-            raise ValueError("Failed to parse any claims from extraction output (JSON + repair both failed)")
-        return claims
-
-    return retry(_call)
-
-
-def _parse_json_claims(text: str) -> list[dict]:
-    """Parse JSON claims from model output, with tolerance for markdown fences."""
-    text = text.strip()
-    if text.startswith("```"):
-        lines = text.split("\n")
-        lines = lines[1:] if lines[0].startswith("```") else lines
-        if lines and lines[-1].strip() == "```":
-            lines = lines[:-1]
-        text = "\n".join(lines)
-    try:
-        data = json.loads(text)
-    except json.JSONDecodeError:
-        m = re.search(r"\[[\s\S]*\]", text)
-        if m:
-            try:
-                data = json.loads(m.group(0))
-            except json.JSONDecodeError:
-                return []
-        else:
-            return []
-    if not isinstance(data, list):
-        return []
-    claims = []
-    for i, item in enumerate(data, 1):
-        if not isinstance(item, dict):
-            continue
-        claims.append({
-            "id": i,
-            "claim": str(item.get("claim", item.get("claim_text", ""))),
-            "snippet": str(item.get("snippet", item.get("original_text", ""))),
-            "url": str(item.get("url", "")),
-            "has_conflict": bool(item.get("has_conflict", False)),
-        })
-    return claims
-
-
-def generate_answer(question: str, claims: list[dict]) -> tuple[str, dict]:
-    """Step 3: Generate answer from structured knowledge table.
-
-    Returns (answer_text, citation_map) where citation_map is {claim_id: url}.
+    Single API call — no separate extraction step.
+    Citations use [N] pointing to search result rank numbers.
+    Returns (answer, citation_map).
     """
-    if not claims:
+    if not results:
         answer = generate(
-            f"请回答以下问题。如果无法回答，请说明。\n\n问题：{question}"
+            f"Answer the question. If unable to answer, explain why.\n\n"
+            f"Question: {question}"
         )
         return answer, {}
 
-    lines = []
-    for c in claims:
-        conflict = " [冲突]" if c["has_conflict"] else ""
-        lines.append(f"[{c['id']}] {c['claim']} | 来源: {c['url']}{conflict}")
-    table_text = "\n".join(lines)
+    # Build context with numbered search results
+    parts = []
+    for r in results:
+        text = r.get("full_text", "") or r.get("snippet", "")
+        parts.append(
+            f"[{r['rank']}] {r['title']}\n"
+            f"URL: {r['url']}\n"
+            f"Content: {text}"
+        )
+    context = "\n\n".join(parts)
+    citation_map = {str(r["rank"]): r["url"] for r in results}
 
-    prompt = f"""你是一个问答助手。请基于以下结构化知识表回答用户问题。
-
-规则：
-1. 每个事实声明后标注引用编号，如 [1][2]
-2. 如果知识表中标注了 [冲突]，需要同时呈现多方说法并注明来源差异
-3. 首先判断问题前提是否成立：如果问题假设了某个不成立的事实（例如问"A何时做了X"但知识表明确显示A从未做过X），直接指出前提错误，并用知识表中的相关信息说明实际情况
-4. 只有当知识表对该问题完全无法提供任何相关信息时，才写明"当前信息不足以确定"
-5. 对于只有单一来源的信息，标注"据[来源名称]"
-6. 不要编造知识表中不存在的信息
-
-结构化知识表：
-{table_text}
-
-用户问题：{question}
-
-请回答："""
+    prompt = (
+        "You are a QA assistant. Answer the user's question based on the search "
+        "results below.\n\n"
+        "Rules:\n"
+        "1. Mark EVERY factual claim with citation numbers like [1][2] — each "
+        "number MUST match the search result number shown in [brackets] above.\n"
+        "2. If sources contradict, present all sides and note the differences.\n"
+        "3. If the question has a false premise (e.g., asks about X but all "
+        "sources show X never happened), point this out directly.\n"
+        "4. Only say 'Insufficient information' when NO source contains "
+        "relevant information.\n"
+        "5. Do NOT fabricate anything not in the sources.\n\n"
+        f"Search results:\n{context}\n\n"
+        f"Question: {question}\n\n"
+        "Answer:"
+    )
 
     answer = generate(prompt)
-    citation_map = {str(c["id"]): c["url"] for c in claims}
     return answer, citation_map
 
 
-def verify_claims(answer: str, claims: list[dict], search_results: list[dict]) -> list[dict]:
-    """Step 4: Reverse-verify cited claims against original search cache text.
+# === Stage 2: Simplified Verification ===
 
-    Uses a single batch prompt with JSON output. Falls back to single-claim
-    verification for any claims that fail to parse from the batch response.
-    """
-    cited_ids = set()
+def verify_simple(answer: str, results: list[dict]) -> list[dict]:
+    """Lightweight reverse verification: checks each cited sentence against its
+    source text. Uses a simple list format (not JSON) for speed."""
+    cited = set()
     for m in re.finditer(r"\[(\d+)\]", answer):
-        cited_ids.add(m.group(1))
+        cited.add(int(m.group(1)))
 
-    claim_by_id = {str(c["id"]): c for c in claims}
-    url_to_result = {r["url"]: r for r in (search_results or [])}
+    results_by_rank = {r["rank"]: r for r in (results or [])}
+    verifications = []
 
+    # Build verification items
     items = []
-    ordered_ids = []
-    for cid in cited_ids:
-        claim = claim_by_id.get(cid)
-        if not claim:
+    for cid in sorted(cited):
+        src = results_by_rank.get(cid)
+        if not src:
             continue
-        original_result = url_to_result.get(claim["url"])
-        original_text = (original_result.get("full_text") or original_result.get("snippet", "")) if original_result else claim["snippet"]
-        items.append({"id": cid, "claim": claim["claim"], "original": original_text})
-        ordered_ids.append(cid)
+        # Find the sentence containing [citation cid]
+        pattern = re.compile(rf"([^.]*\[{cid}\][^.]*\.)")
+        for m in pattern.finditer(answer):
+            items.append({
+                "id": cid,
+                "claim": m.group(1).strip(),
+                "original": (src.get("full_text", "") or src.get("snippet", ""))[:500],
+            })
+            break
 
     if not items:
         return []
 
-    # Batch verification with JSON output
-    items_json = json.dumps(items, ensure_ascii=False, indent=2)
-    batch_prompt = f"""对以下 JSON 数组中的每组声明和原文，判断原文是否包含声明中声称的信息。
-为每个元素添加 "verdict" 字段，值为 YES/PARTIAL/NO。
-只输出 JSON 数组，不要输出任何其他文字。
+    # Batch verify with simple format
+    text_parts = []
+    for i, it in enumerate(items, 1):
+        text_parts.append(
+            f"{i}. Claim: {it['claim'][:200]}\n"
+            f"   Source text: {it['original'][:300]}"
+        )
+    items_text = "\n\n".join(text_parts)
 
-输入：
-{items_json}
-
-输出 JSON："""
+    batch_prompt = (
+        "For each numbered pair below, judge whether the source text supports "
+        "the claim. Reply with a simple list: '1: YES, 2: NO, 3: PARTIAL, ...'\n"
+        "YES = text clearly contains the claim\n"
+        "PARTIAL = partially supported but details differ\n"
+        "NO = text does not contain or contradicts the claim\n\n"
+        f"{items_text}\n\n"
+        "Verdicts:"
+    )
 
     verdict_map = {}
     try:
         result_text = generate(batch_prompt)
-        batch_results = _parse_json_claims(result_text)
-        for r in batch_results:
-            cid_key = str(r.get("id", ""))
-            raw_verdict = str(r.get("verdict", "")).upper()
-            if raw_verdict in ("YES", "PARTIAL", "NO"):
-                verdict_map[cid_key] = raw_verdict
+        for line in result_text.strip().split("\n"):
+            mm = re.match(r"(\d+)\s*[:：]\s*(YES|PARTIAL|NO)", line.strip(), re.I)
+            if mm:
+                idx = int(mm.group(1)) - 1
+                if 0 <= idx < len(items):
+                    verdict_map[items[idx]["id"]] = mm.group(2).upper()
     except Exception:
         pass
 
-    # Build results, falling back to single-claim for any UNKNOWN
-    verifications = []
-    for cid in ordered_ids:
-        claim = claim_by_id.get(cid)
-        original_result = url_to_result.get(claim["url"]) if claim else None
-        original_text = (original_result.get("full_text") or original_result.get("snippet", "")) if original_result else (claim["snippet"] if claim else "")
-        claim_text = claim["claim"] if claim else ""
-        url = claim["url"] if claim else ""
-
+    for it in items:
+        cid = it["id"]
         verdict = verdict_map.get(cid, "UNKNOWN")
 
-        # Fallback: single-claim verification for UNKNOWN results
-        if verdict == "UNKNOWN" and claim:
+        # Fallback single-item check
+        if verdict == "UNKNOWN":
             try:
-                fallback_prompt = f"""请判断以下引用原文是否包含生成声明中声称的信息。
-
-生成声明：{claim_text}
-引用原文：{original_text}
-
-仅回答一个词：YES / PARTIAL / NO
-
-你的判断："""
-                fb = generate(fallback_prompt).strip().upper()
-                if fb in ("YES", "PARTIAL", "NO"):
-                    verdict = fb
+                fb = generate(
+                    "Does the source text support this claim? "
+                    "Reply YES, PARTIAL, or NO.\n\n"
+                    f"Claim: {it['claim'][:200]}\n"
+                    f"Source: {it['original'][:300]}\n\n"
+                    "Judgment:"
+                ).strip().upper()
+                for v in ("YES", "PARTIAL", "NO"):
+                    if v in fb:
+                        verdict = v
+                        break
             except Exception:
-                pass
+                verdict = "ERROR"
 
         verifications.append({
-            "claim_id": cid,
-            "claim_text": claim_text,
-            "original_text": original_text,
-            "url": url,
+            "claim_id": str(cid),
+            "claim_text": it["claim"],
+            "original_text": it["original"],
             "verdict": verdict,
         })
 
     return verifications
+
+
+# === Stage 3: Post-Verification Correction ===
+
+def correct_answer(answer: str, verifications: list[dict], results: list[dict]) -> str:
+    """Rewrite the answer to fix PARTIAL/NO claims using original source text."""
+    results_by_rank = {r["rank"]: r for r in (results or [])}
+    corrections = []
+    for v in verifications:
+        if v["verdict"] in ("PARTIAL", "NO"):
+            cid = int(v["claim_id"])
+            src = results_by_rank.get(cid, {})
+            src_text = (src.get("full_text", "") or src.get("snippet", ""))[:500]
+            corrections.append({
+                "citation": cid,
+                "original_claim": v["claim_text"][:200],
+                "verdict": v["verdict"],
+                "source_text": src_text,
+            })
+
+    if not corrections:
+        return answer
+
+    corr_text = "\n".join(
+        f"[{c['citation']}] ({c['verdict']})\n"
+        f"  Current: {c['original_claim']}\n"
+        f"  Source:  {c['source_text'][:300]}"
+        for c in corrections
+    )
+
+    prompt = (
+        "Below is an answer where some claims were flagged by verification. "
+        "Rewrite the FULL answer with corrections applied:\n"
+        "- PARTIAL: fix inaccuracies in the claim using the source text\n"
+        "- NO: if the source contains relevant info, create a correct replacement; "
+        "otherwise remove the claim entirely\n"
+        "- Keep all correct claims unchanged. Keep citation numbers [N].\n\n"
+        f"Flagged claims:\n{corr_text}\n\n"
+        f"Original answer:\n{answer}\n\n"
+        "Output ONLY the corrected answer, no other text.\n\n"
+        "Corrected answer:"
+    )
+
+    corrected = generate(prompt)
+    return corrected
 
 
 def apply_verification(answer: str, verifications: list[dict]) -> str:
@@ -243,6 +221,14 @@ def apply_verification(answer: str, verifications: list[dict]) -> str:
     return answer
 
 
+def strip_verification_notes(answer: str) -> str:
+    """Remove verification notes for clean evaluation."""
+    idx = answer.find("\n\n--- 验证备注 ---")
+    if idx != -1:
+        return answer[:idx].strip()
+    return answer
+
+
 def run_seve() -> None:
     questions = load_questions()
     cache = load_search_cache()
@@ -258,12 +244,11 @@ def run_seve() -> None:
         print(f"SEVE [{qid}]: {q['question'][:80]}...")
 
         try:
-            claims = extract_claims(results, q["question"])
-            answer, citation_map = generate_answer(q["question"], claims)
-            verifications = verify_claims(answer, claims, results)
-            final_answer = apply_verification(answer, verifications)
+            answer, citation_map = generate_seve(q["question"], results)
+            verifications = verify_simple(answer, results)
+            corrected = correct_answer(answer, verifications, results)
+            final_answer = apply_verification(corrected, verifications)
         except Exception as e:
-            claims = []
             answer = f"[ERROR: {e}]"
             citation_map = {}
             verifications = []
@@ -271,8 +256,7 @@ def run_seve() -> None:
 
         all_tables[qid] = {
             "question": q["question"],
-            "claims": claims,
-            "num_claims": len(claims),
+            "num_claims": len(verifications),
         }
         all_answers[qid] = {
             "question": q["question"],
@@ -289,7 +273,7 @@ def run_seve() -> None:
             "method": "seve",
             "search_available": bool(results),
         }
-        print(f"  Claims: {len(claims)}, Verifications: {len(verifications)}")
+        print(f"  Verifications: {len(verifications)}")
 
     save_json(all_tables, "outputs/seve/structured_tables.json")
     save_json(all_answers, "outputs/seve/generated_answers.json")

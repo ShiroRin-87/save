@@ -1,7 +1,7 @@
 """Ablation experiments: wo_both and wo_rev_verify."""
 import sys
 from src.model_client import generate
-from src.seve import extract_claims, generate_answer
+from src.seve import generate_seve
 from src.utils import (
     load_questions,
     load_search_cache,
@@ -68,8 +68,7 @@ def run_ablation_wo_rev_verify() -> None:
         results = cache.get(qid, {}).get("results", [])
 
         try:
-            claims = extract_claims(results)
-            answer, citation_map = generate_answer(q["question"], claims)
+            answer, citation_map = generate_seve(q["question"], results)
         except Exception as e:
             answer = f"[ERROR: {e}]"
             citation_map = {}

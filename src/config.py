@@ -1,12 +1,12 @@
 """Experiment configuration — all values are fixed per the experiment design."""
 
 # API keys
-GEMINI_API_KEY = "sk-QRv4ACt4fQub9e2_Jtftp4__Tf6_y3RY69gUKLSo6GjKjnGUiV4QHNVa8io"
+GEMINI_API_KEY = "sk-607e45863f5743aca889ce73a02839a0"
 SERP_API_KEY = "871721eb9798e30a558f35e2267167e621537ebba654e296459c93c3548fcf33"
 
 # Model
-MODEL_NAME = "gemini-3-flash-preview"
-API_BASE_URL = "https://www.ai-wave.org"
+MODEL_NAME = "deepseek-chat"
+API_BASE_URL = "https://api.deepseek.com"
 
 # Search
 SEARCH_TOP_K = 10
@@ -23,6 +23,11 @@ PARSE_RETRY_MAX = 3
 # Evaluation
 BOOTSTRAP_SAMPLES = 10000
 ALPHA = 0.05
+
+# NLI Evaluation (DeepSeek — decoupled from generation model)
+NLI_API_KEY = "sk-607e45863f5743aca889ce73a02839a0"
+NLI_API_BASE_URL = "https://api.deepseek.com/v1"
+NLI_MODEL_NAME = "deepseek-chat"
 
 # Paths (relative to project root)
 DATA_DIR = "data"

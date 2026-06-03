@@ -11,6 +11,7 @@ API_BASE_URL = "https://www.ai-wave.org"
 # Search
 SEARCH_TOP_K = 10
 SERPAPI_ENDPOINT = "https://serpapi.com/search"
+JINA_MAX_CHARS = 30000  # truncate Jina full-text to this per page
 
 # Generation
 TEMPERATURE = 0.0

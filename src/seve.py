@@ -8,6 +8,7 @@ Steps:
 """
 import json
 import re
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from src.model_client import generate
 from src.utils import (
     load_questions,
@@ -186,19 +187,20 @@ def verify_claims(answer: str, claims: list[dict], search_results: list[dict]) -
     except Exception:
         pass
 
-    # Build results, falling back to single-claim for any UNKNOWN
-    verifications = []
+    # Collect UNKNOWN claims for parallel fallback
+    unknown_list = []
     for cid in ordered_ids:
-        claim = claim_by_id.get(cid)
-        original_result = url_to_result.get(claim["url"]) if claim else None
-        original_text = (original_result.get("full_text") or original_result.get("snippet", "")) if original_result else (claim["snippet"] if claim else "")
-        claim_text = claim["claim"] if claim else ""
-        url = claim["url"] if claim else ""
+        if verdict_map.get(cid, "UNKNOWN") == "UNKNOWN":
+            claim = claim_by_id.get(cid)
+            if claim:
+                original_result = url_to_result.get(claim["url"])
+                original_text = (original_result.get("full_text") or original_result.get("snippet", "")) if original_result else (claim.get("snippet") or claim.get("context", ""))
+                claim_text = claim.get("claim") or claim.get("sentence", "")
+                unknown_list.append((cid, claim_text, original_text))
 
-        verdict = verdict_map.get(cid, "UNKNOWN")
-
-        # Fallback: single-claim verification for UNKNOWN results
-        if verdict == "UNKNOWN" and claim:
+    # Parallel fallback for UNKNOWN claims
+    if unknown_list:
+        def _verify_one(cid, claim_text, original_text):
             try:
                 fallback_prompt = f"""请判断以下引用原文是否包含生成声明中声称的信息。
 
@@ -210,9 +212,26 @@ def verify_claims(answer: str, claims: list[dict], search_results: list[dict]) -
 你的判断："""
                 fb = generate(fallback_prompt).strip().upper()
                 if fb in ("YES", "PARTIAL", "NO"):
-                    verdict = fb
+                    return cid, fb
             except Exception:
                 pass
+            return cid, "UNKNOWN"
+
+        with ThreadPoolExecutor(max_workers=8) as ex:
+            futures = {ex.submit(_verify_one, cid, ct, ot): cid for cid, ct, ot in unknown_list}
+            for f in as_completed(futures):
+                cid, verdict = f.result()
+                verdict_map[cid] = verdict
+
+    # Build final results
+    verifications = []
+    for cid in ordered_ids:
+        claim = claim_by_id.get(cid)
+        original_result = url_to_result.get(claim["url"]) if claim else None
+        original_text = (original_result.get("full_text") or original_result.get("snippet", "")) if original_result else (claim.get("snippet") or claim.get("context", "") if claim else "")
+        claim_text = (claim.get("claim") or claim.get("sentence", "")) if claim else ""
+        url = claim["url"] if claim else ""
+        verdict = verdict_map.get(cid, "UNKNOWN")
 
         verifications.append({
             "claim_id": cid,

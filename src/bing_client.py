@@ -1,4 +1,4 @@
-"""Google Search API wrapper via SerpAPI, with Jina Reader full-text enrichment."""
+"""Baidu Search API wrapper via SerpAPI, with Jina Reader full-text enrichment."""
 import time
 import urllib3
 import requests
@@ -31,7 +31,7 @@ def search(query: str, top_k: int = SEARCH_TOP_K, use_jina: bool = True) -> list
     Falls back to snippet if Jina fails.
     """
     params = {
-        "engine": "google",
+        "engine": "baidu",
         "q": query,
         "api_key": SERP_API_KEY,
         "num": top_k,

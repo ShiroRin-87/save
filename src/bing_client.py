@@ -102,7 +102,7 @@ def search(query: str, top_k: int = SEARCH_TOP_K, use_jina: bool = True) -> list
     context windows around query keywords. Falls back to snippet if Jina fails.
     """
     params = {
-        "engine": "baidu",
+        "engine": "google",
         "q": query,
         "api_key": SERP_API_KEY,
         "num": top_k,

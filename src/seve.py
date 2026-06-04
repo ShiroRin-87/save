@@ -25,6 +25,121 @@ from src.utils import (
 )
 
 
+# ── Hypothesis-driven search ───────────────────────────────────────────────
+
+def generate_hypotheses(question: str, n: int = 5) -> list[str]:
+    """Use LLM parametric knowledge to guess candidate answers for a riddle.
+
+    This bridges the gap between riddle-language and answer-language —
+    the riddle may say "a place named in Tang dynasty, 10km from a Warring
+    States site" but the answer is "青城山". The LLM can make that leap.
+    """
+    prompt = f"""你是一个知识渊博的推理助手。请根据以下谜题的约束条件，依靠你自己的知识推测可能的答案。
+
+谜题：{question}
+
+先在心里推理，然后只输出候选答案名称。严格每行一个名称，不要编号、解释、计算过程或任何其他文字。只输出名称本身。如果实在不确定也列出最可能的猜测。
+
+候选答案："""
+    result = generate(prompt).strip()
+    hypotheses = []
+    for line in result.split("\n"):
+        line = line.strip()
+        # Strip leading numbers, dots, brackets
+        while line and (line[0] in "0123456789.、)）" or line[:2] in ("- ", "* ")):
+            line = line.lstrip("0123456789.、)）-* ").strip()
+        if len(line) < 2:
+            continue
+        # Filter out reasoning fragments: too long (>80 chars), contains
+        # English fragments, or looks like calculation/explanation
+        if len(line) > 80:
+            continue
+        if ":" in line and any(c.isascii() and c.isalpha() for c in line):
+            continue  # "H1: or 24 (2010): First album..." — reasoning
+        if any(kw in line.lower() for kw in ["born", "age", "album", "first", "could it", "wait"]):
+            continue
+        hypotheses.append(line)
+    return hypotheses[:n]
+
+
+def _extract_constraints(question: str) -> str:
+    """Extract searchable keyword constraints from the riddle question."""
+    prompt = f"""从以下谜题中提取3-5个可用于搜索验证的关键词或短语。用空格分隔，只输出关键词。
+
+谜题：{question}
+
+关键词："""
+    return generate(prompt).strip()
+
+
+def search_and_verify_hypothesis(hypothesis: str, question: str,
+                                  top_k: int = 5) -> list[dict]:
+    """Search for a candidate answer combined with question constraints.
+
+    Constructs a targeted query: "{candidate} {constraint_keywords}"
+    to find pages that confirm or refute the hypothesis.
+    """
+    from src.bing_client import search as do_search
+
+    constraints = _extract_constraints(question)
+    query = f"{hypothesis} {constraints}"
+    print(f"    Query: {query[:100]}...", end=" ", flush=True)
+    t0 = time.time()
+    results = do_search(query, top_k=top_k)
+    print(f"{len(results)} results ({time.time()-t0:.1f}s)")
+    return results
+
+
+def hypothesis_driven_search(question: str, n_hypotheses: int = 5) -> list[dict]:
+    """Hypothesis-driven search: guess candidates → search each → merge results.
+
+    The key insight: LLM parametric knowledge bridges riddle-language to
+    answer-language. Search only verifies, it doesn't need to find the answer
+    from the riddle text directly.
+
+    Returns accumulated, deduplicated search results.
+    """
+    from src.bing_client import search as do_search
+
+    print(f"  Generating up to {n_hypotheses} hypotheses...", end=" ", flush=True)
+    t0 = time.time()
+    hypotheses = generate_hypotheses(question, n=n_hypotheses)
+    print(f"got {len(hypotheses)} ({time.time()-t0:.1f}s)")
+    for i, h in enumerate(hypotheses, 1):
+        print(f"    H{i}: {h}")
+
+    if not hypotheses:
+        print("  No hypotheses generated, fallback to direct search")
+        return do_search(question)
+
+    all_results = []
+    seen_urls = set()
+
+    for i, h in enumerate(hypotheses, 1):
+        print(f"  [{i}/{len(hypotheses)}] Searching: {h[:60]}...")
+        results = search_and_verify_hypothesis(h, question, top_k=5)
+        added = 0
+        for r in results:
+            url = r.get("url", "")
+            if url and url not in seen_urls:
+                seen_urls.add(url)
+                all_results.append(r)
+                added += 1
+        print(f"    {added} new unique results (total: {len(all_results)})")
+
+    # Also do one direct search for coverage
+    print(f"  Direct search fallback...", end=" ", flush=True)
+    direct_results = do_search(question, top_k=3)
+    for r in direct_results:
+        url = r.get("url", "")
+        if url and url not in seen_urls:
+            seen_urls.add(url)
+            all_results.append(r)
+    print(f"total: {len(all_results)} results")
+
+    return all_results
+
+
 # ── Question decomposition ────────────────────────────────────────────────
 
 def decompose_question(question: str) -> list[str]:

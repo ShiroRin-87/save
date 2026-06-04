@@ -1,5 +1,9 @@
-"""Baidu Search API wrapper via SerpAPI, with Jina Reader full-text enrichment."""
-import re
+"""Search via SerpAPI (Google) with Jina Reader full-text enrichment.
+
+Simplified: Jina full-text is truncated to first JINA_MAX_CHARS chars instead
+of keyword-based context windows, because riddle-style BrowseComp questions
+share no keywords with their answers.
+"""
 import time
 import urllib3
 import requests
@@ -8,80 +12,18 @@ from src.config import SERP_API_KEY, SEARCH_TOP_K, SERPAPI_ENDPOINT, JINA_MAX_CH
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 JINA_ENDPOINT = "https://r.jina.ai"
-CONTEXT_WINDOW = 2000  # chars before and after each keyword match
+
+# Jina quality thresholds
+JINA_MIN_CHARS = 500  # below this, treat as fetch failure
+JINA_CAPTCHA_SIGNS = ["CAPTCHA", "安全验证", "captcha", "verify", "Please verify"]
 
 
-def _split_query_keywords(query: str) -> list[str]:
-    """Split question into searchable keyword segments, longest first."""
-    # Split by Chinese/English punctuation
-    parts = re.split(r"[，。、；：？！,\.;:!\?\s]+", query)
-    parts = [p.strip() for p in parts if len(p.strip()) >= 4]
-    # Also extract quoted substrings and entities
-    quoted = re.findall(r"[「『\"]([^」』\"]+)[」』\"]", query)
-    parts.extend(quoted)
-    # Deduplicate, longest first (more specific matches)
-    seen = set()
-    unique = []
-    for p in sorted(parts, key=len, reverse=True):
-        if p not in seen:
-            seen.add(p)
-            unique.append(p)
-    return unique[:8]  # at most 8 keywords
+def _jina_fetch(url: str, timeout: int = 30) -> tuple[str | None, bool]:
+    """Fetch full page content via Jina Reader.
 
-
-def _extract_context(full_text: str, keywords: list[str],
-                     window: int = CONTEXT_WINDOW) -> str:
-    """Extract context windows around keyword matches in full text.
-
-    Returns concatenated context snippets (up to JINA_MAX_CHARS total).
-    Deduplicates overlapping windows. Falls back to beginning of text if
-    no keywords match.
+    Returns (markdown_text_or_None, is_low_quality).
+    is_low_quality=True means the result may be incomplete (CAPTCHA, short, etc).
     """
-    if not full_text or not keywords:
-        return full_text[:JINA_MAX_CHARS]
-
-    text_len = len(full_text)
-    ranges = []  # list of (start, end) match windows
-
-    for kw in keywords:
-        pos = 0
-        while pos < text_len:
-            idx = full_text.find(kw, pos)
-            if idx == -1:
-                break
-            start = max(0, idx - window)
-            end = min(text_len, idx + len(kw) + window)
-            ranges.append((start, end))
-            pos = idx + len(kw)
-
-    if not ranges:
-        # No keyword match — fall back to first JINA_MAX_CHARS chars
-        return full_text[:JINA_MAX_CHARS]
-
-    # Merge overlapping windows
-    ranges.sort()
-    merged = []
-    for r in ranges:
-        if merged and r[0] <= merged[-1][1]:
-            merged[-1] = (merged[-1][0], max(merged[-1][1], r[1]))
-        else:
-            merged.append(r)
-
-    # Concatenate, respecting JINA_MAX_CHARS limit
-    total = 0
-    snippets = []
-    for start, end in merged:
-        chunk = full_text[start:end]
-        if total + len(chunk) > JINA_MAX_CHARS and snippets:
-            break
-        snippets.append(chunk)
-        total += len(chunk)
-
-    return "\n...\n".join(snippets)
-
-
-def _jina_fetch(url: str, timeout: int = 30) -> str | None:
-    """Fetch full page content via Jina Reader. Returns markdown text or None."""
     try:
         resp = requests.get(
             f"{JINA_ENDPOINT}/{url}",
@@ -89,17 +31,28 @@ def _jina_fetch(url: str, timeout: int = 30) -> str | None:
             timeout=timeout,
         )
         if resp.status_code == 200 and resp.text.strip():
-            return resp.text.strip()
+            text = resp.text.strip()
+            is_bad = len(text) < JINA_MIN_CHARS or any(
+                sign in text for sign in JINA_CAPTCHA_SIGNS
+            )
+            return text, is_bad
     except Exception:
         pass
-    return None
+    return None, True
+
+
+def _truncate(text: str, max_chars: int = JINA_MAX_CHARS) -> str:
+    """Truncate text to first max_chars characters."""
+    if len(text) <= max_chars:
+        return text
+    return text[:max_chars]
 
 
 def search(query: str, top_k: int = SEARCH_TOP_K, use_jina: bool = True) -> list[dict]:
-    """Search via SerpAPI and return structured results.
+    """Search via SerpAPI (Google) and return structured results.
 
-    When use_jina=True, fetch full page text via Jina Reader, then extract
-    context windows around query keywords. Falls back to snippet if Jina fails.
+    When use_jina=True, fetch full page text via Jina Reader, truncate to
+    JINA_MAX_CHARS. Falls back to snippet if Jina fails.
     """
     params = {
         "engine": "google",
@@ -111,8 +64,6 @@ def search(query: str, top_k: int = SEARCH_TOP_K, use_jina: bool = True) -> list
     resp.raise_for_status()
     data = resp.json()
 
-    keywords = _split_query_keywords(query)
-
     results = []
     for i, item in enumerate(data.get("organic_results", [])[:top_k], start=1):
         url = item.get("link", "")
@@ -120,13 +71,15 @@ def search(query: str, top_k: int = SEARCH_TOP_K, use_jina: bool = True) -> list
 
         full_text = snippet
         full_text_source = "snippet"
+        jina_quality = "ok"
 
         if use_jina and url:
-            jina_text = _jina_fetch(url)
-            if jina_text:
-                full_text = _extract_context(jina_text, keywords)
+            jina_text, is_bad = _jina_fetch(url)
+            if jina_text is not None:
+                full_text = _truncate(jina_text)
                 full_text_source = "jina"
-            time.sleep(0.3)  # rate limit
+                jina_quality = "low_quality" if is_bad else "ok"
+            time.sleep(0.3)  # rate limit between Jina requests
 
         results.append({
             "rank": i,
@@ -136,5 +89,6 @@ def search(query: str, top_k: int = SEARCH_TOP_K, use_jina: bool = True) -> list
             "full_text": full_text,
             "full_text_source": full_text_source,
             "full_text_len": len(full_text),
+            "jina_quality": jina_quality,
         })
     return results

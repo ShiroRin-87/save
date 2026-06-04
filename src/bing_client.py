@@ -17,7 +17,7 @@ def _split_query_keywords(query: str) -> list[str]:
     parts = re.split(r"[，。、；：？！,\.;:!\?\s]+", query)
     parts = [p.strip() for p in parts if len(p.strip()) >= 4]
     # Also extract quoted substrings and entities
-    quoted = re.findall(r"[「『"]([^」』"]+)[」』"]', query)
+    quoted = re.findall(r"[「『\"]([^」』\"]+)[」』\"]", query)
     parts.extend(quoted)
     # Deduplicate, longest first (more specific matches)
     seen = set()

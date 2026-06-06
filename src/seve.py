@@ -38,28 +38,75 @@ def generate_hypotheses(question: str, n: int = 5) -> list[str]:
 
 谜题：{question}
 
-先在心里推理，然后只输出候选答案名称。严格每行一个名称，不要编号、解释、计算过程或任何其他文字。只输出名称本身。如果实在不确定也列出最可能的猜测。
+要求：
+1. 先在心里推理，然后只输出候选答案名称
+2. 严格每行一个名称，不要编号、解释、计算过程或任何其他文字
+3. 候选答案必须覆盖不同的方向——不要重复类似的名称（例如不要同时列"宁波""浙江宁波""浙江省宁波"）
 
-候选答案："""
+候选答案（{n}个方向各异的猜测）："""
     result = generate(prompt).strip()
     hypotheses = []
     for line in result.split("\n"):
         line = line.strip()
-        # Strip leading numbers, dots, brackets
         while line and (line[0] in "0123456789.、)）" or line[:2] in ("- ", "* ")):
             line = line.lstrip("0123456789.、)）-* ").strip()
         if len(line) < 2:
             continue
-        # Filter out reasoning fragments: too long (>80 chars), contains
-        # English fragments, or looks like calculation/explanation
         if len(line) > 80:
             continue
         if ":" in line and any(c.isascii() and c.isalpha() for c in line):
-            continue  # "H1: or 24 (2010): First album..." — reasoning
+            continue
         if any(kw in line.lower() for kw in ["born", "age", "album", "first", "could it", "wait"]):
             continue
         hypotheses.append(line)
-    return hypotheses[:n]
+
+    # Deduplicate near-identical entries (e.g. "宁波" ⊆ "浙江宁波" → keep longer)
+    unique = []
+    for h in hypotheses:
+        is_dup = False
+        for i, ex in enumerate(unique):
+            if h in ex or ex in h:
+                is_dup = True
+                if len(h) > len(ex):
+                    unique[i] = h
+                break
+        if not is_dup:
+            unique.append(h)
+    return unique[:n]
+
+
+def gap_fill_search(question: str, partial_answer: str,
+                    existing_results: list[dict] | None = None,
+                    top_k: int = 5) -> list[dict]:
+    """When an answer identifies intermediate entities but can't complete
+    the final hop, extract the entity + missing constraint and search.
+
+    E.g. answer says "王志文 is the male lead but I don't know his ancestral
+    home" → extracts "王志文 祖籍" and searches for the missing link.
+    """
+    from src.bing_client import search as do_search
+
+    prompt = f"""以下是一个不完整的回答——它识别了中间实体但没有完成最后一步。请从问题和不完整回答中，提取出需要补充搜索的关键词。
+
+问题：{question}
+不完整回答：{partial_answer}
+
+用空格分隔的关键词（用于补充搜索，以找到缺失的最后一步信息）："""
+    keywords = generate(prompt).strip()
+    if not keywords:
+        return []
+
+    query = keywords
+    print(f"  Gap-fill query: {query[:100]}...", end=" ", flush=True)
+    t0 = time.time()
+    results = do_search(query, top_k=top_k)
+    print(f"{len(results)} results ({time.time()-t0:.1f}s)")
+
+    if existing_results:
+        seen = {r.get("url", "") for r in existing_results}
+        new_results = [r for r in results if r.get("url", "") not in seen]
+        return new_results
+    return results
 
 
 def _extract_constraints(question: str) -> str:

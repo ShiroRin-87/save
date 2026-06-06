@@ -141,7 +141,7 @@ def _answer_looks_complete(answer: str, question: str,
 
 def gap_fill_search(question: str, initial_answer: str,
                     existing_results: list[dict] | None = None,
-                    max_rounds: int = 3, top_k: int = 5) -> list[dict]:
+                    max_rounds: int = 2, top_k: int = 5) -> list[dict]:
     """Iterative gap-fill: when an answer identifies intermediate entities but
     can't complete the final hop, extract missing link → search → re-answer.
 
@@ -287,22 +287,33 @@ def hypothesis_driven_search(question: str, n_hypotheses: int = 5) -> list[dict]
         print("  No hypotheses generated, fallback to direct search")
         return do_search(question)
 
+    # Parallel hypothesis search — each candidate searched concurrently
     all_results = []
     seen_urls = set()
+    seen_lock = __import__('threading').Lock()
 
-    for i, h in enumerate(hypotheses, 1):
-        print(f"  [{i}/{len(hypotheses)}] Searching: {h[:60]}...")
+    def _search_one(h):
         results = search_and_verify_hypothesis(h, question, top_k=5)
-        added = 0
-        for r in results:
-            url = r.get("url", "")
-            if url and url not in seen_urls:
-                seen_urls.add(url)
-                all_results.append(r)
-                added += 1
-        print(f"    {added} new unique results (total: {len(all_results)})")
+        return h, results
 
-    # Also do one direct search for coverage
+    print(f"  Searching {len(hypotheses)} hypotheses in parallel...", flush=True)
+    t_search = time.time()
+    with ThreadPoolExecutor(max_workers=5) as ex:
+        futures = {ex.submit(_search_one, h): h for h in hypotheses}
+        for f in as_completed(futures):
+            h, results = f.result()
+            with seen_lock:
+                added = 0
+                for r in results:
+                    url = r.get("url", "")
+                    if url and url not in seen_urls:
+                        seen_urls.add(url)
+                        all_results.append(r)
+                        added += 1
+            print(f"    {h[:40]}... {added} new (total: {len(all_results)})")
+    print(f"  Parallel search done ({time.time()-t_search:.1f}s)")
+
+    # Also do one direct search for coverage (parallel with above is fine, but keep simple)
     print(f"  Direct search fallback...", end=" ", flush=True)
     direct_results = do_search(question, top_k=3)
     for r in direct_results:

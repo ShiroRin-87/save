@@ -7,6 +7,7 @@ share no keywords with their answers.
 import time
 import urllib3
 import requests
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from src.config import SERP_API_KEY, SEARCH_TOP_K, SERPAPI_ENDPOINT, JINA_MAX_CHARS
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
@@ -64,36 +65,46 @@ def search(query: str, top_k: int = SEARCH_TOP_K, use_jina: bool = True) -> list
         "api_key": SERP_API_KEY,
         "num": top_k,
     }
-    time.sleep(3)  # avoid 429 on free tier
+    time.sleep(1.5)  # avoid 429 on free tier
     resp = requests.get(SERPAPI_ENDPOINT, params=params, timeout=30, verify=False)
     resp.raise_for_status()
     data = resp.json()
 
+    items = list(enumerate(data.get("organic_results", [])[:top_k], start=1))
+
+    # Build base results first (snippet-only, no Jina yet)
     results = []
-    for i, item in enumerate(data.get("organic_results", [])[:top_k], start=1):
+    jina_tasks = []
+    for i, item in items:
         url = item.get("link", "")
         snippet = item.get("snippet", "")
-
-        full_text = snippet
-        full_text_source = "snippet"
-        jina_quality = "ok"
-
-        if use_jina and url:
-            jina_text, is_bad = _jina_fetch(url)
-            if jina_text is not None:
-                full_text = _truncate(jina_text)
-                full_text_source = "jina"
-                jina_quality = "low_quality" if is_bad else "ok"
-            time.sleep(0.3)  # rate limit between Jina requests
-
         results.append({
             "rank": i,
             "title": item.get("title", ""),
             "url": url,
             "snippet": snippet,
-            "full_text": full_text,
-            "full_text_source": full_text_source,
-            "full_text_len": len(full_text),
-            "jina_quality": jina_quality,
+            "full_text": snippet,
+            "full_text_source": "snippet",
+            "full_text_len": len(snippet),
+            "jina_quality": "ok",
         })
+        if use_jina and url:
+            jina_tasks.append((i - 1, url))
+
+    # Parallel Jina fetches — dominant time cost, now concurrent
+    if jina_tasks:
+        def _fetch_one(idx, url):
+            jina_text, is_bad = _jina_fetch(url)
+            return idx, jina_text, is_bad
+
+        with ThreadPoolExecutor(max_workers=8) as ex:
+            futures = {ex.submit(_fetch_one, idx, url): idx for idx, url in jina_tasks}
+            for f in as_completed(futures):
+                idx, jina_text, is_bad = f.result()
+                if jina_text is not None:
+                    results[idx]["full_text"] = _truncate(jina_text)
+                    results[idx]["full_text_source"] = "jina"
+                    results[idx]["full_text_len"] = len(results[idx]["full_text"])
+                    results[idx]["jina_quality"] = "low_quality" if is_bad else "ok"
+
     return results

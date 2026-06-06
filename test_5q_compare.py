@@ -149,6 +149,8 @@ for idx, qid, topic in QUESTIONS:
     row["E_time"] = time.time()-t0
     row["E_match"] = "Y" if answer_ref.strip().lower() in answer_final_e.lower() else "N"
     row["E_fb"] = "Y" if fb_trig else "N"
+    # E uses same search results as D (no new searches)
+    recall_cache.setdefault(qid, {})["E"] = recall_cache.setdefault(qid, {}).get("D", [])
     print(f"fb={row['E_fb']} match={row['E_match']}")
 
     RESULTS.append(row)

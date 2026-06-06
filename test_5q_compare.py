@@ -9,6 +9,7 @@ from src.model_client import generate, get_usage, reset_usage
 from src.seve import (
     hypothesis_driven_search, gap_fill_search, needs_hypothesis_search,
     extract_claims, generate_answer, verify_claims, apply_verification,
+    fallback_reasoning,
 )
 from src.utils import load_json, format_search_results_numbered
 
@@ -16,9 +17,11 @@ all_qs = load_json("data/browsecomp-zh-decrypted.json")
 cache = load_json("data/search_cache.json")
 
 QUESTIONS = [
-    (7,  "BC007", "历史"),
-    (10, "BC010", "影视"),
-    (12, "BC012", "学术"),
+    (9,  "BC009", "音乐"),
+    (13, "BC013", "艺术"),
+    (15, "BC015", "电子游戏"),
+    (25, "BC025", "医学"),
+    (30, "BC030", "影视"),
 ]
 
 RESULTS = []
@@ -119,24 +122,35 @@ for idx, qid, topic in QUESTIONS:
     row["D_claims"] = len(claims); row["D_verify"] = f"{yes_n}Y/{no_n}N"
     print(f"claims={row['D_claims']} verify={row['D_verify']} match={row['D_match']}")
 
+    # ── E: Hypothesis+SEVE+gap+fallback ──
+    print(f"  E) +Fallback...", end=" ", flush=True)
+    t0 = time.time()
+    answer_final_e, fb_trig = fallback_reasoning(question, answer_final, verifs)
+    row["E_time"] = time.time()-t0
+    row["E_match"] = "Y" if answer_ref.strip().lower() in answer_final_e.lower() else "N"
+    row["E_fb"] = "Y" if fb_trig else "N"
+    print(f"fb={row['E_fb']} match={row['E_match']}")
+
     RESULTS.append(row)
 
 # ── Summary Table ──
 print(f"\n{'='*70}")
 print(f"SUMMARY: 4 Methods × 5 Questions")
 print(f"{'='*70}")
-print(f"{'QID':<8} {'REF':<10} | {'Direct':^8} | {'Direct+gap':^10} | {'Hypo+gap':^10} | {'Hypo+SEVE+gap':^14} |")
-print(f"{'':8} {'':10} | {'match':>4} {'time':>4} | {'match':>4} {'time':>4} {'gap':>4} | {'hypo':>4} {'match':>4} {'time':>4} | {'claims':>6} {'match':>4} {'time':>4} |")
+print(f"{'QID':<8} {'REF':<10} | {'A:Direct':^10} | {'B:+gap':^12} | {'C:Hypo+gap':^12} | {'D:SEVE+gap':^12} | {'E:+Fallback':^10} |")
+print(f"{'':8} {'':10} | {'match':>4} {'time':>5} | {'match':>4} {'time':>5} {'gap':>4} | {'hypo':>4} {'match':>4} {'time':>5} | {'claims':>4} {'verif':>6} {'match':>4} | {'fb':>4} {'match':>4} |")
 
-wins = {"A": 0, "B": 0, "C": 0, "D": 0}
+wins = {m: 0 for m in "ABCDE"}
 for r in RESULTS:
     print(f"{r['qid']:<8} {r['ref']:<10} | "
-          f"{r['A_match']:>4} {r['A_time']:>4.0f}s | "
-          f"{r['B_match']:>4} {r['B_time']:>4.0f}s {r['B_gap']:>4} | "
-          f"{r['C_hypo']:>4} {r['C_match']:>4} {r['C_time']:>4.0f}s | "
-          f"{r['D_claims']:>6} {r['D_match']:>4} {r['D_time']:>4.0f}s |")
-    for m in "ABCD":
+          f"{r['A_match']:>4} {r['A_time']:>5.0f}s | "
+          f"{r['B_match']:>4} {r['B_time']:>5.0f}s {r['B_gap']:>4} | "
+          f"{r['C_hypo']:>4} {r['C_match']:>4} {r['C_time']:>5.0f}s | "
+          f"{r['D_claims']:>4} {r['D_verify']:>6} {r['D_match']:>4} | "
+          f"{r.get('E_fb','?'):>4} {r.get('E_match','?'):>4} |")
+    for m in "ABCDE":
         if r.get(f"{m}_match") == "Y":
             wins[m] += 1
 
-print(f"\n{'':18} | {'A='+str(wins['A'])+'/5':^8} | {'B='+str(wins['B'])+'/5':^10} | {'C='+str(wins['C'])+'/5':^10} | {'D='+str(wins['D'])+'/5':^14} |")
+total = len(QUESTIONS)
+print(f"\n{'':18} | {'A='+str(wins['A'])+'/'+str(total):^10} | {'B='+str(wins['B'])+'/'+str(total):^12} | {'C='+str(wins['C'])+'/'+str(total):^12} | {'D='+str(wins['D'])+'/'+str(total):^12} | {'E='+str(wins['E'])+'/'+str(total):^10} |")

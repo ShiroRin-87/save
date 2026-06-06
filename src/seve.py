@@ -904,6 +904,83 @@ def apply_verification(answer: str, verifications: list[dict]) -> str:
     return answer
 
 
+def _is_failed_answer(answer: str, verifications: list[dict]) -> bool:
+    """Check if search-based pipeline has clearly failed."""
+    if not answer or len(answer) < 30:
+        return True
+    non_answers = ["无法", "不确定", "不足以", "不能确定", "没能找到", "没有可用",
+                   "未从搜索结果中提取到"]
+    if any(phrase in answer for phrase in non_answers):
+        return True
+    if verifications:
+        yes_n = sum(1 for v in verifications if v["verdict"] == "YES")
+        no_n = sum(1 for v in verifications if v["verdict"] == "NO")
+        if yes_n == 0:
+            return True
+        if no_n > yes_n and yes_n <= 1:
+            return True
+    return False
+
+
+def fallback_reasoning(question: str, current_answer: str,
+                       verifications: list[dict] | None = None) -> tuple[str, bool]:
+    """When search-based pipeline fails, use LLM parametric knowledge to guess
+    the answer and reverse-reason through constraint verification.
+
+    Returns (answer, triggered) — triggered=False if fallback was skipped.
+    """
+    if not _is_failed_answer(current_answer, verifications or []):
+        return current_answer, False
+
+    print(f"  [Fallback] Search pipeline failed, trying parametric reasoning...")
+
+    guess_prompt = f"""你是一个知识渊博的助手。以下问题无法通过搜索找到答案，请直接根据你的知识给出最可能的答案。
+只输出答案本身，不要解释，不要前缀。
+
+问题：{question}
+
+答案："""
+    guessed = generate(guess_prompt).strip()
+    if not guessed or len(guessed) < 2:
+        return current_answer, False
+
+    print(f"  [Fallback] Guessed: {guessed[:80]}")
+
+    decomp_prompt = f"""将以下问题拆解为3-8个独立的可验证约束条件。每个约束是一个具体的事实命题。
+
+问题：{question}
+
+输出一个JSON字符串数组。只输出JSON数组。
+
+JSON数组："""
+    constraints = _parse_json_strings(generate(decomp_prompt).strip())
+    if not constraints:
+        print(f"  [Fallback] No constraints extracted, giving up")
+        return current_answer, False
+
+    print(f"  [Fallback] {len(constraints)} constraints")
+
+    passed = 0
+    for c in constraints:
+        verify_prompt = f"""判断候选答案是否满足约束条件。先回答YES或NO，再简短说明。
+
+候选答案：{guessed}
+约束条件：{c}
+
+判断："""
+        result = generate(verify_prompt).strip()
+        if result.upper().startswith("YES"):
+            passed += 1
+
+    print(f"  [Fallback] {passed}/{len(constraints)} constraints passed")
+
+    if passed >= max(1, len(constraints) * 0.5):
+        final = f"{guessed}\n\n[参数化知识推理，{passed}/{len(constraints)} 约束通过]"
+        return final, True
+    else:
+        return current_answer, False
+
+
 def run_seve() -> None:
     questions = load_questions()
     cache = load_search_cache()

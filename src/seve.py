@@ -25,6 +25,56 @@ from src.utils import (
 )
 
 
+# ── JSON parsing utilities ─────────────────────────────────────────────────
+
+def _parse_json(text: str):
+    """Parse JSON from model output with tolerance for markdown fences."""
+    text = text.strip()
+    if text.startswith("```"):
+        lines = text.split("\n")
+        lines = lines[1:] if lines[0].startswith("```") else lines
+        if lines and lines[-1].strip().startswith("```"):
+            lines = lines[:-1]
+        text = "\n".join(lines)
+    try:
+        return json.loads(text)
+    except json.JSONDecodeError:
+        return None
+
+
+def _parse_json_array(text: str) -> list:
+    """Parse a JSON array, with regex fallback."""
+    data = _parse_json(text)
+    if isinstance(data, list):
+        return data
+    # Fallback: find first JSON array in text
+    m = re.search(r"\[[\s\S]*?\]", text)
+    if m:
+        data = _parse_json(m.group(0))
+        if isinstance(data, list):
+            return data
+    return []
+
+
+def _parse_json_strings(text: str) -> list[str]:
+    """Parse a JSON array of strings."""
+    arr = _parse_json_array(text)
+    return [str(x).strip() for x in arr if x and str(x).strip()]
+
+
+def _parse_json_bool(text: str) -> bool | None:
+    """Parse a JSON boolean or YES/NO string."""
+    data = _parse_json(text)
+    if isinstance(data, bool):
+        return data
+    upper = text.strip().upper()
+    if upper.startswith("YES") or upper.startswith("TRUE"):
+        return True
+    if upper.startswith("NO") or upper.startswith("FALSE"):
+        return False
+    return None
+
+
 # ── Hypothesis-driven search ───────────────────────────────────────────────
 
 def generate_hypotheses(question: str, n: int = 5) -> list[str]:
@@ -38,29 +88,14 @@ def generate_hypotheses(question: str, n: int = 5) -> list[str]:
 
 谜题：{question}
 
-要求：
-1. 先在心里推理，然后只输出候选答案名称
-2. 严格每行一个名称，不要编号、解释、计算过程或任何其他文字
-3. 候选答案必须覆盖不同的方向——不要重复类似的名称（例如不要同时列"宁波""浙江宁波""浙江省宁波"）
+输出一个JSON字符串数组，包含{n}个方向各异的最终候选答案。每个元素直接是答案名称，覆盖不同方向。只输出JSON数组，不要其他文字。
 
-候选答案（{n}个方向各异的猜测）："""
+示例：["青城山","都江堰","乐山大佛","峨眉山","莫高窟"]
+
+JSON数组："""
     result = generate(prompt).strip()
-    hypotheses = []
-    for line in result.split("\n"):
-        line = line.strip()
-        while line and (line[0] in "0123456789.、)）" or line[:2] in ("- ", "* ")):
-            line = line.lstrip("0123456789.、)）-* ").strip()
-        if len(line) < 2:
-            continue
-        if len(line) > 80:
-            continue
-        if ":" in line and any(c.isascii() and c.isalpha() for c in line):
-            continue
-        if any(kw in line.lower() for kw in ["born", "age", "album", "first", "could it", "wait"]):
-            continue
-        hypotheses.append(line)
-
-    # Deduplicate near-identical entries (e.g. "宁波" ⊆ "浙江宁波" → keep longer)
+    hypotheses = _parse_json_strings(result)
+    # Deduplicate near-identical entries
     unique = []
     for h in hypotheses:
         is_dup = False
@@ -75,48 +110,141 @@ def generate_hypotheses(question: str, n: int = 5) -> list[str]:
     return unique[:n]
 
 
-def gap_fill_search(question: str, partial_answer: str,
-                    existing_results: list[dict] | None = None,
-                    top_k: int = 5) -> list[dict]:
-    """When an answer identifies intermediate entities but can't complete
-    the final hop, extract the entity + missing constraint and search.
+def _answer_similar(a: str, b: str, threshold: float = 0.7) -> bool:
+    """Check if two answers are substantially similar (stop if no progress)."""
+    if not a or not b:
+        return False
+    # Simple Jaccard on 2-char bigrams
+    def bigrams(s):
+        s = s.replace(" ", "")
+        return {s[i:i+2] for i in range(len(s)-1)}
+    ba, bb = bigrams(a), bigrams(b)
+    if not ba or not bb:
+        return False
+    return len(ba & bb) / len(ba | bb) > threshold
 
-    E.g. answer says "王志文 is the male lead but I don't know his ancestral
-    home" → extracts "王志文 祖籍" and searches for the missing link.
+
+def _answer_looks_complete(answer: str, question: str,
+                           prev_answer: str = "") -> bool:
+    """Check if answer fully addresses the question (revised: behavioral).
+
+    Stops when the answer stops improving (similar to previous round),
+    rather than trusting self-confident wrong answers.
+    """
+    if not answer or len(answer) < 20:
+        return False
+    # If answer is near-identical to previous, no progress made → done
+    if prev_answer and _answer_similar(answer, prev_answer, threshold=0.75):
+        return True
+    return False
+
+
+def gap_fill_search(question: str, initial_answer: str,
+                    existing_results: list[dict] | None = None,
+                    max_rounds: int = 3, top_k: int = 5) -> list[dict]:
+    """Iterative gap-fill: when an answer identifies intermediate entities but
+    can't complete the final hop, extract missing link → search → re-answer.
+
+    Runs up to max_rounds, stopping early when answer looks complete or
+    stops changing. Handles multi-hop chains (A→B→C→D).
     """
     from src.bing_client import search as do_search
 
-    prompt = f"""以下是一个不完整的回答——它识别了中间实体但没有完成最后一步。请从问题和不完整回答中，提取出需要补充搜索的关键词。
+    all_new = []
+    current_answer = initial_answer
+    seen_urls = {r.get("url", "") for r in (existing_results or [])}
+
+    for rnd in range(max_rounds):
+        prev = current_answer if rnd > 0 else ""
+        if _answer_looks_complete(current_answer, question, prev):
+            print(f"  [Gap-fill {rnd+1}] Answer stable, stop")
+            break
+
+        prompt = f"""以下回答可能不完整，只识别了中间步骤但没有给出最终答案。请提取需要补充搜索的关键词。
 
 问题：{question}
-不完整回答：{partial_answer}
+当前回答：{current_answer}
 
-用空格分隔的关键词（用于补充搜索，以找到缺失的最后一步信息）："""
-    keywords = generate(prompt).strip()
-    if not keywords:
-        return []
+输出一个JSON字符串数组，包含2-5个补充搜索关键词。只输出JSON数组。
 
-    query = keywords
-    print(f"  Gap-fill query: {query[:100]}...", end=" ", flush=True)
-    t0 = time.time()
-    results = do_search(query, top_k=top_k)
-    print(f"{len(results)} results ({time.time()-t0:.1f}s)")
+JSON数组："""
+        keywords_raw = generate(prompt).strip()
+        keywords = _parse_json_strings(keywords_raw)
+        if not keywords:
+            print(f"  [Gap-fill {rnd+1}] No keywords extracted, stop")
+            break
+        query = " ".join(keywords)
 
-    if existing_results:
-        seen = {r.get("url", "") for r in existing_results}
-        new_results = [r for r in results if r.get("url", "") not in seen]
-        return new_results
-    return results
+        print(f"  [Gap-fill {rnd+1}] {query[:80]}...", end=" ", flush=True)
+        t0 = time.time()
+        results = do_search(query, top_k=top_k)
+        new = [r for r in results if r.get("url", "") not in seen_urls]
+        for r in new:
+            seen_urls.add(r.get("url", ""))
+        all_new.extend(new)
+        print(f"{len(new)} new results ({time.time()-t0:.1f}s)")
+
+        if not new:
+            print(f"  [Gap-fill {rnd+1}] No new results, stop")
+            break
+
+        # Regenerate answer with accumulated new context
+        from src.utils import format_search_results
+        accumulated = (existing_results or []) + all_new
+        ctx = format_search_results(accumulated)
+        current_answer = generate(
+            f"你是一个问答助手。请基于以下搜索结果为用户问题提供准确、简洁的回答。\n\n"
+            f"搜索结果：\n{ctx}\n\n用户问题：{question}\n\n请回答："
+        )
+
+    return all_new
+
+
+def needs_hypothesis_search(results: list[dict], question: str) -> bool:
+    """Check whether direct search results are sufficient, or if hypothesis-driven
+    search is needed.
+
+    Returns True if hypothesis search should be used (direct results look poor).
+    False if direct results appear sufficient.
+    """
+    if not results or len(results) < 3:
+        return True
+
+    lines = []
+    for r in results[:8]:
+        title = r.get("title", "")[:120]
+        snippet = r.get("snippet", "")[:200]
+        lines.append(f"- {title} | {snippet}")
+    summary = "\n".join(lines)
+
+    prompt = f"""以下是对一个问题的直接搜索结果。判断这些结果是否看起来与问题高度相关、可能包含答案信息。
+
+问题：{question}
+
+搜索结果：
+{summary}
+
+输出true或false。只输出JSON布尔值。
+
+JSON："""
+    result = generate(prompt).strip()
+    parsed = _parse_json_bool(result)
+    sufficient = parsed if parsed is not None else result.upper().startswith("YES")
+    return not sufficient
 
 
 def _extract_constraints(question: str) -> str:
     """Extract searchable keyword constraints from the riddle question."""
-    prompt = f"""从以下谜题中提取3-5个可用于搜索验证的关键词或短语。用空格分隔，只输出关键词。
+    prompt = f"""从以下谜题中提取3-5个可用于搜索验证的关键词或短语。
 
 谜题：{question}
 
-关键词："""
-    return generate(prompt).strip()
+输出一个JSON字符串数组。只输出JSON数组。
+
+JSON数组："""
+    result = generate(prompt).strip()
+    keywords = _parse_json_strings(result)
+    return " ".join(keywords) if keywords else ""
 
 
 def search_and_verify_hypothesis(hypothesis: str, question: str,
@@ -195,13 +323,15 @@ def decompose_question(question: str) -> list[str]:
     Each sub-query focuses on different entities or aspects of the question,
     avoiding the signal dilution of searching with the full riddle text.
     """
-    prompt = f"""将以下复杂问题分解为2-3个独立的搜索查询。每个查询应聚焦问题的不同方面或关键实体，用简洁的关键词组合。每行一个查询，不要编号，不要引号。
+    prompt = f"""将以下复杂问题分解为2-3个独立的搜索查询。每个查询应聚焦问题的不同方面或关键实体。
 
 问题：{question}
 
-搜索查询："""
+输出一个JSON字符串数组。只输出JSON数组。
+
+JSON数组："""
     result = generate(prompt).strip()
-    queries = [q.strip() for q in result.split("\n") if len(q.strip()) >= 4]
+    queries = _parse_json_strings(result)
     return queries[:3]
 
 
@@ -258,16 +388,19 @@ def _has_enough_info(results: list[dict], question: str) -> bool:
         lines.append(f"- {title}: {snippet}")
     summary = "\n".join(lines)
 
-    prompt = f"""基于以下搜索结果的标题和摘要，判断是否可能包含回答问题的信息。只回答 YES 或 NO。
+    prompt = f"""基于以下搜索结果的标题和摘要，判断是否可能包含回答问题的信息。
 
 搜索结果摘要：
 {summary}
 
 问题：{question}
 
-可能包含答案？"""
-    result = generate(prompt).strip().upper()
-    return result.startswith("YES")
+输出true或false。只输出JSON布尔值。
+
+JSON："""
+    result = generate(prompt).strip()
+    parsed = _parse_json_bool(result)
+    return parsed if parsed is not None else result.upper().startswith("YES")
 
 
 def _extract_clues(claims: list[dict], question: str,
@@ -291,15 +424,18 @@ def _extract_clues(claims: list[dict], question: str,
         return ""
 
     prompt = f"""从以下{source_label}中，提取可以用来精炼搜索的关键实体（人名、地名、作品名、时间等）。
-用空格分隔，只输出实体词，不超过 10 个。
 
 {source_label}：
 {source_text}
 
 原始问题：{question}
 
-关键实体："""
-    return generate(prompt).strip()
+输出一个JSON字符串数组，包含5-10个实体词。只输出JSON数组。
+
+JSON数组："""
+    result = generate(prompt).strip()
+    entities = _parse_json_strings(result)
+    return " ".join(entities) if entities else ""
 
 
 def iterative_search(question: str, initial_results: list[dict],

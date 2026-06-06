@@ -11,10 +11,14 @@ from src.seve import (
     extract_claims, generate_answer, verify_claims, apply_verification,
     fallback_reasoning,
 )
-from src.utils import load_json, format_search_results_numbered
+from src.utils import load_json, save_json, format_search_results_numbered
 
 all_qs = load_json("data/browsecomp-zh-decrypted.json")
 cache = load_json("data/search_cache.json")
+
+# Per-method search recall cache: {qid: {A: [results], B: [results], ...}}
+RECALL_CACHE_PATH = "data/search_recall_cache.json"
+recall_cache = load_json(RECALL_CACHE_PATH)
 
 QUESTIONS = [
     (9,  "BC009", "音乐"),
@@ -41,6 +45,10 @@ for idx, qid, topic in QUESTIONS:
     print(f"\n  A) Direct+Vanilla...", end=" ", flush=True)
     reset_usage(); t0 = time.time()
     results_a = search(question)
+    recall_cache.setdefault(qid, {})["A"] = [
+        {"title": r["title"], "url": r["url"], "snippet": r["snippet"]}
+        for r in results_a
+    ]
     ctx = format_search_results_numbered(results_a)
     answer = generate(
         f"你是一个问答助手。请基于以下搜索结果为用户问题提供准确、简洁的回答。\n\n"
@@ -63,6 +71,10 @@ for idx, qid, topic in QUESTIONS:
     gap = gap_fill_search(question, answer, results_b, max_rounds=2, top_k=5)
     if gap:
         results_b = results_b + gap
+        recall_cache.setdefault(qid, {})["B"] = [
+            {"title": r["title"], "url": r["url"], "snippet": r["snippet"]}
+            for r in results_b
+        ]
         ctx = format_search_results_numbered(results_b)
         answer = generate(
             f"你是一个问答助手。请基于以下搜索结果为用户问题提供准确、简洁的回答。\n\n"
@@ -83,6 +95,10 @@ for idx, qid, topic in QUESTIONS:
     else:
         print("skip-hypo", end=" ")
         results_c = list(results_a)
+    recall_cache.setdefault(qid, {})["C"] = [
+        {"title": r["title"], "url": r["url"], "snippet": r["snippet"]}
+        for r in results_c
+    ]
     ctx = format_search_results_numbered(results_c)
     answer = generate(
         f"你是一个问答助手。请基于以下搜索结果为用户问题提供准确、简洁的回答。\n\n"
@@ -112,6 +128,10 @@ for idx, qid, topic in QUESTIONS:
         results_c = results_c + gap
         claims = extract_claims(results_c, question)
         answer, cmap = generate_answer(question, claims)
+    recall_cache.setdefault(qid, {})["D"] = [
+        {"title": r["title"], "url": r["url"], "snippet": r["snippet"]}
+        for r in results_c
+    ]
     verifs = verify_claims(answer, claims, results_c)
     answer_final = apply_verification(answer, verifs)
     u = get_usage()
@@ -132,6 +152,9 @@ for idx, qid, topic in QUESTIONS:
     print(f"fb={row['E_fb']} match={row['E_match']}")
 
     RESULTS.append(row)
+    # Incremental save — preserve progress on crash
+    save_json(RESULTS, "outputs/5q_compare_results.json")
+    save_json(recall_cache, RECALL_CACHE_PATH)
 
 # ── Summary Table ──
 print(f"\n{'='*70}")
@@ -154,3 +177,9 @@ for r in RESULTS:
 
 total = len(QUESTIONS)
 print(f"\n{'':18} | {'A='+str(wins['A'])+'/'+str(total):^10} | {'B='+str(wins['B'])+'/'+str(total):^12} | {'C='+str(wins['C'])+'/'+str(total):^12} | {'D='+str(wins['D'])+'/'+str(total):^12} | {'E='+str(wins['E'])+'/'+str(total):^10} |")
+
+# Final save with summary
+save_json({"results": RESULTS, "wins": wins, "total": total}, "outputs/5q_compare_results.json")
+save_json(recall_cache, RECALL_CACHE_PATH)
+print(f"\nResults saved to outputs/5q_compare_results.json")
+print(f"Recall cache saved to {RECALL_CACHE_PATH}")

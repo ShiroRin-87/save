@@ -11,6 +11,10 @@ from src.config import SERP_API_KEY, SEARCH_TOP_K, SERPAPI_ENDPOINT, JINA_MAX_CH
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
+# Simple rate limiter for SerpAPI free tier
+_last_search = 0.0
+_SEARCH_GAP = 3.0
+
 JINA_ENDPOINT = "https://r.jina.ai"
 
 # Jina quality thresholds
@@ -60,6 +64,7 @@ def search(query: str, top_k: int = SEARCH_TOP_K, use_jina: bool = True) -> list
         "api_key": SERP_API_KEY,
         "num": top_k,
     }
+    time.sleep(3)  # avoid 429 on free tier
     resp = requests.get(SERPAPI_ENDPOINT, params=params, timeout=30, verify=False)
     resp.raise_for_status()
     data = resp.json()

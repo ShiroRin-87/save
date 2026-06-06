@@ -491,6 +491,80 @@ def iterative_search(question: str, initial_results: list[dict],
 
 # ── Core pipeline: per-result extraction ──────────────────────────────────
 
+def _filter_relevant_results(results: list[dict], question: str, top_n: int = 10) -> list[dict]:
+    """Filter to top-N most relevant results via a single cheap LLM scoring call.
+
+    This avoids sending 30 pages of full text to the LLM — only the most
+    promising pages get the expensive per-page extraction treatment.
+    """
+    if len(results) <= top_n:
+        return results
+
+    items = []
+    for i, r in enumerate(results):
+        title = r.get("title", "")[:100]
+        snippet = r.get("snippet", "")[:150]
+        items.append(f"[{i}] {title} | {snippet}")
+
+    prompt = f"""从以下搜索结果中选出与问题最相关的{top_n}个。返回索引数组，最相关的排在前面。
+
+问题：{question}
+
+搜索结果：
+{chr(10).join(items)}
+
+输出JSON整数数组。只输出JSON数组。
+JSON数组："""
+    try:
+        result = generate(prompt).strip()
+        indices = _parse_json_array(result)
+        if isinstance(indices, list) and len(indices) > 0:
+            valid = [i for i in indices if isinstance(i, int) and 0 <= i < len(results)]
+            filtered = [results[i] for i in valid[:top_n]]
+            print(f"  Relevance filter: {len(results)} → {len(filtered)} results")
+            return filtered
+    except Exception:
+        pass
+    return results[:top_n]
+
+
+def _extract_from_batch(batch_results: list[dict], question: str) -> list[dict]:
+    """Extract claims from 2-3 pages in a single LLM call."""
+    from src.config import JINA_MAX_CHARS
+
+    parts = []
+    for r in batch_results:
+        text = r.get("full_text", "")
+        url = r.get("url", "")
+        if len(text) < 50:
+            continue
+        if len(text) > JINA_MAX_CHARS:
+            text = text[:JINA_MAX_CHARS]
+        parts.append(f"=== PAGE [{r.get('rank','?')}]: {url} ===\n{text}")
+
+    if not parts:
+        return []
+
+    combined = "\n\n".join(parts)
+
+    prompt = f"""从以下网页内容中提取所有可能对回答问题有帮助的事实信息。
+关键原则：即使信息不完整、不直接、看似只匹配问题的一小部分，也应该提取。宁可多提不要漏提。
+输出JSON数组，每个元素含: "claim"(事实声明), "snippet"(原文逐字引用), "url"(来源URL)
+没有任何相关信息则输出 []
+只输出JSON，不要其他文字
+
+问题：{question}
+内容：
+{combined}
+
+JSON数组："""
+
+    try:
+        return retry(lambda: _parse_json_claims(generate(prompt)))
+    except Exception:
+        return []
+
+
 def _extract_from_one_result(result: dict, question: str) -> list[dict]:
     """Extract claims from a single search result (one page of text).
 
@@ -538,21 +612,35 @@ JSON数组："""
 
 
 def extract_claims(results: list[dict], question: str = "") -> list[dict]:
-    """Extract claims from each result in parallel, then merge and deduplicate.
+    """Extract claims from search results with relevance filter + batching.
 
-    Per-result extraction avoids the information overload problem of the old
-    all-at-once approach, which often returned 1-2 claims from 900K chars.
+    Cost-optimized pipeline:
+      1. Filter to top-10 most relevant pages (single cheap LLM call)
+      2. Batch 2-3 pages per LLM call
+      3. Process batches in parallel (max 4 workers → ~2-3 concurrent calls)
     """
     if not results:
         return []
 
-    print(f"  Extracting per-result (parallel, {len(results)} pages)...", end=" ", flush=True)
+    # Step 1: Relevance filter — only extract from promising pages
+    results = _filter_relevant_results(results, question, top_n=10)
+
+    # Step 2: Batch pages into groups of 2-3
+    BATCH_SIZE = 3
+    batches = []
+    for i in range(0, len(results), BATCH_SIZE):
+        batch = results[i:i + BATCH_SIZE]
+        if batch:
+            batches.append(batch)
+
+    print(f"  Extracting claims from {len(results)} pages in {len(batches)} batches...", end=" ", flush=True)
     t0 = time.time()
 
+    # Step 3: Parallel extraction over batches
     all_claims = []
-    with ThreadPoolExecutor(max_workers=5) as ex:
-        futures = {ex.submit(_extract_from_one_result, r, question): i
-                   for i, r in enumerate(results)}
+    with ThreadPoolExecutor(max_workers=4) as ex:
+        futures = {ex.submit(_extract_from_batch, batch, question): i
+                   for i, batch in enumerate(batches)}
         for f in as_completed(futures):
             try:
                 claims = f.result()

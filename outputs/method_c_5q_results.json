@@ -1,0 +1,127 @@
+[
+  {
+    "method": "C",
+    "qid": "BC016",
+    "question": "19世纪中叶的一场战争改变了一个国家的制度，在40年后，另一个大陆上的第一次以移民后裔命名的战争结束，同年该国最伟大的人中的Top30当选为总统，并与19年后导致了第二次同名称战争，请问，在此年份中，什么药物上市，并对以后产生了非常大的影响。",
+    "ref": "阿司匹林",
+    "answer": "根据谜面描述，这个年份是**1899年**。  \n在这一年，由拜耳公司推出的药物**阿司匹林（Aspirin）**正式上市。阿司匹林作为医药史上三大经典药物之一，至今仍是全球应用最广泛的解热、镇痛和抗炎药物，对后世产生了极其深远的影响。",
+    "accuracy": "Y",
+    "recall": true,
+    "total_wall_s": 208.9,
+    "llm_calls": 1,
+    "search_calls": 0,
+    "tokens_in": 2007,
+    "tokens_out": 8409,
+    "cost_usd": 0.00356,
+    "n_search_results": 42,
+    "trace": [
+      {
+        "step": "C_generate",
+        "wall_s": 208.9,
+        "tokens_in": 2007,
+        "tokens_out": 8409
+      }
+    ],
+    "_note": "gap-fill skipped (SerpAPI rate limited); using D's already-expanded search results"
+  },
+  {
+    "method": "C",
+    "qid": "BC021",
+    "question": "在一次意外中，一位爱好研究的小人物发现了一种能够改变历史的物质。这一物质极大地推动了生命健康的发展，被某个遥远大陆上的无数国家广泛应用。这位小人物的名字总让人联想到一位住在绿色山脉的人物。这位小人物的作品在中国的那一年正式投产？",
+    "ref": "1953 年",
+    "answer": "1953年。\n\n**推理过程**：\n1.  **人物与物质**：“在一次意外中……发现改变历史的物质……推动生命健康”，指的是**亚历山大·弗莱明**（Alexander Fleming）于1928年偶然发现**青霉素**。\n2.  **名字联想**：“总让人联想到一位住在绿色山脉的人物”，指的是弗莱明名字中的“**明**”字，令人联想到隐居在绿色山林（如隆中卧龙岗）的“**明**”——**诸葛亮（孔明）**。\n3.  **正式投产**：青霉素在中国的工业化生产始于新中国初期。**1953年**，中国第一家生产抗生素的专业工厂——上海第三制药厂建成并正式投产，标志着国产青霉素进入大规模工业化生产阶段。",
+    "accuracy": "N",
+    "recall": false,
+    "total_wall_s": 98.8,
+    "llm_calls": 1,
+    "search_calls": 0,
+    "tokens_in": 1481,
+    "tokens_out": 3658,
+    "cost_usd": 0.00161,
+    "n_search_results": 32,
+    "trace": [
+      {
+        "step": "C_generate",
+        "wall_s": 98.8,
+        "tokens_in": 1481,
+        "tokens_out": 3658
+      }
+    ],
+    "_note": "gap-fill skipped (SerpAPI rate limited); using D's already-expanded search results"
+  },
+  {
+    "method": "C",
+    "qid": "BC031",
+    "question": "创办于1993年，创始人是恢复高考后的第一批大学生，获得硕士学位后，参加工作至30岁，创办了此公司，并于2010年上市。2024年中国民营企业 500 强上榜。这家公司主攻什么行业？",
+    "ref": "制造业",
+    "answer": "根据搜索结果，这家公司是**巨星科技**（隶属于巨星控股集团），主攻**工具制造**行业。\n\n**关键信息匹配：**\n-   **创始人**：仇建平，1978年考入大学，是恢复高考后的第一批大学生，后获得硕士学位。\n-   **创办时间**：1993年。\n-   **上市与排名**：2010年上市，2024年上榜中国民营企业500强。\n-   **主营业务**：全球领先的工具企业，产品涵盖手动工具、电动工具、激光测量工具等。",
+    "accuracy": "N",
+    "recall": true,
+    "total_wall_s": 9.7,
+    "llm_calls": 1,
+    "search_calls": 0,
+    "tokens_in": 2099,
+    "tokens_out": 394,
+    "cost_usd": 0.00037,
+    "n_search_results": 40,
+    "trace": [
+      {
+        "step": "C_generate",
+        "wall_s": 9.7,
+        "tokens_in": 2099,
+        "tokens_out": 394
+      }
+    ],
+    "_note": "gap-fill skipped (SerpAPI rate limited); using D's already-expanded search results"
+  },
+  {
+    "method": "C",
+    "qid": "BC050",
+    "question": "一种已灭绝的鱼类，他所生存的时期，名字来源于一个地名，这种鱼最初被发现的地方夏天会盛开一种花朵，它所属的纲科名称与一个电影角色有关，这个电影角色属于哪个朝代",
+    "ref": "南北朝",
+    "answer": "根据线索推断，这种已灭绝的鱼类是**燕鲟**（学名 *Yanosteus*），其名称来源于古地名“燕”（今辽宁一带）。它最初发现于辽宁北票，当地夏季白石水库有万亩荷花盛开；它所属的科为**北票鲟科**，“北票”谐音联想到电影《倩女幽魂》中的角色**燕赤霞**。燕赤霞这一角色通常设定在**明朝**。\n\n答案：**明朝**",
+    "accuracy": "N",
+    "recall": false,
+    "total_wall_s": 57.0,
+    "llm_calls": 1,
+    "search_calls": 0,
+    "tokens_in": 1244,
+    "tokens_out": 2250,
+    "cost_usd": 0.00102,
+    "n_search_results": 21,
+    "trace": [
+      {
+        "step": "C_generate",
+        "wall_s": 57.0,
+        "tokens_in": 1244,
+        "tokens_out": 2250
+      }
+    ],
+    "_note": "gap-fill skipped (SerpAPI rate limited); using D's already-expanded search results"
+  },
+  {
+    "method": "C",
+    "qid": "BC074",
+    "question": "一女演员a，出生的那天的50余年前某重要革命组织成立，20余年前某高成就科学家出生。该科学家的妻子生于某发达省会，他们俩在科学家26岁时结婚。女演员a的前夫比她大7岁，前夫在42岁提名他领域内较重要的奖项。问女演员a是谁",
+    "ref": "潘虹",
+    "answer": "根据搜索结果[13]，这位女演员1976年5月8日出生于北京，配偶为徐佳宁，符合题目中关于女演员a的描述。因此，女演员a是**李小冉**。",
+    "accuracy": "N",
+    "recall": false,
+    "total_wall_s": 135.9,
+    "llm_calls": 1,
+    "search_calls": 0,
+    "tokens_in": 1062,
+    "tokens_out": 5761,
+    "cost_usd": 0.00241,
+    "n_search_results": 19,
+    "trace": [
+      {
+        "step": "C_generate",
+        "wall_s": 135.9,
+        "tokens_in": 1062,
+        "tokens_out": 5761
+      }
+    ],
+    "_note": "gap-fill skipped (SerpAPI rate limited); using D's already-expanded search results"
+  }
+]

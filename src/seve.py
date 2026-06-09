@@ -287,13 +287,21 @@ def hypothesis_driven_search(question: str, n_hypotheses: int = 5) -> list[dict]
         print("  No hypotheses generated, fallback to direct search")
         return do_search(question)
 
+    # Extract constraints once (same question for all hypotheses)
+    from src.bing_client import search as do_search
+    constraints = _extract_constraints(question)
+
     # Parallel hypothesis search — each candidate searched concurrently
     all_results = []
     seen_urls = set()
     seen_lock = __import__('threading').Lock()
 
     def _search_one(h):
-        results = search_and_verify_hypothesis(h, question, top_k=5)
+        query = f"{h} {constraints}"
+        print(f"    Query: {query[:100]}...", end=" ", flush=True)
+        t0 = time.time()
+        results = do_search(query, top_k=5)
+        print(f"{len(results)} results ({time.time()-t0:.1f}s)")
         return h, results
 
     print(f"  Searching {len(hypotheses)} hypotheses in parallel...", flush=True)
@@ -1078,6 +1086,152 @@ JSON数组："""
         return final, True
     else:
         return current_answer, False
+
+
+def chain_reasoning(question: str, max_hops: int = 5) -> tuple[str, list[dict], list[dict], list[dict], bool]:
+    """Method F: Chain-of-thought reasoning + SEVE verification.
+
+    Phase 1 (Chain): decompose → search each hop → confirm → next hop.
+    Phase 2-6 (SEVE): extract_claims → generate_answer → verify → correct → fallback
+    on ALL accumulated search results from every hop.
+
+    Returns (answer, claims, verifications, all_results, success).
+    """
+    from src.bing_client import search as do_search
+    from src.utils import format_search_results
+
+    # ═══ Phase F1: Decompose into ordered sub-questions ═══
+    print(f"  [Chain] Decomposing question...", end=" ", flush=True)
+    decomp_prompt = f"""将以下复杂问题拆解为2-5个需要按顺序解决的子问题。
+每个子问题应是独立的、可搜索的事实查询。解决前一个才能进入下一个。
+
+输出JSON数组，每个元素含 "step"(序号) 和 "question"(子问题)。
+只输出JSON数组，不要其他文字。
+
+问题：{question}
+
+JSON数组："""
+    steps_raw = generate(decomp_prompt).strip()
+    steps = _parse_json_array(steps_raw)
+    if not steps or not isinstance(steps, list) or len(steps) < 1:
+        print(f"decomposition failed")
+        return "", [], [], [], False
+
+    print(f"{len(steps)} hops")
+    for s in steps:
+        if isinstance(s, dict):
+            print(f"    Hop {s.get('step','?')}: {s.get('question','')[:80]}")
+
+    # ═══ Phase F2: Sequential hop-by-hop search ═══
+    all_results = []
+    confirmed_facts = []
+    seen_urls = set()
+
+    for i, step in enumerate(steps):
+        if isinstance(step, dict):
+            step_q = step.get("question", str(step))
+            step_n = step.get("step", i + 1)
+        else:
+            step_q = str(step)
+            step_n = i + 1
+
+        print(f"  [Hop {step_n}/{len(steps)}] Searching: {step_q[:60]}...", end=" ", flush=True)
+        t0 = time.time()
+
+        hop_results = do_search(step_q)
+        for r in hop_results:
+            url = r.get("url", "")
+            if url and url not in seen_urls:
+                seen_urls.add(url)
+                all_results.append(r)
+        print(f"{len(hop_results)} results ({time.time()-t0:.1f}s)")
+
+        # Answer this hop with context from previous hops
+        prev_facts = "\n".join(f"- {f}" for f in confirmed_facts) if confirmed_facts else "(第一个步骤)"
+        ctx = format_search_results(hop_results)
+
+        hop_prompt = f"""基于搜索结果回答子问题。注意：下面列出了前面步骤已确认的事实，请基于这些事实继续推理。
+
+已确认事实：
+{prev_facts}
+
+当前搜索结果：
+{ctx}
+
+当前子问题：{step_q}
+
+如果搜索结果足以回答，请以"确认："开头给出答案。如果不足，以"不确定："开头说明缺少什么。"""
+
+        hop_answer = generate(hop_prompt).strip()
+        is_confirmed = hop_answer.startswith("确认")
+
+        # Retry once if uncertain
+        if not is_confirmed:
+            alt_query_prompt = f"""以下搜索未找到答案，请提供替代搜索词。
+子问题：{step_q}
+缺失信息：{hop_answer}
+输出JSON字符串数组。只输出JSON数组。
+JSON数组："""
+            alt_queries = _parse_json_strings(generate(alt_query_prompt).strip())
+            for alt_q in alt_queries[:2]:
+                print(f"    Retry search: {alt_q[:60]}...", end=" ", flush=True)
+                t1 = time.time()
+                alt_results = do_search(alt_q)
+                for r in alt_results:
+                    url = r.get("url", "")
+                    if url and url not in seen_urls:
+                        seen_urls.add(url)
+                        all_results.append(r)
+                print(f"{len(alt_results)} results ({time.time()-t1:.1f}s)")
+
+                alt_ctx = format_search_results(alt_results)
+                retry_prompt = f"""基于新搜索结果重新回答。
+
+已确认事实：
+{prev_facts}
+
+新搜索结果：
+{alt_ctx}
+
+子问题：{step_q}
+
+如果搜索结果足以回答，请以"确认："开头。不足则以"不确定："开头。"""
+                retry_answer = generate(retry_prompt).strip()
+                if retry_answer.startswith("确认"):
+                    hop_answer = retry_answer
+                    is_confirmed = True
+                    break
+
+        confirmed_facts.append(f"[Step {step_n}] Q: {step_q} → {hop_answer}")
+        print(f"    {'✓' if is_confirmed else '?'} {hop_answer[:100]}")
+
+    if not all_results:
+        print(f"  [Chain] No search results from any hop")
+        return "", [], [], [], False
+
+    print(f"  [Chain] {len(all_results)} total results from {len(steps)} hops, running SEVE...", flush=True)
+
+    # ═══ Phases F3-F7: SEVE pipeline on accumulated results ═══
+    # Phase 2: Extract claims
+    claims = extract_claims(all_results, question)
+
+    # Phase 3: Generate answer from structured table
+    answer, cmap = generate_answer(question, claims)
+
+    # Phase 4: Verify claims against original text
+    verifications = verify_claims(answer, claims, all_results)
+
+    # Phase 5: Apply verification — remove NO, annotate PARTIAL
+    final_answer = apply_verification(answer, verifications)
+
+    # Phase 6: Fallback reasoning if everything failed
+    final_answer, fb_trig = fallback_reasoning(question, final_answer, verifications)
+
+    yes_n = sum(1 for v in verifications if v.get("verdict") == "YES")
+    no_n = sum(1 for v in verifications if v.get("verdict") == "NO")
+    print(f"  [Chain+SEVE] {len(claims)} claims, {yes_n}Y/{no_n}N, fb={fb_trig}")
+
+    return final_answer, claims, verifications, all_results, True
 
 
 def run_seve() -> None:

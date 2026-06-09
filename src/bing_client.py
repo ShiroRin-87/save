@@ -65,7 +65,7 @@ def search(query: str, top_k: int = SEARCH_TOP_K, use_jina: bool = True) -> list
         "api_key": SERP_API_KEY,
         "num": top_k,
     }
-    time.sleep(1.5)  # avoid 429 on free tier
+    time.sleep(3.0)  # avoid 429 on free tier
     resp = requests.get(SERPAPI_ENDPOINT, params=params, timeout=30, verify=False)
     resp.raise_for_status()
     data = resp.json()

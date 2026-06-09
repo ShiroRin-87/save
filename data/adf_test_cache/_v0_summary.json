@@ -1,0 +1,38 @@
+{
+  "description": "V0 (D3a hypothesis generation) tally across all tested questions, with user corrections applied",
+  "date": "2026-06-08",
+  "total_questions": 16,
+  "corrections": {
+    "BC000": {"ref": "1轮", "v0_hyps": ["2", "5", "4"], "status": "LOOSE_HIT", "note": "V0 guessed '2', '5', '4' — ref '1轮' found at rank#4 via loose match; LLM reasoning traced 11集→日剧"},
+    "BC001": {"ref": "2019年4月23日", "v0_hyps": ["2019年4月23日", "2017年5月2日"], "status": "STRICT_HIT", "note": "Rank#1; reasoning traced 刊物→五卅运动→上海大学→演员→结婚日期"},
+    "BC002": {"ref": "苏笑柏", "v0_hyps": ["盛天泓", "苏笑柏", "姜琤"], "status": "STRICT_HIT", "note": "Rank#2"},
+    "BC003": {"ref": "保罗.高更", "correct_ref": "月亮和六便士", "v0_hyps": ["月亮和六便士", "天堂在另外那个街角", "诺阿诺阿"], "status": "HIT", "note": "题库ref错误：题目问'这部作品叫什么'，答'月亮和六便士'正确。Ref应是作品名而非人物名"},
+    "BC005": {"ref": "宁波奉化", "v0_hyps": ["射洪", "烟台", "哈尔滨"], "status": "MISS", "note": "True miss; 需追踪 陈凯歌→出生地→宁波奉化 的知识链"},
+    "BC006": {"ref": "2004", "v0_hyps": ["2014", "2004", "2006"], "status": "STRICT_HIT", "note": "Rank#2"},
+    "BC007": {"ref": "1946.5", "v0_hyps": ["1946年5月", "1929年3月", "1942年8月"], "status": "LOOSE_HIT", "note": "1946年5月=1946.5，格式差异；reasoning traced 石黑一雄→徐向前→黄杰"},
+    "BC016": {"ref": "?", "status": "OLD_CACHE", "note": "Old method cache only"},
+    "BC018": {"ref": "2003年MVP刘玉栋", "v0_hyps": ["姚明", "刘玉栋", "王治郅"], "status": "LOOSE_HIT", "note": "Rank#2; '刘玉栋' contained in '2003年MVP刘玉栋'"},
+    "BC021": {"ref": "1953 年", "v0_hyps": ["1953年", "1986年", "1999年"], "status": "LOOSE_HIT", "note": "'1953年' contained in '1953 年' — 空格差异"},
+    "BC024": {"ref": "魔法使之夜", "v0_hyps": ["魔法使之夜", "秋之回忆8", "Memories Off"], "status": "STRICT_HIT", "note": "Rank#1; reasoning traced 伊藤智彦→戸松遥→SAO→魔法使之夜"},
+    "BC025": {"ref": "阿莫西林", "v0_hyps": ["阿莫西林", "雷尼替丁", "阿托伐他汀"], "status": "STRICT_HIT", "note": "Rank#1"},
+    "BC031": {"ref": "?", "status": "OLD_CACHE", "note": "Old method cache only"},
+    "BC033": {"ref": "1998年", "v0_hyps": ["1863年11月26日", "1910年1月29日"], "status": "MISS", "note": "True miss; 需追踪 赵丽蓉→去世年份→1998年"},
+    "BC035": {"ref": "1982年", "v0_hyps": ["1983", "1984", "2002"], "status": "MISS", "note": "True miss; 需追踪 路遥→人生→发表年份→1982年"},
+    "BC042": {"ref": "603005", "v0_hyps": ["603005", "300456", "002185"], "status": "STRICT_HIT", "note": "Rank#1"},
+    "BC050": {"ref": "?", "status": "OLD_CACHE", "note": "Old method cache only"},
+    "BC057": {"ref": "蒂特", "v0_hyps": ["蒂特", "哈雷德", "曼奇尼"], "status": "STRICT_HIT", "note": "Rank#1"},
+    "BC060": {"ref": "博士", "correct_ref": "阿米娅", "v0_hyps": ["阿米娅", "刘备", "拿破仑"], "status": "HIT", "note": "题库ref错误：正确答案是'阿米娅'(游戏明日方舟角色)。V0 rank#1命中"},
+    "BC074": {"ref": "?", "status": "OLD_CACHE", "note": "Old method cache only"}
+  },
+  "summary": {
+    "tested_with_v0": 16,
+    "strict_hits": 7,
+    "loose_format_hits": 4,
+    "bank_error_hits": 2,
+    "true_misses": 3,
+    "total_corrected_hits": 13,
+    "corrected_hit_rate": "13/16 = 81%",
+    "true_miss_questions": ["BC005", "BC033", "BC035"],
+    "miss_analysis": "All 3 true misses require niche knowledge chains: BC005(陈凯歌→出生地), BC033(赵丽蓉→去世年份), BC035(路遥→人生→发表年份)"
+  }
+}

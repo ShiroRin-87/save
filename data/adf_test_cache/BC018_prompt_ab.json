@@ -1,0 +1,790 @@
+{
+  "question": "21世纪初中国体育史上有两大突破，同年，某家美国大型公司搬迁到美国东部五大湖区的一家城市，在此城市中诞生的一名主教练在数年后第二次获得了某项体育赛事总冠军，请问同年在CBA中获得MVP的球员是谁？",
+  "ref": "2003年MVP刘玉栋",
+  "versions": {
+    "V0_original": {
+      "hypotheses_prompt": "你是一个知识渊博的推理助手。请根据以下谜题的约束条件，依靠你自己的知识推测可能的答案。\n\n谜题：21世纪初中国体育史上有两大突破，同年，某家美国大型公司搬迁到美国东部五大湖区的一家城市，在此城市中诞生的一名主教练在数年后第二次获得了某项体育赛事总冠军，请问同年在CBA中获得MVP的球员是谁？\n\n输出一个JSON字符串数组，包含5个方向各异的最终候选答案。每个元素直接是答案名称，覆盖不同方向。只输出JSON数组，不要其他文字。\n\n示例：[\"青城山\",\"都江堰\",\"乐山大佛\",\"峨眉山\",\"莫高窟\"]\n\nJSON数组：",
+      "hypotheses_raw": "[\"姚明\",\"刘玉栋\",\"王治郅\",\"唐正东\",\"巴特尔\"]",
+      "hypotheses": [
+        "姚明",
+        "刘玉栋",
+        "王治郅",
+        "唐正东",
+        "巴特尔"
+      ],
+      "constraints_prompt": "从以下谜题中提取3-5个可用于搜索验证的关键词或短语。\n\n谜题：21世纪初中国体育史上有两大突破，同年，某家美国大型公司搬迁到美国东部五大湖区的一家城市，在此城市中诞生的一名主教练在数年后第二次获得了某项体育赛事总冠军，请问同年在CBA中获得MVP的球员是谁？\n\n输出一个JSON字符串数组。只输出JSON数组。\n\nJSON数组：",
+      "constraints_raw": "[\"波音公司 总部 搬迁 芝加哥 2001\", \"中国体育 两大突破 2001\", \"波波维奇 第二次 NBA总冠军 2003\", \"2001年 CBA 常规赛 MVP\", \"姚明 CBA MVP 2001\"]",
+      "constraints": [
+        "波音公司 总部 搬迁 芝加哥 2001",
+        "中国体育 两大突破 2001",
+        "波波维奇 第二次 NBA总冠军 2003",
+        "2001年 CBA 常规赛 MVP",
+        "姚明 CBA MVP 2001"
+      ],
+      "queries": [
+        "姚明 波音公司 总部 搬迁 芝加哥 2001 中国体育 两大突破 2001 波波维奇 第二次 NBA总冠军 2003 2001年 CBA 常规赛 MVP 姚明 CBA MVP 2001",
+        "刘玉栋 波音公司 总部 搬迁 芝加哥 2001 中国体育 两大突破 2001 波波维奇 第二次 NBA总冠军 2003 2001年 CBA 常规赛 MVP 姚明 CBA MVP 2001",
+        "王治郅 波音公司 总部 搬迁 芝加哥 2001 中国体育 两大突破 2001 波波维奇 第二次 NBA总冠军 2003 2001年 CBA 常规赛 MVP 姚明 CBA MVP 2001",
+        "唐正东 波音公司 总部 搬迁 芝加哥 2001 中国体育 两大突破 2001 波波维奇 第二次 NBA总冠军 2003 2001年 CBA 常规赛 MVP 姚明 CBA MVP 2001",
+        "巴特尔 波音公司 总部 搬迁 芝加哥 2001 中国体育 两大突破 2001 波波维奇 第二次 NBA总冠军 2003 2001年 CBA 常规赛 MVP 姚明 CBA MVP 2001"
+      ],
+      "search_detail": [
+        {
+          "entity": "姚明 波音公司 总部 搬迁 芝加哥 2001 中国体育 两大突破 2001 波波维奇 第二次 NBA总冠军 2003 2001年 CBA 常规赛 MVP 姚明 CBA MVP 2001",
+          "query": "姚明 波音公司 总部 搬迁 芝加哥 2001 中国体育 两大突破 2001 波波维奇 第二次 NBA总冠军 2003 2001年 CBA 常规赛 MVP 姚明 CBA MVP 2001",
+          "n_results": 5,
+          "n_new": 5,
+          "wall_s": 20.1,
+          "top3": [
+            {
+              "title": "姚明- 維基百科，自由的百科全書",
+              "snippet": "1998年4月，姚明入選王非執教的國家隊，開始了職業籃球生涯。並在中國籃球協會（CBA）的上海大鯊魚效力了五年。2001奪得CBA例行賽最有價值球員及聯賽 ...",
+              "url": "https://zh.wikipedia.org/wiki/%E5%A7%9A%E6%98%8E"
+            },
+            {
+              "title": "Yao Ming - The Naismith Basketball Hall of Fame",
+              "snippet": "Yao Ming joined the Houston Rockets in the summer of 2002, just a few months removed from having led his Shanghai Sharks to the Chinese Basketball Association ...",
+              "url": "https://www.hoophall.com/hall-of-famers/yao-ming"
+            },
+            {
+              "title": "中国球员在NBA的历史",
+              "snippet": "姚明的退役消息宣告了中国有史以来最优秀的篮球运动员退出了NBA的赛场。 那些与NBA产生交集的中国球员。",
+              "url": "http://nbachina.sina.com.cn/news/4/2011/2143/4618.html"
+            }
+          ]
+        },
+        {
+          "entity": "刘玉栋 波音公司 总部 搬迁 芝加哥 2001 中国体育 两大突破 2001 波波维奇 第二次 NBA总冠军 2003 2001年 CBA 常规赛 MVP 姚明 CBA MVP 2001",
+          "query": "刘玉栋 波音公司 总部 搬迁 芝加哥 2001 中国体育 两大突破 2001 波波维奇 第二次 NBA总冠军 2003 2001年 CBA 常规赛 MVP 姚明 CBA MVP 2001",
+          "n_results": 5,
+          "n_new": 5,
+          "wall_s": 13.9,
+          "top3": [
+            {
+              "title": "刘玉栋:十块碎骨铺就封神路",
+              "snippet": "刘玉栋球员生涯斩获荣誉无数，其中不少都是独一无二的成就：CBA十年最佳球员、连续四届全运会冠军、两次荣立一等功、单赛季包揽得分王、联赛MVP和常规赛MVP三大奖项……但在 ...",
+              "url": "http://sports.163.com/special/cbazt/cbaliuyudong.html"
+            },
+            {
+              "title": "刘玉栋场均29分9板，却输给了20岁的他，看到数据后终于懂了",
+              "snippet": "而在场均砍下37分的前一个赛季，也就是2000-2001赛季，刘玉栋的表现也很出色，场均砍下29.2分8.9篮板1.8助攻1.6抢断。 那个赛季，刘玉栋曾很接近夺得CBA联赛 ...",
+              "url": "https://zhuanlan.zhihu.com/p/86301345"
+            },
+            {
+              "title": "姚明- 维基百科，自由的百科全书",
+              "snippet": "2001夺得CBA常规赛最有价值球员及联赛最有价值球员，2002年获得了CBA总冠军，但该年MVP由刘玉栋获得。 ... 2009年，第一次进入NBA季后赛分区第二轮。 2009年，全资 ...",
+              "url": "https://zh.wikipedia.org/zh-cn/%E6%BD%98%E5%85%8B%E5%80%AB?oldformat=true"
+            }
+          ]
+        },
+        {
+          "entity": "王治郅 波音公司 总部 搬迁 芝加哥 2001 中国体育 两大突破 2001 波波维奇 第二次 NBA总冠军 2003 2001年 CBA 常规赛 MVP 姚明 CBA MVP 2001",
+          "query": "王治郅 波音公司 总部 搬迁 芝加哥 2001 中国体育 两大突破 2001 波波维奇 第二次 NBA总冠军 2003 2001年 CBA 常规赛 MVP 姚明 CBA MVP 2001",
+          "n_results": 5,
+          "n_new": 4,
+          "wall_s": 18.7,
+          "top3": [
+            {
+              "title": "CBA历届总决赛MVP",
+              "snippet": "外援马布里获得总决赛最有价值球员（MVP）。 以下为CBA历届总决赛MVP：. 1999－2000赛季王治郅（八一队）. 2000－2001赛季姚明（上海队）.",
+              "url": "http://sports.people.com.cn/n/2015/0323/c22176-26732083.html"
+            },
+            {
+              "title": "王治郅- 維基百科，自由的百科全書",
+              "snippet": "王治郅（1977年7月8日—），北京人，中國職業籃球運動員、教練、軍人，大校軍階，現任中央軍委訓練管理部軍事體育訓練中心空軍五項隊副隊長。身高2.14米，場上位置為中鋒或大 ...",
+              "url": "https://zh.wikipedia.org/wiki/%E7%8E%8B%E6%B2%BB%E9%83%85"
+            },
+            {
+              "title": "【亞洲球員NBA回顧史(上)】從王治郅首秀到姚明的巔峰時期 ...",
+              "snippet": "【亞洲球員NBA回顧史(上)】從王治郅首秀到姚明的巔峰時期，完整回顧亞洲籃球在NBA的黃金年代. 11K views · 7 months ago. #姚明#田臥勇太#易建聯.",
+              "url": "https://www.youtube.com/watch?v=eOPXiKAj-C4"
+            }
+          ]
+        },
+        {
+          "entity": "唐正东 波音公司 总部 搬迁 芝加哥 2001 中国体育 两大突破 2001 波波维奇 第二次 NBA总冠军 2003 2001年 CBA 常规赛 MVP 姚明 CBA MVP 2001",
+          "query": "唐正东 波音公司 总部 搬迁 芝加哥 2001 中国体育 两大突破 2001 波波维奇 第二次 NBA总冠军 2003 2001年 CBA 常规赛 MVP 姚明 CBA MVP 2001",
+          "n_results": 5,
+          "n_new": 5,
+          "wall_s": 17.5,
+          "top3": [
+            {
+              "title": "Yao Ming",
+              "snippet": "He played for the Shanghai Sharks of the Chinese Basketball Association (CBA), and then spent his entire nine-year National Basketball Association (NBA) career ...",
+              "url": "https://en.wikipedia.org/wiki/Yao_Ming"
+            },
+            {
+              "title": "CBA历届总冠军",
+              "snippet": "CBA历届总冠军（China Basketball Association）是指历届在CBA联赛中获得总冠军的球队。CBA联赛总冠军是CBA联赛的最高荣誉。CBA总决赛的获胜球队获得当赛季CBA总冠军。",
+              "url": "https://baike.baidu.com/item/CBA%E5%8E%86%E5%B1%8A%E6%80%BB%E5%86%A0%E5%86%9B/16975633"
+            },
+            {
+              "title": "http://www.historylink.org/index.cfm?DisplayPage=o...",
+              "snippet": "No information is available for this page.",
+              "url": "http://www.historylink.org/index.cfm?DisplayPage=output.cfm&file_id=8910"
+            }
+          ]
+        },
+        {
+          "entity": "巴特尔 波音公司 总部 搬迁 芝加哥 2001 中国体育 两大突破 2001 波波维奇 第二次 NBA总冠军 2003 2001年 CBA 常规赛 MVP 姚明 CBA MVP 2001",
+          "query": "巴特尔 波音公司 总部 搬迁 芝加哥 2001 中国体育 两大突破 2001 波波维奇 第二次 NBA总冠军 2003 2001年 CBA 常规赛 MVP 姚明 CBA MVP 2001",
+          "n_results": 5,
+          "n_new": 2,
+          "wall_s": 10.4,
+          "top3": [
+            {
+              "title": "Yao Ming - The Naismith Basketball Hall of Fame",
+              "snippet": "Shanghai Sharks. 8x NBA All-Star 2003-2009, 2011. 2002 CBA Finals MVP. 3x Olympian 2000, 2004, 2008. 2003 NBA All-Rookie First Team. 3x CBA blocks leader. 2001 ...",
+              "url": "https://www.hoophall.com/hall-of-famers/yao-ming"
+            },
+            {
+              "title": "http://www.historylink.org/index.cfm?DisplayPage=o...",
+              "snippet": "No information is available for this page.",
+              "url": "http://www.historylink.org/index.cfm?DisplayPage=output.cfm&file_id=8910"
+            },
+            {
+              "title": "Yao Ming",
+              "snippet": "Yao Ming (Chinese: 姚明; born September 12, 1980) is a Chinese basketball executive and former professional player.",
+              "url": "https://en.wikipedia.org/wiki/Yao_Ming"
+            }
+          ]
+        }
+      ],
+      "total_results": 21,
+      "recall": false,
+      "all_results": [
+        {
+          "title": "姚明- 維基百科，自由的百科全書",
+          "url": "https://zh.wikipedia.org/wiki/%E5%A7%9A%E6%98%8E",
+          "snippet": "1998年4月，姚明入選王非執教的國家隊，開始了職業籃球生涯。並在中國籃球協會（CBA）的上海大鯊魚效力了五年。2001奪得CBA例行賽最有價值球員及聯賽 ..."
+        },
+        {
+          "title": "Yao Ming - The Naismith Basketball Hall of Fame",
+          "url": "https://www.hoophall.com/hall-of-famers/yao-ming",
+          "snippet": "Yao Ming joined the Houston Rockets in the summer of 2002, just a few months removed from having led his Shanghai Sharks to the Chinese Basketball Association ..."
+        },
+        {
+          "title": "中国球员在NBA的历史",
+          "url": "http://nbachina.sina.com.cn/news/4/2011/2143/4618.html",
+          "snippet": "姚明的退役消息宣告了中国有史以来最优秀的篮球运动员退出了NBA的赛场。 那些与NBA产生交集的中国球员。"
+        },
+        {
+          "title": "后姚明时代：中国篮球的未来",
+          "url": "https://knowledge.wharton.upenn.edu/wp-content/uploads/2012/10/3253.pdf",
+          "snippet": "李宁公司成⽴于1990年，是中国国内最⼤的体育⽤品公司。它的品牌发展策略与耐克相. 似。在最近两年⾥，李宁与两次⼊选NBA全明星的拜伦·戴维斯（Baron Davis）和2010年. NBA ..."
+        },
+        {
+          "title": "Yao Ming (姚明) – CHIN 3343",
+          "url": "https://uhlibraries.pressbooks.pub/chin3343fa23/chapter/yaoming/",
+          "snippet": "Yao Ming (姚明) is a sports icon born September 12, 1980 in Shanghai, China. became the owner and president of the franchise in 2009."
+        },
+        {
+          "title": "刘玉栋:十块碎骨铺就封神路",
+          "url": "http://sports.163.com/special/cbazt/cbaliuyudong.html",
+          "snippet": "刘玉栋球员生涯斩获荣誉无数，其中不少都是独一无二的成就：CBA十年最佳球员、连续四届全运会冠军、两次荣立一等功、单赛季包揽得分王、联赛MVP和常规赛MVP三大奖项……但在 ..."
+        },
+        {
+          "title": "刘玉栋场均29分9板，却输给了20岁的他，看到数据后终于懂了",
+          "url": "https://zhuanlan.zhihu.com/p/86301345",
+          "snippet": "而在场均砍下37分的前一个赛季，也就是2000-2001赛季，刘玉栋的表现也很出色，场均砍下29.2分8.9篮板1.8助攻1.6抢断。 那个赛季，刘玉栋曾很接近夺得CBA联赛 ..."
+        },
+        {
+          "title": "姚明- 维基百科，自由的百科全书",
+          "url": "https://zh.wikipedia.org/zh-cn/%E6%BD%98%E5%85%8B%E5%80%AB?oldformat=true",
+          "snippet": "2001夺得CBA常规赛最有价值球员及联赛最有价值球员，2002年获得了CBA总冠军，但该年MVP由刘玉栋获得。 ... 2009年，第一次进入NBA季后赛分区第二轮。 2009年，全资 ..."
+        },
+        {
+          "title": "[2002 CBA Final] Yao Ming LAST CBA Game 45PTS VS ...",
+          "url": "https://www.youtube.com/watch?v=tUyJ7mKUDVI",
+          "snippet": "[2002 CBA Final] Yao Ming LAST CBA Game 45PTS VS 49PTS “Mars” Liu Yudong | 姚明CBA生涯最后一战对决“战神”刘玉栋 · Comments."
+        },
+        {
+          "title": "02年总决赛，姚明场均41分21篮板，MVP刘玉栋什么数据？",
+          "url": "https://www.sohu.com/a/458488736_120563559",
+          "snippet": "图片 2001-2002赛季, 2001年的CBA总决赛,姚明场均砍下24.5分17.5篮板5.2盖帽1.8抢断,而刘玉栋场均砍下36.2分9篮板2.5助攻2.3抢断,他的场均得分比姚明"
+        },
+        {
+          "title": "CBA历届总决赛MVP",
+          "url": "http://sports.people.com.cn/n/2015/0323/c22176-26732083.html",
+          "snippet": "外援马布里获得总决赛最有价值球员（MVP）。 以下为CBA历届总决赛MVP：. 1999－2000赛季王治郅（八一队）. 2000－2001赛季姚明（上海队）."
+        },
+        {
+          "title": "王治郅- 維基百科，自由的百科全書",
+          "url": "https://zh.wikipedia.org/wiki/%E7%8E%8B%E6%B2%BB%E9%83%85",
+          "snippet": "王治郅（1977年7月8日—），北京人，中國職業籃球運動員、教練、軍人，大校軍階，現任中央軍委訓練管理部軍事體育訓練中心空軍五項隊副隊長。身高2.14米，場上位置為中鋒或大 ..."
+        },
+        {
+          "title": "【亞洲球員NBA回顧史(上)】從王治郅首秀到姚明的巔峰時期 ...",
+          "url": "https://www.youtube.com/watch?v=eOPXiKAj-C4",
+          "snippet": "【亞洲球員NBA回顧史(上)】從王治郅首秀到姚明的巔峰時期，完整回顧亞洲籃球在NBA的黃金年代. 11K views · 7 months ago. #姚明#田臥勇太#易建聯."
+        },
+        {
+          "title": "中国篮协：热烈祝贺王治郅",
+          "url": "https://content.foshanplus.com/simpleNewsDetails.html?newsId=300327577",
+          "snippet": "2001年，他成为首位登陆NBA的中国球员，先后效力于达拉斯独行侠、洛杉矶快船、迈阿密热火。2008年北京奥运会，王治郅再次帮助中国男篮获得第八名的佳绩，值得一提的是，2001年 ..."
+        },
+        {
+          "title": "Yao Ming",
+          "url": "https://en.wikipedia.org/wiki/Yao_Ming",
+          "snippet": "He played for the Shanghai Sharks of the Chinese Basketball Association (CBA), and then spent his entire nine-year National Basketball Association (NBA) career ..."
+        },
+        {
+          "title": "CBA历届总冠军",
+          "url": "https://baike.baidu.com/item/CBA%E5%8E%86%E5%B1%8A%E6%80%BB%E5%86%A0%E5%86%9B/16975633",
+          "snippet": "CBA历届总冠军（China Basketball Association）是指历届在CBA联赛中获得总冠军的球队。CBA联赛总冠军是CBA联赛的最高荣誉。CBA总决赛的获胜球队获得当赛季CBA总冠军。"
+        },
+        {
+          "title": "http://www.historylink.org/index.cfm?DisplayPage=o...",
+          "url": "http://www.historylink.org/index.cfm?DisplayPage=output.cfm&file_id=8910",
+          "snippet": "No information is available for this page."
+        },
+        {
+          "title": "Yao Ming voted president of Chinese Basketball Association",
+          "url": "https://www.espn.com/nba/story/_/id/18745594/yao-ming-unanimously-voted-president-chinese-basketball-association",
+          "snippet": "The Chinese Basketball Association voted unanimously Thursday to appoint the former Houston Rockets star its president in a step toward reform."
+        },
+        {
+          "title": "Happy Birthday, Yao Ming! Career Highlights and Awards ...",
+          "url": "https://www.facebook.com/SDBasketballportal/posts/happy-birthday-yao-mingcareer-highlights-and-awards8-nba-all-star-20032009-20112/1958907717566127/",
+          "snippet": "... NBA Third Team (2004, 2006, 2008) NBA All-Rookie First Team (2003) No. 11 retired by Houston Rockets CBA MVP (2001) CBA Champion (2002) CBA ..."
+        },
+        {
+          "title": "上海队时隔24年再次挺进CBA总决赛，上一次姚明率 ...",
+          "url": "https://m.dongqiudi.com/article/5865721.html",
+          "snippet": "北京时间5月22日，CBA季后赛半决赛的比赛继续进行，在上半区的对决中，上海大鲨鱼客场99-85逆转战胜北京首钢，总比分3-1成功挺进总决赛。 这也是上海大鲨鱼时隔24年后再次 ..."
+        },
+        {
+          "title": "https://www.espn.com/nba/history/awards/_/year/2001",
+          "url": "https://www.espn.com/nba/history/awards/_/year/2001",
+          "snippet": "No information is available for this page."
+        }
+      ]
+    },
+    "V1_fix_hypotheses": {
+      "hypotheses_prompt": "你是一个知识渊博的推理助手。请根据以下谜题的约束条件，推测谜题中涉及的可搜索实体名称。\n\n重要：输出的是谜题的中间实体（物质名、人名、地名、作品名等具体名词），而不是最终答案。\n- 如果问题问\"哪个年份\"，应输出该事件涉及的具体物质/人物名称，而非年份\n- 如果问题问\"哪个朝代\"，应输出该事物/人物的具体名称，而非朝代名\n- 如果问题问\"哪家公司\"，应输出创始人的名字或相关产品名，而非公司名\n\n谜题：21世纪初中国体育史上有两大突破，同年，某家美国大型公司搬迁到美国东部五大湖区的一家城市，在此城市中诞生的一名主教练在数年后第二次获得了某项体育赛事总冠军，请问同年在CBA中获得MVP的球员是谁？\n\n输出一个JSON字符串数组，包含5个可搜索的中间实体名称，覆盖不同方向。只输出JSON数组，不要其他文字。\n\n示例：[\"青霉素\",\"链霉素\",\"四环素\",\"磺胺\",\"红霉素\"]\n\nJSON数组：",
+      "hypotheses_raw": "[\"波音公司\",\"芝加哥\",\"埃里克·斯波尔斯特拉\",\"中国男足\",\"北京奥运会\"]",
+      "hypotheses": [
+        "波音公司",
+        "芝加哥",
+        "埃里克·斯波尔斯特拉",
+        "中国男足",
+        "北京奥运会"
+      ],
+      "constraints": [
+        "波音公司 总部 搬迁 芝加哥 2001",
+        "中国体育 两大突破 2001",
+        "波波维奇 第二次 NBA总冠军 2003",
+        "2001年 CBA 常规赛 MVP",
+        "姚明 CBA MVP 2001"
+      ],
+      "constraints_str": "波音公司 总部 搬迁 芝加哥 2001 中国体育 两大突破 2001 波波维奇 第二次 NBA总冠军 2003 2001年 CBA 常规赛 MVP 姚明 CBA MVP 2001",
+      "queries": [
+        "波音公司 波音公司 总部 搬迁 芝加哥 2001 中国体育 两大突破 2001 波波维奇 第二次 NBA总冠军 2003 2001年 CBA 常规赛 MVP 姚明 CBA MVP 2001",
+        "芝加哥 波音公司 总部 搬迁 芝加哥 2001 中国体育 两大突破 2001 波波维奇 第二次 NBA总冠军 2003 2001年 CBA 常规赛 MVP 姚明 CBA MVP 2001",
+        "埃里克·斯波尔斯特拉 波音公司 总部 搬迁 芝加哥 2001 中国体育 两大突破 2001 波波维奇 第二次 NBA总冠军 2003 2001年 CBA 常规赛 MVP 姚明 CBA MVP 2001",
+        "中国男足 波音公司 总部 搬迁 芝加哥 2001 中国体育 两大突破 2001 波波维奇 第二次 NBA总冠军 2003 2001年 CBA 常规赛 MVP 姚明 CBA MVP 2001",
+        "北京奥运会 波音公司 总部 搬迁 芝加哥 2001 中国体育 两大突破 2001 波波维奇 第二次 NBA总冠军 2003 2001年 CBA 常规赛 MVP 姚明 CBA MVP 2001"
+      ],
+      "search_detail": [
+        {
+          "entity": "波音公司 波音公司 总部 搬迁 芝加哥 2001 中国体育 两大突破 2001 波波维奇 第二次 NBA总冠军 2003 2001年 CBA 常规赛 MVP 姚明 CBA MVP 2001",
+          "query": "波音公司 波音公司 总部 搬迁 芝加哥 2001 中国体育 两大突破 2001 波波维奇 第二次 NBA总冠军 2003 2001年 CBA 常规赛 MVP 姚明 CBA MVP 2001",
+          "n_results": 5,
+          "n_new": 5,
+          "wall_s": 25.3,
+          "top3": [
+            {
+              "title": "姚明- 維基百科，自由的百科全書",
+              "snippet": "目次 · 青年時代及CBA生涯 · NBA職業生涯 · 退休後 · 家庭 · NBA生涯數據 · 大事記 · 花絮.",
+              "url": "https://zh.wikipedia.org/wiki/%E5%A7%9A%E6%98%8E"
+            },
+            {
+              "title": "When #Shanghai last won the #CBA championship in ...",
+              "snippet": "LAST TIME IT HAPPENED: When #Shanghai last won the #CBA championship in the 2001/2002 season, a certain 21-year-old #YaoMing heavily ...",
+              "url": "https://x.com/ShanghaiEye/status/2063085652330291481"
+            },
+            {
+              "title": "拿下总冠军，但MVP却不是姚明，这人是NBA第一前锋 - 体育",
+              "snippet": "2001-2002赛季，上海队卷土重来，3-1战胜了八一队，终于拿到了自己的第一个CBA总冠军。姚明在总决赛场均41.2分21篮板3助攻2.5抢断3.2盖帽，打出了极为梦幻的 ...",
+              "url": "https://sports.sina.cn/nba/other/2018-09-29/detail-ihkmwytp7965419.d.html?vt=4"
+            }
+          ]
+        },
+        {
+          "entity": "芝加哥 波音公司 总部 搬迁 芝加哥 2001 中国体育 两大突破 2001 波波维奇 第二次 NBA总冠军 2003 2001年 CBA 常规赛 MVP 姚明 CBA MVP 2001",
+          "query": "芝加哥 波音公司 总部 搬迁 芝加哥 2001 中国体育 两大突破 2001 波波维奇 第二次 NBA总冠军 2003 2001年 CBA 常规赛 MVP 姚明 CBA MVP 2001",
+          "n_results": 5,
+          "n_new": 5,
+          "wall_s": 5.7,
+          "top3": [
+            {
+              "title": "姚明- 维基百科，自由的百科全书",
+              "snippet": "并在中国篮球协会（CBA）的上海大鲨鱼效力了五年。2001夺得CBA常规赛最有价值球员及联赛最有价值球员，2002年获得了 ...",
+              "url": "https://zh.wikipedia.org/zh-hans/%E5%A7%9A%E6%98%8E"
+            },
+            {
+              "title": "Facts about Yao Ming!!",
+              "snippet": "At 7'6\", Yao Ming is the tallest player in the NBA and one of the tallest men in the world. He played in the 2000 and the 2004 Olympics.",
+              "url": "https://castle.eiu.edu/wow/classes/fa06/yofacts.html"
+            },
+            {
+              "title": "Happy Birthday, Yao Ming! Career Highlights and Awards ...",
+              "snippet": "... NBA Third Team (2004, 2006, 2008) NBA All-Rookie First Team (2003) No. 11 retired by Houston Rockets CBA MVP (2001) CBA Champion (2002) CBA ...",
+              "url": "https://www.facebook.com/SDBasketballportal/posts/happy-birthday-yao-mingcareer-highlights-and-awards8-nba-all-star-20032009-20112/1958907717566127/"
+            }
+          ]
+        },
+        {
+          "entity": "埃里克·斯波尔斯特拉 波音公司 总部 搬迁 芝加哥 2001 中国体育 两大突破 2001 波波维奇 第二次 NBA总冠军 2003 2001年 CBA 常规赛 MVP 姚明 CBA MVP 2001",
+          "query": "埃里克·斯波尔斯特拉 波音公司 总部 搬迁 芝加哥 2001 中国体育 两大突破 2001 波波维奇 第二次 NBA总冠军 2003 2001年 CBA 常规赛 MVP 姚明 CBA MVP 2001",
+          "n_results": 5,
+          "n_new": 5,
+          "wall_s": 20.5,
+          "top3": [
+            {
+              "title": "葛雷格·波波維奇",
+              "snippet": "波波維奇的教練生涯頗受好評，在他麾下培養出數位籃球名人堂巨星，現役多位NBA球隊的總教練曾也是波波的徒弟。執教風格鐵血，善於鼓動球員士氣及球迷氣氛，同時也多次跟裁判起 ...",
+              "url": "https://zh.wikipedia.org/wiki/%E6%A0%BC%E9%9B%B7%E6%A0%BC%C2%B7%E6%B3%A2%E6%B3%A2%E7%BB%B4%E5%A5%87"
+            },
+            {
+              "title": "马刺总经理兼篮球运营副总裁格雷格·波波维奇解雇了主教练 ...",
+              "snippet": "老实说，波波维奇在他职业生涯的最初几年其实并没有那么出色。显然，他成长为历史上排名前两的教练，但如果他没有得到蒂姆，我可以想象他的职业生涯会截然不同 ...",
+              "url": "https://www.reddit.com/r/nba/comments/clxunc/after_a_315_start_to_the_1996_season_spurs_gm_vp/?tl=zh-hans"
+            },
+            {
+              "title": "扒一扒NBA胜场排名前十教练波波还能升第几 - 体育- 新浪",
+              "snippet": "马刺在主场大胜太阳，波波维奇收获自己执教生涯1156场比赛胜利，目前，他已经超过禅师菲尔-杰克逊的1155胜，排名历史第六。在NBA的历史上排名前十的教练都 ...",
+              "url": "https://sports.sina.cn/nba/2017-11-07/detail-ifynmvuq9310444.d.html?vt=4"
+            }
+          ]
+        },
+        {
+          "entity": "中国男足 波音公司 总部 搬迁 芝加哥 2001 中国体育 两大突破 2001 波波维奇 第二次 NBA总冠军 2003 2001年 CBA 常规赛 MVP 姚明 CBA MVP 2001",
+          "query": "中国男足 波音公司 总部 搬迁 芝加哥 2001 中国体育 两大突破 2001 波波维奇 第二次 NBA总冠军 2003 2001年 CBA 常规赛 MVP 姚明 CBA MVP 2001",
+          "n_results": 5,
+          "n_new": 3,
+          "wall_s": 17.6,
+          "top3": [
+            {
+              "title": "姚明- 维基百科，自由的百科全书",
+              "snippet": "2001夺得CBA常规赛最有價值球員及联赛最有价值球员，2002年獲得了CBA總冠軍，但该年MVP由刘玉栋获得。分别三次当选CBA篮板王以及CBA盖帽王，二次当选CBA扣篮王。 姚明是 ...",
+              "url": "https://en.wikipedia.org/wiki/zh:%E5%A7%9A%E6%98%8E?mobile-app=true&theme=wiki"
+            },
+            {
+              "title": "When #Shanghai last won the #CBA championship in ...",
+              "snippet": "It marks Shanghai's first CBA title since the 2001-2002 season, ending a 24-year drought, and represents the second championship trophy in the ...",
+              "url": "https://x.com/ShanghaiEye/status/2063085652330291481"
+            },
+            {
+              "title": "CBA历届总决赛MVP",
+              "snippet": "总比分4:2获得中国男子篮球职业联赛(CBA)总冠军。外援马布里获得总决赛最有价值球员(MVP)。",
+              "url": "http://sports.people.com.cn/n/2015/0323/c22176-26732083.html"
+            }
+          ]
+        },
+        {
+          "entity": "北京奥运会 波音公司 总部 搬迁 芝加哥 2001 中国体育 两大突破 2001 波波维奇 第二次 NBA总冠军 2003 2001年 CBA 常规赛 MVP 姚明 CBA MVP 2001",
+          "query": "北京奥运会 波音公司 总部 搬迁 芝加哥 2001 中国体育 两大突破 2001 波波维奇 第二次 NBA总冠军 2003 2001年 CBA 常规赛 MVP 姚明 CBA MVP 2001",
+          "n_results": 5,
+          "n_new": 2,
+          "wall_s": 14.8,
+          "top3": [
+            {
+              "title": "姚明- 維基百科，自由的百科全書",
+              "snippet": "2001奪得CBA例行賽最有價值球員及聯賽最有價值球員，2002年獲得了CBA總冠軍，但該年MVP由劉玉棟獲得。 ... 2009年，第一次進入NBA季後賽分區第二輪。 2009年，全資收購上海東方 ...",
+              "url": "https://zh.wikipedia.org/wiki/%E5%A7%9A%E6%98%8E"
+            },
+            {
+              "title": "成名之前：姚明 - Olympics.com",
+              "snippet": "作为中国国家队的绝对核心，姚明带领中国队三次赢得男篮亚锦赛冠军（2001、2003、2005）。征战过三届奥运会的他（2000、2004、2008）在雅典奥运会和北京奥运会 ...",
+              "url": "https://www.olympics.com/zh/news/before-they-were-stars-yao-ming"
+            },
+            {
+              "title": "Facts about Yao Ming!!",
+              "snippet": "At 7'6\", Yao Ming is the tallest player in the NBA and one of the tallest men in the world. He played in the 2000 and the 2004 Olympics.",
+              "url": "https://castle.eiu.edu/wow/classes/fa06/yofacts.html"
+            }
+          ]
+        }
+      ],
+      "total_results": 20,
+      "recall": false,
+      "all_results": [
+        {
+          "title": "姚明- 維基百科，自由的百科全書",
+          "url": "https://zh.wikipedia.org/wiki/%E5%A7%9A%E6%98%8E",
+          "snippet": "目次 · 青年時代及CBA生涯 · NBA職業生涯 · 退休後 · 家庭 · NBA生涯數據 · 大事記 · 花絮."
+        },
+        {
+          "title": "When #Shanghai last won the #CBA championship in ...",
+          "url": "https://x.com/ShanghaiEye/status/2063085652330291481",
+          "snippet": "LAST TIME IT HAPPENED: When #Shanghai last won the #CBA championship in the 2001/2002 season, a certain 21-year-old #YaoMing heavily ..."
+        },
+        {
+          "title": "拿下总冠军，但MVP却不是姚明，这人是NBA第一前锋 - 体育",
+          "url": "https://sports.sina.cn/nba/other/2018-09-29/detail-ihkmwytp7965419.d.html?vt=4",
+          "snippet": "2001-2002赛季，上海队卷土重来，3-1战胜了八一队，终于拿到了自己的第一个CBA总冠军。姚明在总决赛场均41.2分21篮板3助攻2.5抢断3.2盖帽，打出了极为梦幻的 ..."
+        },
+        {
+          "title": "2002） 2×CBA扣篮王（2000、2001） 勞倫斯世界體育獎-年度 ...",
+          "url": "https://www.facebook.com/JohnArana30/photos/%E5%A7%9A%E6%98%8E%E7%BB%B4%E5%9F%BA%E7%99%BE%E7%A7%91%E8%87%AA%E7%94%B1%E7%9A%84%E7%99%BE%E7%A7%91%E5%85%A8%E4%B9%A6%E8%B7%B3%E5%88%B0%E5%AF%BC%E8%88%AA%E8%B7%B3%E5%88%B0%E6%90%9C%E7%B4%A2%E6%9C%AC%E6%9D%A1%E7%9B%AE%E9%9C%80%E8%A6%81%E7%B2%BE%E9%80%9A%E6%88%96%E7%86%9F%E6%82%89%E7%9B%B8%E5%85%B3%E4%B8%BB%E9%A2%98%E7%9A%84%E7%BC%96%E8%80%85%E5%8F%82%E4%B8%8E%E5%8F%8A%E5%8D%8F%E5%8A%A9%E7%BC%96%E8%BE%912015%E5%B9%B412%E6%9C%8814%E6%97%A5-%E8%AB%8B%E9%82%80%E8%AB%8B%E9%81%A9%E5%90%88%E7%9A%84%E4%BA%BA%E5%A3%AB%E6%94%B9%E5%96%84%E6%9C%AC%E6%9D%A1%E7%9B%AE%E6%9B%B4%E5%A4%9A%E7%9A%84%E7%B4%B0%E7%AF%80%E8%88%87%E8%A9%B3%E6%83%85%E8%AB%8B%E5%8F%83/1040392129475351/",
+          "snippet": "在接下来的2001-2002赛季中，王治郅离开八一火箭 队并成为第一位挑戰NBA的中國球員，这使得大鲨鱼队 终于摘取了2001-2002赛季CBA的总冠军。在上海队的 最后 ..."
+        },
+        {
+          "title": "CBA历届总决赛MVP",
+          "url": "http://sports.people.com.cn/n/2015/0323/c22176-26732083.html",
+          "snippet": "外援马布里获得总决赛最有价值球员（MVP）。 以下为CBA历届总决赛MVP：. 1999－2000赛季王治郅（八一队）. 2000－2001赛季姚明（上海队）."
+        },
+        {
+          "title": "姚明- 维基百科，自由的百科全书",
+          "url": "https://zh.wikipedia.org/zh-hans/%E5%A7%9A%E6%98%8E",
+          "snippet": "并在中国篮球协会（CBA）的上海大鲨鱼效力了五年。2001夺得CBA常规赛最有价值球员及联赛最有价值球员，2002年获得了 ..."
+        },
+        {
+          "title": "Facts about Yao Ming!!",
+          "url": "https://castle.eiu.edu/wow/classes/fa06/yofacts.html",
+          "snippet": "At 7'6\", Yao Ming is the tallest player in the NBA and one of the tallest men in the world. He played in the 2000 and the 2004 Olympics."
+        },
+        {
+          "title": "Happy Birthday, Yao Ming! Career Highlights and Awards ...",
+          "url": "https://www.facebook.com/SDBasketballportal/posts/happy-birthday-yao-mingcareer-highlights-and-awards8-nba-all-star-20032009-20112/1958907717566127/",
+          "snippet": "... NBA Third Team (2004, 2006, 2008) NBA All-Rookie First Team (2003) No. 11 retired by Houston Rockets CBA MVP (2001) CBA Champion (2002) CBA ..."
+        },
+        {
+          "title": "http://www.historylink.org/index.cfm?DisplayPage=o...",
+          "url": "http://www.historylink.org/index.cfm?DisplayPage=output.cfm&file_id=8910",
+          "snippet": "No information is available for this page."
+        },
+        {
+          "title": "https://www.espn.com/nba/history/awards/_/year/2001",
+          "url": "https://www.espn.com/nba/history/awards/_/year/2001",
+          "snippet": "No information is available for this page."
+        },
+        {
+          "title": "葛雷格·波波維奇",
+          "url": "https://zh.wikipedia.org/wiki/%E6%A0%BC%E9%9B%B7%E6%A0%BC%C2%B7%E6%B3%A2%E6%B3%A2%E7%BB%B4%E5%A5%87",
+          "snippet": "波波維奇的教練生涯頗受好評，在他麾下培養出數位籃球名人堂巨星，現役多位NBA球隊的總教練曾也是波波的徒弟。執教風格鐵血，善於鼓動球員士氣及球迷氣氛，同時也多次跟裁判起 ..."
+        },
+        {
+          "title": "马刺总经理兼篮球运营副总裁格雷格·波波维奇解雇了主教练 ...",
+          "url": "https://www.reddit.com/r/nba/comments/clxunc/after_a_315_start_to_the_1996_season_spurs_gm_vp/?tl=zh-hans",
+          "snippet": "老实说，波波维奇在他职业生涯的最初几年其实并没有那么出色。显然，他成长为历史上排名前两的教练，但如果他没有得到蒂姆，我可以想象他的职业生涯会截然不同 ..."
+        },
+        {
+          "title": "扒一扒NBA胜场排名前十教练波波还能升第几 - 体育- 新浪",
+          "url": "https://sports.sina.cn/nba/2017-11-07/detail-ifynmvuq9310444.d.html?vt=4",
+          "snippet": "马刺在主场大胜太阳，波波维奇收获自己执教生涯1156场比赛胜利，目前，他已经超过禅师菲尔-杰克逊的1155胜，排名历史第六。在NBA的历史上排名前十的教练都 ..."
+        },
+        {
+          "title": "格雷格·波波维奇",
+          "url": "https://baike.baidu.com/item/%E6%A0%BC%E9%9B%B7%E6%A0%BC%C2%B7%E6%B3%A2%E6%B3%A2%E7%BB%B4%E5%A5%87/4720601",
+          "snippet": "格雷格·波波维奇（Gregg Popovich），1949年1月28日出生于印第安纳州东芝加哥，塞尔维亚和克罗地亚裔美国篮球运动员、教练员，毕业于美国空军学院，现任NBA圣安东尼奥马刺队总裁 ..."
+        },
+        {
+          "title": "波波维奇生涯盘点：五次总冠军&历史胜场数最多主教练",
+          "url": "https://m.dongqiudi.com/article/5070880.html",
+          "snippet": "回顾波波维奇29年马刺主教练生涯，他一共率领马刺队夺得了五次NBA总冠军，自己则三次获得NBA年度最佳教练的殊荣。 波波维奇生涯荣誉盘点. NBA总冠军：5次."
+        },
+        {
+          "title": "姚明- 维基百科，自由的百科全书",
+          "url": "https://en.wikipedia.org/wiki/zh:%E5%A7%9A%E6%98%8E?mobile-app=true&theme=wiki",
+          "snippet": "2001夺得CBA常规赛最有價值球員及联赛最有价值球员，2002年獲得了CBA總冠軍，但该年MVP由刘玉栋获得。分别三次当选CBA篮板王以及CBA盖帽王，二次当选CBA扣篮王。 姚明是 ..."
+        },
+        {
+          "title": "上海队上一次夺得CBA总冠军是在哪一年，当时的阵容是怎样的？",
+          "url": "https://sports.sina.cn/2026-05-25/detail-inhyzqrz5556886.d.html?vt=4",
+          "snippet": "但2001-2002赛季，一支拥有绝对统治力的上海队彻底改写了历史。 这支球队的核心引擎，是年仅22岁的姚明。那个赛季的常规赛，上海队打出了惊世骇俗的23 ..."
+        },
+        {
+          "title": "CBA历届总冠军",
+          "url": "https://baike.baidu.com/item/CBA%E5%8E%86%E5%B1%8A%E6%80%BB%E5%86%A0%E5%86%9B/16975633",
+          "snippet": "CBA历届总冠军（China Basketball Association）是指历届在CBA联赛中获得总冠军的球队。CBA联赛总冠军是CBA联赛的最高荣誉。CBA总决赛的获胜球队获得当赛季CBA总冠军。"
+        },
+        {
+          "title": "成名之前：姚明 - Olympics.com",
+          "url": "https://www.olympics.com/zh/news/before-they-were-stars-yao-ming",
+          "snippet": "作为中国国家队的绝对核心，姚明带领中国队三次赢得男篮亚锦赛冠军（2001、2003、2005）。征战过三届奥运会的他（2000、2004、2008）在雅典奥运会和北京奥运会 ..."
+        },
+        {
+          "title": "中国球员在NBA的历史",
+          "url": "http://nbachina.sina.com.cn/news/4/2011/2143/4618.html",
+          "snippet": "王治郅是中国篮球历史上第一位在NBA选秀大会上被选中，并成功征战NBA赛场的中国球员。虽然1999年达拉斯小牛就选中了王治郅，但双方直到2001年3月才正式完成 ..."
+        }
+      ]
+    },
+    "V2_fix_both": {
+      "hypotheses": [
+        "波音公司",
+        "芝加哥",
+        "埃里克·斯波尔斯特拉",
+        "中国男足",
+        "北京奥运会"
+      ],
+      "query_prompt": "对于以下谜题和候选实体，为每个实体生成一个用于Google搜索验证的关键词组合。关键词应：\n1. 包含实体名本身\n2. 加入谜题中对验证该实体最关键的1-3个约束词（只选事实性约束如\"中国\"\"投产\"\"年份\"，不要谜语修辞如\"绿色山脉\"\"小人物\"）\n3. 简短精准，不超过8个词\n\n谜题：21世纪初中国体育史上有两大突破，同年，某家美国大型公司搬迁到美国东部五大湖区的一家城市，在此城市中诞生的一名主教练在数年后第二次获得了某项体育赛事总冠军，请问同年在CBA中获得MVP的球员是谁？\n\n候选实体：\n- 波音公司\n- 芝加哥\n- 埃里克·斯波尔斯特拉\n- 中国男足\n- 北京奥运会\n\n输出JSON数组，每个元素含 \"entity\" 和 \"search_query\" 两字段。只输出JSON数组。\n\nJSON数组：",
+      "query_raw": "```json\n[\n  {\n    \"entity\": \"波音公司\",\n    \"search_query\": \"波音公司 搬迁 芝加哥 2001\"\n  },\n  {\n    \"entity\": \"芝加哥\",\n    \"search_query\": \"芝加哥 斯波尔斯特拉 出生\"\n  },\n  {\n    \"entity\": \"埃里克·斯波尔斯特拉\",\n    \"search_query\": \"埃里克·斯波尔斯特拉 第二次 总冠军\"\n  },\n  {\n    \"entity\": \"中国男足\",\n    \"search_query\": \"中国男足 2001 世界杯 出线\"\n  },\n  {\n    \"entity\": \"北京奥运会\",\n    \"search_query\": \"北京 申奥 成功 2001\"\n  }\n]\n```",
+      "queries_parsed": [
+        {
+          "entity": "波音公司",
+          "search_query": "波音公司 搬迁 芝加哥 2001"
+        },
+        {
+          "entity": "芝加哥",
+          "search_query": "芝加哥 斯波尔斯特拉 出生"
+        },
+        {
+          "entity": "埃里克·斯波尔斯特拉",
+          "search_query": "埃里克·斯波尔斯特拉 第二次 总冠军"
+        },
+        {
+          "entity": "中国男足",
+          "search_query": "中国男足 2001 世界杯 出线"
+        },
+        {
+          "entity": "北京奥运会",
+          "search_query": "北京 申奥 成功 2001"
+        }
+      ],
+      "search_detail": [
+        {
+          "entity": "波音公司",
+          "query": "波音公司 搬迁 芝加哥 2001",
+          "n_results": 5,
+          "n_new": 5,
+          "wall_s": 14.2,
+          "top3": [
+            {
+              "title": "波音公司决定将总部从西雅图迁到芝加哥(附图)",
+              "snippet": "据西雅图的报纸报道，波音公司的高层人士已经飞往芝加哥。 ... 移地点为芝加哥、丹佛和达拉斯三个城市。一个多月来，波音高层分赴这三个城市考察，并与当地政府探讨了有关迁移 ...",
+              "url": "http://news.sina.com.cn/w/249097.html?from=wap"
+            },
+            {
+              "title": "早读|从芝加哥到华盛顿，波音二迁总部的背后之意",
+              "snippet": "2001年9月5日，波音正式搬入芝加哥新总部，康迪特称此举是“一项战略性的商业决策”。“战略性”的意义在于波音希望通过搬迁总部将“新波音”与其发源地西雅图区分 ...",
+              "url": "https://h5.ifeng.com/c/vivoArticle/v002aq5haJXD--qv-_VO707ZgJjqApxcRART3YTt1JUOs83aI__?isNews=1&showComments=0"
+            },
+            {
+              "title": "Boeing Begins World Headquarters Operations in Chicago",
+              "snippet": "The Boeing Company began operations on schedule today at its new world headquarters building in downtown Chicago.",
+              "url": "https://boeing.mediaroom.com/2001-09-04-Boeing-Begins-World-Headquarters-Operations-in-Chicago"
+            }
+          ]
+        },
+        {
+          "entity": "芝加哥",
+          "query": "芝加哥 斯波尔斯特拉 出生",
+          "n_results": 5,
+          "n_new": 5,
+          "wall_s": 20.6,
+          "top3": [
+            {
+              "title": "埃里克·斯波尔斯特拉 - 维基百科",
+              "snippet": "埃里克·琼·斯波尔斯特拉. Erik Jon Spoelstra. 迈阿密热火. 位置, 主教练. 联赛, NBA. 个人资料. 出生, (1970-11-01) 1970年11月1日（55岁） 美国伊利诺伊州埃文斯顿. 国籍 ...",
+              "url": "https://zh.wikipedia.org/zh-hans/%E5%9F%83%E9%87%8C%E5%85%8B%C2%B7%E6%96%AF%E6%B3%A2%E5%B0%94%E6%96%AF%E7%89%B9%E6%8B%89"
+            },
+            {
+              "title": "埃里克·斯波尔斯特拉",
+              "snippet": "埃里克·斯波尔斯特拉（Erik Spoelstra），1970年11月1日出生于美国伊利诺伊州埃文斯顿，毕业于波特兰大学，美国职业篮球教练员，现任NBA迈阿密热火队以及美国国家男子篮球队主 ...",
+              "url": "https://baike.baidu.com/item/%E5%9F%83%E9%87%8C%E5%85%8B%C2%B7%E6%96%AF%E6%B3%A2%E5%B0%94%E6%96%AF%E7%89%B9%E6%8B%89/4485811"
+            },
+            {
+              "title": "埃里克·斯波尔斯特拉",
+              "snippet": "埃里克·斯波尔斯特拉（Erik Spoelstra），1970年11月1日出生于美国伊利诺伊州埃文斯顿，毕业于波特兰大学，美国职业篮球教练员，现任NBA迈阿密热火队主教练。 2008年，斯波尔 ...",
+              "url": "https://www.zhihu.com/topic/20239003/intro"
+            }
+          ]
+        },
+        {
+          "entity": "埃里克·斯波尔斯特拉",
+          "query": "埃里克·斯波尔斯特拉 第二次 总冠军",
+          "n_results": 5,
+          "n_new": 3,
+          "wall_s": 18.9,
+          "top3": [
+            {
+              "title": "埃里克·斯波尔斯特拉 - 维基百科",
+              "snippet": "埃里克·琼·斯波尔斯特拉（英语 ... 2012-2013赛季热火成功夺得NBA总冠军后，这也是斯波尔斯特拉担任主教练后的第二座总冠军。2014年总冠军赛，斯波尔斯特拉未能于第 ...",
+              "url": "https://zh.wikipedia.org/zh-hans/%E5%9F%83%E9%87%8C%E5%85%8B%C2%B7%E6%96%AF%E6%B3%A2%E5%B0%94%E6%96%AF%E7%89%B9%E6%8B%89"
+            },
+            {
+              "title": "埃里克·斯波尔斯特拉",
+              "snippet": "2011-12赛季，斯波尔斯特拉再次率领热火杀进总决赛。最终热火4-1取胜雷霆，斯波尔斯特拉终于夺得了作为主教练以来的第一座总冠军奖杯。 ... 2012-13赛季，斯波尔斯特拉率领热火 ...",
+              "url": "https://baike.baidu.com/item/%E5%9F%83%E9%87%8C%E5%85%8B%C2%B7%E6%96%AF%E6%B3%A2%E5%B0%94%E6%96%AF%E7%89%B9%E6%8B%89/4485811"
+            },
+            {
+              "title": "太有钱了，热火队主帅埃里克·斯波尔斯特拉2025 年的净资产",
+              "snippet": "斯波尔斯特拉在担任助理教练期间帮助热火队赢得了2006 年NBA 总冠军。自续约以来，斯波尔斯特拉在2012 年和2013 年带领热火队连续夺得NBA 总冠军， ...",
+              "url": "https://www.sohu.com/a/849474756_120753534"
+            }
+          ]
+        },
+        {
+          "entity": "中国男足",
+          "query": "中国男足 2001 世界杯 出线",
+          "n_results": 5,
+          "n_new": 5,
+          "wall_s": 13.5,
+          "top3": [
+            {
+              "title": "中国国家足球队世界杯预选赛及会内赛记录 - 维基百科",
+              "snippet": "2001年10月7日，中国国家足球队在2002年世界杯亚洲区预选赛中，主场对阵阿曼队。最终中国队凭借于根伟的进球，提前在亚洲区预选赛上成功晋级，这是中国足球队自1957年参加 ...",
+              "url": "https://zh.wikipedia.org/zh-hans/%E4%B8%AD%E5%9B%BD%E5%9B%BD%E5%AE%B6%E8%B6%B3%E7%90%83%E9%98%9F%E4%B8%96%E7%95%8C%E6%9D%AF%E5%A4%96%E5%9B%B4%E8%B5%9B%E5%8F%8A%E4%BC%9A%E5%86%85%E8%B5%9B%E8%AE%B0%E5%BD%95"
+            },
+            {
+              "title": "中国队备战世界杯_竞技风暴_新浪网",
+              "snippet": "中国国家足球队心理测试问卷泄密前后 (2001/4/18 14:07) ; 必须一步一步地踢下去--谢晖归来更显成熟 (2001/4/18 14:05) ; 紧张害怕惊讶--李金羽、李毅细说“救火”心情 (2001 ...",
+              "url": "http://sports.sina.com.cn/focus/cwwcup.shtml"
+            },
+            {
+              "title": "20年前的今天：中国男足提前两轮晋级2002世界杯｜On This ...",
+              "snippet": "20年前的今天，2001年10月7日，中国国家男子足球队坐镇沈阳五里河体育场，凭借于根伟的进球1：0击败阿曼队，提前两轮获得2002韩日世界杯入场券。",
+              "url": "https://www.youtube.com/watch?v=wIvZmXaocsY"
+            }
+          ]
+        },
+        {
+          "entity": "北京奥运会",
+          "query": "北京 申奥 成功 2001",
+          "n_results": 5,
+          "n_new": 5,
+          "wall_s": 22.0,
+          "top3": [
+            {
+              "title": "北京申奧成功| 當年今日| 通識中國",
+              "snippet": "2001年7月13日，國際奧委會第112次全會在俄羅斯莫斯科舉行，會上全體委員投票選舉出中國北京成為第29屆奧林匹克運動會的舉辦城市。中國幾代體育人的「申奧夢」終於在當年 ...",
+              "url": "https://www.ourchinastory.com/zh/1985/%E5%8C%97%E4%BA%AC%E7%94%B3%E5%A5%A7%E6%88%90%E5%8A%9F"
+            },
+            {
+              "title": "2001年7月13日北京申奥成功，现在看依然激动万分",
+              "snippet": "北京申奥成功20年.",
+              "url": "https://www.ttplus.cn/publish/app/video/2021/07/13/381828/os_video.html"
+            },
+            {
+              "title": "2001年北京申奥成功",
+              "snippet": "在申奥成功当晚举行的庆祝活动中，数万名首都群众汇聚北京中华世纪坛，“热烈庆祝北京申奥成功”的标语随处可见。国家主席江泽民也第一时间出席庆祝仪式，并 ...",
+              "url": "http://www.cnr.cn/2008zt/ggkf/tpbd/200810/t20081010_505119721.html"
+            }
+          ]
+        }
+      ],
+      "total_results": 23,
+      "recall": false,
+      "all_results": [
+        {
+          "title": "波音公司决定将总部从西雅图迁到芝加哥(附图)",
+          "url": "http://news.sina.com.cn/w/249097.html?from=wap",
+          "snippet": "据西雅图的报纸报道，波音公司的高层人士已经飞往芝加哥。 ... 移地点为芝加哥、丹佛和达拉斯三个城市。一个多月来，波音高层分赴这三个城市考察，并与当地政府探讨了有关迁移 ..."
+        },
+        {
+          "title": "早读|从芝加哥到华盛顿，波音二迁总部的背后之意",
+          "url": "https://h5.ifeng.com/c/vivoArticle/v002aq5haJXD--qv-_VO707ZgJjqApxcRART3YTt1JUOs83aI__?isNews=1&showComments=0",
+          "snippet": "2001年9月5日，波音正式搬入芝加哥新总部，康迪特称此举是“一项战略性的商业决策”。“战略性”的意义在于波音希望通过搬迁总部将“新波音”与其发源地西雅图区分 ..."
+        },
+        {
+          "title": "Boeing Begins World Headquarters Operations in Chicago",
+          "url": "https://boeing.mediaroom.com/2001-09-04-Boeing-Begins-World-Headquarters-Operations-in-Chicago",
+          "snippet": "The Boeing Company began operations on schedule today at its new world headquarters building in downtown Chicago."
+        },
+        {
+          "title": "波音总部将从芝加哥迁至阿灵顿",
+          "url": "http://www.chinanews.com.cn/gj/2022/05-06/9747682.shtml",
+          "snippet": "2001年，波音将总部从西雅图迁至芝加哥。《西雅图时报》报道称，波音现有超过14万名员工，只有400多人在芝加哥工作。波音5日在声明中 ..."
+        },
+        {
+          "title": "Boeing moves corporate headquarters to Chicago on ...",
+          "url": "https://www.historylink.org/File/5367",
+          "snippet": "On September 4, 2001, the Boeing Company moves its world headquarters from Seattle to Chicago. The decision to leave Seattle, announced on ..."
+        },
+        {
+          "title": "埃里克·斯波尔斯特拉 - 维基百科",
+          "url": "https://zh.wikipedia.org/zh-hans/%E5%9F%83%E9%87%8C%E5%85%8B%C2%B7%E6%96%AF%E6%B3%A2%E5%B0%94%E6%96%AF%E7%89%B9%E6%8B%89",
+          "snippet": "埃里克·琼·斯波尔斯特拉. Erik Jon Spoelstra. 迈阿密热火. 位置, 主教练. 联赛, NBA. 个人资料. 出生, (1970-11-01) 1970年11月1日（55岁） 美国伊利诺伊州埃文斯顿. 国籍 ..."
+        },
+        {
+          "title": "埃里克·斯波尔斯特拉",
+          "url": "https://baike.baidu.com/item/%E5%9F%83%E9%87%8C%E5%85%8B%C2%B7%E6%96%AF%E6%B3%A2%E5%B0%94%E6%96%AF%E7%89%B9%E6%8B%89/4485811",
+          "snippet": "埃里克·斯波尔斯特拉（Erik Spoelstra），1970年11月1日出生于美国伊利诺伊州埃文斯顿，毕业于波特兰大学，美国职业篮球教练员，现任NBA迈阿密热火队以及美国国家男子篮球队主 ..."
+        },
+        {
+          "title": "埃里克·斯波尔斯特拉",
+          "url": "https://www.zhihu.com/topic/20239003/intro",
+          "snippet": "埃里克·斯波尔斯特拉（Erik Spoelstra），1970年11月1日出生于美国伊利诺伊州埃文斯顿，毕业于波特兰大学，美国职业篮球教练员，现任NBA迈阿密热火队主教练。 2008年，斯波尔 ..."
+        },
+        {
+          "title": "斯波尔斯特拉出任美国男篮国家队主教练 - 央视体育",
+          "url": "https://sports.cctv.com/2025/10/15/ARTIZTlt10a8tDSSx3GiM8Vb251015.shtml",
+          "snippet": "斯波尔斯特拉曾在2024年巴黎奥运会担任美国男篮的首席助教，他将接替史蒂夫-科尔执教2027年男篮世界杯以及2028年的洛杉矶奥运会。 值得一提的是，这将是美国 ..."
+        },
+        {
+          "title": "埃里克-斯波尔斯特拉- 球队资料",
+          "url": "https://nba.titan007.com/Team/DrillMaster.aspx?TeamID=3",
+          "snippet": "出生城市: 出生日期: 1970年11月01日身高: 体重: 所属球队: 迈阿密热火加盟时间: 曾经执教: 教练"
+        },
+        {
+          "title": "太有钱了，热火队主帅埃里克·斯波尔斯特拉2025 年的净资产",
+          "url": "https://www.sohu.com/a/849474756_120753534",
+          "snippet": "斯波尔斯特拉在担任助理教练期间帮助热火队赢得了2006 年NBA 总冠军。自续约以来，斯波尔斯特拉在2012 年和2013 年带领热火队连续夺得NBA 总冠军， ..."
+        },
+        {
+          "title": "斯波尔斯特拉数据统计-新球体育",
+          "url": "https://nba.titan007.com/cn/Team/player.aspx?playerid=3444",
+          "snippet": "在他执教的前两年（2008-2010）他带领热火队拿到90场胜利并且两次打入季后赛，虽然两年季后赛都止步于第一轮，但是帕特莱利仍然对他表示放心，10-11赛季，勒布朗·詹姆斯和克里斯· ..."
+        },
+        {
+          "title": "[埃里克·斯波尔斯特拉]在战胜尼克斯队后：“第二阵容，你们都会 ...",
+          "url": "https://www.reddit.com/r/nba/comments/1oh2jhm/erik_spoelstra_after_the_big_win_vs_the_knicks/?tl=zh-hans",
+          "snippet": "仅仅通过加入诺曼·帕威尔，教练埃里克·斯波尔斯特拉就使迈阿密热火从去年到今年发生了巨大的变化：进攻效率排名从第19到第11 | 防守效率排名从第7到第4 | ..."
+        },
+        {
+          "title": "中国国家足球队世界杯预选赛及会内赛记录 - 维基百科",
+          "url": "https://zh.wikipedia.org/zh-hans/%E4%B8%AD%E5%9B%BD%E5%9B%BD%E5%AE%B6%E8%B6%B3%E7%90%83%E9%98%9F%E4%B8%96%E7%95%8C%E6%9D%AF%E5%A4%96%E5%9B%B4%E8%B5%9B%E5%8F%8A%E4%BC%9A%E5%86%85%E8%B5%9B%E8%AE%B0%E5%BD%95",
+          "snippet": "2001年10月7日，中国国家足球队在2002年世界杯亚洲区预选赛中，主场对阵阿曼队。最终中国队凭借于根伟的进球，提前在亚洲区预选赛上成功晋级，这是中国足球队自1957年参加 ..."
+        },
+        {
+          "title": "中国队备战世界杯_竞技风暴_新浪网",
+          "url": "http://sports.sina.com.cn/focus/cwwcup.shtml",
+          "snippet": "中国国家足球队心理测试问卷泄密前后 (2001/4/18 14:07) ; 必须一步一步地踢下去--谢晖归来更显成熟 (2001/4/18 14:05) ; 紧张害怕惊讶--李金羽、李毅细说“救火”心情 (2001 ..."
+        },
+        {
+          "title": "20年前的今天：中国男足提前两轮晋级2002世界杯｜On This ...",
+          "url": "https://www.youtube.com/watch?v=wIvZmXaocsY",
+          "snippet": "20年前的今天，2001年10月7日，中国国家男子足球队坐镇沈阳五里河体育场，凭借于根伟的进球1：0击败阿曼队，提前两轮获得2002韩日世界杯入场券。"
+        },
+        {
+          "title": "2001年10月7日，我们出线了！",
+          "url": "https://i.ifeng.com/c/8AAWRcczopJ",
+          "snippet": "2001年10月7日晚21：22分，整整二十年前的今夜，中国男足在世界杯外围赛十强赛第六场比赛中，坐镇主场以1-0击败阿曼队，自1957年参加世界杯预选赛以来，第一次打 ..."
+        },
+        {
+          "title": "米卢为什么能带领中国国家男子足球队世界杯预选赛出线？",
+          "url": "https://www.zhihu.com/question/51500585",
+          "snippet": "从中国球迷对米卢的评价就能看出中国球迷根本就是不知好歹外加忘恩负义。米卢以一己之力完成了前无古人后无来者的任务，结果中国从球迷到官员再到媒体 ..."
+        },
+        {
+          "title": "北京申奧成功| 當年今日| 通識中國",
+          "url": "https://www.ourchinastory.com/zh/1985/%E5%8C%97%E4%BA%AC%E7%94%B3%E5%A5%A7%E6%88%90%E5%8A%9F",
+          "snippet": "2001年7月13日，國際奧委會第112次全會在俄羅斯莫斯科舉行，會上全體委員投票選舉出中國北京成為第29屆奧林匹克運動會的舉辦城市。中國幾代體育人的「申奧夢」終於在當年 ..."
+        },
+        {
+          "title": "2001年7月13日北京申奥成功，现在看依然激动万分",
+          "url": "https://www.ttplus.cn/publish/app/video/2021/07/13/381828/os_video.html",
+          "snippet": "北京申奥成功20年."
+        },
+        {
+          "title": "2001年北京申奥成功",
+          "url": "http://www.cnr.cn/2008zt/ggkf/tpbd/200810/t20081010_505119721.html",
+          "snippet": "在申奥成功当晚举行的庆祝活动中，数万名首都群众汇聚北京中华世纪坛，“热烈庆祝北京申奥成功”的标语随处可见。国家主席江泽民也第一时间出席庆祝仪式，并 ..."
+        },
+        {
+          "title": "北京申奥",
+          "url": "https://baike.baidu.com/item/%E5%8C%97%E4%BA%AC%E7%94%B3%E5%A5%A5/55477335",
+          "snippet": "... 北京成为2008年奥运会主办城市。 2001年7月13日晚，北京申奥成功的消息传来，40万群众涌向天安门狂欢。 申奥口号. 北京申奥口号是“新北京，新奥运。”英文口号是“NEW ..."
+        },
+        {
+          "title": "2001年7月13日北京申奥成功-盐田档案与史志信息网",
+          "url": "https://www.yantian.gov.cn/ytdayszxxw/lsjt/content/post_11735651.html",
+          "snippet": "在这轮投票中，北京获得了56票，多伦多为22票，巴黎为18票，伊斯坦布尔为9票。 中国国务院副总理李岚清在投票前各申奥代表团作陈述报告时，再次重申中国政府 ..."
+        }
+      ]
+    }
+  }
+}

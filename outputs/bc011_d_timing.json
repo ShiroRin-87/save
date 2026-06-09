@@ -1,0 +1,112 @@
+{
+  "qid": "BC011",
+  "question": "某地点名称出自发生于某周朝诸侯国一次非战争行为，主角为一位职权较高者，面对潜在羞辱选择退至一条窄道中，日后双方和解传为佳话。此地重建碑文由一位地方书法家撰写，现已成为文化象征。请问该地点是哪里？",
+  "reference": "回车巷",
+  "answer_d": "**：据天下吴氏网，“回车巷”名称源于蔺相如（一位职权较高者）为避免与廉颇发生冲突，在此处选择掉转车头回避的非战争行为 [6]。此事件后，廉颇向蔺相如负荆请罪，两人和解并成为好友，同心协力保卫赵国，传为佳话 [7]。\n3. **关于碑文的前提说明**：针对问题中提到的“此地重建碑文由一位地方书法家撰写，现已成为文化象征”，结构化知识表中并未包含此地重建碑文或地方书法家撰写碑文的相关信息。仅据新浪收藏提到，历史上的书法家黄庭坚曾\n\n--- 验证备注 ---\n[已删除 — 原文不支撑: [6] “回车巷”名称源于蔺相如为避免与廉颇发生冲突，在此处掉转车头回避的事件。...]",
+  "answer_e": "**：据天下吴氏网，“回车巷”名称源于蔺相如（一位职权较高者）为避免与廉颇发生冲突，在此处选择掉转车头回避的非战争行为 [6]。此事件后，廉颇向蔺相如负荆请罪，两人和解并成为好友，同心协力保卫赵国，传为佳话 [7]。\n3. **关于碑文的前提说明**：针对问题中提到的“此地重建碑文由一位地方书法家撰写，现已成为文化象征”，结构化知识表中并未包含此地重建碑文或地方书法家撰写碑文的相关信息。仅据新浪收藏提到，历史上的书法家黄庭坚曾\n\n--- 验证备注 ---\n[已删除 — 原文不支撑: [6] “回车巷”名称源于蔺相如为避免与廉颇发生冲突，在此处掉转车头回避的事件。...]",
+  "match_d": "Y",
+  "match_e": "Y",
+  "claims": 7,
+  "verification": "1Y/0P/1N",
+  "fallback_triggered": false,
+  "timings": {
+    "1a_serpapi": 5.3,
+    "1a_serpapi_direct": 5.3,
+    "1a_jina_total": 44.1,
+    "1a_jina_max": 11.1,
+    "1a_total": 49.4,
+    "1b_needs_hypothesis": 3.2,
+    "1c_generate_hypotheses": 17.1,
+    "1d_extract_constraints": 3.7,
+    "1e_hypo_searches_total": 20.2,
+    "1e_hypo_searches_sum": 67.9,
+    "1e_hypo_searches_max": 20.2,
+    "1f_direct_fallback": 2.9,
+    "phase1_total": 94.1,
+    "phase1_sum": 96.5,
+    "2a_relevance_filter": 7.7,
+    "2b_batch_total_wall": 41.8,
+    "2b_batch_max": 16.6,
+    "2c_dedup": 0.0,
+    "phase2_total": 49.5,
+    "3a_generate_answer": 13.6,
+    "3b_gap_keywords_r1": 15.0,
+    "3b_gap_search_r1": 14.9,
+    "3b_gap_regenerate_r1": 20.5,
+    "3b_gap_keywords_r2": 5.0,
+    "3b_gap_search_r2": 7.8,
+    "3b_gap_regenerate_r2": 14.1,
+    "3c_reextract_claims": 18.3,
+    "3c_regenerate_answer": 7.5,
+    "3b_gap_total": 77.4,
+    "phase3_total": 116.8,
+    "4a_batch_verify": 6.0,
+    "4b_fallback_sum": 19.9,
+    "4b_fallback_max": 17.9,
+    "phase4_total": 25.8,
+    "5_apply_verification": 0.0,
+    "6_fallback": 0.0
+  },
+  "tokens": {
+    "1a_serpapi_direct": [
+      0,
+      0
+    ],
+    "1b_needs_hypothesis": [
+      889,
+      771
+    ],
+    "1c_generate_hypotheses": [
+      172,
+      3956
+    ],
+    "1d_extract_constraints": [
+      367,
+      1491
+    ],
+    "1f_direct_fallback": [
+      0,
+      0
+    ],
+    "2a_relevance_filter": [
+      2787,
+      3950
+    ],
+    "3a_generate_answer": [
+      614,
+      1915
+    ],
+    "3b_gap_keywords_r1": [
+      356,
+      1336
+    ],
+    "3b_gap_regenerate_r1": [
+      32090,
+      2386
+    ],
+    "3b_gap_keywords_r2": [
+      660,
+      1834
+    ],
+    "3b_gap_regenerate_r2": [
+      41025,
+      2146
+    ],
+    "3c_reextract_claims": [
+      27546,
+      11377
+    ],
+    "3c_regenerate_answer": [
+      1030,
+      4092
+    ],
+    "4a_batch_verify": [
+      2924,
+      3752
+    ],
+    "6_fallback": [
+      0,
+      0
+    ]
+  }
+}

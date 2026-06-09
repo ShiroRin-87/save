@@ -1,0 +1,748 @@
+{
+  "question": "请根据以下线索找出这位艺术家的姓名：曾在中国中央美术学院及德国杜塞尔多夫艺术学院深造，并赴德国留学。在德国学习期间，他师从三位知名艺术家，其中一位艺术家的作品曾在2012年创下在世艺术家拍卖的最高价纪录",
+  "ref": "苏笑柏",
+  "versions": {
+    "V0_original": {
+      "hypotheses_prompt": "你是一个知识渊博的推理助手。请根据以下谜题的约束条件，依靠你自己的知识推测可能的答案。\n\n谜题：请根据以下线索找出这位艺术家的姓名：曾在中国中央美术学院及德国杜塞尔多夫艺术学院深造，并赴德国留学。在德国学习期间，他师从三位知名艺术家，其中一位艺术家的作品曾在2012年创下在世艺术家拍卖的最高价纪录\n\n输出一个JSON字符串数组，包含5个方向各异的最终候选答案。每个元素直接是答案名称，覆盖不同方向。只输出JSON数组，不要其他文字。\n\n示例：[\"青城山\",\"都江堰\",\"乐山大佛\",\"峨眉山\",\"莫高窟\"]\n\nJSON数组：",
+      "hypotheses_raw": "[\"盛天泓\",\"苏笑柏\",\"姜琤\",\"陈若冰\",\"谭平\"]",
+      "hypotheses": [
+        "盛天泓",
+        "苏笑柏",
+        "姜琤",
+        "陈若冰",
+        "谭平"
+      ],
+      "constraints_prompt": "从以下谜题中提取3-5个可用于搜索验证的关键词或短语。\n\n谜题：请根据以下线索找出这位艺术家的姓名：曾在中国中央美术学院及德国杜塞尔多夫艺术学院深造，并赴德国留学。在德国学习期间，他师从三位知名艺术家，其中一位艺术家的作品曾在2012年创下在世艺术家拍卖的最高价纪录\n\n输出一个JSON字符串数组。只输出JSON数组。\n\nJSON数组：",
+      "constraints_raw": "[\"中央美术学院\", \"杜塞尔多夫艺术学院\", \"2012在世艺术家拍卖纪录\", \"师从格哈德·里希特\"]",
+      "constraints": [
+        "中央美术学院",
+        "杜塞尔多夫艺术学院",
+        "2012在世艺术家拍卖纪录",
+        "师从格哈德·里希特"
+      ],
+      "queries": [
+        "盛天泓 中央美术学院 杜塞尔多夫艺术学院 2012在世艺术家拍卖纪录 师从格哈德·里希特",
+        "苏笑柏 中央美术学院 杜塞尔多夫艺术学院 2012在世艺术家拍卖纪录 师从格哈德·里希特",
+        "姜琤 中央美术学院 杜塞尔多夫艺术学院 2012在世艺术家拍卖纪录 师从格哈德·里希特",
+        "陈若冰 中央美术学院 杜塞尔多夫艺术学院 2012在世艺术家拍卖纪录 师从格哈德·里希特",
+        "谭平 中央美术学院 杜塞尔多夫艺术学院 2012在世艺术家拍卖纪录 师从格哈德·里希特"
+      ],
+      "search_detail": [
+        {
+          "entity": "盛天泓 中央美术学院 杜塞尔多夫艺术学院 2012在世艺术家拍卖纪录 师从格哈德·里希特",
+          "query": "盛天泓 中央美术学院 杜塞尔多夫艺术学院 2012在世艺术家拍卖纪录 师从格哈德·里希特",
+          "n_results": 5,
+          "n_new": 5,
+          "wall_s": 13.1,
+          "top3": [
+            {
+              "title": "格哈德·里希特（Gerhard Richter） | 出售物品与拍卖结果",
+              "snippet": "1932年，里希特出生于德国德累斯顿，后于当地艺术学院就读。还在求学的他为德国卫生博物馆完成了早期壁画作品《生活的乐趣》（1956年作）。1961年逃离东德 ...",
+              "url": "https://www.christies.com/zh-cn/artists/gerhard-richter"
+            },
+            {
+              "title": "Gerhard Richter 藝術指南：完整歷史、作品與市場價值（2025）",
+              "snippet": "探索Gerhard Richter 完整的藝術旅程，從他開創性的照片繪畫到創紀錄的抽象作品。在這本全面的指南中了解他的技術、著名作品及市場影響。",
+              "url": "https://ideelart.com/zh-hant/blogs/magazine/gerhard-richter-the-ultimate-guide-to-contemporary-arts-most-influential-living-artist-1?srsltid=AfmBOoqL6i-x5-XOFXbmAhN0OQOK-css2wsb_G64CXe3ncQAcVZr94EK"
+            },
+            {
+              "title": "热钱涌入，苏富比拍出天价",
+              "snippet": "已年届80的德国艺术家格哈德·里希特(Gerhard Richter)目前是在世艺术家中作品拍卖价最高纪录保持者——上个月在伦敦苏富比，一幅埃里克·克莱普顿(Eric ...",
+              "url": "https://cn.nytimes.com/culture/20121121/c21sotheby/"
+            }
+          ]
+        },
+        {
+          "entity": "苏笑柏 中央美术学院 杜塞尔多夫艺术学院 2012在世艺术家拍卖纪录 师从格哈德·里希特",
+          "query": "苏笑柏 中央美术学院 杜塞尔多夫艺术学院 2012在世艺术家拍卖纪录 师从格哈德·里希特",
+          "n_results": 5,
+          "n_new": 2,
+          "wall_s": 9.1,
+          "top3": [
+            {
+              "title": "从湖北省美术院走出的艺术家群体研究展”艺术家·苏笑柏",
+              "snippet": "苏笑柏，1949年出生于湖北武汉。1969年毕业于武汉市工艺美术学校（现武汉市第二轻工业学校），1984年至1987年间就职于湖北省美术院油画创作室，1987年毕业 ...",
+              "url": "http://wlt.hubei.gov.cn/hbsmsy/msg/zltj/202111/t20211108_3851244.shtml"
+            },
+            {
+              "title": "格哈德·里希特（Gerhard Richter） | 出售物品与拍卖结果",
+              "snippet": "1932年，里希特出生于德国德累斯顿，后于当地艺术学院就读。还在求学的他为德国卫生博物馆完成了早期壁画作品《生活的乐趣》（1956年作）。1961年逃离东德 ...",
+              "url": "https://www.christies.com/zh-cn/artists/gerhard-richter"
+            },
+            {
+              "title": "苏笑柏",
+              "snippet": "现居德国已超过20年的苏笑柏，于1949年出生于湖北省武汉市，1984年，进入中央美术学院油画研修班学习。 1987年，苏获得了德国文化艺术奖学金，前往德国杜多尔多夫国立艺术学院 ...",
+              "url": "https://www.pearllam.com/zh-hans/exhibition/%E8%8B%8F%E7%AC%91%E6%9F%8F/"
+            }
+          ]
+        },
+        {
+          "entity": "姜琤 中央美术学院 杜塞尔多夫艺术学院 2012在世艺术家拍卖纪录 师从格哈德·里希特",
+          "query": "姜琤 中央美术学院 杜塞尔多夫艺术学院 2012在世艺术家拍卖纪录 师从格哈德·里希特",
+          "n_results": 5,
+          "n_new": 5,
+          "wall_s": 20.6,
+          "top3": [
+            {
+              "title": "姜琤中国, 1985",
+              "snippet": "姜琤， 1985 年生于中国浙江，现工作生活于上海。他于2012 年获得柏林艺术大学美术硕士学位， 2008 年毕业于中国美术学院。 姜琤的创作围绕“观看及其产生的结构”展开， ...",
+              "url": "https://bankmabsociety.com/cn/artists/484-jiang-cheng/overview/"
+            },
+            {
+              "title": "姜琤中国当代前瞻型艺术家",
+              "snippet": "艺术家资料库. 姜琤更多. 1985 出生于浙江衢州 2008 毕业于中国美术学院 2012 毕业于中国美术学院中德艺术研究生院绘画专业，获柏林艺术大学美术学硕士学位. 主要展览 2012 ...",
+              "url": "https://www.ccartd.com/artistData/detail/J/2612.html"
+            },
+            {
+              "title": "姜琤_百度百科",
+              "snippet": "姜琤1985年生于浙江，现生活和工作于北京。2008年毕业于中国美术学院美术教育系，获学士学位；2012年毕业于中国美术学院中德艺术研究生院绘画专业，获柏林艺术大学美术学硕士 ...",
+              "url": "https://baike.baidu.com/item/%E5%A7%9C%E7%90%A4/59070132"
+            }
+          ]
+        },
+        {
+          "entity": "陈若冰 中央美术学院 杜塞尔多夫艺术学院 2012在世艺术家拍卖纪录 师从格哈德·里希特",
+          "query": "陈若冰 中央美术学院 杜塞尔多夫艺术学院 2012在世艺术家拍卖纪录 师从格哈德·里希特",
+          "n_results": 5,
+          "n_new": 3,
+          "wall_s": 12.2,
+          "top3": [
+            {
+              "title": "格哈德·里希特（Gerhard Richter） | 出售物品与拍卖结果",
+              "snippet": "1932年，里希特出生于德国德累斯顿，后于当地艺术学院就读。还在求学的他为德国卫生博物馆完成了早期壁画作品《生活的乐趣》（1956年作）。1961年逃离东德 ...",
+              "url": "https://www.christies.com/zh-cn/artists/gerhard-richter"
+            },
+            {
+              "title": "蝉联在世最贵艺术家的格哈德·里希特",
+              "snippet": "近年来，格哈德·里希特(Gerhard Richter)的市场如日中天，堪称现存于世的艺术家中卖得最好的一位。从市场角度回顾他的生涯，所见却唯有小火慢热。这位年逾八十的画家已 ...",
+              "url": "http://www.lbtart.com/Cn/Index/pageView/catid/2/id/1.html"
+            },
+            {
+              "title": "他靠“作弊”成爲繪畫大師 | Gerhard Richter",
+              "snippet": "60年代初的西德，當忙于先鋒藝術的同班同學向李希特發出靈魂拷問“妳要做什麽藝術？行爲還是裝置？”時，年輕的李希特疑惑中帶著堅定的答道“繪畫”， ...",
+              "url": "https://www.youtube.com/watch?v=BtV63jtryp0"
+            }
+          ]
+        },
+        {
+          "entity": "谭平 中央美术学院 杜塞尔多夫艺术学院 2012在世艺术家拍卖纪录 师从格哈德·里希特",
+          "query": "谭平 中央美术学院 杜塞尔多夫艺术学院 2012在世艺术家拍卖纪录 师从格哈德·里希特",
+          "n_results": 5,
+          "n_new": 5,
+          "wall_s": 4.3,
+          "top3": [
+            {
+              "title": "2013年当代艺术市场",
+              "snippet": "业之后，他于1980年进入了杜塞尔多夫美术学院学习，并师从伯纳德·. 贝歇（Bernd ... 1 格哈德•里希特，《Domplatz，Mailand [Cathedral Square，Milan]》（1968 ...",
+              "url": "https://zh.artprice.com/artprice-reports/pdf/gmac/artprice-contemporary-2012-2013-zh.pdf"
+            },
+            {
+              "title": "1520911313451864.pdf",
+              "snippet": "2012年4月底，在故宫盛大举行的艺术界颇有影响的第六届“AAC艺术中国奖”颁奖仪式上，中央美院. 美术馆两度上台领奖，在全部10个分类奖项中，中央美院美术馆获得了“年度机构 ...",
+              "url": "https://static.cafamuseum.org/museum-image/file/201803/1520911313451864.pdf"
+            },
+            {
+              "title": "艺术有读",
+              "snippet": "大学博士，西方艺术史学者，著有《八卦艺术史》、《珠宝传奇·中世纪》等畅销书，新书《趣说西方艺术史两千年》、《画中繁花：花语艺术史》已由人民文学出版社出版。 剪辑&图文 ...",
+              "url": "https://feeds.acast.com/public/shows/618ae0957929510012e11e6a"
+            }
+          ]
+        }
+      ],
+      "total_results": 20,
+      "recall": true,
+      "all_results": [
+        {
+          "title": "格哈德·里希特（Gerhard Richter） | 出售物品与拍卖结果",
+          "url": "https://www.christies.com/zh-cn/artists/gerhard-richter",
+          "snippet": "1932年，里希特出生于德国德累斯顿，后于当地艺术学院就读。还在求学的他为德国卫生博物馆完成了早期壁画作品《生活的乐趣》（1956年作）。1961年逃离东德 ..."
+        },
+        {
+          "title": "Gerhard Richter 藝術指南：完整歷史、作品與市場價值（2025）",
+          "url": "https://ideelart.com/zh-hant/blogs/magazine/gerhard-richter-the-ultimate-guide-to-contemporary-arts-most-influential-living-artist-1?srsltid=AfmBOoqL6i-x5-XOFXbmAhN0OQOK-css2wsb_G64CXe3ncQAcVZr94EK",
+          "snippet": "探索Gerhard Richter 完整的藝術旅程，從他開創性的照片繪畫到創紀錄的抽象作品。在這本全面的指南中了解他的技術、著名作品及市場影響。"
+        },
+        {
+          "title": "热钱涌入，苏富比拍出天价",
+          "url": "https://cn.nytimes.com/culture/20121121/c21sotheby/",
+          "snippet": "已年届80的德国艺术家格哈德·里希特(Gerhard Richter)目前是在世艺术家中作品拍卖价最高纪录保持者——上个月在伦敦苏富比，一幅埃里克·克莱普顿(Eric ..."
+        },
+        {
+          "title": "蝉联在世最贵艺术家的格哈德·里希特",
+          "url": "http://www.lbtart.com/Cn/Index/pageView/catid/2/id/1.html",
+          "snippet": "他在杜塞尔多夫美术学院学习三年，在那里与布林奇·巴勒莫(Blinky Palermo)、西格玛·波尔克(Sigmar Polke)和康拉德·卢埃格[Konrad Lueg，后以商家康拉德·费舍(Konrad Fischer) ..."
+        },
+        {
+          "title": "盛天泓",
+          "url": "http://ayegallery.com/wp-content/uploads/2021/06/%E7%9B%9B%E5%A4%A9%E6%B3%93Sheng-Tianhong-cn-2023.04.pdf",
+          "snippet": "1973. 出生于浙江. 1993. 毕业于中央美术学院附中. 1997. 毕业于中央美术学院油画系，获文学学士学位. 2003. 毕业于德国杜塞尔多夫艺术学院，获硕士学位和大师生称号."
+        },
+        {
+          "title": "从湖北省美术院走出的艺术家群体研究展”艺术家·苏笑柏",
+          "url": "http://wlt.hubei.gov.cn/hbsmsy/msg/zltj/202111/t20211108_3851244.shtml",
+          "snippet": "苏笑柏，1949年出生于湖北武汉。1969年毕业于武汉市工艺美术学校（现武汉市第二轻工业学校），1984年至1987年间就职于湖北省美术院油画创作室，1987年毕业 ..."
+        },
+        {
+          "title": "苏笑柏",
+          "url": "https://www.pearllam.com/zh-hans/exhibition/%E8%8B%8F%E7%AC%91%E6%9F%8F/",
+          "snippet": "现居德国已超过20年的苏笑柏，于1949年出生于湖北省武汉市，1984年，进入中央美术学院油画研修班学习。 1987年，苏获得了德国文化艺术奖学金，前往德国杜多尔多夫国立艺术学院 ..."
+        },
+        {
+          "title": "姜琤中国, 1985",
+          "url": "https://bankmabsociety.com/cn/artists/484-jiang-cheng/overview/",
+          "snippet": "姜琤， 1985 年生于中国浙江，现工作生活于上海。他于2012 年获得柏林艺术大学美术硕士学位， 2008 年毕业于中国美术学院。 姜琤的创作围绕“观看及其产生的结构”展开， ..."
+        },
+        {
+          "title": "姜琤中国当代前瞻型艺术家",
+          "url": "https://www.ccartd.com/artistData/detail/J/2612.html",
+          "snippet": "艺术家资料库. 姜琤更多. 1985 出生于浙江衢州 2008 毕业于中国美术学院 2012 毕业于中国美术学院中德艺术研究生院绘画专业，获柏林艺术大学美术学硕士学位. 主要展览 2012 ..."
+        },
+        {
+          "title": "姜琤_百度百科",
+          "url": "https://baike.baidu.com/item/%E5%A7%9C%E7%90%A4/59070132",
+          "snippet": "姜琤1985年生于浙江，现生活和工作于北京。2008年毕业于中国美术学院美术教育系，获学士学位；2012年毕业于中国美术学院中德艺术研究生院绘画专业，获柏林艺术大学美术学硕士 ..."
+        },
+        {
+          "title": "增长",
+          "url": "https://imgpublic.artprice.com/pdf/zh-the-contemporary-art-market-report-2020.pdf",
+          "snippet": "在作品现身拍卖的当代艺术家数量翻了五倍、新. 市场在全球各地全面开花之时，部分在世艺术家是如. 何“封神”的？一方面，一些艺术家的价格增长过快. 以至于 ..."
+        },
+        {
+          "title": "CURATORIAL STUDIES-Academic Research－Art and ...",
+          "url": "https://www.cafamuseum.org/en/artist/exhibit/1",
+          "snippet": "“莫扎特-基因：李继伟艺术展”正在中央美术学院美术馆一层大厅展出。所有参展作品都是李继伟为这个特定的展览空间在今年创作的新作。他象征地表现莫扎特音乐中超越信仰，追求 ..."
+        },
+        {
+          "title": "他靠“作弊”成爲繪畫大師 | Gerhard Richter",
+          "url": "https://www.youtube.com/watch?v=BtV63jtryp0",
+          "snippet": "60年代初的西德，當忙于先鋒藝術的同班同學向李希特發出靈魂拷問“妳要做什麽藝術？行爲還是裝置？”時，年輕的李希特疑惑中帶著堅定的答道“繪畫”， ..."
+        },
+        {
+          "title": "2012年度艺术市场报告",
+          "url": "https://imgpublic.artprice.com/pdf/the_art_market2012_online_zh.pdf",
+          "snippet": "格哈德·里希. 特凭借6件拍价突破百万英镑的作品成为这几场拍卖会上最畅销的艺术家。 2月14日和16日：佳士得和苏富比拍卖会上成绩最佳的部分作品. 弗朗西斯·培根— ..."
+        },
+        {
+          "title": "亚洲买家2.22亿元拍下里希特《抽象画》",
+          "url": "http://www.rmzxw.com.cn/c/2018-11-15/2218103.shtml",
+          "snippet": "当地时间11月14日晚，纽约苏富比当代艺术晚拍举槌，全场估价最高（估价约2800万美元）的格哈德·里希特（Gerhard Richter）作品《抽象画》（Abstraktes Bild） ..."
+        },
+        {
+          "title": "2013年当代艺术市场",
+          "url": "https://zh.artprice.com/artprice-reports/pdf/gmac/artprice-contemporary-2012-2013-zh.pdf",
+          "snippet": "业之后，他于1980年进入了杜塞尔多夫美术学院学习，并师从伯纳德·. 贝歇（Bernd ... 1 格哈德•里希特，《Domplatz，Mailand [Cathedral Square，Milan]》（1968 ..."
+        },
+        {
+          "title": "1520911313451864.pdf",
+          "url": "https://static.cafamuseum.org/museum-image/file/201803/1520911313451864.pdf",
+          "snippet": "2012年4月底，在故宫盛大举行的艺术界颇有影响的第六届“AAC艺术中国奖”颁奖仪式上，中央美院. 美术馆两度上台领奖，在全部10个分类奖项中，中央美院美术馆获得了“年度机构 ..."
+        },
+        {
+          "title": "艺术有读",
+          "url": "https://feeds.acast.com/public/shows/618ae0957929510012e11e6a",
+          "snippet": "大学博士，西方艺术史学者，著有《八卦艺术史》、《珠宝传奇·中世纪》等畅销书，新书《趣说西方艺术史两千年》、《画中繁花：花语艺术史》已由人民文学出版社出版。 剪辑&图文 ..."
+        },
+        {
+          "title": "PERIODICAL OF TSINGHUA UNIVERSITY ART MUSEUM",
+          "url": "https://www.artmuseum.tsinghua.edu.cn/xsyj/gk/202412/W020241224520850421153.pdf",
+          "snippet": "展览分为. 开卷有艺、纹艺青年、饰艺向心、艺美之瓷、艺味其从、现代建艺六. 个展区，以英国维多利亚与艾尔伯特博物馆和清华大学艺术博物馆等. 机构和藏家的共计近200 件 ..."
+        },
+        {
+          "title": "演出",
+          "url": "https://groups.google.com/group/elvita-wei/attach/104148b4d3c29e9f/elvita%E5%A8%81%E6%96%87%E8%89%BA%E5%91%A8%E6%9C%AB12%E5%B9%B46%E6%9C%887-14%E6%97%A5.doc?part=0.1",
+          "snippet": "杜钦，文字设计研究者、平面设计师、中央美术学院设计专业在读博士研究生，设计实践专注于艺术与文化类的委托及自发项目。同时致力于与传达设计、文字设计、视觉文化 ..."
+        }
+      ]
+    },
+    "V1_fix_hypotheses": {
+      "hypotheses_prompt": "你是一个知识渊博的推理助手。请根据以下谜题的约束条件，推测谜题中涉及的可搜索实体名称。\n\n重要：输出的是谜题的中间实体（物质名、人名、地名、作品名等具体名词），而不是最终答案。\n- 如果问题问\"哪个年份\"，应输出该事件涉及的具体物质/人物名称，而非年份\n- 如果问题问\"哪个朝代\"，应输出该事物/人物的具体名称，而非朝代名\n- 如果问题问\"哪家公司\"，应输出创始人的名字或相关产品名，而非公司名\n\n谜题：请根据以下线索找出这位艺术家的姓名：曾在中国中央美术学院及德国杜塞尔多夫艺术学院深造，并赴德国留学。在德国学习期间，他师从三位知名艺术家，其中一位艺术家的作品曾在2012年创下在世艺术家拍卖的最高价纪录\n\n输出一个JSON字符串数组，包含5个可搜索的中间实体名称，覆盖不同方向。只输出JSON数组，不要其他文字。\n\n示例：[\"青霉素\",\"链霉素\",\"四环素\",\"磺胺\",\"红霉素\"]\n\nJSON数组：",
+      "hypotheses_raw": "[\"中央美术学院\",\"杜塞尔多夫艺术学院\",\"格哈德·里希特\",\"抽象画\",\"托尼·克拉格\"]",
+      "hypotheses": [
+        "中央美术学院",
+        "杜塞尔多夫艺术学院",
+        "格哈德·里希特",
+        "抽象画",
+        "托尼·克拉格"
+      ],
+      "constraints": [
+        "中央美术学院",
+        "杜塞尔多夫艺术学院",
+        "2012在世艺术家拍卖纪录",
+        "师从格哈德·里希特"
+      ],
+      "constraints_str": "中央美术学院 杜塞尔多夫艺术学院 2012在世艺术家拍卖纪录 师从格哈德·里希特",
+      "queries": [
+        "中央美术学院 中央美术学院 杜塞尔多夫艺术学院 2012在世艺术家拍卖纪录 师从格哈德·里希特",
+        "杜塞尔多夫艺术学院 中央美术学院 杜塞尔多夫艺术学院 2012在世艺术家拍卖纪录 师从格哈德·里希特",
+        "格哈德·里希特 中央美术学院 杜塞尔多夫艺术学院 2012在世艺术家拍卖纪录 师从格哈德·里希特",
+        "抽象画 中央美术学院 杜塞尔多夫艺术学院 2012在世艺术家拍卖纪录 师从格哈德·里希特",
+        "托尼·克拉格 中央美术学院 杜塞尔多夫艺术学院 2012在世艺术家拍卖纪录 师从格哈德·里希特"
+      ],
+      "search_detail": [
+        {
+          "entity": "中央美术学院 中央美术学院 杜塞尔多夫艺术学院 2012在世艺术家拍卖纪录 师从格哈德·里希特",
+          "query": "中央美术学院 中央美术学院 杜塞尔多夫艺术学院 2012在世艺术家拍卖纪录 师从格哈德·里希特",
+          "n_results": 5,
+          "n_new": 5,
+          "wall_s": 14.6,
+          "top3": [
+            {
+              "title": "格哈德·里希特（Gerhard Richter） | 出售物品与拍卖结果",
+              "snippet": "1932年，里希特出生于德国德累斯顿，后于当地艺术学院就读。还在求学的他为德国卫生博物馆完成了早期壁画作品《生活的乐趣》（1956年作）。1961年逃离东德 ...",
+              "url": "https://www.christies.com/zh-cn/artists/gerhard-richter"
+            },
+            {
+              "title": "格哈德·里希特 - 维基百科",
+              "snippet": "在2012年十月，里希特的一幅作品Abstraktes Bild 在拍卖会以3,400万美元拍出，创下在世艺术家拍卖的最高价纪录。 2013年5月，另一件1986年名为Domplatz, Mailand (教堂 ...",
+              "url": "https://zh.wikipedia.org/zh-hans/%E8%91%9B%E5%93%88%C2%B7%E6%9D%8E%E5%B8%8C%E7%89%B9"
+            },
+            {
+              "title": "观察格哈德·里希特的抽象画",
+              "snippet": "正是在杜塞尔多夫艺术学院，Gerhard Richter开始发展他总体的艺术理念。他发现了实验的价值、多学科工作的吸引力以及抽象的可能性。他还学会了幽默的重要性，以及创作 ...",
+              "url": "https://ideelart.com/zh-hans/blogs/magazine/observing-gerhard-richters-abstract-painting?srsltid=AfmBOor0NI7K6irHTFl3xeCiyJypkvn5rXtBoN2qYKVHxRE0KE-7h12Q"
+            }
+          ]
+        },
+        {
+          "entity": "杜塞尔多夫艺术学院 中央美术学院 杜塞尔多夫艺术学院 2012在世艺术家拍卖纪录 师从格哈德·里希特",
+          "query": "杜塞尔多夫艺术学院 中央美术学院 杜塞尔多夫艺术学院 2012在世艺术家拍卖纪录 师从格哈德·里希特",
+          "n_results": 5,
+          "n_new": 1,
+          "wall_s": 25.7,
+          "top3": [
+            {
+              "title": "格哈德·里希特（Gerhard Richter） | 出售物品与拍卖结果",
+              "snippet": "1932年，里希特出生于德国德累斯顿，后于当地艺术学院就读。还在求学的他为德国卫生博物馆完成了早期壁画作品《生活的乐趣》（1956年作）。1961年逃离东德 ...",
+              "url": "https://www.christies.com/zh-cn/artists/gerhard-richter"
+            },
+            {
+              "title": "观察格哈德·里希特的抽象画",
+              "snippet": "Richter的同学包括布林基·帕勒莫、康拉德·费舍尔和西格玛·波尔克。 正是在杜塞尔多夫艺术学院，Gerhard Richter开始发展他总体的艺术理念。他发现了实验的价值、多 ...",
+              "url": "https://ideelart.com/zh-hans/blogs/magazine/observing-gerhard-richters-abstract-painting?srsltid=AfmBOoqmccTgtziU6PYvQkOUvVxUNNzYxgPRoAVYv3wf-OOB8sK6PHfI"
+            },
+            {
+              "title": "格哈德·里希特 - 维基百科",
+              "snippet": "作品形式包含抽象艺术、照相写实主义绘画、摄影及利用玻璃媒材等。他的在艺术概念上追随毕加索和让·阿尔普等人，创作形式多样而并非维持单一风格。",
+              "url": "https://zh.wikipedia.org/zh-hans/%E8%91%9B%E5%93%88%C2%B7%E6%9D%8E%E5%B8%8C%E7%89%B9"
+            }
+          ]
+        },
+        {
+          "entity": "格哈德·里希特 中央美术学院 杜塞尔多夫艺术学院 2012在世艺术家拍卖纪录 师从格哈德·里希特",
+          "query": "格哈德·里希特 中央美术学院 杜塞尔多夫艺术学院 2012在世艺术家拍卖纪录 师从格哈德·里希特",
+          "n_results": 5,
+          "n_new": 2,
+          "wall_s": 15.1,
+          "top3": [
+            {
+              "title": "格哈德·里希特（Gerhard Richter） | 出售物品与拍卖结果",
+              "snippet": "1961年逃离东德后，里希特入读杜塞尔多夫艺术学院，并在那里结交了西格玛尔‧波尔克、康拉德·卢埃格，及布林其·帕勒莫等艺术家好友。 里希特正式开始的创作生涯始于一系列以 ...",
+              "url": "https://www.christies.com/zh-cn/artists/gerhard-richter"
+            },
+            {
+              "title": "格哈德·里希特：他的艺术终极指南（2025）",
+              "snippet": "他进入杜塞尔多夫艺术学院，接触到了达达主义、弗卢克斯运动、美国波普 ... 此作于2012年拍卖时以3420万美元创下里希特的纪录。 九月 (2005). 这 ...",
+              "url": "https://ideelart.com/zh-hans/blogs/magazine/gerhard-richter-the-ultimate-guide-to-contemporary-arts-most-influential-living-artist-1?srsltid=AfmBOoo2oyuQvqSwhmFF_W2OPT_NlGkCndHXgJaxeirtazkRLOjy4rbl"
+            },
+            {
+              "title": "格哈德·里希特 - 维基百科",
+              "snippet": "在2012年十月，里希特的一幅作品Abstraktes Bild 在拍卖会以3,400万美元拍出，创下在世艺术家拍卖的最高价纪录。 2013年5月，另一件1986年名为Domplatz, Mailand (教堂 ...",
+              "url": "https://zh.wikipedia.org/zh-hans/%E8%91%9B%E5%93%88%C2%B7%E6%9D%8E%E5%B8%8C%E7%89%B9"
+            }
+          ]
+        },
+        {
+          "entity": "抽象画 中央美术学院 杜塞尔多夫艺术学院 2012在世艺术家拍卖纪录 师从格哈德·里希特",
+          "query": "抽象画 中央美术学院 杜塞尔多夫艺术学院 2012在世艺术家拍卖纪录 师从格哈德·里希特",
+          "n_results": 5,
+          "n_new": 2,
+          "wall_s": 20.5,
+          "top3": [
+            {
+              "title": "格哈德·里希特（Gerhard Richter） | 出售物品与拍卖结果",
+              "snippet": "德国艺术家杰哈德·里希特以其抽象及照相写实主义作品而著称。六十年来，他在艺术作品中持续探索现实和表象之间的对话。 1932年，里希特出生于德国德累斯顿，后于当地艺术 ...",
+              "url": "https://www.christies.com/zh-cn/artists/gerhard-richter"
+            },
+            {
+              "title": "观察格哈德·里希特的抽象画",
+              "snippet": "正是在杜塞尔多夫艺术学院，Gerhard Richter开始发展他总体的艺术理念。他发现了实验的价值、多学科工作的吸引力以及抽象的可能性。他还学会了幽默的重要性，以及创作 ...",
+              "url": "https://ideelart.com/zh-hans/blogs/magazine/observing-gerhard-richters-abstract-painting?srsltid=AfmBOooP2buazMwf3HTGQAy2C7niFNFV9j2fVRafG7qLowPO42Geoa6x"
+            },
+            {
+              "title": "蝉联在世最贵艺术家的格哈德·里希特",
+              "snippet": "他在杜塞尔多夫美术学院学习三年，在那里与布林奇·巴勒莫(Blinky Palermo)、西格玛·波尔克(Sigmar Polke)和康拉德·卢埃格[Konrad Lueg，后以商家康拉德·费舍(Konrad Fischer) ...",
+              "url": "http://www.lbtart.com/Cn/Index/pageView/catid/2/id/1.html"
+            }
+          ]
+        },
+        {
+          "entity": "托尼·克拉格 中央美术学院 杜塞尔多夫艺术学院 2012在世艺术家拍卖纪录 师从格哈德·里希特",
+          "query": "托尼·克拉格 中央美术学院 杜塞尔多夫艺术学院 2012在世艺术家拍卖纪录 师从格哈德·里希特",
+          "n_results": 5,
+          "n_new": 3,
+          "wall_s": 12.4,
+          "top3": [
+            {
+              "title": "格哈德·里希特（Gerhard Richter） | 出售物品与拍卖结果",
+              "snippet": "1932年，里希特出生于德国德累斯顿，后于当地艺术学院就读。还在求学的他为德国卫生博物馆完成了早期壁画作品《生活的乐趣》（1956年作）。1961年逃离东德 ...",
+              "url": "https://www.christies.com/zh-cn/artists/gerhard-richter"
+            },
+            {
+              "title": "观察格哈德·里希特的抽象画",
+              "snippet": "1961年，他在柏林墙建设开始前几个月逃往西德。他定居杜塞尔多夫，尽管已完成艺术学位，仍报名杜塞尔多夫艺术学院学习，该校吸引了当时一些最前卫的艺术家。这里是非 ...",
+              "url": "https://ideelart.com/zh-hans/blogs/magazine/observing-gerhard-richters-abstract-painting?srsltid=AfmBOor1wm81ECZTkZDUvzt9MI-yMYDUcL4U5VjdY7JqmaabF1CdVPYD"
+            },
+            {
+              "title": "“特纳奖”得主Tony Cragg的首个中国秀",
+              "snippet": "托尼•克拉格（Tony Cragg）是极具影响力的英国著名雕塑家，曾于1988年获得英国最重要的艺术家大奖——特纳奖(Turner Prize)，现任德国杜塞尔多夫艺术学院院长。此行是托尼•克拉格 ...",
+              "url": "https://cafamuseum.org/exhibit/newsdetail/413"
+            }
+          ]
+        }
+      ],
+      "total_results": 13,
+      "recall": false,
+      "all_results": [
+        {
+          "title": "格哈德·里希特（Gerhard Richter） | 出售物品与拍卖结果",
+          "url": "https://www.christies.com/zh-cn/artists/gerhard-richter",
+          "snippet": "1932年，里希特出生于德国德累斯顿，后于当地艺术学院就读。还在求学的他为德国卫生博物馆完成了早期壁画作品《生活的乐趣》（1956年作）。1961年逃离东德 ..."
+        },
+        {
+          "title": "格哈德·里希特 - 维基百科",
+          "url": "https://zh.wikipedia.org/zh-hans/%E8%91%9B%E5%93%88%C2%B7%E6%9D%8E%E5%B8%8C%E7%89%B9",
+          "snippet": "在2012年十月，里希特的一幅作品Abstraktes Bild 在拍卖会以3,400万美元拍出，创下在世艺术家拍卖的最高价纪录。 2013年5月，另一件1986年名为Domplatz, Mailand (教堂 ..."
+        },
+        {
+          "title": "观察格哈德·里希特的抽象画",
+          "url": "https://ideelart.com/zh-hans/blogs/magazine/observing-gerhard-richters-abstract-painting?srsltid=AfmBOor0NI7K6irHTFl3xeCiyJypkvn5rXtBoN2qYKVHxRE0KE-7h12Q",
+          "snippet": "正是在杜塞尔多夫艺术学院，Gerhard Richter开始发展他总体的艺术理念。他发现了实验的价值、多学科工作的吸引力以及抽象的可能性。他还学会了幽默的重要性，以及创作 ..."
+        },
+        {
+          "title": "葛哈·李希特- 128 件藝術品- 畫作",
+          "url": "https://www.wikiart.org/zh/ge-ha-li-xi-te",
+          "snippet": "在2012年十月，李希特的一幅作品Abstraktes Bild 在拍賣會以3,400萬美元拍出，創下在世藝術家拍賣的最高價紀錄。 2013年5月，另一件1986年名為Domplatz, Mailand (教堂广场， ..."
+        },
+        {
+          "title": "蝉联在世最贵艺术家的格哈德·里希特",
+          "url": "http://www.lbtart.com/Cn/Index/pageView/catid/2/id/1.html",
+          "snippet": "他在杜塞尔多夫美术学院学习三年，在那里与布林奇·巴勒莫(Blinky Palermo)、西格玛·波尔克(Sigmar Polke)和康拉德·卢埃格[Konrad Lueg，后以商家康拉德·费舍(Konrad Fischer) ..."
+        },
+        {
+          "title": "观察格哈德·里希特的抽象画",
+          "url": "https://ideelart.com/zh-hans/blogs/magazine/observing-gerhard-richters-abstract-painting?srsltid=AfmBOoqmccTgtziU6PYvQkOUvVxUNNzYxgPRoAVYv3wf-OOB8sK6PHfI",
+          "snippet": "Richter的同学包括布林基·帕勒莫、康拉德·费舍尔和西格玛·波尔克。 正是在杜塞尔多夫艺术学院，Gerhard Richter开始发展他总体的艺术理念。他发现了实验的价值、多 ..."
+        },
+        {
+          "title": "格哈德·里希特：他的艺术终极指南（2025）",
+          "url": "https://ideelart.com/zh-hans/blogs/magazine/gerhard-richter-the-ultimate-guide-to-contemporary-arts-most-influential-living-artist-1?srsltid=AfmBOoo2oyuQvqSwhmFF_W2OPT_NlGkCndHXgJaxeirtazkRLOjy4rbl",
+          "snippet": "他进入杜塞尔多夫艺术学院，接触到了达达主义、弗卢克斯运动、美国波普 ... 此作于2012年拍卖时以3420万美元创下里希特的纪录。 九月 (2005). 这 ..."
+        },
+        {
+          "title": "格哈德•里希特",
+          "url": "https://www.benbrownfinearts.com/zh/artists/85-gerhard-richter/",
+          "snippet": "格哈德·里希特以豐富多樣和風格百般的繪畫媒介探索而馳名，他常在他的創作中融入並探求攝影的視覺效果。「我喜歡一切沒有風格的東西：字典，攝影，自然，我自己以及我的畫。"
+        },
+        {
+          "title": "观察格哈德·里希特的抽象画",
+          "url": "https://ideelart.com/zh-hans/blogs/magazine/observing-gerhard-richters-abstract-painting?srsltid=AfmBOooP2buazMwf3HTGQAy2C7niFNFV9j2fVRafG7qLowPO42Geoa6x",
+          "snippet": "正是在杜塞尔多夫艺术学院，Gerhard Richter开始发展他总体的艺术理念。他发现了实验的价值、多学科工作的吸引力以及抽象的可能性。他还学会了幽默的重要性，以及创作 ..."
+        },
+        {
+          "title": "温钦画廊私人洽购格哈德.里希特原作抽象画，刮除画法",
+          "url": "https://zhuanlan.zhihu.com/p/605252462",
+          "snippet": "里希特（Gerhard Richter），被称为尚健在的最受敬重的艺术家，1932年出生于德国Dresden（德累斯顿）一个知识分子家庭，1951-1956年就读于德累斯顿艺术学院，1961-1963年在杜塞尔多 ..."
+        },
+        {
+          "title": "观察格哈德·里希特的抽象画",
+          "url": "https://ideelart.com/zh-hans/blogs/magazine/observing-gerhard-richters-abstract-painting?srsltid=AfmBOor1wm81ECZTkZDUvzt9MI-yMYDUcL4U5VjdY7JqmaabF1CdVPYD",
+          "snippet": "1961年，他在柏林墙建设开始前几个月逃往西德。他定居杜塞尔多夫，尽管已完成艺术学位，仍报名杜塞尔多夫艺术学院学习，该校吸引了当时一些最前卫的艺术家。这里是非 ..."
+        },
+        {
+          "title": "“特纳奖”得主Tony Cragg的首个中国秀",
+          "url": "https://cafamuseum.org/exhibit/newsdetail/413",
+          "snippet": "托尼•克拉格（Tony Cragg）是极具影响力的英国著名雕塑家，曾于1988年获得英国最重要的艺术家大奖——特纳奖(Turner Prize)，现任德国杜塞尔多夫艺术学院院长。此行是托尼•克拉格 ..."
+        },
+        {
+          "title": "新闻资料- 展览“德国：艺术之域”",
+          "url": "https://www.pearllam.com/zh-hans/%E8%89%BA%E6%9C%AF%E9%97%A8%E7%94%BB%E5%BB%8A%E8%89%BA%E6%9C%AF%E5%AE%B6%E6%9C%B1%E9%87%91%E7%9F%B3%E3%80%81%E7%A7%A6%E7%8E%89%E8%8A%AC-%EF%BD%9C-%E4%B8%AD%E5%A4%AE%E7%BE%8E%E6%9C%AF%E5%AD%A6%E9%99%A2/",
+          "snippet": "托尼·克拉格（Tony Cragg）. 1949 年出生于利物浦。1970-1973 年在温布尔登艺术学校学习。1973-1977 年就读于伦敦皇. 家艺术学院。1978-1988 年担任杜塞尔多夫艺术学院教授。"
+        }
+      ]
+    },
+    "V2_fix_both": {
+      "hypotheses": [
+        "中央美术学院",
+        "杜塞尔多夫艺术学院",
+        "格哈德·里希特",
+        "抽象画",
+        "托尼·克拉格"
+      ],
+      "query_prompt": "对于以下谜题和候选实体，为每个实体生成一个用于Google搜索验证的关键词组合。关键词应：\n1. 包含实体名本身\n2. 加入谜题中对验证该实体最关键的1-3个约束词（只选事实性约束如\"中国\"\"投产\"\"年份\"，不要谜语修辞如\"绿色山脉\"\"小人物\"）\n3. 简短精准，不超过8个词\n\n谜题：请根据以下线索找出这位艺术家的姓名：曾在中国中央美术学院及德国杜塞尔多夫艺术学院深造，并赴德国留学。在德国学习期间，他师从三位知名艺术家，其中一位艺术家的作品曾在2012年创下在世艺术家拍卖的最高价纪录\n\n候选实体：\n- 中央美术学院\n- 杜塞尔多夫艺术学院\n- 格哈德·里希特\n- 抽象画\n- 托尼·克拉格\n\n输出JSON数组，每个元素含 \"entity\" 和 \"search_query\" 两字段。只输出JSON数组。\n\nJSON数组：",
+      "query_raw": "[\n  {\"entity\": \"中央美术学院\", \"search_query\": \"中央美术学院 杜塞尔多夫 留学\"},\n  {\"entity\": \"杜塞尔多夫艺术学院\", \"search_query\": \"杜塞尔多夫艺术学院 中国 艺术家\"},\n  {\"entity\": \"格哈德·里希特\", \"search_query\": \"格哈德·里希特 2012 拍卖 最高价\"},\n  {\"entity\": \"抽象画\", \"search_query\": \"抽象画 里希特 2012 拍卖\"},\n  {\"entity\": \"托尼·克拉格\", \"search_query\": \"托尼·克拉格 杜塞尔多夫 学院\"}\n]",
+      "queries_parsed": [
+        {
+          "entity": "中央美术学院",
+          "search_query": "中央美术学院 杜塞尔多夫 留学"
+        },
+        {
+          "entity": "杜塞尔多夫艺术学院",
+          "search_query": "杜塞尔多夫艺术学院 中国 艺术家"
+        },
+        {
+          "entity": "格哈德·里希特",
+          "search_query": "格哈德·里希特 2012 拍卖 最高价"
+        },
+        {
+          "entity": "抽象画",
+          "search_query": "抽象画 里希特 2012 拍卖"
+        },
+        {
+          "entity": "托尼·克拉格",
+          "search_query": "托尼·克拉格 杜塞尔多夫 学院"
+        }
+      ],
+      "search_detail": [
+        {
+          "entity": "中央美术学院",
+          "query": "中央美术学院 杜塞尔多夫 留学",
+          "n_results": 5,
+          "n_new": 5,
+          "wall_s": 17.2,
+          "top3": [
+            {
+              "title": "德国杜塞尔多夫艺术学院",
+              "snippet": "德国杜塞尔多夫艺术学院是位于北莱茵- 威斯特伐利亚州首府杜塞尔多夫的一所著名公立艺术学院。她及她的前身，这历史最悠久的学校兰伯特`卡赫斯(Lambert Krahe) 绘画学校 ...",
+              "url": "https://m.siaedu.net/college/524.html"
+            },
+            {
+              "title": "杜塞尔多夫美术学院申请要求",
+              "snippet": "专业方向. 杜塞尔多夫艺术学院设有以下主要专业方向，适用于本科和硕士阶段的招生： ; 绘画. 雕塑. 摄影. 新媒体. 舞台设计 ; 艺术教育学. 艺术史. 哲学. 艺术美学 ; 建筑学.",
+              "url": "https://www.sfkedu.com/news/24970.html"
+            },
+            {
+              "title": "青年艺术：中国艺术家张潇月在杜塞尔多夫",
+              "snippet": "张潇月先上了北京的中央美术学院。这是中国最著名、最有威望的美术学院 ... 这一点也很清楚地体现在她2019年夏季第二段艺术学业的毕业装置作品上：主题是杜塞 ...",
+              "url": "https://www.deutschland.de/zh-hans/topic/wenhua/qingnianyishuzhongguoyishujiazhangxiaoyuezaidusaierduofu"
+            }
+          ]
+        },
+        {
+          "entity": "杜塞尔多夫艺术学院",
+          "query": "杜塞尔多夫艺术学院 中国 艺术家",
+          "n_results": 5,
+          "n_new": 4,
+          "wall_s": 22.5,
+          "top3": [
+            {
+              "title": "青年艺术：中国艺术家张潇月在杜塞尔多夫",
+              "snippet": "张潇月先上了北京的中央美术学院。这是中国最著名、最有威望的美术学院。张潇月说，这里教艺术的方式和在德国完全不同。欧洲的院 ...",
+              "url": "https://www.deutschland.de/zh-hans/topic/wenhua/qingnianyishuzhongguoyishujiazhangxiaoyuezaidusaierduofu"
+            },
+            {
+              "title": "CV|联系我们-果博东方福布斯上下分客服电话181-08888862",
+              "snippet": "高郁韬1988年出生于湖南，目前生活工作于上海。2019年获得德国杜塞尔多夫艺术学院研究生学位，并得到教授卡塔琳娜·弗里奇荣誉大师生称号。其作品触及记忆，时间以及日常之 ...",
+              "url": "http://www.gaoyutao.com/Home/Texts/lists/category/24.html"
+            },
+            {
+              "title": "杜塞尔多夫艺术学院",
+              "snippet": "... 大学”。其摄影系形成的“杜塞尔多夫学派”在国际摄影界具有重要地位，培养出格哈德·里希特、安德烈亚斯·古尔斯基等知名艺术家。学院采用导师制及大师班教学模式，拥有 ...",
+              "url": "https://baike.baidu.com/item/%E6%9D%9C%E5%A1%9E%E5%B0%94%E5%A4%9A%E5%A4%AB%E8%89%BA%E6%9C%AF%E5%AD%A6%E9%99%A2/10335852"
+            }
+          ]
+        },
+        {
+          "entity": "格哈德·里希特",
+          "query": "格哈德·里希特 2012 拍卖 最高价",
+          "n_results": 5,
+          "n_new": 5,
+          "wall_s": 6.6,
+          "top3": [
+            {
+              "title": "格哈德·里希特 - 维基百科",
+              "snippet": "在2012年十月，里希特的一幅作品Abstraktes Bild 在拍卖会以3,400万美元拍出，创下在世艺术家拍卖的最高价纪录。 2013年5月，另一件1986年名为Domplatz, Mailand (教堂 ...",
+              "url": "https://zh.wikipedia.org/zh-hans/%E8%91%9B%E5%93%88%C2%B7%E6%9D%8E%E5%B8%8C%E7%89%B9"
+            },
+            {
+              "title": "格哈德·里希特（Gerhard Richter） | 出售物品与拍卖结果",
+              "snippet": "德国艺术家杰哈德·里希特以其抽象及照相写实主义作品而著称。六十年来，他在艺术作品中持续探索现实和表象之间的对话。 1932年，里希特出生于德国德累斯顿，后于当地艺术 ...",
+              "url": "https://www.christies.com/zh-cn/artists/gerhard-richter"
+            },
+            {
+              "title": "強強聯手，卓納畫廊宣布代理格哈德・里希特",
+              "snippet": "里希特目前最高拍賣紀錄為2015年2月《Abstraktes Bild》（1986)拍出的4,630萬美元成交價。 David Zwirner, 2020. Photo by Jason Schmidt.（ ...",
+              "url": "https://artouch.com/art-news/content-91190.html"
+            }
+          ]
+        },
+        {
+          "entity": "抽象画",
+          "query": "抽象画 里希特 2012 拍卖",
+          "n_results": 5,
+          "n_new": 4,
+          "wall_s": 12.8,
+          "top3": [
+            {
+              "title": "藝術大師格哈特‧里希特抽象畫的發展軌跡",
+              "snippet": "藝術大師格哈特‧里希特抽象畫的發展軌跡. 二十世紀及當代 ... 估價75,000,000-95,000,000港元/ 9,620,000-12,180,000美元拍品13，二十世紀及當代藝術晚間拍賣，6月8日。",
+              "url": "https://www.phillips.com/article/77146098/gerhard-richter-abstraktes-bild-cn"
+            },
+            {
+              "title": "格哈德·里希特（Gerhard Richter） | 出售物品与拍卖结果",
+              "snippet": "德国艺术家杰哈德·里希特以其抽象及照相写实主义作品而著称。六十年来，他在艺术作品中持续探索现实和表象之间的对话。 1932年，里希特出生于德国德累斯顿，后于当地艺术 ...",
+              "url": "https://www.christies.com/zh-cn/artists/gerhard-richter"
+            },
+            {
+              "title": "葛哈·李希特- 128 件藝術品- 畫作",
+              "snippet": "在2012年十月，李希特的一幅作品Abstraktes Bild 在拍賣會以3,400萬美元拍出，創下在世藝術家拍賣的最高價紀錄。 2013年5月，另一件1986年名為Domplatz, Mailand (教堂 ...",
+              "url": "https://www.wikiart.org/zh/ge-ha-li-xi-te"
+            }
+          ]
+        },
+        {
+          "entity": "托尼·克拉格",
+          "query": "托尼·克拉格 杜塞尔多夫 学院",
+          "n_results": 5,
+          "n_new": 5,
+          "wall_s": 38.9,
+          "top3": [
+            {
+              "title": "托尼·克拉格",
+              "snippet": "克拉格生于利物浦，自1979年以来，一直在德国乌帕塔尔生活和工作，并于柏林艺术学院（Berlin Academy of Arts）和杜塞尔多夫艺术学院（Düsseldorf Academy of Fine Arts）授课。",
+              "url": "https://ropac.net/zh/artists/37-/"
+            },
+            {
+              "title": "托尼·克拉格",
+              "snippet": "托尼·克拉格是极具影响力的英国著名雕塑家，也是英国当代艺术界的领军人物。1949年出生于英国利物浦，现生活、工作于德国伍珀塔尔，现任德国杜塞尔多夫艺术学院院长。",
+              "url": "http://xxgk.cafa.edu.cn/cafa/tnklg203509.jhtml"
+            },
+            {
+              "title": "“特纳奖”得主Tony Cragg的首个中国秀",
+              "snippet": "托尼•克拉格（Tony Cragg）是极具影响力的英国著名雕塑家，曾于1988年获得英国最重要的艺术家大奖——特纳奖(Turner Prize)，现任德国杜塞尔多夫艺术学院院长。此行是托尼•克拉格 ...",
+              "url": "https://cafamuseum.org/exhibit/newsdetail/413"
+            }
+          ]
+        }
+      ],
+      "total_results": 23,
+      "recall": false,
+      "all_results": [
+        {
+          "title": "德国杜塞尔多夫艺术学院",
+          "url": "https://m.siaedu.net/college/524.html",
+          "snippet": "德国杜塞尔多夫艺术学院是位于北莱茵- 威斯特伐利亚州首府杜塞尔多夫的一所著名公立艺术学院。她及她的前身，这历史最悠久的学校兰伯特`卡赫斯(Lambert Krahe) 绘画学校 ..."
+        },
+        {
+          "title": "杜塞尔多夫美术学院申请要求",
+          "url": "https://www.sfkedu.com/news/24970.html",
+          "snippet": "专业方向. 杜塞尔多夫艺术学院设有以下主要专业方向，适用于本科和硕士阶段的招生： ; 绘画. 雕塑. 摄影. 新媒体. 舞台设计 ; 艺术教育学. 艺术史. 哲学. 艺术美学 ; 建筑学."
+        },
+        {
+          "title": "青年艺术：中国艺术家张潇月在杜塞尔多夫",
+          "url": "https://www.deutschland.de/zh-hans/topic/wenhua/qingnianyishuzhongguoyishujiazhangxiaoyuezaidusaierduofu",
+          "snippet": "张潇月先上了北京的中央美术学院。这是中国最著名、最有威望的美术学院 ... 这一点也很清楚地体现在她2019年夏季第二段艺术学业的毕业装置作品上：主题是杜塞 ..."
+        },
+        {
+          "title": "杜塞美院自由艺术－学长分享国内申请成功经验- 到德国之后",
+          "url": "https://read.douban.com/reader/column/3153162/chapter/20051880/?dt_dapp=1",
+          "snippet": "在国内大觉是在鲁迅美术学院学习雕塑，大五临毕业时就收到了杜塞美院（Kunstakademie Düsseldorf）自由艺术专业的Zulassung（入学通知），且条件优渥给一年的时间学习语言并 ..."
+        },
+        {
+          "title": "在德国杜塞尔多夫艺术学院就读是怎样的一种体验？",
+          "url": "https://www.zhihu.com/question/317909218/answer/1151131669",
+          "snippet": "最重要的是要去杜塞尔多夫艺术学院参加艺术术科考试。 曾经看过一个视频，一个中央美院附中的学生，考取了杜塞尔多夫艺术学院，现在在上海，北京做艺术品商人 ..."
+        },
+        {
+          "title": "CV|联系我们-果博东方福布斯上下分客服电话181-08888862",
+          "url": "http://www.gaoyutao.com/Home/Texts/lists/category/24.html",
+          "snippet": "高郁韬1988年出生于湖南，目前生活工作于上海。2019年获得德国杜塞尔多夫艺术学院研究生学位，并得到教授卡塔琳娜·弗里奇荣誉大师生称号。其作品触及记忆，时间以及日常之 ..."
+        },
+        {
+          "title": "杜塞尔多夫艺术学院",
+          "url": "https://baike.baidu.com/item/%E6%9D%9C%E5%A1%9E%E5%B0%94%E5%A4%9A%E5%A4%AB%E8%89%BA%E6%9C%AF%E5%AD%A6%E9%99%A2/10335852",
+          "snippet": "... 大学”。其摄影系形成的“杜塞尔多夫学派”在国际摄影界具有重要地位，培养出格哈德·里希特、安德烈亚斯·古尔斯基等知名艺术家。学院采用导师制及大师班教学模式，拥有 ..."
+        },
+        {
+          "title": "莱茵河畔的视觉盛宴：中德大师杜塞尔多夫“大化悟道”",
+          "url": "https://dusseldorf.china-consulate.gov.cn/xwdt/201511/t20151121_3720546.htm",
+          "snippet": "与此同时，李翔的作品也闻名中外，曾在第八届、第九届、第十届中国全国美展中获奖，全国第二届速写大赛获一等奖，入选中国画百年大展和首届、第二届、第三届北京国际双年展。"
+        },
+        {
+          "title": "2025 漩涡中的光",
+          "url": "https://www.tangcontemporary.com/2025-%E6%BC%A9%E6%B6%A1%E4%B8%AD%E7%9A%84%E5%85%89-%E5%8C%97%E4%BA%AC",
+          "snippet": "刘雯是一位出生于中国上海、现居纽约布鲁克林的视觉艺术家。她的作品探讨了移民、记忆和归属感的情感架构，运用雕塑、装置和混合媒介，探索永恒与无常之间的 ..."
+        },
+        {
+          "title": "格哈德·里希特 - 维基百科",
+          "url": "https://zh.wikipedia.org/zh-hans/%E8%91%9B%E5%93%88%C2%B7%E6%9D%8E%E5%B8%8C%E7%89%B9",
+          "snippet": "在2012年十月，里希特的一幅作品Abstraktes Bild 在拍卖会以3,400万美元拍出，创下在世艺术家拍卖的最高价纪录。 2013年5月，另一件1986年名为Domplatz, Mailand (教堂 ..."
+        },
+        {
+          "title": "格哈德·里希特（Gerhard Richter） | 出售物品与拍卖结果",
+          "url": "https://www.christies.com/zh-cn/artists/gerhard-richter",
+          "snippet": "德国艺术家杰哈德·里希特以其抽象及照相写实主义作品而著称。六十年来，他在艺术作品中持续探索现实和表象之间的对话。 1932年，里希特出生于德国德累斯顿，后于当地艺术 ..."
+        },
+        {
+          "title": "強強聯手，卓納畫廊宣布代理格哈德・里希特",
+          "url": "https://artouch.com/art-news/content-91190.html",
+          "snippet": "里希特目前最高拍賣紀錄為2015年2月《Abstraktes Bild》（1986)拍出的4,630萬美元成交價。 David Zwirner, 2020. Photo by Jason Schmidt.（ ..."
+        },
+        {
+          "title": "艺术界下起了格哈德里希特之雨 - 收藏- 新浪",
+          "url": "http://collection.sina.com.cn/cjrw/20120208/170355184.shtml",
+          "snippet": "据Artnet报道，里希特作品的价格在刚过去的10年中增长了近600%。这样的涨幅甚至超过了达明安-赫斯特或是安迪-沃霍尔作品的增长率。在一张为《每日电讯报》 ..."
+        },
+        {
+          "title": "格哈德•里希特",
+          "url": "https://www.benbrownfinearts.com/zh/artists/85-gerhard-richter/",
+          "snippet": "通過質地厚重的抽象灰色單色繪畫，里希特將抽象畫引入了他的實踐中，他持續在具象和抽象之間自由穿梭，創作出幾何抽象的“色卡繪畫”、姿態大膽的抽象畫、以及從裸體、花卉、 ..."
+        },
+        {
+          "title": "藝術大師格哈特‧里希特抽象畫的發展軌跡",
+          "url": "https://www.phillips.com/article/77146098/gerhard-richter-abstraktes-bild-cn",
+          "snippet": "藝術大師格哈特‧里希特抽象畫的發展軌跡. 二十世紀及當代 ... 估價75,000,000-95,000,000港元/ 9,620,000-12,180,000美元拍品13，二十世紀及當代藝術晚間拍賣，6月8日。"
+        },
+        {
+          "title": "葛哈·李希特- 128 件藝術品- 畫作",
+          "url": "https://www.wikiart.org/zh/ge-ha-li-xi-te",
+          "snippet": "在2012年十月，李希特的一幅作品Abstraktes Bild 在拍賣會以3,400萬美元拍出，創下在世藝術家拍賣的最高價紀錄。 2013年5月，另一件1986年名為Domplatz, Mailand (教堂 ..."
+        },
+        {
+          "title": "里希特抽象画拍3420万美元 - 收藏- 新浪",
+          "url": "http://collection.sina.com.cn/pmzx/20121022/091889248.shtml",
+          "snippet": "2012年10月12日,一位德国艺术家的作品在伦敦苏富比(微博)拍卖 ・ 为1400万到1900万美元的抽象画作品拍出了3420万美元・ 幅画的时候只花了340万美元,也就 ..."
+        },
+        {
+          "title": "观察格哈德·里希特的抽象画",
+          "url": "https://ideelart.com/zh-hans/blogs/magazine/observing-gerhard-richters-abstract-painting?srsltid=AfmBOopBs2H90N8ai3grZctbc_sOQZeWdqUqjapN5AH1njNXG57qqkOI",
+          "snippet": "对于Gerhard Richter来说,<b>抽象画</b>可以和写实画一样具有表现力。通过探索抽象和写实,他质疑它们是否真的如此不同。"
+        },
+        {
+          "title": "托尼·克拉格",
+          "url": "https://ropac.net/zh/artists/37-/",
+          "snippet": "克拉格生于利物浦，自1979年以来，一直在德国乌帕塔尔生活和工作，并于柏林艺术学院（Berlin Academy of Arts）和杜塞尔多夫艺术学院（Düsseldorf Academy of Fine Arts）授课。"
+        },
+        {
+          "title": "托尼·克拉格",
+          "url": "http://xxgk.cafa.edu.cn/cafa/tnklg203509.jhtml",
+          "snippet": "托尼·克拉格是极具影响力的英国著名雕塑家，也是英国当代艺术界的领军人物。1949年出生于英国利物浦，现生活、工作于德国伍珀塔尔，现任德国杜塞尔多夫艺术学院院长。"
+        },
+        {
+          "title": "“特纳奖”得主Tony Cragg的首个中国秀",
+          "url": "https://cafamuseum.org/exhibit/newsdetail/413",
+          "snippet": "托尼•克拉格（Tony Cragg）是极具影响力的英国著名雕塑家，曾于1988年获得英国最重要的艺术家大奖——特纳奖(Turner Prize)，现任德国杜塞尔多夫艺术学院院长。此行是托尼•克拉格 ..."
+        },
+        {
+          "title": "托尼•克拉格：雕塑与绘画展 - 英语点津",
+          "url": "http://language.chinadaily.com.cn/britishcouncil/2012-04/05/content_14984925.htm",
+          "snippet": "1949年出生于英国利物浦，现生活、工作于德国伍珀塔尔，现任德国杜塞尔多夫艺术学院院长。托尼•克拉格曾于1988年获得英国最重要的艺术家大奖——特纳奖 ..."
+        },
+        {
+          "title": "托尼·克拉格",
+          "url": "https://baike.baidu.com/item/%20Tony%20Cragg/57113384?fromModule=lemma_inlink",
+          "snippet": "托尼·克拉格（Tony Cragg），1949年出生于英国利物浦，英国后现代主义雕塑家、英国当代艺术界领军人物，毕业于英国皇家艺术学院，现任德国杜塞尔多夫艺术学院院长。"
+        }
+      ]
+    }
+  }
+}

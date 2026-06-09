@@ -1,0 +1,242 @@
+{
+  "questions": [
+    {
+      "index": 16,
+      "qid": "BC016",
+      "topic": "医学",
+      "ref": "阿司匹林"
+    },
+    {
+      "index": 21,
+      "qid": "BC021",
+      "topic": "医学",
+      "ref": "1953 年"
+    },
+    {
+      "index": 31,
+      "qid": "BC031",
+      "topic": "科技",
+      "ref": "制造业"
+    },
+    {
+      "index": 50,
+      "qid": "BC050",
+      "topic": "地理",
+      "ref": "南北朝"
+    },
+    {
+      "index": 74,
+      "qid": "BC074",
+      "topic": "历史",
+      "ref": "潘虹"
+    }
+  ],
+  "wins": {
+    "A": 0,
+    "D": 0,
+    "F": 1
+  },
+  "recalls": {
+    "A": 0,
+    "D": 2,
+    "F": 1
+  },
+  "total": 5,
+  "results": [
+    {
+      "method": "A",
+      "qid": "BC016",
+      "answer": "在40年后，另一个大陆上的第一次以移民后裔命名的战争结束，同年该国最伟大的人中的Top30当选为总统，并与19年后导致了第二次同名称战争\"?\n                                                                *   Wait. \"与19年后导致了第二次同名称战争\" -> \"and 19 years later led to the second war of the same name\".\n                                                                *   If the year we are looking for is **1919**?\n                                                                    *   19 years after 1900?\n                                                                    *   Wait, 1919: Treaty of Versailles.\n                                                                    *   Wait, World War I (第一次世界大战) ended in 1918",
+      "accuracy": "N",
+      "recall": false,
+      "total_wall_s": 20.1,
+      "llm_calls": 1,
+      "search_calls": 1,
+      "hallucination_rate": null
+    },
+    {
+      "method": "D",
+      "qid": "BC016",
+      "answer": "当前信息不足以确定。未从搜索结果中提取到任何与问题相关的事实声明。",
+      "accuracy": "N",
+      "recall": true,
+      "total_wall_s": 319.2,
+      "llm_calls": 29,
+      "search_calls": 9,
+      "hallucination_rate": null,
+      "verification": "0Y/0P/0N",
+      "n_claims": 0,
+      "fallback_triggered": false
+    },
+    {
+      "method": "F",
+      "qid": "BC016",
+      "answer": "",
+      "accuracy": "N",
+      "recall": false,
+      "total_wall_s": 7.5,
+      "llm_calls": 1,
+      "search_calls": 0,
+      "hallucination_rate": null,
+      "verification": "0Y/0P/0N",
+      "n_claims": 0,
+      "chain_success": false
+    },
+    {
+      "method": "A",
+      "qid": "BC021",
+      "answer": "抱歉，基于您提供的搜索结果，并未包含关于这位“爱好研究的小人物”、其发现的物质以及相关投产年份的信息。因此，无法为您提供准确的回答。",
+      "accuracy": "N",
+      "recall": false,
+      "total_wall_s": 37.9,
+      "llm_calls": 1,
+      "search_calls": 1,
+      "hallucination_rate": null
+    },
+    {
+      "method": "D",
+      "qid": "BC021",
+      "answer": "据 https://www.youtube.com/watch?v=4ocky7EUOEI，结构化知识表中仅记载了114年前一位海军大臣意外获胜并引入「外血液」系统 [1]，以及该系统的生产地是一个遍布沙漠与阴谋的地带 [2]。\n\n由于知识表对于问题中涉及的“小人物”以及“该作品在中国投产的年份”等信息完全无法提供任何相关内容，当前信息不足以确定。",
+      "accuracy": "N",
+      "recall": false,
+      "total_wall_s": 301.7,
+      "llm_calls": 31,
+      "search_calls": 9,
+      "hallucination_rate": 0.0,
+      "verification": "2Y/0P/0N",
+      "n_claims": 2,
+      "fallback_triggered": false
+    },
+    {
+      "method": "F",
+      "qid": "BC021",
+      "answer": "",
+      "accuracy": "N",
+      "recall": false,
+      "total_wall_s": 7.9,
+      "llm_calls": 1,
+      "search_calls": 0,
+      "hallucination_rate": null,
+      "verification": "0Y/0P/0N",
+      "n_claims": 0,
+      "chain_success": false
+    },
+    {
+      "method": "A",
+      "qid": "BC031",
+      "answer": "基于您提供的搜索结果，无法找到符合“创办于1993年、2010年上市、2024年中国民营企业500强、创始人为恢复高考后第一批大学生”这一系列条件的具体公司信息。\n\n提供的搜索结果主要涵盖了恢复高考的历史背景、意义、部分校友的个人经历（如杨大俊及其创办的亚盛医药，但其创办与上市时间与您描述的不符），以及清华校友的相关资讯，未涉及您所描述的特定公司。",
+      "accuracy": "N",
+      "recall": false,
+      "total_wall_s": 38.3,
+      "llm_calls": 1,
+      "search_calls": 1,
+      "hallucination_rate": null
+    },
+    {
+      "method": "D",
+      "qid": "BC031",
+      "answer": "针对您的问题，回答如下：\n\n### 一、 关于问题前提的澄清与修正\n\n问题中“2024年中国民营企业 500 强上榜”这一前提存在以下不准确之处：\n1. **上榜主体不符**：据新浪财经（https://finance.sina.cn/2025-06-16/detail-infaftuk3316735.d.html ）报道，上榜的并非该公司（巨星科技）本身，而是该公司的**母公司“巨星控股集团”** [5]。\n2. **榜单年份不符**：据人民日报客户端（https://www.peopleapp.com/column",
+      "accuracy": "N",
+      "recall": true,
+      "total_wall_s": 237.9,
+      "llm_calls": 26,
+      "search_calls": 9,
+      "hallucination_rate": 0.0,
+      "verification": "1Y/0P/0N",
+      "n_claims": 11,
+      "fallback_triggered": false
+    },
+    {
+      "method": "F",
+      "qid": "BC031",
+      "answer": "根据知识表，关于您提到的公司及行业回答如下：\n\n1. **公司及主攻行业**：该创办于1993年的公司为顺丰（后更名为顺丰控股）[2][3]。据 https://baike.baidu.com/item/%E9%A1%BA%E4%B8%B0%E6%8E%A7%E8%82%A1/20445918 ，这家公司主攻**快递物流行业**（是一家快递物流综合服务公司）[1]。\n2. **前提信息说明**：对于您问题中提到的“创始人是恢复高考后的第一批大学生、获得硕士学位、工作至30岁创办公司",
+      "accuracy": "N",
+      "recall": true,
+      "total_wall_s": 285.5,
+      "llm_calls": 22,
+      "search_calls": 8,
+      "hallucination_rate": 0.0,
+      "verification": "3Y/0P/0N",
+      "n_claims": 3,
+      "chain_success": true
+    },
+    {
+      "method": "A",
+      "qid": "BC050",
+      "answer": "根据您提供的搜索结果，这种已灭绝的鱼类是**白鲟**（又称中华匙吻鲟、中国剑鱼）。\n\n以下是针对您问题的详细解答：\n\n1.  **生存时期（名字来源于地名）：**\n    白鲟生存于**侏罗纪**（Jurassic）至白垩纪时期。其中，“侏罗纪”的名称来源于欧洲的**汝拉山脉**（Jura Mountains，位于法国与瑞士边境）。\n\n2.  **最初被发现的地方（夏天盛开一种花朵）：**\n    白鲟（特别是其化石记录，如刘氏原白鲟）在**辽宁**（如辽西凌源、北票等地）有重要发现。辽宁省",
+      "accuracy": "N",
+      "recall": false,
+      "total_wall_s": 22.7,
+      "llm_calls": 1,
+      "search_calls": 1,
+      "hallucination_rate": null
+    },
+    {
+      "method": "D",
+      "qid": "BC050",
+      "answer": "基于提供的结构化知识表，针对您的问题，回答如下：\n\n关于您提到的鱼类，知识表中记录了“燕鲟属”的相关信息：\n*   它生存于早白垩世阿普第期 [1]。\n*   它属于辐鳍鱼纲、鲟形目、北票鲟科 [2]。\n*   其化石最初发现于河北省丰宁满族自治县的义县组 [3]。\n\n关于您问题中涉及的以下细节：\n1. “生存时期名字来源于一个地名”；\n2. “最初被发现的地方夏天会盛开一种花朵”；\n3. “所属的纲科名称与一个电影角色有关，且该角色属于哪个朝代”；\n\n当前知识表中均未包含上述信息，因此无法确定相关内容。",
+      "accuracy": "N",
+      "recall": false,
+      "total_wall_s": 231.8,
+      "llm_calls": 32,
+      "search_calls": 9,
+      "hallucination_rate": 0.0,
+      "verification": "3Y/0P/0N",
+      "n_claims": 4,
+      "fallback_triggered": false
+    },
+    {
+      "method": "F",
+      "qid": "BC050",
+      "answer": "",
+      "accuracy": "N",
+      "recall": false,
+      "total_wall_s": 8.4,
+      "llm_calls": 1,
+      "search_calls": 0,
+      "hallucination_rate": null,
+      "verification": "0Y/0P/0N",
+      "n_claims": 0,
+      "chain_success": false
+    },
+    {
+      "method": "A",
+      "qid": "BC074",
+      "answer": " 让我们重新审视“某高成就科学家”的线索：\n                                                    *   该科学家的妻子生于某发达省会，他们俩在科学家26岁时结婚。\n                                                    *   20余年前某高成就科学家出生（相对于女演员出生年份 $Y_a$）。\n                                                    *   也就是说，$Y_a - Y_s = 20$-something。\n                                                    *   如果女演员a出生于1970年代，那么科学家出生于1950年代？\n                                                    *   如果女演员a出生于1960年代，那么科学家出生于1940年代？\n                                                    *   如果女演员a出生于1950年代",
+      "accuracy": "N",
+      "recall": false,
+      "total_wall_s": 15.2,
+      "llm_calls": 1,
+      "search_calls": 1,
+      "hallucination_rate": null
+    },
+    {
+      "method": "D",
+      "qid": "BC074",
+      "answer": "张雨绮\n\n[参数化知识推理，3/6 约束通过]",
+      "accuracy": "N",
+      "recall": false,
+      "total_wall_s": 214.8,
+      "llm_calls": 30,
+      "search_calls": 4,
+      "hallucination_rate": null,
+      "verification": "0Y/0P/0N",
+      "n_claims": 4,
+      "fallback_triggered": true
+    },
+    {
+      "method": "F",
+      "qid": "BC074",
+      "answer": "潘虹\n\n[参数化知识推理，4/6 约束通过]",
+      "accuracy": "Y",
+      "recall": false,
+      "total_wall_s": 450.7,
+      "llm_calls": 39,
+      "search_calls": 11,
+      "hallucination_rate": 0.143,
+      "verification": "6Y/0P/1N",
+      "n_claims": 7,
+      "chain_success": true
+    }
+  ]
+}

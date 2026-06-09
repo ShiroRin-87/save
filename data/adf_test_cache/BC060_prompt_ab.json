@@ -1,0 +1,815 @@
+{
+  "question": "一款使用Unity3D制作的策略向游戏，其中的某个组织与真实地名相同，请问游戏中该组织的领导者名称是？",
+  "ref": "博士",
+  "versions": {
+    "V0_original": {
+      "hypotheses_prompt": "你是一个知识渊博的推理助手。请根据以下谜题的约束条件，依靠你自己的知识推测可能的答案。\n\n谜题：一款使用Unity3D制作的策略向游戏，其中的某个组织与真实地名相同，请问游戏中该组织的领导者名称是？\n\n输出一个JSON字符串数组，包含5个方向各异的最终候选答案。每个元素直接是答案名称，覆盖不同方向。只输出JSON数组，不要其他文字。\n\n示例：[\"青城山\",\"都江堰\",\"乐山大佛\",\"峨眉山\",\"莫高窟\"]\n\nJSON数组：",
+      "hypotheses_raw": "[\"曹操\",\"凯撒\",\"嬴政\",\"孙武\",\"哈特谢普苏特\"]",
+      "hypotheses_reasoning": "我们被问到：“一款使用Unity3D制作的策略向游戏，其中的某个组织与真实地名相同，请问游戏中该组织的领导者名称是？” 需要输出5个候选答案的JSON数组。必须基于已知知识推测。谜题：Unity3D制作的策略游戏，其中某个组织名和真实地名相同，问该组织领导者的名字。\n\n我们必须思考哪些知名的策略游戏是用Unity制作的，并且有一个组织（派系、势力等）名称与现实中的地名相同。可能是历史策略、科幻策略等。组织可能是“罗马”、“威尼斯”、“米兰”之类的真实地名，但在游戏中是一个组织。领导者是游戏中该组织的首领。\n\n注意：谜题说“策略向游戏”，可能是4X、即时战略、回合制策略等。用Unity3D制作。这可能是近几年的游戏。一个著名的策略游戏系列《文明》？但文明系列不是Unity做的，使用的是自研引擎。那《群星》？P社游戏一般用克劳塞维茨引擎，不是Unity。《全面战争》系列？不是Unity。《无尽》系列？比如《无尽空间》《无尽传奇》是Unity做的吗？振幅工作室的游戏使用Unity。比如《无尽空间2》中，有一个派系叫“联合帝国”（United Empire），但这不是真实地名。那“地平线”？不。《奇迹时代》？《Age of Wonders》系列，最新作《Age of Wonders 4》是用Unity做的吗？《Age of Wonders: Planetfall》是Unity。《Age of Wonders 4》也是Unity。派系中有真实地名吗？《Age of Wonders》有各种种族和领袖，不一定用真实地名作为组织名。\n\n考虑一款游戏：《三国志》系列？光荣的《三国志》通常不是Unity。但有一些三国策略游戏是Unity做的，比如《三国：全面战争》不是Unity。不过有一些国产策略游戏用Unity，比如《汉末霸业》？但组织名真实地名？三国时期地名，但组织通常以势力名，如“曹操军”，不是地名。\n\n另一个可能性：《部落冲突》？Supercell用的是自研引擎。《皇室战争》是Unity，但那是策略？即时策略/卡牌。有组织叫“Arena”？不。\n\n或许是一些独立策略游戏，比如《冰汽时代》（Frostpunk）是虚幻引擎，不是Unity。《钢铁雄心》？P社不用Unity。\n\n中国的策略游戏：比如《率土之滨》？那是网易的，可能用Unity。里面有“州”等，组织是真实地名。但问问领导者名称？率土之滨的势力？不太确定。\n\n另一个角度：谜题可能特指某个知名游戏，其组织与真实地名相同。比如“罗马”是地名，在某个Unity策略游戏中有一个组织叫“罗马”，领导者是凯撒？或者“元老院”？但游戏是啥？《罗马2：全面战争》不是Unity。\n\n也许游戏是《文明6》？但文明6的引擎是LORE？不是Unity。文明6有各种文明，组织名=真实地名（国家名），领导者是真实历史人物。例如罗马的领导者是图拉真？但谜题说“某个组织与真实地名相同”，文明系列是“文明”，但组织更可能是派系。谜题中“组织”可能指公会、公司等。可能指的是赛博朋克或者科幻背景的策略游戏，里面组织用真实地名，比如“上海”、“东京”等公司。比如《赛博朋克2077》不是策略游戏。《暗影狂奔》？不是Unity。\n\n《XCOM》？用的虚幻。不是。\n\n想想知名的Unity策略游戏：《Cities: Skylines》（城市天际线）是城市建造模拟，组织？没有特别组织的领导者。《Two Point Hospital》是模拟经营，管理医院，地名是虚构。《冰汽时代》不是。\n\n《Kerbal Space Program》是Unity，但它是模拟，不是策略。不过也算有策略元素，组织吗？有“Kerbal Space Center”，但本身不是真实地名。\n\n即时战略游戏：例如《钢铁收割》？那是柴油朋克，不是Unity（用虚幻？）。《Company of Heroes》？不是Unity。\n\n也许游戏是《BattleTech》？Harebrained Schemes做的，使用Unity。策略回合制。里面有各种派系，如“House Davion”，“Free Worlds League”等，但都不是真实地名，是星际帝国。\n\n《暗黑地牢》？Unity，但算策略？不太像。\n\n《Into the Breach》？策略，但不是组织。\n\n《瘟疫公司》？Unity？里面的组织“世界卫生组织”等，但那是真实的。不过“组织”指的是玩家扮演的病原体？没有领导者。\n\n《Risk of Rain 2》？不是策略。\n\n《Slay the Spire》？卡牌策略，没有真实地名组织。\n\n也许是一款国产策略游戏：《三国志・战略版》？阿里游戏，Unity制作，里面有真实地名的“州”？组织可能是“益州”、“冀州”等。领导者是各州州牧？比如“刘璋”是益州牧。\n\n《率土之滨》：里面有无数的州，组织可以是以地名命名的同盟？不太确定。\n\n《文明》手机版？但不一定是Unity。\n\n更可能是《全面战争》？不是Unity。\n\n一款显著的游戏：《This War of Mine》？不是策略，是生存。\n\n《Frostpunk》？虚幻。\n\n《文明6》的移动版本？可能用Unity移植，但原版不是。\n\nThink about recent strategy games made with Unity: \"Age of Wonders 4\", “Age of Wonders: Planetfall”. Planetfall factions: Vanguard, Kir'Ko, Amazon, Syndicate, Assembly, Shakarn? None are Earth place names.\n\n\"Humankind\" by Amplitude? They use Unity! Yes, Amplitude's games are made with Unity (Endless Space 2, Endless Legend, Humankind). Humankind is a historical 4X strategy game where you build a civilization. You can choose different cultures. In Humankind, you start as a nomadic tribe and then adopt cultures. But there aren't real place names as \"organizations\" exactly. You have empires like \"Babylonians\", \"Romans\", etc. Leaders are avatars.\n\n\"Endless Legend\": fantasy, not real places.\n\n\"Endless Space 2\": sci-fi.\n\nWhat about \"Crusader Kings 3\"? Paradox uses Clausewitz, not Unity.\n\nMaybe it's a mobile strategy game. Many mobile strategy games use Unity, e.g., \"Rise of Kingdoms\" (by Lilith Games). It features historical civilizations: Rome, China, etc. Leaders are commanders like Julius Caesar, Sun Tzu, etc. Is \"Rome\" an organization? The player's city/alliance? \"Rise of Kingdoms\" is an RTS/strategy game made with Unity. The game has various civilizations that are real place names: Rome, Germany, Britain, France, etc. Inside the game, the \"organization\" could be the \"Civilization\" or \"Alliance\" named after a place. But the question says \"某个组织与真实地名相同\" (a certain organization shares the name with a real place name). Possibly \"Rome\" as a civilization, and its leader? But civilizations have multiple leaders. Could be an Alliance name that players create.\n\nAnother candidate: \"Evony\"? Not sure.\n\nWhat about \"Total War\" series? But they use TW Engine, not Unity.\n\nMaybe \"三国志14\"? Not Unity, but Koei Tecmo uses their own engine. However, some versions or spin-offs? Unlikely.\n\nThere's a game called \"东方帝国\" (Oriental Empires)? Made with Unity. It's a turn-based strategy set in ancient China. Real place names as factions? Factions include Shang, Zhou, etc., which are historical dynasties/places. Leaders would be historical kings.\n\nBut let's think more broadly: \"一个组织与真实地名相同\". Could be something like \"Venice\" in a game where Venice is a faction. Many strategy games have Venice as a faction. But we need a Unity game.\n\nWhat about \"Europa Universalis IV\"? Not Unity. \"Civilization V\" had Venice as a civilization, leader Enrico Dandolo. But not Unity.\n\nWhat about indie games like \"Bad North\"? It's a strategy roguelike, Unity, but factions are just \"Vikings\".\n\n\"The Battle of Polytopia\": a mobile 4X strategy game, made with Unity. It features tribes named after real or fictional places? Tribes include Xin-Xi, Imperius, Bardur, etc. None are real place names, they are fantasy.\n\n\"Hexonia\"? Similar, tribes: Roman, Egyptian, etc. Real place names. Factions might be civilizations like Rome, and leaders are named? In Hexonia, each tribe has a unique leader. For example, Roman tribe leader is \"Caesar\"? I don't know exactly.\n\n\"World Conqueror\" series by EasyTech? They use a custom engine maybe.\n\nAnother possibility: \"Company of Heroes\" is Relic's Essence Engine. Not Unity.\n\nWhat about \"Northgard\"? It's a strategy game, made with Unity! Northgard is by Shiro Games, uses Unity. It's a Viking strategy game. The clans: Stag, Goat, Wolf, Raven, Bear, etc. Not real place names. (Unless \"Northgard\" itself is a place? Fictional.)\n\nWhat about \"Dune: Spice Wars\"? Made with Unity? Yes, by Shiro Games, uses Unity. It's a 4X RTS. Factions are Houses: Atreides, Harkonnen, etc. These are not real place names, they are noble houses. Arrakis is a place, but not an organization.\n\n\"Warhammer 40,000: Battlesector\"? Uses Unity. Factions are Space Marines, Tyranids, not real places.\n\n\"Warhammer 40,000: Gladius - Relics of War\"? Uses Unity. Factions are Space Marines, Orks, Necrons, Astra Militarum, etc. No real places.\n\n\"Warhammer: Age of Sigmar - Storm Ground\"? Unity.\n\nHmm. Maybe it's a game set in modern day, with real place names. \"Wargame\" series by Eugen Systems? Uses IRISZOOM engine, not Unity.\n\n\"Call to Arms\" / \"Men of War\" series? Not Unity.\n\nWhat about \"Rebel Inc.\"? By Ndemic Creations, uses Unity. It's a strategy game. You stabilize a country, regions named after fake places like \"Saffron Fields\", etc. Not real places.\n\n\"Plague Inc.\" uses real place names, but organizations? You play as a pathogen, not an organization leader. Maybe the \"World Health Organization\"? No named leader though.\n\n\"Frostpunk\" - not Unity.\n\nWhat about \"Kenshi\"? Not Unity.\n\n\"RimWorld\" is Unity! But it's a colony sim. Factions are randomly generated or lore-based: Outlander Union, Pirate Bandits, etc. Not real places.\n\n\"Factorio\" is not Unity.\n\n\"Satisfactory\" is not exactly strategy (factory building), Unreal Engine.\n\n\"Anno 1800\" is not Unity (Ubisoft).\n\nLet's think of Chinese games. In China, many strategy games are made with Unity, e.g., \"率土之滨\" (Infinite Borders), \"三国志·战略版\" (Three Kingdoms Tactics), \"鸿图之下\" (Grand Conquest), etc. These are mobile strategy games. They feature ancient Chinese places. Organizations: \"同盟\" (Alliances) often named after places like \"洛阳\" etc. However, the question likely refers to a specific in-game organization that shares a name with a real place, whose leader has a specific name. Could be a fixed NPC faction.\n\nFor instance, in \"三国志·战略版\" (Three Kingdoms Tactics), there are Yellow Turbans? No, Yellow Turbans are a faction. What about \"益州\"? The game has resource states, but leaders? There are NPC city guards? Not clear.\n\nMaybe a game like \"江南百景图\"? It's a simulation/city builder, not exactly strategy.\n\nAnother idea: a game called \"全面战争模拟器\" (Totally Accurate Battle Simulator - TABS)? Made with Unity, but it's physics-based, not strategy, and no real place organizations.\n\nWhat about \"钢铁雄心\" but it's not Unity.\n\nWait, \"This Is the Police\"? Strategy/adventure, Unity. Places like \"Freeburg\" fictional.\n\n\"Rebel Inc.\" uses fictional regions.\n\nCould it be \"The Banner Saga\"? It's a strategy RPG, Unity, but places are fictional.\n\nWhat about \"Desperados III\"? Isometric strategy, Unity. Locations are real places (Colorado, etc.), but organizations? The \"Agency\" or something? Not real place. \"Mimimi Games\" uses Unity.\n\nMaybe an RTS like \"Iron Harvest\"? Unreal.\n\nWhat about \"Ancestors: The Humankind Odyssey\"? Not strategy.\n\nLet's consider \"EVE Online\"? Not Unity, it's CCP's own engine. \"Elite Dangerous\"? Cobra engine.\n\nMaybe \"Star Sector\"? Made with Java.\n\n\"Starsector\" is not Unity.\n\nWhat about \"Age of Empires II: Definitive Edition\"? Not Unity.\n\nMaybe it's a mobile card strategy game like \"Clash Royale\" (Unity). Clash Royale is by Supercell, made with Unity. It is a real-time strategy/tower defense game. The organizations are \"Clans\" (called Clans). Do players form clans named after real places? Possibly, but no fixed \"leader\" name in the game's content. There are NPC leaders? The game features arenas, each arena is a place: \"Goblin Stadium\", \"Bone Pit\", etc., not real places.\n\n\"Brawl Stars\" also by Supercell, Unity, but not really strategy.\n\n\"Lords Mobile\" is a strategy game, made with Unity. It has a world map, and guilds. Might have a fixed organization? \"Kingdom\" maybe? Not sure.\n\n\"Rise of Kingdoms\" is highly likely: It's a Unity-based mobile strategy game. Civilizations are real places: Rome, China, Japan, etc. And each civilization has an initial leader/commander? For example, Rome has Scipio, Caesar, etc. Or the \"organization\" could be an Alliance. Alliances can be named anything, but that's user-generated. There might be a storyline with a particular organization.\n\nAnother big strategy game: \"三国志14 with Power Up Kit\" nothing Unity.\n\nCould it be \"Cities: Skylines\"? Paradox's city-builder, Unity. Organizations? Unique buildings, companies. There's no overarching organization.\n\nWhat about \"XCOM 2\"? Unreal.\n\nWait, \"Phoenix Point\"? It's by Snapshot Games, made with Unity. It's a turn-based strategy game similar to XCOM. The factions: New Jericho (a city), Synedrion, Anu's Disciples. New Jericho is technically a real place name? There is a real city Jericho. But it's \"New Jericho,\" maybe they mean an exact match of a real place name. Synedrion is a Greek word, Anu is a god. Not an exact real place name.\n\nAnother strategy game: \"Fell Seal: Arbiter's Mark\"? Tactics RPG.\n\n\"The Last Spell\"? Unity, tactical RPG with strategy, but fantasy places.\n\nWhat about \"Humankind\"? The cultures are real historical places, but they are called \"cultures\", not organizations. The leaders are generic avatars.\n\nCould it be \"Total War: Three Kingdoms\"? Not Unity.\n\nLet's think about a dead giveaway: \"某个组织与真实地名相同\" - so an organization whose name is exactly a real-world geographic location. Like a \"City\" that is a faction. In many games, cities are factions. For example, \"威尼斯\" (Venice) in some games. But which Unity strategy game features a faction named after a real place, with a specific leader name?\n\nMaybe \"文明6\" mobile version was made with Unity? Not sure.\n\nWhat about \"帝国时代2\" but it's Genie engine.\n\nWhat about a game called \"Suzerain\"? It's a narrative strategy game, made with Unity? I think it's made with Ren'Py or Unity. Suzerain features a country called Sordland, and organizations like the \"Oligarchs\" or political parties? Real place names like \"Arcasia\" (not real).\n\nMaybe it's a game that simulates real-world geopolitics. \"Realpolitiks\"? Made by Jujubee, uses Unity. \"Realpolitiks\" has countries with real names. You play as a leader of a country. The organization might be \"NATO\", \"EU\", \"UN\"? NATO is an organization, and it's a real name, but not a real \"地名\" (place name). Place name usually means a geographical location (city, country, region). Wait, \"地名\" means place name, e.g., \"London\", \"Paris\", \"Shanghai\".\n\nCould the organization be a company named after a place? Like \"Ubisoft Montreal\"? Not a game.\n\nWhat about \"Grand Theft Auto V\"? Not strategy.\n\nWhat about \"Watch Dogs: Legion\"? It's set in London, you lead DedSec, not a place.\n\nWe need a strategy game made with Unity. A prominent one: \"Northgard\". The clans are not real places.\n\n\"Wartile\"? A Viking strategy game.\n\n\"Panzer Corps 2\"? It's a strategy game, made with Unity. It's a World War II hex strategy game. The organizations are Axis and Allies countries, which are real places. For example, \"Germany\", \"Italy\", \"Soviet Union\". And they have historical leaders like \"Hitler\", \"Stalin\", \"Mussolini\". But the leaders are actual historical figures; the game probably uses their names? However, Panzer Corps 2 is WWII, so organizations are nations, and leaders are historical. But the problem says \"某个组织与真实地名相同\" - \"Germany\" is a real place name, organization could be \"Wehrmacht\", which is not a place. But \"Germany\" as a faction is both a place and an organization in the context of the game (the army). The leader would be the historical leader. But would a puzzle ask for \"Hitler\"? That seems a bit sensitive, but possible. There are many WWII games.\n\n\"Panzer Corps\" series is by Slitherine. Slitherine uses Unity for many games.\n\n\"Order of Battle: World War II\" is another Unity strategy game. Factions are countries like \"Japan\", \"USA\", \"UK\". Leaders? There's a campaign with specific generals, but the \"leader\" of the faction is the player or AI, perhaps represented by a figure like \"Emperor Hirohito\"? Or you command units.\n\n\"Strategic Command: World War II\"? Not sure.\n\nAnother Slitherine game: \"Warhammer 40,000: Gladius\" no.\n\n\"Fantasy General II\"? Fictional.\n\nMaybe a game like \"三国志\" or \"Han Dynasty\" themed. \"Total War: THREE KINGDOMS\" not Unity. \"Romance of the Three Kingdoms\" games not Unity.\n\nCould it be a modern military strategy game like \"Call of War\"? Not Unity.\n\nWhat about \"Hearts of Iron IV\"? Not Unity.\n\nLet's search my memory for popular Chinese mobile strategy games: \n- \"率土之滨\" (Infinite Borders) - Unity. The game has organizations called \"同盟\" (Alliances). Player alliances often use real place names like \"洛阳\" etc., but no fixed leader. The game's world map is based on ancient China. Factions? No predefined factions, just players.\n- \"三国志·战略版\" - Unity. Same as above.\n- \"鸿图之下\" - Unity. Same.\n- \"万国觉醒\" (Rise of Kingdoms) - Unity. Civilizations are countries. Leaders of civilizations? There are initial commanders. Each civilization has a unique commander. For example, Rome has Scipio, Germany has Hermann, Britain has Boudica, France has Joan of Arc, China has Sun Tzu, Japan has Kusunoki Masashige, Spain has Pelagius, Korea has Eulji Mundeok, Arabia has Baibars, Ottoman has Mehmed II, Viking has Bjorn Ironside, etc. This is a very famous strategy game, widely known. The question: \"某个组织与真实地名相同\". In Rise of Kingdoms, civilizations are essentially \"organizations\" you choose and develop. The civilization name is a real place or historical country name. The leader (aka initial commander) would be the named character. This fits well. The leader name would be like \"Scipio\" or \"Caesar\" (Actually in RoK, the starting commander for Rome is Scipio Africanus, I think? Or is it? In Rise of Kingdoms, initial commanders: Rome -> Scipio Africanus (Epic). Germany -> Hermann. Britain -> Boudica. France -> Joan of Arc. China -> Sun Tzu. Japan -> Kusunoki Masashige. Spain -> Pelagius. Korea -> Eulji Mundeok. Arabia -> Baibars. Ottoman -> Osman I. Viking -> Bjorn Ironside. Byzantium -> Belisarius. Etc. However, the question might refer to the \"Alliance\" called something, but player alliances are custom. There is an organization in the game called \"Kingdom\", which is named after a place? Kingdoms are numbered, not named. But the game also features \"Holy Sites\" and \"Lost Kingdom\". Not sure.\n\nBut \"Rise of Kingdoms\" is a strong possibility. Other similar game: \"Evony: The King's Return\" - it's a strategy game, Unity. It has cultures like \"America\", \"China\", etc. Leaders are generals like \"George Washington\", \"Joan of Arc\".\n\nAnother: \"State of Survival\" - zombie strategy, Unity. \n\"Last Shelter: Survival\" - Unity.\n\nWhat about \"Civilization VI\" on mobile? Ported by Aspyr, maybe using Unity? But Civ6 is not intrinsically Unity.\n\nAnother possibility: \"Humankind\" is a 4X by Amplitude, uses Unity. It has cultures that are real place names (e.g., Egypt, Zhou, Rome). The leader is a personalized avatar you create, no fixed names? Actually in Humankind you create your own leader persona; you pick an archetype and name, no fixed historical names. So unlikely.\n\n\"Age of Wonders: Planetfall\" - sci-fi, no real places.\n\n\"Age of Wonders 4\" - fantasy, no real places.\n\n\"Endless Legend\" - fantasy.\n\n\"Endless Space 2\" - sci-fi.\n\nWhat about \"XCOM: Chimera Squad\"? Uses Unreal Engine 3? Not Unity.\n\n\"Battletech\" - sci-fi.\n\nA very famous Unity strategy game: \"Kerbal Space Program\" - but it's a simulation, not strategy.\n\nWhat about \"Mini Metro\"? Strategy/puzzle, Unity, but you design metro maps with real city names, but there is no \"organization leader\". The cities are real places (Paris, London, etc.). You don't have an organization or leader.\n\n\"Mini Motorways\" - same.\n\n\"Bad North\" - small RTS, Unity. No real places.\n\n\"Into the Breach\" - no.\n\n\"FTL: Faster Than Light\" - not Unity (custom).\n\n\"Slay the Spire\" - not strategy 4X, card game.\n\n\"Monster Train\" - not.\n\nAnother genre: \"Tower defense\"? \"Bloons TD 6\" - Unity, strategy, no real places.\n\nMaybe it's a game like \"Rebel Inc.\" But already debunked.\n\n\"Plague Inc.\" - maybe the \"organization\" is a country? You upgrade symptoms, not leaders.\n\nCould it be \"Suzerain\"? The country is Sordland, not real. \"Nation\" is not a place.\n\nPerhaps the game is \"Diplomacy is Not an Option\"? Not famous.\n\nWhat about \"Manor Lords\"? Unreal Engine.\n\n\"Farthest Frontier\"? Unity, city builder. Place names fictional.\n\n\"Against the Storm\"? Unity, fantasy.\n\n\"They Are Billions\"? Unity, RTS, but places are human colonies, fictional.\n\nMaybe \"Shadow Empire\"? By Slitherine, but not Unity.\n\nWhat about \"Old World\"? By Mohawk Games, uses Unity. It is a historical 4X strategy game similar to Civilization. It features several playable civilizations based on ancient real places: Assyria, Babylon, Carthage, Egypt, Greece, Rome, etc. Leaders are historical figures like \"Ashurbanipal\", \"Nebuchadnezzar\", \"Dido\", \"Hatshepsut\", \"Philip\", \"Caesar\", etc. This fits perfectly! Old World is a Unity-based strategy game. The \"organization\" would be the Nation/Civilization (which is also a real place name, like Rome, Egypt). The leader's name is the historical leader of that civilization in the game. The question says \"某个组织与真实地名相同，请问游戏中该组织的领导者名称是？\" This could refer to any of the factions. So the answer could be a leader name. The question asks to provide 5 possible candidate answers that cover different directions. So we can list the leaders of different civilizations in Old World. For example, Rome's leader is \"Gaius Octavius\"? Wait, Old World leaders: \n- Assyria: Ashurbanipal (?)\n- Babylon: Nebuchadnezzar II\n- Carthage: Dido\n- Egypt: Hatshepsut? or Ramesses?\n- Greece: Philip II of Macedon? or Leonidas? Actually in Old World, Greece is led by Philip II. Rome is led by Caesar? Let's check: In the base game, the leaders are: \n  Assyria - Ashurbanipal\n  Babylon - Nebuchadnezzar II\n  Carthage - Dido\n  Egypt - Hatshepsut\n  Greece - Philip II\n  Rome - Caesar (Gaius Julius Caesar)? Or \"Augustus\"? The game has \"Caesar\" as the leader. Later DLCs add more: Persia - Cyrus, etc.\nThis is a very strong candidate because \"Old World\" is a well-known Unity strategy game, and the factions are real historical places, each with a singular leader. The puzzle likely expects a single specific answer, but asks us to output 5 candidates covering different directions. It could mean different possible games or different leaders from the same game? \"覆盖不同方向\" means covering different directions. So we should list 5 different answers that could be the answer, representing different possibilities or interpretations. For example: 5 different leader names from different possible games, or 5 leaders from Old World? The prompt says: \"输出一个JSON字符串数组，包含5个方向各异的最终候选答案。每个元素直接是答案名称，覆盖不同方向。\" This implies we need to provide 5 distinct guesses for the answer, representing different directions (e.g., different games, different leaders). The answer should be a name. So we can propose leaders from Old World, but also from other possible games like Rise of Kingdoms, Humankind (though leaders are custom, maybe \"Amanitore\" from Civ but not Unity). We should generate 5 plausible leaders from different Unity strategy games where the faction is a real place.\n\nLet's verify: \"Old World\" is definitely made with Unity (it's known for using Unity). Factions: Rome, Egypt, Babylon, etc. Leaders: \"Caesar\", \"Hatshepsut\", \"Nebuchadnezzar\", \"Dido\", \"Ashurbanipal\", \"Philip II\". Other candidates:\n- \"Rise of Kingdoms\" (万国觉醒): Civilizations: Rome (leader \"Scipio\"? actually starting commander is Scipio Africanus). Germany (Hermann). Britain (Boudica). France (Joan of Arc). Korea (Eulji Mundeok). etc.\n- \"Panzer Corps 2\": Factions: Germany (leader? The campaign might have the player as a general, but historical leader is \"Hitler\", perhaps the game avoids that; but the supreme commander is the player). Might not have a specific leader name.\n- \"Order of Battle: WWII\": Similar, probably has historical commanders, not a single faction leader.\n- \"Humankind\": Avatar is custom, no leader names.\n- \"Age of Wonders: Planetfall\": Places like \"Amazon\" are not real Earth places. (Wait, Amazon is a river/region, but the faction is a sci-fi version. Not a pure place name.)\n\nAnother Unity strategy game: \"Total War: THREE KINGDOMS\" is not Unity. What about \"Total War Battles: Kingdom\"? It's a mobile game, maybe Unity, set in medieval times? Factions might be real places.\n\n\"Worms W.M.D\" is strategy-ish, Unity, but places not.\n\nCould it be \"Armello\"? Fantasy board game strategy.\n\n\"Might & Magic: Heroes\" series? Not Unity.\n\n\"King's Bounty II\"? Unity. It's a strategy RPG. Factions: maybe real place names? It's set in Antara, fictional.\n\n\"Disciples: Liberation\"? Unity, strategy, fictional.\n\n\"Marvel's Midnight Suns\"? Strategy, Unreal.\n\n\"Cities: Skylines\" has no leader.\n\n\"GeoGuessr\" no.\n\nThere's also \"Humankind\" but leaders are custom. However, the game does have \"Cultures\" which are real places, and each culture has an AI persona with a historical name? In Humankind, AI personas are based on historical figures like \"Agamemnon\", \"Boudica\", \"Cleopatra\", etc. But they are not strictly \"leaders\" of the organization per se; they are competitors. The player leads their empire.\n\nAnother: \"三国汉之涛\" etc.\n\nWhat about \"三国杀\"? Card game, but strategy? Not Unity.\n\nPerhaps a game called \"Rebel Inc.\" already discussed.\n\n\"Plague Inc.\" countries are real, no leaders.\n\n\"Rebel Inc.\" has insurgent leaders with names? Yes, insurgent leaders have names like \"Big Brother\", etc., but not real places.\n\nMaybe \"The Battle of Polytopia\" has tribes, but names are fictional: Xin-xi, Imperius.\n\n\"Hexonia\" is a mobile strategy game heavily inspired by Polytopia, made with Unity. It has tribes like \"Roman\", \"Egyptian\", \"British\", etc. The leaders are named: for Rome, it's \"Caesar\"; for Egypt, \"Cleopatra\"? Actually Hexonia tribes: \n- Roman Empire (Leader: Caesar)\n- Egyptian Empire (Leader: Cleopatra)\n- British Empire (Leader: Victoria)\n- Japanese Empire (Leader: Oda Nobunaga)\n- Aztec Empire (Leader: Montezuma)\n- Korean Empire (Leader: Sejong)\n- etc.\nThis is a very good candidate: a Unity-based strategy game, with organizations (tribes/civilizations) that share exact real place names (Roman, Egyptian, etc.), and specific leader names. The question might ask for the leader's name of such an organization. It could be \"Caesar\" or \"Cleopatra\" or others.\n\nAnother game: \"World Conqueror 4\" by EasyTech, but it's not Unity I think, they have their own engine.\n\nWhat about \"European War 6\" etc.\n\nThere's also \"Age of History 2\" by Lukasz Jakowski? Not sure about engine, maybe Java.\n\n\"Rise of Nations\" not Unity.\n\n\"Civilization V\" has leaders but not Unity.\n\nLet's think of any indie game. \"Suzerain\" has leaders like \"Anton Rayne\" but the country is Sordland, not real.\n\n\"Not For Broadcast\" not strategy.\n\n\"Headliner\" no.\n\nWhat about \"This Is the President\"? You play as a president, country is fictional.\n\n\"Rogue State Revolution\"? Fictional country.\n\nMaybe it's a game about a specific city. \"Citystate\"? It's a city builder, you lead a country, but you name it yourself.\n\n\"Tropico\" series - you play as El Presidente, the island is fictional. Engine is not Unity.\n\nAnother angle: \"策略向游戏\" might be a broad category. Perhaps \"Lords Mobile\" where \"Kingdom\" is a place? In Lords Mobile, you join a kingdom, which is a server with a number, but not real places. However, guilds are called guilds. Some events have NPC organizations.\n\nWhat about \"State of Survival\": You have settlements. Story has factions. There's an organization called \"The Settlements\" but not real places.\n\nCould it be a Chinese game like \"无极仙途\"? Not strategy.\n\n\"模拟城市\" (SimCity)? Not Unity.\n\n\"城市：天际线\" is Cities Skylines, Unity. It has districts, but no organization leader.\n\nMaybe a game like \"东方：平野孤鸿\" (Oriental: Plain of Lonely Wild)? It's a city builder.\n\nAnother possibility: \"三国志战略版\" or \"率土之滨\" have fixed NPC faction called \"黄巾军\" (Yellow Turbans), not a place. Or \"洛阳\" (Luoyang) as a city, but its leader? The city is controlled by an NPC army led by \"何进\" (He Jin) maybe? In the game, there are city garrisons.\n\nBut the phrasing \"某个组织与真实地名相同\" suggests the organization's name is the place name. Like a \"Guild\" named \"Shanghai\", or a \"Faction\" named \"Venice\".\n\nWhat about \"EVE Online\"? There are corporations, but not Unity.\n\nWhat about \"Albion Online\"? Sandbox MMORPG, Unity. Cities are real-ish names? Thetford, Martlock, etc., not real places. Except \"Caerleon\" which is a real Welsh town? But Albion is an MMORPG, not explicitly a \"策略向游戏\" (strategy game), though it has PvP strategy.\n\nWhat about \"Foxhole\"? It's a top-down shooter/strategy. Made with Unreal? Actually Foxhole uses Unreal Engine.\n\n\"Running with Rifles\"? Unity, top-down shooter, not mainly strategy.\n\n\"Call of War\"? WW2 strategy, browser-based.\n\n\"Hearts of Iron IV\" not Unity.\n\nMaybe a space strategy game. \"Stellaris\" uses Clausewitz, not Unity. \"Sins of a Solar Empire\" not Unity. \"Endless Space 2\" is Unity. Factions: United Empire, Sophons, Lumeris, Vodyani, Cravers, Riftborn, Unfallen, Horatio. None are real places.\n\nWhat about \"星际殖民\" (Star Drive)? Not Unity.\n\n\"The Last Federation\"? Not Unity.\n\nPerhaps the game is \"Democracy 4\"? Made with Unity. It's a political strategy game. You play as the leader of a country. The countries are real places: USA, UK, Germany, etc. But the leader is you, and it's a simulation. There are NPCs like \"Hillary Clinton\", etc. Organizations? There are political parties, but party names aren't exactly places. Or maybe \"Democracy 4\" features countries, and the leader of the country is like \"President\" but the question asks for \"领导者名称\" which might be a specific historical figure? In Democracy 4, you can play as existing leaders? I think you create your own character.\n\n\"Political Process\" - not Unity.\n\nCould it be \"三国：全面战争\" mod? Not.\n\nLet's reconsider \"Old World\". \"Old World\" is a clear 4X game made with Unity, heavily inspired by Civilization. It features nations as factions, and each nation has a named leader. The puzzle asks for \"该组织的领导者名称\". This could be any of the leaders. Since the question is a puzzle, it likely has a single definitive answer. What could be the \"某个组织\"? Perhaps the puzzle refers to a specific well-known game and a specific organization. The puzzle might be from a riddle or trivia context. I am an AI, I need to provide 5 candidates based on my knowledge.\n\nOther Unity strategy games: \n- \"Battle Brothers\" is a turn-based tactical RPG, not strategy in the 4X sense, and no real place organizations.\n- \"Star Traders: Frontiers\" - sci-fi, no real places.\n- \"Crying Suns\" - sci-fi.\n- \"FTL\" - not Unity.\n\nWhat about \"Iron Harvest\"? Unreal.\n\"Company of Heroes 3\" - not Unity.\n\nMaybe \"A Total War Saga: Troy\"? Not Unity.\n\"Total War: Warhammer III\" - not Unity.\n\nWait, what about \"全面战争：三国\" (Total War: Three Kingdoms) - not Unity.\n\nThere is a Chinese game called \"三国志14\" not Unity. \"汉末霸业\" (Three Kingdoms: The Last Warlord) is a Chinese turn-based strategy game, and it's made with Unity! Yes, \"汉末霸业\" (The Last Warlord) is a Unity game. It's set in the Three Kingdoms period. The factions are warlords such as Cao Cao, Liu Bei, Sun Jian, etc. Their organizations are their forces, often named after them or their commandery? In the game, forces are based in cities (\"真实地名\"): e.g., \"许昌\" (Xuchang), \"洛阳\" (Luoyang), but the organization is the warlord faction. The game might have forces called \"曹操军\" or they are based in specific cities. If the \"organization\" is a city like \"洛阳\", who is the leader? The governor or the player? Not a single \"leader name\" for a city as an organization.\n\nAnother Chinese Unity strategy game: \"三国群英传8\" (Heroes of the Three Kingdoms 8)? Not Unity, I think it's using a proprietary engine.\n\n\"幻想三国志\" - RPG.\n\nWhat about \"大战略\" games? \"Advanced Tactics: Gold\"? Not Unity.\n\n\"Unity of Command\" - it's a WWII strategy game, but the engine is not Unity (custom, I think it's called Unity of Command engine? Ironically, the name has Unity but it's not built on Unity3D). But wait, \"Unity of Command II\" is made with Unity? Let's check. Unity of Command II is developed by 2x2 Games, and it is indeed built on Unity! So \"Unity of Command II\" is a strategy game made with Unity3D. It's a turn-based WWII strategy. The organizations are military units, but also the campaign scenarios feature the Axis and Allied sides. The factions are countries (real places). But do they have a \"leader\"? You play as military commanders; the leaders of the countries are not the focus. Except maybe you play as specific generals like \"Patton\" or \"Rommel\"? The game features HQs, and you can have named generals. For example, in Unity of Command II, the Axis faction is led by a named general? The campaign might have you playing as a specific army group. But it's not a clear \"organization with a real place name and a leader\".\n\nWhat about \"Panzer Corps 2\"? Made with Unity. It's WWII. Factions: Germany, Britain, USA, Soviet Union, etc. Are there faction leaders? The campaign is about the Wehrmacht. You play as the general, not the political leader. It might refer to \"Hitler\" but probably not a leader you control.\n\nWait, there's a game called \"Iron Conflict\" - not well-known.\n\nWhat about \"Broken Arrow\"? Not released yet.\n\n\"Warno\" - Unity. Warno is an RTS made by Eugen Systems, and yes, Warno uses Unity! (Eugen Systems previously used their IRISZOOM engine, but Warno is actually made with Unity? Wait, Warno is made with IRISZOOM, I think Steel Division 2 uses IRISZOOM. Warno uses IRISZOOM as well? Actually, rumors said Eugen might switch, but I'm not sure. Let's check: \"Warno\" uses the IRISZOOM engine. So not Unity.)\n\nWhat about \"Regiments\"? It's a real-time tactics game, made with Unity. Factions are NATO and Warsaw Pact, not specifically places, but there are countries. Leaders? You play as a regiment commander, no named political leader.\n\n\"Call to Arms\" - Gates of Hell, uses GEM engine.\n\nWhat about \"Men of War II\"? Not Unity.\n\n\"Total Conflict: Resistance\" - Unity, modern military strategy FPS. Factions are modern countries maybe? Could have leaders.\n\nMaybe it's a game like \"Suzerain\" but it's not Unity? Suzerain is actually made with Unity! From their website: \"Suzerain is a text-based role-playing game developed by Torpor Games and published by Fellow Traveller. It was released for Windows in December 2020.\" The engine is listed as Unity. Suzerain is a political strategy/narrative game. The country is Sordland, not real. However, there are neighboring countries like \"Rumburg\" (fictional), \"Agnolia\", \"Wehlen\". There is a global organization called \"OMEC\" (sorta OPEC), \"Alliance of Nations\" (UN). Not real places.\n\nMaybe the organization is \"United Contana\" (not real).\n\nCould it be \"Crisis in the Kremlin\"? Not Unity.\n\n\"Hidden Agenda\" - not.\n\nWhat about \"三国志·战略版\"? It is a licensed game by Alibaba, built on the Unity engine for mobile. In this game, there is a \"同盟\" (Alliance) system. Each server has many alliances that compete. Alliances often use real Chinese city names like \"洛阳\", \"长安\", \"成都\", etc. And each alliance has a \"盟主\" (Alliance Leader). But the name of the leader is player-defined, not a fixed answer. But what if the puzzle refers to an NPC alliance? The game has some NPC forces: \"黄巾军\", \"蛮族\", \"洛阳禁卫军\"? In some scripted seasons, there might be an NPC faction defending a city like \"洛阳\", led by \"董卓\" or \"吕布\"? For instance, in the \"群雄讨董\" script, there is an NPC faction called \"董卓军\" occupying Luoyang? That's a faction named after a warlord, not a place. However, the city itself might be considered an organization? \"洛阳\" as a city might have a \"太守\" (governor)? The game's lore often has \"洛阳太守\". But it's not standardized.\n\nThink about \"Rise of Kingdoms\" again. It has \"Alliances\" which players create. But there are also \"Kingdoms\" which are numbered (e.g., Kingdom #1001). Not named.\n\nAnother Chinese game: \"无极仙途\" not strategy.\n\n\"一念逍遥\" not strategy.\n\nWhat about \"冰汽时代\" (Frostpunk)? Not Unity.\n\n\"戴森球计划\" (Dyson Sphere Program) - Unity, but it's a factory sim, not strategy with real place organizations.\n\n\"鬼谷八荒\" - RPG.\n\n\"太吾绘卷\" - RPG.\n\n\"部落与弯刀\" (Sands of Salzaar) - Action RPG/Strategy, Unity. It's set in a fantasy desert, not real places.\n\n\"汉末霸业\" as mentioned, actual places.\n\n\"三国：全面战争\" not Unity.\n\nLet's search memory for trivia: \"使用Unity3D制作的策略向游戏\" + \"某个组织与真实地名相同\". This could be a specific game where you have a guild/faction named after a city. Like \"Shanghai\" in some post-apocalyptic game.\n\n\"Fallout Shelter\"? It's a vault simulation, has real place vaults? Vault 101, etc., not real.\n\n\"Wasteland 3\"? Not Unity.\n\n\"State of Decay 2\"? Unreal.\n\nWhat about \"This War of Mine\"? Not unity.\n\n\"Frozenheim\"? Unity, Viking strategy, fictional.\n\nThere is a game called \"Prominence\". Not.\n\nMaybe it's a game about a real-world event. \"Plague Inc.\" as discussed. \"Rebel Inc.\"\n\nWhat about \"The Political Machine 2020\"? Unity. You run for US President. Organizations: states are real places. Leaders are the candidates (you and opponent). The opponent leader could be \"Biden\" or \"Trump\"? That's a real place (state) organization? Party is not a place.\n\n\"Power & Revolution\" not Unity.\n\n\"Rogue State\" about Middle East.\n\nWhat about \"Command: Modern Operations\"? Not Unity.\n\n\"Carrier Command 2\"? Unity. Factions are players.\n\nThink of board game adaptations. \"Wingspan\"? Not strategy.\n\n\"Scythe: Digital Edition\"? It's a 4X board game adaptation, made with Unity. Factions are countries: \"Saxony\", \"Crimea\", \"Rusviet\", \"Polania\", \"Nordic\". Saxony and Crimea are real places! (Saxony is a region in Germany, Crimea is a place). Rusviet is fictional (Soviet), Polania is fictional (Poland). Nordic is fictional. In Scythe, the factions are led by specific characters. For Saxony, the leader is \"Gunter von Duisburg\" with his animal companion. For Crimea, the leader is \"Zehra\" and her tiger. So the organizations (factions) include real place names, and each has a named leader. This fits \"某个组织与真实地名相同\" — Saxony or Crimea. Wait, Crimea is a real place (recently disputed). Saxony is also real. But are they exactly real place names? Yes, \"Crimea\" is the Crimean Peninsula. So the leaders would be \"Zehra\" for Crimean Khanate, and \"Gunter\" for Saxony. The question asks \"请问游戏中该组织的领导者名称是？\" It would be the leader's name. This is a solid candidate. The game is digitally adapted using Unity, it's a strategy game (4X). It has a specific organization = \"Crimea\" or \"Saxony\". We'd need to provide the leader's name. Which one is more likely? Maybe the puzzle points to Crimea because it's a more distinct place name? Saxony might be considered a real place too.\n\nBut is there a more iconic game? \"Scythe\" board game digital version is well-known, but is it the first guess?\n\nAnother board game: \"Through the Ages\" - digital version is Unity. But civilizations are nations, leaders are historical figures. E.g., you can play as \"Gandhi\" leading \"India\"? No, Through the Ages you pick leaders throughout history, they don't correspond 1-to-1 with a nation.\n\n\"Terraforming Mars\" - Unity. Organizations are corporations, not real places. Places on Mars are real geological features? E.g., \"Hellas\", \"Elysium\". But corporations: \"Credicor\", \"InterPlanetary Cinema\", etc. Not real places.\n\n\"Root: The Woodland Might and Right\"? Digital version is Unity? Root board game is strategy, digital version by Dire Wolf uses Unity. Factions: Marquise de Cat, Eyrie Dynasties, Woodland Alliance, Vagabond, Riverfolk Company, etc. Not real places.\n\n\"Everdell\" - digital, Unity, fantasy.\n\nWhat about \"Dune: Spice Wars\"? Not a real place (Arrakis is fictional).\n\nWhat about \"Northgard\"? Clans like \"Stag\" etc.\n\n\"Wartales\" - mercenary sim, Unity, not strategy with real places.\n\n\"Humankind\" again, no fixed leader names.\n\nWait... \"三国志·战略版\" has a feature: \"真实地名\" could be \"洛阳\", and the leader of the organization controlling it in the scripted campaign could be \"曹操\"? But the organization is \"曹操军\", not \"洛阳\". But the puzzle says the organization's name is the real place. So the organization itself must be named after the place. Like \"The Venetian Republic\" in a game. \n\nThink of \"Europa Universalis IV\" but not Unity. \"Age of Civilizations II\" - maybe Unity? It's by Lukasz Jakowski, developed in Java/LibGDX probably.\n\nWhat about \"Rome: Total War\" mobile version? It was ported to mobile by Feral Interactive, and the port uses a custom engine, not Unity.\n\nWhat about \"TheoTown\"? It's a city building game, Unity. No leaders.\n\nWhat about \"Cities: Skylines\"? Already discussed.\n\nMaybe a game called \"东方：新世界\" (Touhou: New World)? RPG.\n\nWhat about \"圣地牙哥\" (San Diego) as a place in some game? \"GTA\" not Unity.\n\nConsider \"XCOM: Enemy Within\" - Unreal Engine 3. \"XCOM 2\" - Unreal Engine 3.5. \"Chimera Squad\" - Unreal.\n\n\"Phantom Doctrine\" - Unity. It's a turn-based strategy game about Cold War spies. Organizations: CIA, KGB, Mossad, Stasi? Some are real places? \"KGB\" is a Soviet organization, but its name is an acronym, not a place. \"Stasi\" is East Germany. \"Mossad\" is Israel. Not exactly named after places, but after countries. What about CIA? Central Intelligence Agency, not a place. However, you can set up safehouses in real cities like \"Berlin\", \"Moscow\". But the \"organization\" with a real place name? Possibly the cell you run? You name your cell.\n\nAnother spy game: \"Sigma Theory: Global Cold War\" - Unity. It's a strategy game. You play as a country's intelligence agency. Real places.\n\n\"Espiocracy\" - not released.\n\nMaybe the puzzle refers to a famous mobile game \"王国纪元\" (Lords Mobile)? The guild is called a guild.\n\n\"剑与家园\" (Art of Conquest) - by Lilith, Unity. It has different races. Fictional.\n\nWhat about \"阿瓦隆之王\" (King of Avalon)? Fictional.\n\n\"Rise of Empires: Ice and Fire\" - medieval, not real places.\n\nCould it be \"蒸汽时代\" (Steam Age) - no.\n\n\"Total War Battles: WARHAMMER\" - no.\n\nWhat about \"The Banner Saga\"? Fictional.\n\n\"Surviving Mars\" - Unreal? Actually \"Surviving Mars\" is made with Haemimont's engine (which is proprietary, maybe using Unity? No, Haemimont uses their own engine. Tropico is their own.).\n\n\"Foundation\" - city builder, Unity.\n\n\"Anno 1800\" - not Unity.\n\nLet's revisit \"Old World\". This is an increasingly likely candidate because it's a premium PC strategy game, well-regarded, explicitly uses Unity. It has historical civilizations as factions. Civilizations are real place names (e.g., \"Rome\", \"Egypt\"). The leader is a named historical figure. The question asks for \"该组织的领导者名称\" – singular, so a specific leader. But which organization? There are multiple. The puzzle might have additional context not shared with me, but I can only guess. Since I am to provide 5 different directions, I can list leaders from various plausible games. For example, leaders from Old World (like \"Caesar\", \"Hatshepsut\", \"Dido\"), from Rise of Kingdoms (\"Scipio\", \"Cleopatra\"), from Scythe (\"Zehra\", \"Gunter\"), from Hexonia (\"Caesar\", \"Cleopatra\"), from Humankind (though leader names are not predefined, but AI personas like \"Cleopatra\" maybe?), from Panzer Corps 2 (maybe \"Hitler\"? But I'd avoid that), from Unity of Command II (maybe specific generals?).\n\nWait, \"Dido\" is a leader of Carthage, a real place. \"Caesar\" of Rome. \"Hatshepsut\" of Egypt.\n\nAnother possible game: \"A Total War Saga: Thrones of Britannia\" not Unity. But \"Total War Battles: Kingdom\" was made with Unity I think. It's a mobile/browser game. Factions are kingdoms.\n\nWhat about \"Stronghold: Warlords\"? Uses Vision engine.\n\n\"要塞\" (Stronghold) not Unity.\n\nMaybe \"帝国时代\" (Age of Empires) 4 uses Essence Engine, not Unity. AoE2 DE uses Genie.\n\nWhat about \"神话时代\" (Age of Mythology)? Not Unity.\n\n\"无尽太空2\" (Endless Space 2) - sci-fi.\n\n\"Frostpunk\" - not unity.\n\n\"Kingdom Two Crowns\"? It's a strategy/simulation game, made with Unity! It has various settings. The \"kingdom\" is not named after a real place, but there are different biomes. There's \"Kingdom: New Lands\", \"Kingdom: Two Crowns\". You play as a monarch. The monarch doesn't have a given name (it's just \"the Monarch\"). The lands are not real places.\n\n\"Bad North\" has islands, not real places.\n\n\"Into the Breach\" has islands, not real places.\n\nMaybe the game is \"Stellaris\" but it's not Unity. \"Galactic Civilizations III\" not Unity.\n\nWhat about \"Imperator: Rome\"? Not Unity. \n\nCould the game be \"三国志14\" mobile version? Mobile versions by NetEase, maybe Unity.\n\n\"Evony\" is a candidate: Evony: The King's Return. It's Unity. Real civilizations: America, China, Russia, etc. Leaders are historical generals. Like \"George Washington\", \"Genghis Khan\", etc. But they are not \"leaders of the organization\", they are recruit-able generals. The organization is the player's \"Keep\", no specific name.\n\nAnother Chinese game: \"率土之滨\" - the \"同盟\" alliances often take the names of historical places, but that's player-driven.\n\n\"三国志幻想大陆\" - more of an RPG.\n\nMaybe a game called \"隐形守护者\" (The Invisible Guardian) - visual novel.\n\nConsider \"Democracy 4\" again. The game has country as organization. Leader could be \"President\". But name?\n\nThink of a game with a very specific organization: e.g., \"The City of London\" in some game. \n\nWhat about \"Fallout: London\"? It's a mod, not a game.\n\n\"Assassin's Creed\" - not strategy.\n\n\"Watch Dogs: Legion\" - you can recruit anyone.\n\nWhat about \"Rebel Inc.\" - The insurgents are randomly named. \n\nCould the puzzle be referring to \"One Hour One Life\"? Not strategy.\n\nMaybe \"Risk: Global Domination\" - mobile/PC game, made with Unity. It's a strategy game. The \"organizations\" are the players, but you play on a world map with real territories. No named leaders.\n\n\"Hasbro's Risk\" - you can choose an avatar with a name? Like \"General...\"\n\nThere is a game called \"Battle for Wesnoth\" - not Unity, open source.\n\nLet's consider the possibility that the puzzle is from a specific community or a riddle contest. The phrase \"某个组织与真实地名相同\" suggests that the organization's name is exactly a real geographic location. Example: a faction called \"Venice\". In which Unity strategy game is there a faction called Venice with a specific leader?\n\nRemember \"Age of History 2\" is Java, not Unity.\n\nWhat about \"Europa Universalis IV\" - no. But EU4 has a spin-off? \"Europa Universalis: Rome\" - not.\n\nWhat about \"Sengoku\"? Not Unity.\n\nThere's a game called \"东方帝国\" (Oriental Empires). It's a 4X strategy set in ancient China, made with Unity. It has various factions based on historical Chinese states, like \"商\" (Shang), \"周\" (Zhou), \"楚\" (Chu), etc. These are real place names/historical states. And they have leaders. For example, the leader of Shang might be \"King Wu Ding\"? Actually in Oriental Empires, factions include the \"Han\", \"Zhou\", \"Shang\", \"Qin\", etc. Leaders are randomly generated? No, there are named historical leaders for the scenarios. The game has a \"Grand Campaign\" where you pick a faction and a leader. The leaders are historical figures. So an organization named \"Qin\" (a real place/historical state) would have a leader like \"Ying Zheng\" (Qin Shi Huang). This fits very well. \"Oriental Empires\" is a Unity strategy game. The organization names are real Chinese place/state names. The leaders are Chinese historical kings. So possible answers: \"嬴政\" (Ying Zheng), \"姬发\" (Ji Fa), \"成汤\" (Cheng Tang), etc. Since the question is in Chinese, it might expect a Chinese name. The puzzle text is in Chinese: \"一款使用Unity3D制作的策略向游戏，其中的某个组织与真实地名相同，请问游戏中该组织的领导者名称是？\" So the answer is likely a Chinese name or a known historical name in Chinese. The candidates could be Chinese names. For example, in Oriental Empires, the states are \"商\", \"周\", \"秦\", \"楚\", etc. Leaders: \"商汤\" (Shang Tang), \"周武王\" (Zhou Wu Wang, Ji Fa), \"秦始皇\" (Qin Shi Huang, Ying Zheng), \"项羽\" (Xiang Yu) for Chu? Maybe.\n\nAnother Chinese Unity strategy game: \"三国之志\" (Three Kingdoms of Zhi) or \"汉末霸业\" (Han's Last Warlord). \"汉末霸业\" features cities as real places: \"洛阳\", \"长安\", \"许昌\". But are they \"organizations\"? In the game, forces are warlords. If the puzzle considers a city as an organization, the leader is the \"太守\" (governor). For example, \"洛阳\" leader could be \"韩馥\" or \"董卓\" depending on the scenario. If it's a faction, it's \"曹操军\" (not a place). But what if the organization is \"黄巾军\"? Not a place. \"南蛮\"? Not specific.\n\n\"三国志战略版\" (Three Kingdoms Tactics) has \"州\" (Provinces) like \"冀州\", \"豫州\", etc. And each province has a \"州府\" (capital) and an NPC governor? Actually, the game has NPC defenders of resource gates and cities. \n\nWhat about \"无极之道\"? No.\n\nAnother interesting candidate: \"全面战争模拟器\" (Totally Accurate Battle Simulator). Made with Unity. There are factions like \"Ancient\", \"Viking\", \"Renaissance\", etc. Not real places. But there are maps named after real places? \"Medieval\" etc. But no named leaders.\n\nCould it be a game like \"My Time at Portia\"? Not strategy.\n\nWhat about \"欧陆风云\" (Europa Universalis)? Not Unity.\n\n\"东方帝国\" (Oriental Empires) seems very plausible. It's a 4X strategy game developed by a Western developer but entirely about China. It uses Unity. The factions are \"商\", \"周\", \"秦\", \"汉\", \"楚\", etc. Leaders are named. I recall the game's factions are often just the state names. The leaders are \"商汤\", \"周武王\", \"秦始皇\", \"汉高祖\" etc. \n\nAnother possibility: \"三国志11\" - not Unity.\n\nWhat about \"文明6\" - no.\n\n\"Rise of Kingdoms\" (万国觉醒) has Chinese leaders like \"孙武\" (Sun Tzu), but the organization \"China\" is a real place, and its leader (the initial commander) is \"Sun Tzu\"? Actually, China's starting commander in Rise of Kingdoms is Sun Tzu. But is Sun Tzu the \"leader\" of China? The game describes them as \"commanders\". The \"Civilization\" is an organization. So \"China\" -> \"Sun Tzu\". Could be.\n\nBut \"Sun Tzu\" is a famous historical figure, making it a good puzzle answer.\n\nWhat about \"Hexonia\"? In Hexonia, the Roman tribe leader is \"Caesar\", Egyptian is \"Cleopatra\", British is \"Victoria\", Korean is \"Sejong\", Japanese is \"Oda Nobunaga\", Aztec is \"Montezuma\". These are all real places. Hexonia is a mobile strategy game made with Unity. It's less famous but fits exactly.\n\nAnother similar game: \"Polytopia\" (文明之战). But tribes are not real places.\n\nWhat about \"World of Empires\"? \n\nLet's see if there's any specific game where an organization is directly a contemporary real-world place, like a city. For instance, \"The City of London\" in a financial strategy game? \"Offworld Trading Company\"? Not Unity (uses Unreal? Actually OTC uses Unreal Engine 4). \n\n\"Plague Inc.\" has \"World Health Organization\" not a place.\n\n\"Rebel Inc.\" has \"Coalition Forces\".\n\nWhat about \"Democracy 4\"? Countries.\n\nI think the most probable games are:\n1. Old World (Leaders: Caesar, Hatshepsut, etc.)\n2. Oriental Empires (Leaders: Ying Zheng, etc.)\n3. Rise of Kingdoms (Leaders: Sun Tzu, Julius Caesar, etc.)\n4. Hexonia (Leaders: Caesar, Cleopatra, etc.)\n5. Scythe: Digital Edition (Leaders: Zehra for Crimea, Gunter for Saxony)\n6. Humankind (AI personas, though not exactly leaders, but people like Cleopatra, Gilgamesh)\n7. Unity of Command II (maybe a specific general)\n\nSince the puzzle is in Chinese and asks for a name, it could be either a Chinese name or a Western name depending on the game. The prompt says \"输出一个JSON字符串数组，包含5个方向各异的最终候选答案。每个元素直接是答案名称\". It wants me to output 5 different guesses.\n\nI should pick 5 distinct plausible answers from different games or different factions. They should be \"方向各异\" (covering different directions). I can list:\n- From Old World: \"凯撒\" (Caesar) for Rome, or \"哈特谢普苏特\" (Hatshepsut) for Egypt, or \"尼布甲尼撒\" (Nebuchadnezzar) for Babylon.\n- From Oriental Empires: \"嬴政\" (Ying Zheng) for Qin, or \"成汤\" (Cheng Tang) for Shang.\n- From Rise of Kingdoms: \"孙武\" (Sun Tzu) for China, or \"尤里乌斯·凯撒\" (Julius Caesar) for Rome.\n- From Hexonia: \"凯撒\" (Caesar) for Rome.\n- From Scythe: \"泽拉\" (Zehra) for Crimea, or \"冈瑟\" (Gunter) for Saxony.\n- From Humankind: \"克利奥帕特拉\" (Cleopatra) as an AI persona.\n\nBut I should provide the name exactly as it appears in the game or commonly known. Since I don't know the exact game the puzzle refers to, I'll output 5 distinct names that are strong candidates. Let's avoid giving multiple names from the same game to cover different directions. I'll pick leaders from different plausible games. And preferably use their most common Chinese or English names. The puzzle itself is in Chinese, but the answer could be in English if it's a Western game, or Chinese if it's a Chinese game. The instruction says \"每个元素直接是答案名称\", so I can output the name. I'll provide a mix.\n\nHere are 5 strong candidates spanning different games:\n1. 凯撒 (Caesar from Old World/Hexonia) - very common.\n2. 嬴政 (Ying Zheng from Oriental Empires) - a Chinese historical figure.\n3. 泽拉 (Zehra from Scythe's Crimean faction) - a bit more obscure, covering board game aspect.\n4. 孙武 (Sun Tzu from Rise of Kingdoms) - mobile strategy.\n5. 克利奥帕特拉 (Cleopatra from Humankind / Hexonia) - another famous leader.\n\nAlternatively, I could use:\n- 凯撒\n- 嬴政\n- 尼布甲尼撒二世 (Nebuchadnezzar II from Old World)\n- 哈特谢普苏特 (Hatshepsut)\n- 孙武\n\nBut I need to make sure they are \"组织与真实地名相同\". All these have organizations named after real places: Rome, Qin, Crimea, Egypt, Babylon, China.\n\nLet's double-check Scythe: Crimea is a faction, its leader is Zehra. Saxony is a faction, its leader is Gunter. Both are real place names. I can use \"Zehra\" as a candidate. However, the puzzle might be aiming for a more mainstream game.\n\nAnother famous Unity strategy game: \"Northgard\" does not have real places. \"Bad North\" no. \"Into the Breach\" no.\n\n\"Lords Mobile\" - might have kingdoms with real place names? Actually, it has kingdoms that are numbered, not named.\n\n\"三国志·战略版\" has \"洛阳\" as a city. If the \"organization\" is the city defender, the leader could be \"董卓\" or \"吕布\" depending on the season. For example, in the \"群雄讨董\" season, the NPC organization occupying Luoyang is \"董卓军\", but the city itself is Luoyang. A better fit is \"汉室\" (Han Dynasty) - but that's a dynasty.\n\nWhat about a game called \"无悔华夏\" (Unmatched Heroes)? It's a Chinese historical strategy game, but might not be Unity.\n\nI'll proceed to produce 5 candidates that are specific and plausible. I'll format as a JSON array.\n\nLet's provide: \n- \"凯撒\" (from Old World, Rome)\n- \"嬴政\" (from Oriental Empires, Qin)\n- \"孙武\" (from Rise of Kingdoms, China)\n- \"泽拉\" (from Scythe, Crimea)\n- \"哈特谢普苏特\" (from Old World, Egypt)\n\nWait, I shouldn't only use Old World. Let's ensure diverse games: Old World, Oriental Empires, Rise of Kingdoms, Scythe, and maybe Hexonia. Hexonia leader: \"凯撒\" would be duplicate. I can use \"克利奥帕特拉\" (Cleopatra) from Hexonia for Egypt.\n\nSo:\n1. 凯撒 (Caesar) - Rome, Old World/Hexonia\n2. 嬴政 (Ying Zheng) - Qin, Oriental Empires\n3. 孙武 (Sun Tzu) - China, Rise of Kingdoms\n4. 冈瑟 (Gunter) - Saxony, Scythe. Or Zehra? Zehra is Crimean, Gunter is Saxony. I'll pick Zehra (泽拉) because Crimea is more distinctly a real place, while Saxony might be considered a historical region.\n5. 克利奥帕特拉 (Cleopatra) - Egypt, Hexonia\n\nOr I could also include a Western name in English? The puzzle is in Chinese but doesn't restrict language. I can give English names too. \"Caesar\" vs \"凯撒\". I think providing Chinese names for Western figures is safe if the game's Chinese localization uses them. Many games use localized names. But I can also provide English. The instruction \"每个元素直接是答案名称\" implies the name as it is. I'll stick to Chinese to match the puzzle's language, assuming the Chinese localization is well-known. \"Julius Caesar\" in Chinese is \"尤里乌斯·凯撒\" or just \"凯撒\". \"Caesar\" is sufficient.\n\nAlternatively, I can use \"凯撒大帝\" but usually just \"凯撒\".\n\nTo be safe, I can output a mix. I'll output Chinese names.\n\nLet's finalize:\n[\"凯撒\",\"嬴政\",\"孙武\",\"泽拉\",\"克利奥帕特拉\"]\n\nWait, is \"Zehra\" localized as \"泽拉\"? In the game's Chinese localization it might be \"泽赫拉\"? I'm not sure. Maybe avoid uncertain localization. Better to use a more standardized one.\n\nAnother candidate from \"Humankind\": The AI persona for Egypt is \"Cleopatra\", and for Rome is \"Caesar\". Again duplicates.\n\nWhat about \"Augustus\" from Old World? Old World actually has Rome led by \"Gaius Octavius\" or \"Augustus\"? No, I think the leader of Rome in Old World is \"Caesar\" (Julius Caesar). The DLC adds more leaders.\n\nAnother game: \"Age of Wonders: Planetfall\" has no real places.\n\n\"Panzer Corps 2\" - leader of Germany? Could be \"Hitler\" but it's politically sensitive and not usually a player-facing leader in games, more like \"Manstein\" as a general. If the organization is \"Germany\", its leader in-game might be \"Hitler\", but I'm not comfortable guessing that.\n\n\"Unity of Command II\" - you play as specific generals.\n\nWhat about \"This Is the Police\"? Fictional.\n\n\"Rebel Inc.\" - no.\n\nAnother possibility: \"Farming Simulator\"? Not strategy.\n\n\"Carrier Command 2\": no.\n\n\"Desperados III\": The organization could be \"The Agency\", not real place.\n\n\"Shadow Tactics\" - same.\n\n\"Command & Conquer Remastered\" - not Unity.\n\n\"StarCraft II\" - not Unity.\n\n\"Warcraft III\" - not.\n\nMaybe \"Rise of Nations: Extended Edition\" - not Unity.\n\nWhat about \"三国杀\"? Board game, not Unity.\n\nNow, think again: \"一款使用Unity3D制作的策略向游戏，其中的某个组织与真实地名相同，请问游戏中该组织的领导者名称是？\" This could be a trivia question from a specific community (e.g., a Chinese gaming forum, a riddle). There's a Chinese game called \"汉末霸业\" (The Last Warlord). It's a standalone turn-based strategy game, on Steam, made with Unity. It simulates the Three Kingdoms period. Factions: you choose a warlord, and the warlord's force is based in a city. The \"组织\" might refer to the \"势力\" (force) named after the city? In the game, there are \"在野\" forces and cities. If you play as a free officer, you can join a city's force. But that force is usually under a warlord's name. \n\nAnother Chinese game: \"三国志14\" is not Unity. \"三国志13\" not Unity.\n\nWhat about \"三国群英传8\"? Made by UserJoy, uses a proprietary engine (not Unity, I think it's Unity? Wait, \"三国群英传8\" (Heroes of the Three Kingdoms 8) was developed using Unity. Yes! I recall UserJoy switched to Unity for this installment. It's a strategy game. The factions are various warlords, often associated with cities (real place names). For example, \"曹操\" leads \"许昌\"? Not exactly. The faction could be \"曹操军\", not a place name. But there are cities like \"洛阳\" which you can capture. The game's story mode has different factions. There is a mode where you play as a specific faction. But is there an organization exactly named after a real place? Possibly \"黄巾贼\" (Yellow Turbans) - not a place. \"南匈奴\" - place-ish? \"匈奴\" is a historical region/people.\n\nWhat about \"大禹治水\"? No.\n\nAnother Chinese indie game: \"部落与弯刀\" has tribes, not real places.\n\n\"修仙门派模拟器\" - not.\n\n\"了不起的修仙模拟器\" - not.\n\n\"低魔时代\" (Low Magic Age) - D&D, not real places.\n\n\"帝国神话\" (Myth of Empires) - sandbox, not exactly strategy.\n\nLet's revisit \"东方帝国\" (Oriental Empires). It's definitely about China, and the factions are historical states that are named after real locations (Qin, Chu, Qi, etc.). It's a turn-based strategy 4X, made with Unity. It's quite known in strategy circles. The leaders are historical kings: \"周武王\", \"秦始皇\", \"楚霸王\", etc. The Chinese localization of the game is \"东方帝国\", and the leaders are named in Chinese. This is a very good fit.\n\nAnother game: \"European War 6: 1914\" by EasyTech. They recently started using Unity for some games? EasyTech's newer games like \"World Conqueror 4\" are made with Unity? I think \"World Conqueror 4\" might be Unity. But factions are countries (real places). Leaders are historical generals. But the \"organization\" is just the country, and the \"leader\" could be the head of state, but you recruit generals. \n\n\"Great Conqueror: Rome\" by EasyTech - Unity? Yes, EasyTech uses Unity for their newer mobile games. It's a strategy game. Factions include Rome, Carthage, Egypt, etc. Leaders are historical figures? You play as Julius Caesar leading Rome, etc. The campaign features specific leaders like \"Caesar\" for Rome. This is also a strong candidate. The question might be from \"Great Conqueror: Rome\" (大征服者：罗马). In that game, the organization \"Roman Republic/Empire\" is a real place name, and its leader in the campaign is \"Julius Caesar\" or \"凯撒\".\n\nAnother EasyTech game: \"帝国军团：罗马\" (Imperial Legion: Rome) or similar.\n\nWhat about \"三国志战略版\"? The organization \"同盟\" can be named after places, but player-driven.\n\nMaybe it's a game with modern warfare. \"Call of War\" not Unity. \"Conflict of Nations\" not.\n\n\"Supremacy 1914\" - not.\n\n\"Military Conflict: Vietnam\" - not Unity.\n\nI'm leaning towards \"Oriental Empires\" or \"Old World\" or \"Rise of Kingdoms\". \n\nLet's gather 5 specific answers with different flavors. I'll provide:\n1. 凯撒 (from Old World, Rome; also Great Conqueror: Rome)\n2. 嬴政 (from Oriental Empires, Qin)\n3. 孙武 (from Rise of Kingdoms, China)\n4. 泽拉 (from Scythe, Crimea) - or maybe pick something safer like 哈特谢普苏特 (Hatshepsut from Old World, Egypt)\n5. 尼布甲尼撒二世 (Nebuchadnezzar II from Old World, Babylon) - but that's also Old World.\n\nTo be diverse across games:\nGame 1: Old World -> 哈特谢普苏特 (Hatshepsut) Egypt\nGame 2: Oriental Empires -> 嬴政 (Ying Zheng) Qin\nGame 3: Rise of Kingdoms -> 孙武 (Sun Tzu) China\nGame 4: Great Conqueror: Rome -> 凯撒 (Caesar) Rome\nGame 5: Hexonia -> 克利奥帕特拉 (Cleopatra) Egypt\n\nOr maybe Scythe is less known, let's replace with another. \"Panzer Corps 2\" has \"Germany\" and its leader in the Wehrmacht campaign is the player, but you could argue \"Adolf Hitler\" is the supreme leader. I'm uncomfortable.\n\nHow about \"Humankind\"? AI persona \"Agamemnon\" leads Mycenaeans? Not a modern real place.\n\nWhat about \"Rome: Total War\" mobile version? Not Unity as far as I know.\n\nWhat about \"汉末霸业\" -> e.g. 曹操 leading 许昌? But the organization is \"曹操军\" not \"许昌\".\n\nMaybe the game \"大秦帝国\" (The Qin Empire) - it's a Unity-based MMO strategy game by 西山居? Actually \"大秦帝国之帝国烽烟\" (Qin Empire: Dynasty of the Spirit) is a Unity strategy game. Factions are the Seven Warring States, which are real place names: 秦, 齐, 楚, 燕, 韩, 赵, 魏. Leaders are historical monarchs: 秦始皇 (Ying Zheng), 齐威王, etc. So this is another very plausible candidate.\n\nI'll finalize a diverse set of 5 candidates:\n1. 凯撒 (Caesar) - Roman faction in many games (Old World, Hexonia, Great Conqueror)\n2. 嬴政 (Ying Zheng) - Qin faction in Oriental Empires or Qin Empire\n3. 孙武 (Sun Tzu) - China faction in Rise of Kingdoms\n4. 哈特谢普苏特 (Hatshepsut) - Egypt in Old World\n5. 泽拉 (Zehra) - Crimea in Scythe\n\nAlternatively, to be safer with well-known names:\n1. 凯撒\n2. 嬴政\n3. 孙武\n4. 克利奥帕特拉\n5. 李舜臣 (Yi Sun-sin) - Korea in Rise of Kingdoms? Actually Korea's starter is Eulji Mundeok, and later there's Yi Sun-sin. Or \"曹操\" from something? No, if organization = \"魏国\" (Wei) which is a real place? Wei is a historical state, real place name. In many Three Kingdoms strategy games, the leader is 曹操. But I'm not sure which Unity Three Kingdoms game uses it as a faction name. \"三国杀\" has \"魏\" and leader is \"曹操\". But \"三国杀\" is a card game, not a strategy game, and originally not Unity. \"三国杀\" online/mobile is made with Unity? It might be. \"三国杀\" is a strategy card game. Organizations: 魏, 蜀, 吴 (real places? They are states). Leaders: 曹操, 刘备, 孙权. This is extremely famous in China. If the puzzle is Chinese-centric, \"三国杀\" using Unity? The mobile version \"三国杀\" is developed by different companies; the original PC version might be Flash or something, but mobile could be Unity. However, it's not typically called a \"策略向游戏\" but a card game, though it does involve strategy. Many consider it a strategy game. \"三国杀\" has exactly the kingdoms Wei, Shu, Wu as organizations. And their leaders are 曹操, 刘备, 孙权. This could be a major candidate. \"三国杀\" uses Unity? Yes, the mobile/WebGL versions might. \"三国杀\" is massively popular. \"某个组织与真实地名相同\" -> 魏, 蜀, 吴 are historical states (real places). Leaders: 曹操 (for Wei), 刘备 (for Shu), 孙权 (for Wu). So the answer could be one of these three. The puzzle says \"某个组织\" singular, so it could be any of them, or a specific one. If it's \"三国杀\", the leaders are well known.\n\nLet's check if \"三国杀\" is made with Unity3D. The PC version might not be. The mobile version \"三国杀\" by 游卡桌游 is made with Unity? Yes, \"三国杀 Online\" and mobile versions are typically developed using Unity. So this is a very strong candidate. So leaders could be \"曹操\", \"刘备\", \"孙权\". \n\nAnother very famous Chinese strategy game: \"率土之滨\" (Infinite Borders). In this game, players can form alliances, but the game also has a fundamental \"organization\" called \"州\" (Provinces), e.g., \"扬州\", \"益州\". But they aren't exactly organizations with a leader; they are territories. However, the NPC forces? In the \"备战区\" there are no fixed NPC leaders. It's more sandbox.\n\n\"三国志·战略版\" (Three Kingdoms Tactics) is another. There are NPC forces representing historical warlords. For instance, the Yellow Turbans? Not a place. The \"洛阳\" defenders? In the grand campaign, there are cities. Could the organization be \"吕布军\"? Not a place.\n\nWhat about \"鸿图之下\"? Similar.\n\nIf it's \"三国杀\", the answer would be \"曹操\", \"刘备\", or \"孙权\". I should include these.\n\nWhat about \"万国觉醒\" (Rise of Kingdoms)? That's also very popular.\n\nTo cover all bases, my 5 candidates:\n1. 曹操 (from 三国杀, Wei faction)\n2. 凯撒 (from various, Old World/Rise of Kingdoms/Hexonia)\n3. 嬴政 (from 东方帝国/大秦帝国, Qin faction)\n4. 孙武 (from 万国觉醒, China faction)\n5. 哈特谢普苏特 (from Old World, Egypt faction)\n\nThis covers Chinese history card game, Western 4X, Chinese history 4X, mobile global strategy, and Western 4X with female leader. \"方向各异\" indeed.\n\nI can also use \"刘备\" instead of \"曹操\", but one is enough.\n\nI'll format it as a JSON array.",
+      "hypotheses": [
+        "曹操",
+        "凯撒",
+        "嬴政",
+        "孙武",
+        "哈特谢普苏特"
+      ],
+      "constraints_prompt": "从以下谜题中提取3-5个可用于搜索验证的关键词或短语。\n\n谜题：一款使用Unity3D制作的策略向游戏，其中的某个组织与真实地名相同，请问游戏中该组织的领导者名称是？\n\n输出一个JSON字符串数组。只输出JSON数组。\n\nJSON数组：",
+      "constraints_raw": "[\"Unity3D 策略游戏\", \"组织 真实地名\", \"领导者 名称\"]",
+      "constraints_reasoning": "我们被要求输出一个JSON字符串数组，包含3-5个可用于搜索验证的关键词或短语。谜题是：“一款使用Unity3D制作的策略向游戏，其中的某个组织与真实地名相同，请问游戏中该组织的领导者名称是？”\n\n我们需要从谜题中提取关键词或短语，用于搜索验证。可能的搜索词包括：Unity3D 策略游戏 组织 真实地名 领导者名称。但我们也要考虑具体可能是什么游戏。不过我们不需要知道答案，只需要提取可用于搜索的关键词。所以可以提取：Unity3D，策略游戏，组织，真实地名，领导者。但需要是3-5个短语。可以组合成：“Unity3D 策略游戏”、“组织 真实地名”、“领导者 名称”。或者更精炼的：“Unity3D 策略游戏”、“组织与真实地名相同”、“游戏组织领导者”。根据要求，输出JSON数组。",
+      "constraints": [
+        "Unity3D 策略游戏",
+        "组织 真实地名",
+        "领导者 名称"
+      ],
+      "queries": [
+        "曹操 Unity3D 策略游戏 组织 真实地名 领导者 名称",
+        "凯撒 Unity3D 策略游戏 组织 真实地名 领导者 名称",
+        "嬴政 Unity3D 策略游戏 组织 真实地名 领导者 名称",
+        "孙武 Unity3D 策略游戏 组织 真实地名 领导者 名称",
+        "哈特谢普苏特 Unity3D 策略游戏 组织 真实地名 领导者 名称"
+      ],
+      "search_detail": [
+        {
+          "entity": "曹操 Unity3D 策略游戏 组织 真实地名 领导者 名称",
+          "query": "曹操 Unity3D 策略游戏 组织 真实地名 领导者 名称",
+          "n_results": 5,
+          "n_new": 5,
+          "wall_s": 11.3,
+          "top3": [
+            {
+              "title": "Unity3d 策略游戏势力名称真实地名",
+              "snippet": "英國獨立開發者Jamie Janas 近日發表動作塔防新作《Fangstorm》，預計登上Steam，結合第一人稱近戰動作與塔防策略，玩家將化身由獸人諸神復活的半神英雄， ...",
+              "url": "https://www.instagram.com/popular/unity3d-%E7%AD%96%E7%95%A5-%E6%B8%B8%E6%88%8F-%E5%8A%BF%E5%8A%9B-%E5%90%8D%E7%A7%B0-%E7%9C%9F%E5%AE%9E%E5%9C%B0%E5%90%8D/"
+            },
+            {
+              "title": "降肝減課全進化的策略遊戲《三國群英傳-鴻鵠霸業》開局武將 ...",
+              "snippet": "任容萱代言推薦，首款雙世界賽季SLG ·降肝減課真策略！自選技能的SLG創新大作，公平與高自由度的真實三國世界。 【前往預約】：https://bit.ly ...",
+              "url": "https://www.youtube.com/watch?v=F5ZkoQkYz1s"
+            },
+            {
+              "title": "3 Kingdoms War Game",
+              "snippet": "3。各個軍隊陣營都有專屬將軍，參照《三國志》的英雄特性來編輯個人策略技能，英雄感十足。各陣營還有獨特軍隊技能，曹操軍隊技能佔天時，孫堅軍隊技能佔地利，劉備軍隊技能佔人 ...",
+              "url": "https://3kingdomswg.com/"
+            }
+          ]
+        },
+        {
+          "entity": "凯撒 Unity3D 策略游戏 组织 真实地名 领导者 名称",
+          "query": "凯撒 Unity3D 策略游戏 组织 真实地名 领导者 名称",
+          "n_results": 5,
+          "n_new": 5,
+          "wall_s": 20.6,
+          "top3": [
+            {
+              "title": "Unity3d 策略游戏势力名称真实地名",
+              "snippet": "《Fangstorm》由英國獨立開發者Jamie Janas 單獨製作，他原本是一名3D CG 藝術家，這是他的第一款推出的遊戲，根據他在Reddit 分享，本作靈感來自 ...",
+              "url": "https://www.instagram.com/popular/unity3d-%E7%AD%96%E7%95%A5%E6%B8%B8%E6%88%8F-%E5%8A%BF%E5%8A%9B-%E5%90%8D%E7%A7%B0-%E7%9C%9F%E5%AE%9E%E5%9C%B0%E5%90%8D/"
+            },
+            {
+              "title": "我急切地想起一个老策略游戏的名字。请帮忙。 : r/retrogaming",
+              "snippet": "它很可能是90年代的一款游戏。我记得这个游戏分为两部分：一种策略地图，你可以看到你的主角（他是一种英雄或重要角色）、一些军队（也就是说，你只能看到 ...",
+              "url": "https://www.reddit.com/r/retrogaming/comments/157q1ro/i_am_desperate_to_remember_the_name_of_an_old/?tl=zh-hans"
+            },
+            {
+              "title": "戰爭迷霧| 在Unity中製作即時策略遊戲| 遊戲開發片段: r/unity",
+              "snippet": "嗨各位， 這是我的第二個影片，關於我正在製作的（目前未命名）即時策略遊戲，風格類似世紀帝國或魔獸爭霸3，使用Unity引擎開發。 這個影片裡，我展示了即時 ...",
+              "url": "https://www.reddit.com/r/unity/comments/1jos6qv/fog_of_war_creating_an_rts_game_in_unity_game_dev/?tl=zh-hant"
+            }
+          ]
+        },
+        {
+          "entity": "嬴政 Unity3D 策略游戏 组织 真实地名 领导者 名称",
+          "query": "嬴政 Unity3D 策略游戏 组织 真实地名 领导者 名称",
+          "n_results": 5,
+          "n_new": 4,
+          "wall_s": 17.6,
+          "top3": [
+            {
+              "title": "Unity3d 策略游戏势力名称真实地名",
+              "snippet": "英國獨立開發者Jamie Janas 近日發表動作塔防新作《Fangstorm》，預計登上Steam，結合第一人稱近戰動作與塔防策略，玩家將化身由獸人諸神復活的半神英雄， ...",
+              "url": "https://www.instagram.com/popular/unity3d-%E7%AD%96%E7%95%A5-%E6%B8%B8%E6%88%8F-%E5%8A%BF%E5%8A%9B-%E5%90%8D%E7%A7%B0-%E7%9C%9F%E5%AE%9E%E5%9C%B0%E5%90%8D/"
+            },
+            {
+              "title": "用Unity做的即时战略游戏: r/Unity3D",
+              "snippet": "这是一个RTS游戏,里面有《命令与征服:将军》和《英雄连》的元素,但整体上会更简单一些。 老策略游戏的名字。 如何组织你的Unity 项目。一篇关于Unity 游 ...",
+              "url": "https://www.reddit.com/r/Unity3D/comments/abqpjs/real_time_strategy_game_done_on_unity/?tl=zh-hans"
+            },
+            {
+              "title": "嬴政- 維基百科，自由嘅百科全書",
+              "snippet": "秦始皇 ceon4 ci2 wong4 （稱 嬴政 jing4 zing3 ）（前259年 —前210年 ），嬴姓，趙氏，名政，有時又稱趙政（或稱為趙正），歷史書多寫作秦王政或始皇帝。佢係中國秦朝首個皇帝，生 ...",
+              "url": "https://zh-yue.wikipedia.org/wiki/%E5%AC%B4%E6%94%BF"
+            }
+          ]
+        },
+        {
+          "entity": "孙武 Unity3D 策略游戏 组织 真实地名 领导者 名称",
+          "query": "孙武 Unity3D 策略游戏 组织 真实地名 领导者 名称",
+          "n_results": 5,
+          "n_new": 4,
+          "wall_s": 19.5,
+          "top3": [
+            {
+              "title": "Unity3d 策略游戏势力名称真实地名",
+              "snippet": "Unity3d 策略游戏势力名称真实地名 · 英國獨立開發者Jamie Janas 近日發表動作塔防新作《Fangstorm》， · 老實說…",
+              "url": "https://www.instagram.com/popular/unity3d-%E7%AD%96%E7%95%A5-%E6%B8%B8%E6%88%8F-%E5%8A%BF%E5%8A%9B-%E5%90%8D%E7%A7%B0-%E7%9C%9F%E5%AE%9E%E5%9C%B0%E5%90%8D/"
+            },
+            {
+              "title": "Unity：开发、部署、增长| 全球知名的游戏引擎",
+              "snippet": "利用全球知名的3D 游戏引擎Unity 实现开发、部署和增长。为所有主要平台构建，从移动设备到PC和主机，以及扩展现实，获取玩家，实现游戏盈利，并推动工业应用。",
+              "url": "https://unity.com/cn"
+            },
+            {
+              "title": "全世界最多人用的遊戲引擎Unity 暴走了｜ 遊戲新聞/偷閒加油站",
+              "snippet": "全世界最多人用的遊戲引擎Unity 暴走了 ｜ 遊戲新聞/偷閒加油站. 641K views · 2 years ago. #unity #ea #steam ...more ...",
+              "url": "https://www.youtube.com/watch?v=SEyWfl_6YWo"
+            }
+          ]
+        },
+        {
+          "entity": "哈特谢普苏特 Unity3D 策略游戏 组织 真实地名 领导者 名称",
+          "query": "哈特谢普苏特 Unity3D 策略游戏 组织 真实地名 领导者 名称",
+          "n_results": 5,
+          "n_new": 5,
+          "wall_s": 8.2,
+          "top3": [
+            {
+              "title": "哈特谢普苏特领袖|《席德·梅尔的文明VII》",
+              "snippet": "公元前14世纪初，埃及在哈特谢普苏特的领导下蓬勃发展。在她漫长的统治期间，埃及的贸易帝国得以扩张，在北部的地中海和南部富饶的邦特建立了网络和影响力。",
+              "url": "https://civilization.2k.com/zh-CN/civ-vii/game-guide/leaders/hatshepsut/"
+            },
+            {
+              "title": "哈特谢普苏特 - 维基百科",
+              "snippet": "展开. 法老王名 · 王位名：玛特卡拉 · 真理玛亚特是拉的卡Truth Ma'at is the Ka of Re. M23, L2. ra, mAat, kA. 本名：库努穆特-阿蒙·哈特谢普苏特 · 参与阿蒙 最重要的贵族 ...",
+              "url": "https://zh.wikipedia.org/zh-hans/%E5%93%88%E7%89%B9%E8%B0%A2%E6%99%AE%E8%8B%8F%E7%89%B9"
+            },
+            {
+              "title": "哈特謝普蘇特是誰？看懂她的神殿與帝王谷的連結",
+              "snippet": "哈特謝普蘇特（Hatshepsut）是古埃及少數真正以「法老」身份統治埃及的女性。 · 她的神殿與帝王谷，剛好對應兩件事 · 如果先知道這個脈絡，你在現場看到的就不 ...",
+              "url": "https://dewonder.travel/%E5%93%88%E7%89%B9%E8%AC%9D%E6%99%AE%E8%98%87%E7%89%B9%E4%BB%8B%E7%B4%B9/"
+            }
+          ]
+        }
+      ],
+      "total_results": 23,
+      "recall": false,
+      "all_results": [
+        {
+          "title": "Unity3d 策略游戏势力名称真实地名",
+          "url": "https://www.instagram.com/popular/unity3d-%E7%AD%96%E7%95%A5-%E6%B8%B8%E6%88%8F-%E5%8A%BF%E5%8A%9B-%E5%90%8D%E7%A7%B0-%E7%9C%9F%E5%AE%9E%E5%9C%B0%E5%90%8D/",
+          "snippet": "英國獨立開發者Jamie Janas 近日發表動作塔防新作《Fangstorm》，預計登上Steam，結合第一人稱近戰動作與塔防策略，玩家將化身由獸人諸神復活的半神英雄， ..."
+        },
+        {
+          "title": "降肝減課全進化的策略遊戲《三國群英傳-鴻鵠霸業》開局武將 ...",
+          "url": "https://www.youtube.com/watch?v=F5ZkoQkYz1s",
+          "snippet": "任容萱代言推薦，首款雙世界賽季SLG ·降肝減課真策略！自選技能的SLG創新大作，公平與高自由度的真實三國世界。 【前往預約】：https://bit.ly ..."
+        },
+        {
+          "title": "3 Kingdoms War Game",
+          "url": "https://3kingdomswg.com/",
+          "snippet": "3。各個軍隊陣營都有專屬將軍，參照《三國志》的英雄特性來編輯個人策略技能，英雄感十足。各陣營還有獨特軍隊技能，曹操軍隊技能佔天時，孫堅軍隊技能佔地利，劉備軍隊技能佔人 ..."
+        },
+        {
+          "title": "隱名三國",
+          "url": "https://store.steampowered.com/app/4560970/Three_Kingdoms__Alias_Demo/?l=tchinese&snr=1_300_morelikev2__tab-DemoGames_8",
+          "snippet": "隱名三國開發人員Plotrick 發行商・ 策略模擬回合制策略・ 可選勢力: 曹操/ 劉備/ 孫權. Windows 10 64-bit 處理器: Intel Core i3-4160 / AMD FX-4300"
+        },
+        {
+          "title": "經典大型國戰策略遊戲新作《三國群英傳- 戰略版》遊玩前6 個 ...",
+          "url": "https://www.youtube.com/watch?v=r7_08SfMv9o",
+          "snippet": "《三國群英傳-戰略版》擁有「全實境」、「 經典大型國戰策略遊戲新作《三國群英傳- 戰略版》 跑曹操根本不是故意,而是打不過曹操身邊這兩個人!"
+        },
+        {
+          "title": "Unity3d 策略游戏势力名称真实地名",
+          "url": "https://www.instagram.com/popular/unity3d-%E7%AD%96%E7%95%A5%E6%B8%B8%E6%88%8F-%E5%8A%BF%E5%8A%9B-%E5%90%8D%E7%A7%B0-%E7%9C%9F%E5%AE%9E%E5%9C%B0%E5%90%8D/",
+          "snippet": "《Fangstorm》由英國獨立開發者Jamie Janas 單獨製作，他原本是一名3D CG 藝術家，這是他的第一款推出的遊戲，根據他在Reddit 分享，本作靈感來自 ..."
+        },
+        {
+          "title": "我急切地想起一个老策略游戏的名字。请帮忙。 : r/retrogaming",
+          "url": "https://www.reddit.com/r/retrogaming/comments/157q1ro/i_am_desperate_to_remember_the_name_of_an_old/?tl=zh-hans",
+          "snippet": "它很可能是90年代的一款游戏。我记得这个游戏分为两部分：一种策略地图，你可以看到你的主角（他是一种英雄或重要角色）、一些军队（也就是说，你只能看到 ..."
+        },
+        {
+          "title": "戰爭迷霧| 在Unity中製作即時策略遊戲| 遊戲開發片段: r/unity",
+          "url": "https://www.reddit.com/r/unity/comments/1jos6qv/fog_of_war_creating_an_rts_game_in_unity_game_dev/?tl=zh-hant",
+          "snippet": "嗨各位， 這是我的第二個影片，關於我正在製作的（目前未命名）即時策略遊戲，風格類似世紀帝國或魔獸爭霸3，使用Unity引擎開發。 這個影片裡，我展示了即時 ..."
+        },
+        {
+          "title": "《战地风云》工作室：四支团队，一款突破性的游戏",
+          "url": "https://www.ea.com/zh-cn/news/battlefield-studios-all-in",
+          "snippet": "这支由四个主要工作室组成的联盟——DICE、Criterion、Motive 和Ripple Effect——被称为《战地风云》工作室。这些开发者、美术家和故事创作者倾注了他们的 ..."
+        },
+        {
+          "title": "VU Games 發表歷史城市建設模擬策略遊戲《凱薩4》 - GNN新聞",
+          "url": "https://gnn.gamer.com.tw/detail.php?sn=20944",
+          "snippet": "遊戲廠商VU Games 今天在德國萊比錫舉辦的遊戲研討會議（Game Convention）中正式發表了旗下Sierra Entertainment 知名的歷史城市建設模擬策略遊戲《凱 ..."
+        },
+        {
+          "title": "用Unity做的即时战略游戏: r/Unity3D",
+          "url": "https://www.reddit.com/r/Unity3D/comments/abqpjs/real_time_strategy_game_done_on_unity/?tl=zh-hans",
+          "snippet": "这是一个RTS游戏,里面有《命令与征服:将军》和《英雄连》的元素,但整体上会更简单一些。 老策略游戏的名字。 如何组织你的Unity 项目。一篇关于Unity 游 ..."
+        },
+        {
+          "title": "嬴政- 維基百科，自由嘅百科全書",
+          "url": "https://zh-yue.wikipedia.org/wiki/%E5%AC%B4%E6%94%BF",
+          "snippet": "秦始皇 ceon4 ci2 wong4 （稱 嬴政 jing4 zing3 ）（前259年 —前210年 ），嬴姓，趙氏，名政，有時又稱趙政（或稱為趙正），歷史書多寫作秦王政或始皇帝。佢係中國秦朝首個皇帝，生 ..."
+        },
+        {
+          "title": "三國：謀定天下 – Apps on Google Play",
+          "url": "https://play.google.com/store/apps/details?id=com.bhk.newslgfz&hl=en_NZ",
+          "snippet": "*Three Kingdoms: Strategy for the World* is a Three Kingdoms war game designed for a new generation of strategy players. in a chaotic world"
+        },
+        {
+          "title": "MINISO Group Holding Limited",
+          "url": "https://www.sec.gov/Archives/edgar/data/1815846/000110465925039022/tm2513102d1_ex99-10.pdf",
+          "snippet": "名創優品集團控股有限公司（下稱「公司」或. 「本公司」）及其附屬公司（統稱「本集團」、. 「名創優品」、「名創」或「我們」）欣然呈列截. 至2024年12月31日止財年的環境、 ..."
+        },
+        {
+          "title": "Unity：开发、部署、增长| 全球知名的游戏引擎",
+          "url": "https://unity.com/cn",
+          "snippet": "利用全球知名的3D 游戏引擎Unity 实现开发、部署和增长。为所有主要平台构建，从移动设备到PC和主机，以及扩展现实，获取玩家，实现游戏盈利，并推动工业应用。"
+        },
+        {
+          "title": "全世界最多人用的遊戲引擎Unity 暴走了｜ 遊戲新聞/偷閒加油站",
+          "url": "https://www.youtube.com/watch?v=SEyWfl_6YWo",
+          "snippet": "全世界最多人用的遊戲引擎Unity 暴走了 ｜ 遊戲新聞/偷閒加油站. 641K views · 2 years ago. #unity #ea #steam ...more ..."
+        },
+        {
+          "title": "孫武- 維基百科，自由的百科全書",
+          "url": "https://zh.wikipedia.org/wiki/%E5%AD%99%E6%AD%A6",
+          "snippet": "，東漢末年江東籍將軍，三國江東的首任領導者，被視為江東的奠基者。 孫策，江東的第二任領導者，因行事驃悍而被稱為江東小霸王。 孫權，江東的第三任領導者，東吳的建立者，首任東 ..."
+        },
+        {
+          "title": "【不止遊戲】親自探訪遊戲中的戰場地圖，探尋背後的傳奇故事",
+          "url": "https://www.youtube.com/watch?v=NsCcBBItT4c",
+          "snippet": "本期講述《戰地1》中「西奈沙漠」的遊戲真實背景和一戰時期阿拉伯戰場的歷史，以及「阿拉伯的勞倫斯」的傳奇故事。 特此感謝「約旦遺產復興公司(JHRC ..."
+        },
+        {
+          "title": "哈特谢普苏特领袖|《席德·梅尔的文明VII》",
+          "url": "https://civilization.2k.com/zh-CN/civ-vii/game-guide/leaders/hatshepsut/",
+          "snippet": "公元前14世纪初，埃及在哈特谢普苏特的领导下蓬勃发展。在她漫长的统治期间，埃及的贸易帝国得以扩张，在北部的地中海和南部富饶的邦特建立了网络和影响力。"
+        },
+        {
+          "title": "哈特谢普苏特 - 维基百科",
+          "url": "https://zh.wikipedia.org/zh-hans/%E5%93%88%E7%89%B9%E8%B0%A2%E6%99%AE%E8%8B%8F%E7%89%B9",
+          "snippet": "展开. 法老王名 · 王位名：玛特卡拉 · 真理玛亚特是拉的卡Truth Ma'at is the Ka of Re. M23, L2. ra, mAat, kA. 本名：库努穆特-阿蒙·哈特谢普苏特 · 参与阿蒙 最重要的贵族 ..."
+        },
+        {
+          "title": "哈特謝普蘇特是誰？看懂她的神殿與帝王谷的連結",
+          "url": "https://dewonder.travel/%E5%93%88%E7%89%B9%E8%AC%9D%E6%99%AE%E8%98%87%E7%89%B9%E4%BB%8B%E7%B4%B9/",
+          "snippet": "哈特謝普蘇特（Hatshepsut）是古埃及少數真正以「法老」身份統治埃及的女性。 · 她的神殿與帝王谷，剛好對應兩件事 · 如果先知道這個脈絡，你在現場看到的就不 ..."
+        },
+        {
+          "title": "哈特谢普苏特女王：阿蒙神之女，埃及法老- 世界历史百科全书",
+          "url": "https://www.worldhistory.org/trans/zh/2-118/",
+          "snippet": "哈特谢普苏特（Hatshepsut）的名字意为“最杰出的贵族女性”或“贵族女性之首”（其王室名“Ma'at-ka-re”意为“和谐与真理之灵”），她是第十八王朝（公元前1479 年 ..."
+        },
+        {
+          "title": "女法老哈特謝普蘇特的盛世傳奇Herstory",
+          "url": "https://www.facebook.com/hongkongpalacemuseum/posts/herstory%E5%A5%B3%E6%B3%95%E8%80%81%E5%93%88%E7%89%B9%E8%AC%9D%E6%99%AE%E8%98%87%E7%89%B9%E7%9A%84%E7%9B%9B%E4%B8%96%E5%82%B3%E5%A5%87-herstory-hatshepsuts-legendary-reign%E5%8F%A4%E5%9F%83%E5%8F%8A%E7%8E%8B%E6%9C%9D%E7%94%B1%E7%94%B7%E6%80%A7%E4%B8%BB%E5%B0%8E%E5%A5%B3%E6%B3%95%E8%80%81%E5%B1%88%E6%8C%87%E5%8F%AF%E6%95%B8%E5%93%88%E7%89%B9%E8%AC%9D%E6%99%AE/842851755135643/",
+          "snippet": "哈特謝普蘇 特以一己之力改寫了歷史——從公主到王后、攝政者， 再到王朝的最高統治者，她以非凡的智慧與膽識打破傳 統秩序，為古埃及開創了繁榮盛世。 生而為 ..."
+        }
+      ]
+    },
+    "V1_fix_hypotheses": {
+      "hypotheses_prompt": "你是一个知识渊博的推理助手。请根据以下谜题的约束条件，推测谜题中涉及的可搜索实体名称。\n\n重要：输出的是谜题的中间实体（物质名、人名、地名、作品名等具体名词），而不是最终答案。\n- 如果问题问\"哪个年份\"，应输出该事件涉及的具体物质/人物名称，而非年份\n- 如果问题问\"哪个朝代\"，应输出该事物/人物的具体名称，而非朝代名\n- 如果问题问\"哪家公司\"，应输出创始人的名字或相关产品名，而非公司名\n\n谜题：一款使用Unity3D制作的策略向游戏，其中的某个组织与真实地名相同，请问游戏中该组织的领导者名称是？\n\n输出一个JSON字符串数组，包含5个可搜索的中间实体名称，覆盖不同方向。只输出JSON数组，不要其他文字。\n\n示例：[\"青霉素\",\"链霉素\",\"四环素\",\"磺胺\",\"红霉素\"]\n\nJSON数组：",
+      "hypotheses_raw": "[\"明日方舟\",\"罗德岛\",\"凯尔希\",\"希腊\",\"Unity\"]",
+      "hypotheses_reasoning": "我们被问到：\"一款使用Unity3D制作的策略向游戏，其中的某个组织与真实地名相同，请问游戏中该组织的领导者名称是？\" 我们需要输出5个可搜索的中间实体名称，覆盖不同方向。这些应该是游戏名称、组织名称、领导者名称等相关实体，但最终答案应该是领导者名称。但要求输出中间实体，不是最终答案。所以我们要找出可能的相关实体。\n\n首先，我们需要识别游戏。使用Unity3D的策略游戏，其中有组织与真实地名相同。哪些游戏呢？可能是一种策略游戏，比如《文明》、《全面战争》、《钢铁雄心》等，但Unity3D制作的可能不是大厂作品，可能是移动端或独立游戏。真实地名作组织名：比如“罗德岛”在《明日方舟》？但《明日方舟》不是Unity3D？它是Unity制作的。但它是策略向游戏吗？塔防策略。其中组织“罗德岛”是制药公司，与真实地名希腊罗德岛相同。领导者是“阿米娅”还是“凯尔希”？还是“博士”？罗德岛的领导者通常是阿米娅（公开领导人），不过凯尔希是实际掌权者之一。问题问“游戏中该组织的领导者名称是？”，可能指的是最高领导者。如果是罗德岛，可能答案是“阿米娅”。但我们需要输出中间实体，比如[\"明日方舟\",\"罗德岛\",\"阿米娅\",\"凯尔希\",\"Unity\"]？但我们需要5个可搜索实体，覆盖不同方向。可以包括游戏名、组织名、角色名、地名等。\n\n还有其他可能：“迦勒底”在FGO？但FGO不是Unity3D？它是Unity。策略向？不是策略，是RPG。还有《少女前线》？组织“格里芬”不是真实地名。“龙门”是地名但不是组织。“哥伦比亚”？等等。\n\n另一个候选：《原神》不是策略。 《崩坏：星穹铁道》不是Unity？是Unity，策略？回合制策略有点。组织“星穹列车”？不是真实地名。“贝洛伯格”是真实地名？贝洛伯格是虚构的，但有时地名像俄罗斯的。没有直接相同。\n\n《碧蓝航线》？组织“碧蓝航线”不是地名。\n\n可能的是《明日方舟》确实是Unity3D制作的塔防策略游戏，组织“罗德岛”与真实地名相同。领导者是阿米娅。也可能有其他游戏，比如《战争艺术：赤潮》？《率土之滨》？《部落冲突》不是Unity。\n\n《文明6》不是Unity。 《Risk of Rain 2》不是策略。\n\n或许是中国独立游戏。比如《鬼谷八荒》? 不是策略。《太吾绘卷》？不是Unity3D？是Unity。策略？角色扮演加策略。其组织与真实地名相同？没有。\n\n《戴森球计划》？模拟策略，组织“COSMO”可能不是地名。\n\n《永劫无间》？不是策略。\n\n《三国志·战略版》？Unity3D，真实地名？组织可能叫“魏”“蜀”“吴”，是真实地名，但组织与地名相同？这些既是地名也是国家名。领导者是曹操、刘备、孙权。问题说“某个组织与真实地名相同”，例如“蜀”既是地名也是组织，领导者刘备。但“使用Unity3D制作”很多三国游戏。但是否具体指某个游戏？问题没有明确是哪款游戏，我们需要推断出最可能的知名游戏。可能是一款知名的Unity策略游戏，组织名是真实地名。考虑到广泛度，可能是《明日方舟》的罗德岛。另外，《原神》的“蒙德”？但蒙德是虚构地名，不是真实地名。《王国纪元》？组织没有。\n\n另一个：《冰汽时代》不是Unity。《北境之地》？不是Unity。\n\n《文明Online》？可能。\n\n还有《率土之滨》是网易的，Unity？是Cocos2dx还是Unity？不确定。\n\n《万国觉醒》？莉莉丝，Unity，策略，有真实地名国家组织，领导者如凯撒等。\n\n但问题提到“一款使用Unity3D制作的策略向游戏”，可能比较出名，很多人知道。如果有多款，我们需要输出5个可搜索实体，可能是游戏名称，角色名称，组织名称，地名等，以便搜索找到最终答案。\n\n要求输出JSON数组，包含5个中间实体名称，覆盖不同方向。即我们提供一些关键词，可以帮助定位到这个谜题的答案。这些实体应该是实体的名称，例如游戏名、角色名、组织名等。最终谜题答案是这个组织的领导者名称，但我们输出的不是它，而是相关的中间实体。所以如果我们认为是《明日方舟》的罗德岛，领导者是阿米娅，那么我们可以输出[\"明日方舟\",\"罗德岛\",\"阿米娅\",\"Unity\",\"塔防策略\"]之类，但要求是可搜索实体名称，具体名词，“塔防策略”不是具体名词。应该是游戏名：《明日方舟》，组织名：罗德岛，领导者：阿米娅，还有真实地名：罗德岛，游戏引擎：Unity。这样正好5个。但问题说输出覆盖不同方向，这样就是游戏、组织、角色、地名、引擎。如果我们确定是这个答案。但是否还有其他可能？例如《钢铁雄心4》不是Unity。《欧陆风云》不是Unity。\n\n《军团战棋》? 小游戏。\n\n还有《不思议迷宫》？组织没用真实地名。\n\n《地下城堡2》？组织“庇护所”不是真实地名。\n\n最符合的确实是《明日方舟》。它是2019年发布，使用Unity开发，策略塔防，组织“罗德岛”与希腊的罗德岛相同。领导者：阿米娅。所以答案很可能是阿米娅。我们需要输出的中间实体：明日方舟，罗德岛，阿米娅，Unity，塔防。但“塔防”是类型，不是具体实体名称，可以换成“罗德岛（真实地名）”或者“凯尔希”（另一个重要角色）。更安全的是输出具体名词：[\"明日方舟\", \"罗德岛\", \"阿米娅\", \"Unity3D\", \"希腊\"] 或者 [\"明日方舟\", \"罗德岛\", \"凯尔希\", \"博士\", \"整合运动\"]？为了覆盖不同方向，游戏名、组织名、领导者候选、引擎、真实地名。既然问题要推测谜题中涉及的可搜索实体名称，可能谜题本身有标准答案。我们输出五个可能包括最终答案吗？指令说：“输出的是谜题的中间实体（物质名、人名、地名、作品名等具体名词），而不是最终答案。” 最终答案应该是“阿米娅”。那么我们不能输出最终答案？但示例输出青霉素、链霉素等，这些可能是中间实体，但不是最终答案。如果我们输出包含了阿米娅，那等于输出了答案。输出五个中间实体，是帮助搜索的，所以也许不应该直接包含最终答案。但示例中，如果问题是“哪种抗生素最早发现？”答案是“青霉素”，那么中间实体可能包括“弗莱明”“青霉菌”等，不包含“青霉素”？但示例输出[\"青霉素\",\"链霉素\",\"四环素\",\"磺胺\",\"红霉素\"]，这些是抗生素名称，都不是最终答案吗？示例没有给出谜题。可能示例就是一个输出某种类别的实体列表。我们不确定。但指令说了“输出的中间实体...而不是最终答案”，所以我们应该避免直接输出那个领导者的名字，而是输出与之相关的其他实体，如游戏名、组织名、其他角色、引擎、地名等，这样搜索时可以导向最终答案。所以如果领导者是阿米娅，我们应该输出[\"明日方舟\",\"罗德岛\",\"凯尔希\",\"Unity\",\"希腊\"]。凯尔希是另一重要角色，但不是正式领导者。更好是输出博士？博士是玩家角色，不是组织领导者。阿米娅是公开领导人。也许输出 “阿米娅” 不行。那我们就输出游戏名，组织名，另一个相关角色，引擎，真实地名。保证最终答案不在其中。其他可能性：如果谜题答案是《明日方舟》罗德岛的阿米娅，那中间实体可以包含“明日方舟”、“罗德岛”、“凯尔希”、“整合运动”、“Unity”。覆盖游戏、组织、敌对组织、角色、引擎。这样就够了。\n\n有没有其他游戏？《原神》某个组织叫“蒙德城”？不是组织名，是国家名。《原神》不是策略向。《崩坏3》组织“天命”、“逆熵”都不是真实地名。《战双帕弥什》组织“空中花园”不是真实地名。《少前：云图计划》？无真实地名。\n\n《无尽的拉格朗日》？太空策略，组织可能用星名。\n\n可能是《三国志·战略版》的“蜀”领导者“刘备”。这样中间实体可以输出“三国志战略版”，“蜀”，“刘备”，“诸葛亮”，“Unity”。但是刘备是最终答案，不能输出。那就输出“三国志战略版”，“蜀”，“诸葛亮”，“曹操”，“Unity”。但这样领导者是谁？最后答案是刘备。所以输出其他。\n\n但谜题描述：“一款使用Unity3D制作的策略向游戏，其中的某个组织与真实地名相同”，三国志战略版中的“蜀”确实是真实地名（古蜀地），也是组织名。领导者是刘备。这款游戏很有名，由光荣特库摩授权，国内阿里游戏开发，使用Unity。所以也很有可能。还有“吴”、“魏”。哪个更常见？考虑到谜题通常来自网上的脑筋急转弯或游戏知识问答，可能《明日方舟》更年轻化，《三国志·战略版》也热门。我们需要判断哪一个更符合“策略向游戏”这一描述。明日方舟是塔防策略，通常归类为策略。三国志战略版是标准的slg策略。两者都是Unity。都会有组织与真实地名相同。但是“组织”一词，在明日方舟中“罗德岛”是一个制药公司兼组织，带有军事力量，比较像组织。而三国中“蜀”是一个国家/阵营，也可以说组织。都有可能。我们需要选择其中一个，提供5个中间实体。由于没有更多上下文，我们可能需要给出一个最知名、公开的谜题答案。我在网络上搜索类似谜题：“一款使用Unity3D制作的策略向游戏，其中的某个组织与真实地名相同” 可能来自B站或TapTap的猜谜活动。这很可能指的是《明日方舟》。因为“罗德岛”这个梗很有名。而且谜题问“游戏中该组织的领导者名称是？”，答案是“阿米娅”。如果是三国，问领导者名称可能是“刘备”或“曹操”，但组织名是“蜀”或“魏”，真实地名也是蜀地、魏地。但一般不会说魏是真实地名？蜀是地名，魏也是地名（古魏国）。但组织领导者是“曹操”或“刘备”。同样合理。但为了确定，我倾向于《明日方舟》，因为Unity3D+策略+地名组织，这款游戏常被提及。我会输出明日方舟相关的5个实体：[\"明日方舟\",\"罗德岛\",\"凯尔希\",\"Unity3D\",\"整合运动\"]。覆盖游戏名、组织名、其他重要角色、引擎、敌对组织。不包含阿米娅。\n\n或者也可以加“希腊”，因为罗德岛是真实地名。那 [\"明日方舟\",\"罗德岛\",\"凯尔希\",\"希腊\",\"Unity\"] 更好。覆盖游戏、组织、角色、真实地名、引擎。完美。\n\n如果是三国志战略版，则 [\"三国志战略版\",\"蜀\",\"诸葛亮\",\"成都\",\"Unity\"]。但我觉得明日方舟的可能性更大。\n\n另一种可能是《Fate/Grand Order》？FGO是Unity做的，但不算策略向，是RPG。组织“迦勒底”是南极地名？迦勒底是真实地名，古巴比伦地区。游戏里组织是迦勒底，领导者是“罗玛尼·阿其曼”或者“达芬奇”？或者所长奥尔加玛丽。但这游戏是“策略向”吗？不是。\n\n《碧蓝档案》？Unity，策略？有一些，组织“夏莱”不是真实地名。\n\n《云顶之弈》？不是Unity，是LOL内。 《金铲铲之战》？Unity，但组织“微光”“黑魔法师”等不是真实地名。\n\n所以我还是选择《明日方舟》。\n\n输出的JSON数组：[\"明日方舟\",\"罗德岛\",\"凯尔希\",\"希腊\",\"Unity\"]\n\n这样，覆盖了游戏、组织、另一角色、真实地名、引擎。没有包含最终答案“阿米娅”。符合要求。",
+      "hypotheses": [
+        "明日方舟",
+        "罗德岛",
+        "凯尔希",
+        "希腊",
+        "Unity"
+      ],
+      "constraints": [
+        "Unity3D 策略游戏",
+        "组织 真实地名",
+        "领导者 名称"
+      ],
+      "constraints_str": "Unity3D 策略游戏 组织 真实地名 领导者 名称",
+      "queries": [
+        "明日方舟 Unity3D 策略游戏 组织 真实地名 领导者 名称",
+        "罗德岛 Unity3D 策略游戏 组织 真实地名 领导者 名称",
+        "凯尔希 Unity3D 策略游戏 组织 真实地名 领导者 名称",
+        "希腊 Unity3D 策略游戏 组织 真实地名 领导者 名称",
+        "Unity Unity3D 策略游戏 组织 真实地名 领导者 名称"
+      ],
+      "search_detail": [
+        {
+          "entity": "明日方舟 Unity3D 策略游戏 组织 真实地名 领导者 名称",
+          "query": "明日方舟 Unity3D 策略游戏 组织 真实地名 领导者 名称",
+          "n_results": 5,
+          "n_new": 5,
+          "wall_s": 13.7,
+          "top3": [
+            {
+              "title": "Unity3d 策略游戏势力名称真实地名",
+              "snippet": "英國獨立開發者Jamie Janas 近日發表動作塔防新作《Fangstorm》，預計登上Steam，結合第一人稱近戰動作與塔防策略，玩家將化身由獸人諸神復活的半神英雄， ...",
+              "url": "https://www.instagram.com/popular/unity3d-%E7%AD%96%E7%95%A5-%E6%B8%B8%E6%88%8F-%E5%8A%BF%E5%8A%9B-%E5%90%8D%E7%A7%B0-%E7%9C%9F%E5%AE%9E%E5%9C%B0%E5%90%8D/"
+            },
+            {
+              "title": "《明日方舟：终末地》指南：掌握生产建造，打造顶尖队伍",
+              "snippet": "集成工业（AIC）是终末地工业在各区域的行动核心。你的电网与生产线都以核心AIC 为起点与终点，每解锁一座前哨站，都会获得新的AIC 区域用于生产与电力管理。",
+              "url": "https://store.epicgames.com/news/arknights-endfield-guide-master-manufacturing-build-top-team-tips?lang=zh-CN"
+            },
+            {
+              "title": "明日方舟：終末地- 維基百科",
+              "snippet": "《明日方舟：終末地》為即時制的動作角色扮演遊戲。玩家在探索時可編成最多四名幹員組成小隊進行戰鬥，並可在戰鬥中即時切換當前操控的幹員，其餘成員則由AI自動行動 ...",
+              "url": "https://zh.wikipedia.org/wiki/%E6%98%8E%E6%97%A5%E6%96%B9%E8%88%9F%EF%BC%9A%E7%BB%88%E6%9C%AB%E5%9C%B0"
+            }
+          ]
+        },
+        {
+          "entity": "罗德岛 Unity3D 策略游戏 组织 真实地名 领导者 名称",
+          "query": "罗德岛 Unity3D 策略游戏 组织 真实地名 领导者 名称",
+          "n_results": 5,
+          "n_new": 5,
+          "wall_s": 19.4,
+          "top3": [
+            {
+              "title": "Unity3d 策略游戏势力名称真实地名",
+              "snippet": "《Fangstorm》由英國獨立開發者Jamie Janas 單獨製作，他原本是一名3D CG 藝術家，這是他的第一款推出的遊戲，根據他在Reddit 分享，本作靈感來自 ...",
+              "url": "https://www.instagram.com/popular/unity3d-%E7%AD%96%E7%95%A5%E6%B8%B8%E6%88%8F-%E5%8A%BF%E5%8A%9B-%E5%90%8D%E7%A7%B0-%E7%9C%9F%E5%AE%9E%E5%9C%B0%E5%90%8D/"
+            },
+            {
+              "title": "用Unity做的即时战略游戏: r/Unity3D",
+              "snippet": "今天才知道Unity 里的巴黎每条街都有名字 · Unity 首席执行官John Riccitiello 将辞职，James M. Whitehurst 将接替他的职位。 · 大卫·布拉本对《精英危机》 ...",
+              "url": "https://www.reddit.com/r/Unity3D/comments/abqpjs/real_time_strategy_game_done_on_unity/?tl=zh-hans"
+            },
+            {
+              "title": "About Unity | The World's Leading Game Engine",
+              "snippet": "Our leadership ; Matthew Bromberg. CEO and President · Matthew Bromberg ; Alex Blum. Senior Vice President, Chief Operating Officer · Alex Blum ; Rebecca Boyden.",
+              "url": "https://unity.com/our-company"
+            }
+          ]
+        },
+        {
+          "entity": "凯尔希 Unity3D 策略游戏 组织 真实地名 领导者 名称",
+          "query": "凯尔希 Unity3D 策略游戏 组织 真实地名 领导者 名称",
+          "n_results": 5,
+          "n_new": 5,
+          "wall_s": 20.7,
+          "top3": [
+            {
+              "title": "凯尔希",
+              "snippet": "作者：唯@W. 基本资料. 代号, 凯尔希→凯尔希·思衡托. Kal'tsit→Kal'tsit Espranta ケルシー. 本名, AMa-10. 别号, 凯爹、凯皇、凯太后、勋爵、凯喵、前妻、老猞猁、老 ...",
+              "url": "https://zh.moegirl.org.cn/%E5%87%AF%E5%B0%94%E5%B8%8C"
+            },
+            {
+              "title": "快速分析一下凯尔希。 : r/arknights",
+              "snippet": "凯尔希和“怪物”拥有所有那些强大的能力的同时，也有很多东西限制了他们，而且与使用棘刺和泥岩等普通干员相比，他们的整体多功能性/灵活性会占用相同的部署位 ...",
+              "url": "https://www.reddit.com/r/arknights/comments/n3gcrv/quick_analysis_on_kaltsit/?tl=zh-hans"
+            },
+            {
+              "title": "明日方舟：凯尔希究竟有多强？种族考据、技能机制介绍",
+              "snippet": "罗德岛的真正领袖：凯尔希. 如果说阿米娅是罗德岛的发言人，是明面或名义上的领袖。那么，凯尔希就是罗德岛背后真正的领袖，是众人的精神导师。",
+              "url": "https://zhuanlan.zhihu.com/p/106092455"
+            }
+          ]
+        },
+        {
+          "entity": "希腊 Unity3D 策略游戏 组织 真实地名 领导者 名称",
+          "query": "希腊 Unity3D 策略游戏 组织 真实地名 领导者 名称",
+          "n_results": 5,
+          "n_new": 5,
+          "wall_s": 8.0,
+          "top3": [
+            {
+              "title": "Unity3d 策略游戏势力真实地名",
+              "snippet": "Unity3d 策略游戏势力真实地名 · 《殺戮尖塔2》開放搶先體驗階段！ · 中國學生組成的獨立遊戲團隊冰矩遊戲（Cryotrix Games）開發中 ...",
+              "url": "https://www.instagram.com/popular/unity3d-%E7%AD%96%E7%95%A5%E6%B8%B8%E6%88%8F-%E5%8A%BF%E5%8A%9B-%E7%9C%9F%E5%AE%9E%E5%9C%B0%E5%90%8D/"
+            },
+            {
+              "title": "Unity：开发、部署、增长| 全球知名的游戏引擎",
+              "snippet": "利用全球知名的3D 游戏引擎Unity 实现开发、部署和增长。为所有主要平台构建，从移动设备到PC和主机，以及扩展现实，获取玩家，实现游戏盈利，并推动工业应用。",
+              "url": "https://unity.com/cn"
+            },
+            {
+              "title": "Unity 引擎开发的5 大热门游戏: r/Unity3D",
+              "snippet": "社区信息区域r/Unity3D 我为有兴趣的人整理了一个关于在Unity 中制作RPG 风格任务系统的教程。 策略游戏设计地图的建议? 艺术 98 个点赞",
+              "url": "https://www.reddit.com/r/Unity3D/comments/v7q2cl/top_5_games_created_with_unity/?tl=zh-hans"
+            }
+          ]
+        },
+        {
+          "entity": "Unity Unity3D 策略游戏 组织 真实地名 领导者 名称",
+          "query": "Unity Unity3D 策略游戏 组织 真实地名 领导者 名称",
+          "n_results": 5,
+          "n_new": 4,
+          "wall_s": 24.7,
+          "top3": [
+            {
+              "title": "如何组织你的Unity 项目。一篇关于Unity 游戏项目组织和 ...",
+              "snippet": "如何组织你的Unity 项目。一篇关于Unity 游戏项目组织和结构的详细文章，包含软件模式、示例和一个自定义解决方案。快来看看吧，欢迎提出意见和建议！",
+              "url": "https://www.reddit.com/r/gamedev/comments/uwtk4t/how_to_organize_your_unity_project_a_detailed/?tl=zh-hans"
+            },
+            {
+              "title": "Unity3d 策略游戏势力名称真实地名",
+              "snippet": "英國獨立開發者Jamie Janas 近日發表動作塔防新作《Fangstorm》，預計登上Steam，結合第一人稱近戰動作與塔防策略，玩家將化身由獸人諸神復活的半神英雄， ...",
+              "url": "https://www.instagram.com/popular/unity3d-%E7%AD%96%E7%95%A5%E6%B8%B8%E6%88%8F-%E5%8A%BF%E5%8A%9B-%E5%90%8D%E7%A7%B0-%E7%9C%9F%E5%AE%9E%E5%9C%B0%E5%90%8D/"
+            },
+            {
+              "title": "戰爭迷霧| 在Unity中製作即時策略遊戲| 遊戲開發片段: r/unity",
+              "snippet": "如何整理你的Unity 專案。一篇關於Unity 遊戲專案組織和結構的詳細文章，包含軟體模式、範例和自訂解決方案。來看看吧，隨時歡迎指教！",
+              "url": "https://www.reddit.com/r/unity/comments/1jos6qv/fog_of_war_creating_an_rts_game_in_unity_game_dev/?tl=zh-hant"
+            }
+          ]
+        }
+      ],
+      "total_results": 24,
+      "recall": true,
+      "all_results": [
+        {
+          "title": "Unity3d 策略游戏势力名称真实地名",
+          "url": "https://www.instagram.com/popular/unity3d-%E7%AD%96%E7%95%A5-%E6%B8%B8%E6%88%8F-%E5%8A%BF%E5%8A%9B-%E5%90%8D%E7%A7%B0-%E7%9C%9F%E5%AE%9E%E5%9C%B0%E5%90%8D/",
+          "snippet": "英國獨立開發者Jamie Janas 近日發表動作塔防新作《Fangstorm》，預計登上Steam，結合第一人稱近戰動作與塔防策略，玩家將化身由獸人諸神復活的半神英雄， ..."
+        },
+        {
+          "title": "《明日方舟：终末地》指南：掌握生产建造，打造顶尖队伍",
+          "url": "https://store.epicgames.com/news/arknights-endfield-guide-master-manufacturing-build-top-team-tips?lang=zh-CN",
+          "snippet": "集成工业（AIC）是终末地工业在各区域的行动核心。你的电网与生产线都以核心AIC 为起点与终点，每解锁一座前哨站，都会获得新的AIC 区域用于生产与电力管理。"
+        },
+        {
+          "title": "明日方舟：終末地- 維基百科",
+          "url": "https://zh.wikipedia.org/wiki/%E6%98%8E%E6%97%A5%E6%96%B9%E8%88%9F%EF%BC%9A%E7%BB%88%E6%9C%AB%E5%9C%B0",
+          "snippet": "《明日方舟：終末地》為即時制的動作角色扮演遊戲。玩家在探索時可編成最多四名幹員組成小隊進行戰鬥，並可在戰鬥中即時切換當前操控的幹員，其餘成員則由AI自動行動 ..."
+        },
+        {
+          "title": "【終末地】全組織盤點，方舟的陣營都去哪了？",
+          "url": "https://www.youtube.com/watch?v=vE7zAPQnUi0",
+          "snippet": "全組織盤點，方舟的陣營都去哪了？"
+        },
+        {
+          "title": "明日方舟| 中国独立游戏",
+          "url": "https://indienova.com/g/arknights",
+          "snippet": "《明日方舟》是一款全新的原创策略游戏。 玩家将作为天灾对策组织“罗德岛”的战术头脑，带领魔物干员们，与灾害下信念各异的阵营组织，为了实现目标，彼此周旋与对抗。"
+        },
+        {
+          "title": "Unity3d 策略游戏势力名称真实地名",
+          "url": "https://www.instagram.com/popular/unity3d-%E7%AD%96%E7%95%A5%E6%B8%B8%E6%88%8F-%E5%8A%BF%E5%8A%9B-%E5%90%8D%E7%A7%B0-%E7%9C%9F%E5%AE%9E%E5%9C%B0%E5%90%8D/",
+          "snippet": "《Fangstorm》由英國獨立開發者Jamie Janas 單獨製作，他原本是一名3D CG 藝術家，這是他的第一款推出的遊戲，根據他在Reddit 分享，本作靈感來自 ..."
+        },
+        {
+          "title": "用Unity做的即时战略游戏: r/Unity3D",
+          "url": "https://www.reddit.com/r/Unity3D/comments/abqpjs/real_time_strategy_game_done_on_unity/?tl=zh-hans",
+          "snippet": "今天才知道Unity 里的巴黎每条街都有名字 · Unity 首席执行官John Riccitiello 将辞职，James M. Whitehurst 将接替他的职位。 · 大卫·布拉本对《精英危机》 ..."
+        },
+        {
+          "title": "About Unity | The World's Leading Game Engine",
+          "url": "https://unity.com/our-company",
+          "snippet": "Our leadership ; Matthew Bromberg. CEO and President · Matthew Bromberg ; Alex Blum. Senior Vice President, Chief Operating Officer · Alex Blum ; Rebecca Boyden."
+        },
+        {
+          "title": "《Norse》利用虚幻引擎5生态系统打造维京策略游戏",
+          "url": "https://www.unrealengine.com/developer-interviews/norse-is-a-tactical-viking-game-that-taps-into-many-aspects-of-unreal-engine-5-s-ecosystem?lang=zh-CN",
+          "snippet": "开发商Arctic Hazard正在制作一款回合制策略游戏，旨在让玩家体验真刀真枪的维京战争。这家挪威工作室基于当地历史以及他们对经典策略游戏的热爱，构筑了《 ..."
+        },
+        {
+          "title": "The RISE & FALL of UNITY! | Gaming Documentary",
+          "url": "https://www.youtube.com/watch?v=Duo0kC1IitU",
+          "snippet": "The detailed Rise & Fall of GOOGLE STADIA! · Kickstarter's PLAGIARISED Video Games | Bizarre Crowdfunding Stories · (audio) Floppy Days 163 - ..."
+        },
+        {
+          "title": "凯尔希",
+          "url": "https://zh.moegirl.org.cn/%E5%87%AF%E5%B0%94%E5%B8%8C",
+          "snippet": "作者：唯@W. 基本资料. 代号, 凯尔希→凯尔希·思衡托. Kal'tsit→Kal'tsit Espranta ケルシー. 本名, AMa-10. 别号, 凯爹、凯皇、凯太后、勋爵、凯喵、前妻、老猞猁、老 ..."
+        },
+        {
+          "title": "快速分析一下凯尔希。 : r/arknights",
+          "url": "https://www.reddit.com/r/arknights/comments/n3gcrv/quick_analysis_on_kaltsit/?tl=zh-hans",
+          "snippet": "凯尔希和“怪物”拥有所有那些强大的能力的同时，也有很多东西限制了他们，而且与使用棘刺和泥岩等普通干员相比，他们的整体多功能性/灵活性会占用相同的部署位 ..."
+        },
+        {
+          "title": "明日方舟：凯尔希究竟有多强？种族考据、技能机制介绍",
+          "url": "https://zhuanlan.zhihu.com/p/106092455",
+          "snippet": "罗德岛的真正领袖：凯尔希. 如果说阿米娅是罗德岛的发言人，是明面或名义上的领袖。那么，凯尔希就是罗德岛背后真正的领袖，是众人的精神导师。"
+        },
+        {
+          "title": "凯尔希| 中国全明星玩游戏联盟Wiki",
+          "url": "https://kichiku.fandom.com/zh/wiki/%E5%87%AF%E5%B0%94%E5%B8%8C",
+          "snippet": "凯尔希（英文：Kal'tsit，日文：ケルシー） TDAU FA MAS，暮光王朝医师，第三领域全玩者缔造者之一与现任党魁，斯托拉斯时期促成了明日方舟队的成立，曾于2025年3月2日至4月27日期间 ..."
+        },
+        {
+          "title": "凯尔希",
+          "url": "https://moegirl.icu/%E5%87%AF%E5%B0%94%E5%B8%8C",
+          "snippet": "作者：唯@W. 基本资料. 代号, 凯尔希. Kal'tsit ケルシー. 本名, AMa-10. 别号, 凯爹、凯皇、凯太后、勋爵、凯喵、前妻、老猞猁、老女人、尖叫、M3发射 ..."
+        },
+        {
+          "title": "Unity3d 策略游戏势力真实地名",
+          "url": "https://www.instagram.com/popular/unity3d-%E7%AD%96%E7%95%A5%E6%B8%B8%E6%88%8F-%E5%8A%BF%E5%8A%9B-%E7%9C%9F%E5%AE%9E%E5%9C%B0%E5%90%8D/",
+          "snippet": "Unity3d 策略游戏势力真实地名 · 《殺戮尖塔2》開放搶先體驗階段！ · 中國學生組成的獨立遊戲團隊冰矩遊戲（Cryotrix Games）開發中 ..."
+        },
+        {
+          "title": "Unity：开发、部署、增长| 全球知名的游戏引擎",
+          "url": "https://unity.com/cn",
+          "snippet": "利用全球知名的3D 游戏引擎Unity 实现开发、部署和增长。为所有主要平台构建，从移动设备到PC和主机，以及扩展现实，获取玩家，实现游戏盈利，并推动工业应用。"
+        },
+        {
+          "title": "Unity 引擎开发的5 大热门游戏: r/Unity3D",
+          "url": "https://www.reddit.com/r/Unity3D/comments/v7q2cl/top_5_games_created_with_unity/?tl=zh-hans",
+          "snippet": "社区信息区域r/Unity3D 我为有兴趣的人整理了一个关于在Unity 中制作RPG 风格任务系统的教程。 策略游戏设计地图的建议? 艺术 98 个点赞"
+        },
+        {
+          "title": "全世界最多人用的遊戲引擎Unity 暴走了｜ 遊戲新聞/偷閒加油站",
+          "url": "https://www.youtube.com/watch?v=SEyWfl_6YWo",
+          "snippet": "全世界最多人用的遊戲引擎Unity 暴走了🦾| 遊戲新聞/偷閒加油站641K views · 2 years ago #unity #ea #steam 347K views 1:19:03"
+        },
+        {
+          "title": "Unity (遊戲引擎) - 維基百科，自由的百科全書",
+          "url": "https://zh.wikipedia.org/wiki/Unity_(%E6%B8%B8%E6%88%8F%E5%BC%95%E6%93%8E)",
+          "snippet": "Unity是一款跨平台的遊戲引擎，可用於開發2D和3D遊戲，支援多種個人電腦、行動裝置、遊戲主機、網頁平台、擴增實境和虛擬實境，其中在iOS和Android系統的遊戲開發上特別受 ..."
+        },
+        {
+          "title": "如何组织你的Unity 项目。一篇关于Unity 游戏项目组织和 ...",
+          "url": "https://www.reddit.com/r/gamedev/comments/uwtk4t/how_to_organize_your_unity_project_a_detailed/?tl=zh-hans",
+          "snippet": "如何组织你的Unity 项目。一篇关于Unity 游戏项目组织和结构的详细文章，包含软件模式、示例和一个自定义解决方案。快来看看吧，欢迎提出意见和建议！"
+        },
+        {
+          "title": "戰爭迷霧| 在Unity中製作即時策略遊戲| 遊戲開發片段: r/unity",
+          "url": "https://www.reddit.com/r/unity/comments/1jos6qv/fog_of_war_creating_an_rts_game_in_unity_game_dev/?tl=zh-hant",
+          "snippet": "如何整理你的Unity 專案。一篇關於Unity 遊戲專案組織和結構的詳細文章，包含軟體模式、範例和自訂解決方案。來看看吧，隨時歡迎指教！"
+        },
+        {
+          "title": "组织您的Unity项目的最佳实践| Unity",
+          "url": "https://unity.com/cn/how-to/organizing-your-project",
+          "snippet": "虽然没有单一的方法来组织Unity项目，但这里有一些关键建议：. 记录您的命名约定和文件夹结构。样式指南和/或项目模板使文件更易于查找和组织。选择适合您团队的方式，并 ..."
+        },
+        {
+          "title": "Unity 遊戲開發零基礎入門 #6！拿出你天馬行空的靈感打造下 ...",
+          "url": "https://www.youtube.com/watch?v=h6CNk7aAufg",
+          "snippet": "內容綱要00:00 遊戲結束和重玩設定03:40 遊戲設分設定07:07 顯示玩家最終得分10:17 遊戲輸出 教學資源專案進度檔下載https://tinyurl.com/2ddcxvv8 ..."
+        }
+      ]
+    },
+    "V2_fix_both": {
+      "hypotheses": [
+        "明日方舟",
+        "罗德岛",
+        "凯尔希",
+        "希腊",
+        "Unity"
+      ],
+      "query_prompt": "对于以下谜题和候选实体，为每个实体生成一个用于Google搜索验证的关键词组合。关键词应：\n1. 包含实体名本身\n2. 加入谜题中对验证该实体最关键的1-3个约束词（只选事实性约束如\"中国\"\"投产\"\"年份\"，不要谜语修辞如\"绿色山脉\"\"小人物\"）\n3. 简短精准，不超过8个词\n\n谜题：一款使用Unity3D制作的策略向游戏，其中的某个组织与真实地名相同，请问游戏中该组织的领导者名称是？\n\n候选实体：\n- 明日方舟\n- 罗德岛\n- 凯尔希\n- 希腊\n- Unity\n\n输出JSON数组，每个元素含 \"entity\" 和 \"search_query\" 两字段。只输出JSON数组。\n\nJSON数组：",
+      "query_raw": "```json\n[\n  {\"entity\": \"明日方舟\", \"search_query\": \"明日方舟 Unity3D 策略游戏 组织\"},\n  {\"entity\": \"罗德岛\", \"search_query\": \"罗德岛 明日方舟 组织 领导者\"},\n  {\"entity\": \"凯尔希\", \"search_query\": \"凯尔希 罗德岛 领导者 明日方舟\"},\n  {\"entity\": \"希腊\", \"search_query\": \"希腊 罗德岛 明日方舟 组织\"},\n  {\"entity\": \"Unity\", \"search_query\": \"明日方舟 使用 Unity3D 制作\"}\n]\n```",
+      "query_reasoning": "我们被要求为每个候选实体生成一个搜索查询。谜题是：\"一款使用Unity3D制作的策略向游戏，其中的某个组织与真实地名相同，请问游戏中该组织的领导者名称是？\" 候选实体：明日方舟、罗德岛、凯尔希、希腊、Unity。\n\n我们需要理解谜题：游戏使用Unity3D制作，策略游戏，其中某个组织名称与真实地名相同，问该组织的领导者名称。显然，答案是“凯尔希”。游戏是《明日方舟》，组织是“罗德岛”（与希腊的罗德岛同名），领导者是凯尔希。所以验证时，我们需要搜索游戏、组织、领导者等。\n\n对于每个候选实体，生成搜索关键词，包含实体名，并加入验证该实体最关键的约束词。约束词应是事实性的，如\"明日方舟 罗德岛 领导者\"，或者\"罗德岛 组织 明日方舟 凯尔希\"。最多8个词。\n\n我们分析每个实体：\n- 明日方舟：游戏名，可能需要验证它是否是Unity3D制作的策略游戏，以及其中的组织。搜索：\"明日方舟 Unity3D 策略游戏 组织\"\n- 罗德岛：组织名，需要验证它与真实地名相同（希腊的罗德岛），领导者是谁。搜索：\"罗德岛 明日方舟 组织 领导者\"\n- 凯尔希：角色名，需要验证她是罗德岛的领导者。搜索：\"凯尔希 罗德岛 领导者 明日方舟\"\n- 希腊：真实地名，罗德岛是希腊的一个岛。可能搜索：\"希腊 罗德岛 明日方舟\" 但可能需要验证游戏中的组织与真实地名相同。搜索：\"希腊 罗德岛 明日方舟 组织\"\n- Unity：游戏引擎，验证《明日方舟》使用Unity3D制作。搜索：\"明日方舟 Unity3D 制作\"\n\n我们需要简短精准，不超过8个词。输出JSON数组，每个元素有entity和search_query。\n\n所以构建如下：\n1. {\"entity\": \"明日方舟\", \"search_query\": \"明日方舟 Unity3D 策略游戏 组织\"}\n2. {\"entity\": \"罗德岛\", \"search_query\": \"罗德岛 明日方舟 组织 领导者\"}\n3. {\"entity\": \"凯尔希\", \"search_query\": \"凯尔希 罗德岛 领导者 明日方舟\"}\n4. {\"entity\": \"希腊\", \"search_query\": \"希腊 罗德岛 明日方舟 组织\"}\n5. {\"entity\": \"Unity\", \"search_query\": \"明日方舟 使用 Unity3D 制作\"}\n\n检查词数：\"明日方舟 Unity3D 策略游戏 组织\" 4个词，OK。\"罗德岛 明日方舟 组织 领导者\" 4个词。\"凯尔希 罗德岛 领导者 明日方舟\" 4个词。\"希腊 罗德岛 明日方舟 组织\" 4个词。\"明日方舟 使用 Unity3D 制作\" 包含\"使用\"，也许可以简化为 \"明日方舟 Unity3D 引擎\"？但\"制作\"更好。不超过8词，没问题。\n\n输出JSON数组。",
+      "queries_parsed": [
+        {
+          "entity": "明日方舟",
+          "search_query": "明日方舟 Unity3D 策略游戏 组织"
+        },
+        {
+          "entity": "罗德岛",
+          "search_query": "罗德岛 明日方舟 组织 领导者"
+        },
+        {
+          "entity": "凯尔希",
+          "search_query": "凯尔希 罗德岛 领导者 明日方舟"
+        },
+        {
+          "entity": "希腊",
+          "search_query": "希腊 罗德岛 明日方舟 组织"
+        },
+        {
+          "entity": "Unity",
+          "search_query": "明日方舟 使用 Unity3D 制作"
+        }
+      ],
+      "search_detail": [
+        {
+          "entity": "明日方舟",
+          "query": "明日方舟 Unity3D 策略游戏 组织",
+          "n_results": 5,
+          "n_new": 5,
+          "wall_s": 20.2,
+          "top3": [
+            {
+              "title": "明日方舟：終末地- 維基百科",
+              "snippet": "《明日方舟：終末地》是由鷹角網絡旗下峘形山工作室開發的即時策略遊戲，為《明日方舟》的衍生作品。遊戲採用基本免費、內含付費內容的營運模式，在Windows、PlayStation ...",
+              "url": "https://zh.wikipedia.org/wiki/%E6%98%8E%E6%97%A5%E6%96%B9%E8%88%9F%EF%BC%9A%E7%BB%88%E6%9C%AB%E5%9C%B0"
+            },
+            {
+              "title": "Unity3d 策略游戏势力真实地名",
+              "snippet": "Unity3d 策略游戏势力真实地名 · 開局直接偷金條翻金庫賺了800多銀幣旁邊的守衛選擇視而不見 2,538 · 長年來孕育出無數同人與獨立遊戲名作的開發工具系列《 ...",
+              "url": "https://www.instagram.com/popular/unity3d-%E7%AD%96%E7%95%A5%E6%B8%B8%E6%88%8F-%E5%8A%BF%E5%8A%9B-%E7%9C%9F%E5%AE%9E%E5%9C%B0%E5%90%8D/"
+            },
+            {
+              "title": "《明日方舟：终末地》指南：掌握生产建造，打造顶尖队伍",
+              "snippet": "集成工业（AIC）是终末地工业在各区域的行动核心。你的电网与生产线都以核心AIC 为起点与终点，每解锁一座前哨站，都会获得新的AIC 区域用于生产与电力管理。",
+              "url": "https://store.epicgames.com/news/arknights-endfield-guide-master-manufacturing-build-top-team-tips?lang=zh-CN"
+            }
+          ]
+        },
+        {
+          "entity": "罗德岛",
+          "query": "罗德岛 明日方舟 组织 领导者",
+          "n_results": 5,
+          "n_new": 5,
+          "wall_s": 21.5,
+          "top3": [
+            {
+              "title": "罗德岛- 明日方舟",
+              "snippet": "直到续作《明日方舟：终末地》中，罗德岛也依然存在，并与终末地工业保持紧密合作，时任领袖为华法琳，但在塔卫二上，罗德岛的活动较为隐蔽。 组织历史. 以下 ...",
+              "url": "https://zh.moegirl.org.cn/%E7%BD%97%E5%BE%B7%E5%B2%9B"
+            },
+            {
+              "title": "罗德岛",
+              "snippet": "罗德岛是游戏《明日方舟》中的主角阵营，对外宣称制药公司并公开领袖为阿米娅，实则为拥有独立武装力量及矿石病研究体系的感染者问题专家组织。其核心移动舰由特蕾西娅 ...",
+              "url": "https://baike.baidu.com/item/%E7%BD%97%E5%BE%B7%E5%B2%9B/23605501"
+            },
+            {
+              "title": "为什么阿米娅是罗德岛的领导者？ : r/arknights",
+              "snippet": "在罗德岛的领导层里，阿米娅最能继承和体现罗德岛的理想。 其他的领导层要么太愤世嫉俗（凯尔希），要么太健忘（博士），无法按照组织的使命宣言来领导。",
+              "url": "https://www.reddit.com/r/arknights/comments/yh4olx/why_is_amiya_the_leader_of_rhodes_island/?tl=zh-hans"
+            }
+          ]
+        },
+        {
+          "entity": "凯尔希",
+          "query": "凯尔希 罗德岛 领导者 明日方舟",
+          "n_results": 5,
+          "n_new": 5,
+          "wall_s": 14.1,
+          "top3": [
+            {
+              "title": "凯尔希",
+              "snippet": "参照医学检测报告，确认为感染者。 ... 凯尔希，罗德岛高层管理人员之一，罗德岛医疗项目领头人。在冶金工业、社会学、源石技艺、考古学、历史系谱学、经济学、植物学、地质学等 ...",
+              "url": "https://zh.moegirl.org.cn/%E5%87%AF%E5%B0%94%E5%B8%8C"
+            },
+            {
+              "title": "凯尔希- PRTS - 玩家共同构筑的明日方舟中文Wiki",
+              "snippet": "博士，请坐。 · 我会定期为你进行理学检查，记录你的生命征象与意识状态，其他人没有这个权限。 · 罗德岛的核心部门是医疗部门，理论研究与实践救治都需要医学人才，外勤行动所需 ...",
+              "url": "https://prts.wiki/w/%E5%87%AF%E5%B0%94%E5%B8%8C"
+            },
+            {
+              "title": "明日方舟：凯尔希究竟有多强？种族考据、技能机制介绍",
+              "snippet": "罗德岛的真正领袖：凯尔希如果说阿米娅是罗德岛的发言人，是明面或名义上的领袖。那么，凯尔希就是罗德岛背后真正的领袖，是众人的精神导师。这位在明日 ...",
+              "url": "https://zhuanlan.zhihu.com/p/106092455"
+            }
+          ]
+        },
+        {
+          "entity": "希腊",
+          "query": "希腊 罗德岛 明日方舟 组织",
+          "n_results": 5,
+          "n_new": 3,
+          "wall_s": 14.5,
+          "top3": [
+            {
+              "title": "罗德岛",
+              "snippet": "罗德岛是游戏《明日方舟》中的主角阵营，对外宣称制药公司并公开领袖为阿米娅，实则为拥有独立武装力量及矿石病研究体系的感染者问题专家组织。其核心移动舰由特蕾西娅团队在 ...",
+              "url": "https://baike.baidu.com/item/%E7%BD%97%E5%BE%B7%E5%B2%9B/23605501"
+            },
+            {
+              "title": "罗德岛- 明日方舟",
+              "snippet": "《明日方舟：终末地》. 罗德岛是《明日方舟》、《明日方舟：终末地》及以上的衍生作品中登场的一个架空的组织，也是《明日方舟》玩家角色博士所属的组织。",
+              "url": "https://zh.moegirl.org.cn/%E7%BD%97%E5%BE%B7%E5%B2%9B"
+            },
+            {
+              "title": "罗德岛：虚实交融的自由隐喻",
+              "snippet": "也许有人会说，《明日方舟》的罗德岛势力是参考历史上的“罗德骑士团”，再结合对“陆行舰”的猜测，似乎我们知道“罗德岛”势力代表什么了。 但我还有个问题给大家 ...",
+              "url": "https://zhuanlan.zhihu.com/p/80955397"
+            }
+          ]
+        },
+        {
+          "entity": "Unity",
+          "query": "明日方舟 使用 Unity3D 制作",
+          "n_results": 5,
+          "n_new": 4,
+          "wall_s": 10.8,
+          "top3": [
+            {
+              "title": "初创团队的曲折开发前行之路:《明日方舟》中3D和2D结合方案",
+              "snippet": "... 制作人海猫以“初创团队的曲折开发前行之路:《明日方舟》中3D和2D结合方案”为主题发表了演讲。 - Unity技术专栏是中国Unity官方为开发者准备的中文技术 ...",
+              "url": "https://developer.unity.cn/projects/5fc9d972edbc2a49b5e3a8ab"
+            },
+            {
+              "title": "关于Unity的坏消息，可能会影响到《明日方舟》 : r/arknights",
+              "snippet": "大多数抽卡游戏（包括GT）都是使用Unity制作的，一些著名的抽卡游戏，例如： ... 《明日方舟》是用Unity3D 引擎的。打死我也想不到。 但不管怎么说，Unity ...",
+              "url": "https://www.reddit.com/r/arknights/comments/16hc49b/bad_news_regarding_unity_that_may_effects/?tl=zh-hans"
+            },
+            {
+              "title": "用Unity简单实现明日方舟",
+              "snippet": "在干员战斗的时候你会注意到一些秘制特效，这是用Unity自带的组件Trail Renderer做的。这个组件很强大，如果加上一点代码能得到非常酷的效果。 关卡：2.5D/正交 ...",
+              "url": "https://www.bilibili.com/read/cv10606906/"
+            }
+          ]
+        }
+      ],
+      "total_results": 22,
+      "recall": true,
+      "all_results": [
+        {
+          "title": "明日方舟：終末地- 維基百科",
+          "url": "https://zh.wikipedia.org/wiki/%E6%98%8E%E6%97%A5%E6%96%B9%E8%88%9F%EF%BC%9A%E7%BB%88%E6%9C%AB%E5%9C%B0",
+          "snippet": "《明日方舟：終末地》是由鷹角網絡旗下峘形山工作室開發的即時策略遊戲，為《明日方舟》的衍生作品。遊戲採用基本免費、內含付費內容的營運模式，在Windows、PlayStation ..."
+        },
+        {
+          "title": "Unity3d 策略游戏势力真实地名",
+          "url": "https://www.instagram.com/popular/unity3d-%E7%AD%96%E7%95%A5%E6%B8%B8%E6%88%8F-%E5%8A%BF%E5%8A%9B-%E7%9C%9F%E5%AE%9E%E5%9C%B0%E5%90%8D/",
+          "snippet": "Unity3d 策略游戏势力真实地名 · 開局直接偷金條翻金庫賺了800多銀幣旁邊的守衛選擇視而不見 2,538 · 長年來孕育出無數同人與獨立遊戲名作的開發工具系列《 ..."
+        },
+        {
+          "title": "《明日方舟：终末地》指南：掌握生产建造，打造顶尖队伍",
+          "url": "https://store.epicgames.com/news/arknights-endfield-guide-master-manufacturing-build-top-team-tips?lang=zh-CN",
+          "snippet": "集成工业（AIC）是终末地工业在各区域的行动核心。你的电网与生产线都以核心AIC 为起点与终点，每解锁一座前哨站，都会获得新的AIC 区域用于生产与电力管理。"
+        },
+        {
+          "title": "明日方舟| 中国独立游戏",
+          "url": "https://indienova.com/g/arknights",
+          "snippet": "《明日方舟》是一款全新的原创策略游戏。 玩家将作为天灾对策组织“罗德岛”的战术头脑，带领魔物干员们，与灾害下信念各异的阵营组织，为了实现目标，彼此周旋与对抗。"
+        },
+        {
+          "title": "初创团队的曲折开发前行之路:《明日方舟》中3D和2D结合方案",
+          "url": "https://developer.unity.cn/projects/5fc9d972edbc2a49b5e3a8ab",
+          "snippet": "这款游戏具体的玩法可以从图中看到，它的玩法由策略、塔防、RPG相结合，是采用Unity开发的，同时也是考虑到技术的实现，我们采用了一个2D和3D相结合的表现形式 ..."
+        },
+        {
+          "title": "罗德岛- 明日方舟",
+          "url": "https://zh.moegirl.org.cn/%E7%BD%97%E5%BE%B7%E5%B2%9B",
+          "snippet": "直到续作《明日方舟：终末地》中，罗德岛也依然存在，并与终末地工业保持紧密合作，时任领袖为华法琳，但在塔卫二上，罗德岛的活动较为隐蔽。 组织历史. 以下 ..."
+        },
+        {
+          "title": "罗德岛",
+          "url": "https://baike.baidu.com/item/%E7%BD%97%E5%BE%B7%E5%B2%9B/23605501",
+          "snippet": "罗德岛是游戏《明日方舟》中的主角阵营，对外宣称制药公司并公开领袖为阿米娅，实则为拥有独立武装力量及矿石病研究体系的感染者问题专家组织。其核心移动舰由特蕾西娅 ..."
+        },
+        {
+          "title": "为什么阿米娅是罗德岛的领导者？ : r/arknights",
+          "url": "https://www.reddit.com/r/arknights/comments/yh4olx/why_is_amiya_the_leader_of_rhodes_island/?tl=zh-hans",
+          "snippet": "在罗德岛的领导层里，阿米娅最能继承和体现罗德岛的理想。 其他的领导层要么太愤世嫉俗（凯尔希），要么太健忘（博士），无法按照组织的使命宣言来领导。"
+        },
+        {
+          "title": "《明日方舟》里的罗德岛是什么性质的组织或机构",
+          "url": "https://www.zhihu.com/question/323950467",
+          "snippet": "又∵阿米娅是罗德岛公开领导人. ∴由领袖效应得: 罗德岛的各位都会自爆. 综上所述，罗德岛是恐怖组织. 阿米娅英文名Amiya，9笔写成，即1+1+4+5-1+4×1."
+        },
+        {
+          "title": "🔸《明日方舟》 羅德島公開領導人：#阿米婭小介紹🔸 她不會拋下 ...",
+          "url": "https://www.facebook.com/yliasdimension/videos/2759094584323144/?locale=hi_IN",
+          "snippet": "《明日方舟》 羅德島公開領導人：#阿米婭小介紹 她不會拋下任何同伴；她不會放棄自己的信念； 她就是羅德島年幼的領導者──阿米婭 這次帶來了簡短而基礎 ..."
+        },
+        {
+          "title": "凯尔希",
+          "url": "https://zh.moegirl.org.cn/%E5%87%AF%E5%B0%94%E5%B8%8C",
+          "snippet": "参照医学检测报告，确认为感染者。 ... 凯尔希，罗德岛高层管理人员之一，罗德岛医疗项目领头人。在冶金工业、社会学、源石技艺、考古学、历史系谱学、经济学、植物学、地质学等 ..."
+        },
+        {
+          "title": "凯尔希- PRTS - 玩家共同构筑的明日方舟中文Wiki",
+          "url": "https://prts.wiki/w/%E5%87%AF%E5%B0%94%E5%B8%8C",
+          "snippet": "博士，请坐。 · 我会定期为你进行理学检查，记录你的生命征象与意识状态，其他人没有这个权限。 · 罗德岛的核心部门是医疗部门，理论研究与实践救治都需要医学人才，外勤行动所需 ..."
+        },
+        {
+          "title": "明日方舟：凯尔希究竟有多强？种族考据、技能机制介绍",
+          "url": "https://zhuanlan.zhihu.com/p/106092455",
+          "snippet": "罗德岛的真正领袖：凯尔希如果说阿米娅是罗德岛的发言人，是明面或名义上的领袖。那么，凯尔希就是罗德岛背后真正的领袖，是众人的精神导师。这位在明日 ..."
+        },
+        {
+          "title": "凯尔希- 明日方舟WIKI_BWIKI",
+          "url": "https://wiki.biligame.com/arknights/%E5%87%AF%E5%B0%94%E5%B8%8C",
+          "snippet": "凯尔希，罗德岛高层管理人员之一，罗德岛医疗项目领头人。在冶金工业、社会学、源石技艺、考古学、历史系谱学、经济学、植物学、地质学等领域皆拥有 ..."
+        },
+        {
+          "title": "凯尔希",
+          "url": "https://moegirl.icu/%E5%87%AF%E5%B0%94%E5%B8%8C",
+          "snippet": "罗德岛医疗项目领头人、罗德岛最高管理者之一、阿米娅的直接辅导者、罗德 ... 保卫罗德岛 • 霜叶之歌 • 日常方舟 • 蚀痕拓印 • Cursed night ..."
+        },
+        {
+          "title": "罗德岛：虚实交融的自由隐喻",
+          "url": "https://zhuanlan.zhihu.com/p/80955397",
+          "snippet": "也许有人会说，《明日方舟》的罗德岛势力是参考历史上的“罗德骑士团”，再结合对“陆行舰”的猜测，似乎我们知道“罗德岛”势力代表什么了。 但我还有个问题给大家 ..."
+        },
+        {
+          "title": "【杂谈/科普向】浅谈“使徒组织”标志和罗德岛医疗部 ...",
+          "url": "https://www.skland.com/h/detail?id=1707441",
+          "snippet": "前言：《明日方舟》开服近五年来，其平面设计一直是被很多玩家津津乐道的一个话题，而明日方舟中的众多组织、国家和地区确实需要为它们设计一个合适的标志，以达到玩家 ..."
+        },
+        {
+          "title": "罗德岛",
+          "url": "https://moegirl.icu/%E7%BD%97%E5%BE%B7%E5%B2%9B",
+          "snippet": "罗德岛是《明日方舟》及其衍生作品中登场的一个架空的组织，也是玩家角色博士所属的组织。"
+        },
+        {
+          "title": "关于Unity的坏消息，可能会影响到《明日方舟》 : r/arknights",
+          "url": "https://www.reddit.com/r/arknights/comments/16hc49b/bad_news_regarding_unity_that_may_effects/?tl=zh-hans",
+          "snippet": "大多数抽卡游戏（包括GT）都是使用Unity制作的，一些著名的抽卡游戏，例如： ... 《明日方舟》是用Unity3D 引擎的。打死我也想不到。 但不管怎么说，Unity ..."
+        },
+        {
+          "title": "用Unity简单实现明日方舟",
+          "url": "https://www.bilibili.com/read/cv10606906/",
+          "snippet": "在干员战斗的时候你会注意到一些秘制特效，这是用Unity自带的组件Trail Renderer做的。这个组件很强大，如果加上一点代码能得到非常酷的效果。 关卡：2.5D/正交 ..."
+        },
+        {
+          "title": "《明日方舟》中3D和2D结合方案",
+          "url": "https://zhuanlan.zhihu.com/p/363965652",
+          "snippet": "本文是根据鹰角网络技术负责人黄一峰，在2020年Unity线上技术大会的演讲整理而成。该视频分为2个部分，前部分是由制作人讲述团队和《明日方舟》项目立项 ..."
+        },
+        {
+          "title": "【情報】沒想到終末地是用Unity製作，跟嗚潮（UE）一樣水準",
+          "url": "https://forum.gamer.com.tw/C.php?bsn=74604&snA=12",
+          "snippet": "【情報】沒想到終末地是用Unity製作，跟嗚潮（UE）一樣水準. 綜合討論 ... 【四格】明日方舟：終末地- 管理員專屬特殊待遇. 2026-04-18 21:50:46."
+        }
+      ]
+    }
+  }
+}

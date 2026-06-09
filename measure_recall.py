@@ -46,10 +46,10 @@ def check_results(results, ref):
             return True
     return False
 
-METHODS = ["A", "B", "C", "D", "E"]
+METHODS = ["A", "B", "C", "D", "E", "F"]
 
-print(f"{'QID':<8} {'Ref':<20} | {'A':^5} {'B':^5} {'C':^5} {'D':^5} {'E':^5}")
-print(f"{'':8} {'':20} | {'':5} {'':5} {'':5} {'':5} {'':5}")
+print(f"{'QID':<8} {'Ref':<20} | {'A':^5} {'B':^5} {'C':^5} {'D':^5} {'E':^5} {'F':^5}")
+print(f"{'':8} {'':20} | {'':5} {'':5} {'':5} {'':5} {'':5} {'':5}")
 print("-" * 50)
 
 hits = {m: 0 for m in METHODS}
@@ -69,13 +69,13 @@ for qid, method_results in sorted(recall.items()):
         if ok:
             hits[m] += 1
 
-    print(f"{qid:<8} {ref[:18]:<20} | {statuses['A']:^5} {statuses['B']:^5} {statuses['C']:^5} {statuses['D']:^5} {statuses['E']:^5}")
+    print(f"{qid:<8} {ref[:18]:<20} | {statuses['A']:^5} {statuses['B']:^5} {statuses['C']:^5} {statuses['D']:^5} {statuses['E']:^5} {statuses['F']:^5}")
 
 print("-" * 50)
 print(f"\nPer-method recall ({total} questions):")
 print(f"{'Method':<12} {'Recall':<12} {'Description'}")
 print(f"{'':12} {'':12} {'':}")
 for m in METHODS:
-    names = {"A": "A: Direct", "B": "B: +gap", "C": "C: Hypo+gap", "D": "D: SEVE+gap", "E": "E: +Fallback"}
+    names = {"A": "A: Direct", "B": "B: +gap", "C": "C: Hypo+gap", "D": "D: SEVE+gap", "E": "E: +Fallback", "F": "F: Chain"}
     pct = f"{hits[m]}/{total} = {hits[m]/total*100:.0f}%" if total else "N/A"
     print(f"{names[m]:<12} {pct:<12}")

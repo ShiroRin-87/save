@@ -1,12 +1,12 @@
 """Experiment configuration — all values are fixed per the experiment design."""
 
 # API keys
-GEMINI_API_KEY = "sk-QRv4ACt4fQub9e2_Jtftp4__Tf6_y3RY69gUKLSo6GjKjnGUiV4QHNVa8io"
-SERP_API_KEY = "871721eb9798e30a558f35e2267167e621537ebba654e296459c93c3548fcf33"
+DS_API_KEY = "sk-2d2f9c783efa49c5b4b501dad0b54107"
+SERP_API_KEY = "0848cf62ae0bbdecf5d293937984dc9695234cfb3ec0da929a1d94d7d7b5a45d"
 
 # Model
-MODEL_NAME = "gemini-3-flash-preview"
-API_BASE_URL = "https://www.ai-wave.org"
+MODEL_NAME = "deepseek-v4-pro"
+API_BASE_URL = "https://api.deepseek.com"
 
 # Search
 SEARCH_TOP_K = 10
@@ -15,7 +15,7 @@ JINA_MAX_CHARS = 5000  # per-page max chars (per-result extraction, simple trunc
 
 # Generation
 TEMPERATURE = 0.0
-MAX_OUTPUT_TOKENS = 4096
+MAX_OUTPUT_TOKENS = 65536
 API_TIMEOUT_SEC = 60
 
 # Parsing

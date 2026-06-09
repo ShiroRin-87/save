@@ -1,0 +1,715 @@
+{
+  "question": "在一次意外中，一位爱好研究的小人物发现了一种能够改变历史的物质。这一物质极大地推动了生命健康的发展，被某个遥远大陆上的无数国家广泛应用。这位小人物的名字总让人联想到一位住在绿色山脉的人物。这位小人物的作品在中国的那一年正式投产？",
+  "ref": "1953 年",
+  "versions": {
+    "V0_original": {
+      "hypotheses_prompt": "你是一个知识渊博的推理助手。请根据以下谜题的约束条件，依靠你自己的知识推测可能的答案。\n\n谜题：在一次意外中，一位爱好研究的小人物发现了一种能够改变历史的物质。这一物质极大地推动了生命健康的发展，被某个遥远大陆上的无数国家广泛应用。这位小人物的名字总让人联想到一位住在绿色山脉的人物。这位小人物的作品在中国的那一年正式投产？\n\n输出一个JSON字符串数组，包含5个方向各异的最终候选答案。每个元素直接是答案名称，覆盖不同方向。只输出JSON数组，不要其他文字。\n\n示例：[\"青城山\",\"都江堰\",\"乐山大佛\",\"峨眉山\",\"莫高窟\"]\n\nJSON数组：",
+      "hypotheses_raw": "[\"1986\", \"1953\", \"1926\", \"1993\", \"2000\"]",
+      "hypotheses": [
+        "1986",
+        "1953",
+        "1926",
+        "1993",
+        "2000"
+      ],
+      "constraints_prompt": "从以下谜题中提取3-5个可用于搜索验证的关键词或短语。\n\n谜题：在一次意外中，一位爱好研究的小人物发现了一种能够改变历史的物质。这一物质极大地推动了生命健康的发展，被某个遥远大陆上的无数国家广泛应用。这位小人物的名字总让人联想到一位住在绿色山脉的人物。这位小人物的作品在中国的那一年正式投产？\n\n输出一个JSON字符串数组。只输出JSON数组。\n\nJSON数组：",
+      "constraints_raw": "[\"意外\", \"爱好研究的小人物\", \"改变历史的物质\", \"名字联想到住在绿色山脉的人物\", \"作品在中国正式投产\"]",
+      "constraints": [
+        "意外",
+        "爱好研究的小人物",
+        "改变历史的物质",
+        "名字联想到住在绿色山脉的人物",
+        "作品在中国正式投产"
+      ],
+      "queries": [
+        "1986 意外 爱好研究的小人物 改变历史的物质 名字联想到住在绿色山脉的人物 作品在中国正式投产",
+        "1953 意外 爱好研究的小人物 改变历史的物质 名字联想到住在绿色山脉的人物 作品在中国正式投产",
+        "1926 意外 爱好研究的小人物 改变历史的物质 名字联想到住在绿色山脉的人物 作品在中国正式投产",
+        "1993 意外 爱好研究的小人物 改变历史的物质 名字联想到住在绿色山脉的人物 作品在中国正式投产",
+        "2000 意外 爱好研究的小人物 改变历史的物质 名字联想到住在绿色山脉的人物 作品在中国正式投产"
+      ],
+      "search_detail": [
+        {
+          "entity": "1986 意外 爱好研究的小人物 改变历史的物质 名字联想到住在绿色山脉的人物 作品在中国正式投产",
+          "query": "1986 意外 爱好研究的小人物 改变历史的物质 名字联想到住在绿色山脉的人物 作品在中国正式投产",
+          "n_results": 5,
+          "n_new": 5,
+          "wall_s": 29.4,
+          "top3": [
+            {
+              "title": "Terms of Use",
+              "snippet": "在承繼遺產這一方得研究中國的作家和作品;這裏寫下的作家小 傳,便是基於這種認識而作的。 中國文學作品的情節、人物和場景等問 題。",
+              "url": "https://commons.ln.edu.hk/cgi/viewcontent.cgi?article=1014&context=chi_etd"
+            },
+            {
+              "title": "機構簡稱： ISBN 書名作者版次裝訂冊 ...",
+              "snippet": "... 人理你,到人人挺你!巧妙操控97%人心的暗黑心理學. 羅密歐.羅德里格斯二世(Romeo Rodriguez Jr.)著; 蘇聖翔, 高詹. 初版. 平裝. 1. 9789869235372 用可愛的波蘭陶器,打造日 ...",
+              "url": "https://www.ncl.edu.tw/files/file_pool/1/0Q054550139186085007/2b5a1aa4-f9af-405f-b6b6-243c3fcfb529.pdf"
+            },
+            {
+              "title": "I 点赞数J",
+              "snippet": "夕特地赶来大陆捐赠闽台关系档案的台湾收藏家田蚚畅， 丰富了新闻内涵， 增强了故事. 性与可听性，与《条例》施行巧妙呼应。同时，通过福建省人大常委会和福建省档案局.",
+              "url": "https://gdj.fujian.gov.cn/gkai/tzgg/202510/P020260318580088703884.pdf"
+            }
+          ]
+        },
+        {
+          "entity": "1953 意外 爱好研究的小人物 改变历史的物质 名字联想到住在绿色山脉的人物 作品在中国正式投产",
+          "query": "1953 意外 爱好研究的小人物 改变历史的物质 名字联想到住在绿色山脉的人物 作品在中国正式投产",
+          "n_results": 5,
+          "n_new": 5,
+          "wall_s": 19.3,
+          "top3": [
+            {
+              "title": "https://www.unesco.org/zh/articles/zhiqingniandeyi...",
+              "snippet": "",
+              "url": "https://www.unesco.org/zh/articles/zhiqingniandeyifengxin"
+            },
+            {
+              "title": "https://www.shenzhenmuseum.com/abnewsdetail?resId=...",
+              "snippet": "",
+              "url": "https://www.shenzhenmuseum.com/abnewsdetail?resId=8afcc80c4e064dceb368d3935e4610dd&clazzName=CmsInformation"
+            },
+            {
+              "title": "http://www.chinawatchnet.com/Encyclopedias/146/153...",
+              "snippet": "",
+              "url": "http://www.chinawatchnet.com/Encyclopedias/146/1534.html"
+            }
+          ]
+        },
+        {
+          "entity": "1926 意外 爱好研究的小人物 改变历史的物质 名字联想到住在绿色山脉的人物 作品在中国正式投产",
+          "query": "1926 意外 爱好研究的小人物 改变历史的物质 名字联想到住在绿色山脉的人物 作品在中国正式投产",
+          "n_results": 5,
+          "n_new": 1,
+          "wall_s": 19.6,
+          "top3": [
+            {
+              "title": "Terms of Use",
+              "snippet": "在承繼遺產這一方 面,當然就得研究中國的作家和作品;這裏寫下的作家小 傳,便是基於這種認識而作的。 文學作品的情節、人物和場景等問 題。",
+              "url": "https://commons.ln.edu.hk/cgi/viewcontent.cgi?article=1014&context=chi_etd"
+            },
+            {
+              "title": "http://www.chinawatchnet.com/Encyclopedias/146/153...",
+              "snippet": "",
+              "url": "http://www.chinawatchnet.com/Encyclopedias/146/1534.html"
+            },
+            {
+              "title": "機構簡稱： ISBN 書名作者版次裝訂冊 ...",
+              "snippet": "... 人理你,到人人挺你!巧妙操控97%人心的暗黑心理學. 羅密歐.羅德里格斯二世(Romeo Rodriguez Jr.)著; 蘇聖翔, 高詹. 初版. 平裝. 1. 9789869235372 用可愛的波蘭陶器,打造日 ...",
+              "url": "https://www.ncl.edu.tw/files/file_pool/1/0Q054550139186085007/2b5a1aa4-f9af-405f-b6b6-243c3fcfb529.pdf"
+            }
+          ]
+        },
+        {
+          "entity": "1993 意外 爱好研究的小人物 改变历史的物质 名字联想到住在绿色山脉的人物 作品在中国正式投产",
+          "query": "1993 意外 爱好研究的小人物 改变历史的物质 名字联想到住在绿色山脉的人物 作品在中国正式投产",
+          "n_results": 5,
+          "n_new": 3,
+          "wall_s": 31.7,
+          "top3": [
+            {
+              "title": "【微历史】9个改变历史进程的小人物",
+              "snippet": "一个小小的侍医，一个下意识的投掷动作，却救了自己的大王，而他的大王在此后的数年间平灭了六国，结束了中国500多年诸侯纷争的局面，建立了中国历史上第一个 ...",
+              "url": "http://www.xinhuanet.com/politics/2015-11/06/c_128400526.htm"
+            },
+            {
+              "title": "Terms of Use",
+              "snippet": "在承繼遺產這一方得研究中國的作家和作品;這裏寫下的作家小 傳,便是基於這種認識而作的。 中國文學作品的情節、人物和場景等問 題。",
+              "url": "https://commons.ln.edu.hk/cgi/viewcontent.cgi?article=1014&context=chi_etd"
+            },
+            {
+              "title": "历史上有哪些小人物改变了历史走向，然后突然消失了？ - 文化",
+              "snippet": "原标题：历史上有哪些小人物改变了历史走向，然后突然消失了？ 先问个问题，在重要历史事件中出现的那些，曾经发挥过重要作用的人，都是名人吗？",
+              "url": "https://culture.china.com/history2014/11159882/20171108/31639941.html"
+            }
+          ]
+        },
+        {
+          "entity": "2000 意外 爱好研究的小人物 改变历史的物质 名字联想到住在绿色山脉的人物 作品在中国正式投产",
+          "query": "2000 意外 爱好研究的小人物 改变历史的物质 名字联想到住在绿色山脉的人物 作品在中国正式投产",
+          "n_results": 5,
+          "n_new": 3,
+          "wall_s": 33.5,
+          "top3": [
+            {
+              "title": "【微历史】9个改变历史进程的小人物",
+              "snippet": "一个小小的侍医，一个下意识的投掷动作，却救了自己的大王，而他的大王在此后的数年间平灭了六国，结束了中国500多年诸侯纷争的局面，建立了中国历史上第一个 ...",
+              "url": "http://www.xinhuanet.com/politics/2015-11/06/c_128400526.htm"
+            },
+            {
+              "title": "https://guides.lib.utexas.edu/az.php?q=Neoster%20G...",
+              "snippet": "No information is available for this page.",
+              "url": "https://guides.lib.utexas.edu/az.php?q=Neoster%20Global%20Inc%20Reviews"
+            },
+            {
+              "title": "有哪些名不见经传的小人物，改变了历史的走向？ - 小轲Kk ...",
+              "snippet": "两个小混混影响一座城甚至全中国的历史走向，这个故事不知道大家听过没？ 庄炳昌出生于山东，童年时期饱受之苦，所以激发了他投身农业的决心。",
+              "url": "https://www.zhihu.com/question/659532185/answer/20282745203"
+            }
+          ]
+        }
+      ],
+      "total_results": 17,
+      "recall": false,
+      "all_results": [
+        {
+          "title": "Terms of Use",
+          "url": "https://commons.ln.edu.hk/cgi/viewcontent.cgi?article=1014&context=chi_etd",
+          "snippet": "在承繼遺產這一方得研究中國的作家和作品;這裏寫下的作家小 傳,便是基於這種認識而作的。 中國文學作品的情節、人物和場景等問 題。"
+        },
+        {
+          "title": "機構簡稱： ISBN 書名作者版次裝訂冊 ...",
+          "url": "https://www.ncl.edu.tw/files/file_pool/1/0Q054550139186085007/2b5a1aa4-f9af-405f-b6b6-243c3fcfb529.pdf",
+          "snippet": "... 人理你,到人人挺你!巧妙操控97%人心的暗黑心理學. 羅密歐.羅德里格斯二世(Romeo Rodriguez Jr.)著; 蘇聖翔, 高詹. 初版. 平裝. 1. 9789869235372 用可愛的波蘭陶器,打造日 ..."
+        },
+        {
+          "title": "I 点赞数J",
+          "url": "https://gdj.fujian.gov.cn/gkai/tzgg/202510/P020260318580088703884.pdf",
+          "snippet": "夕特地赶来大陆捐赠闽台关系档案的台湾收藏家田蚚畅， 丰富了新闻内涵， 增强了故事. 性与可听性，与《条例》施行巧妙呼应。同时，通过福建省人大常委会和福建省档案局."
+        },
+        {
+          "title": "辽宁非遗影像展（三）刘景春",
+          "url": "https://www.lingyuan.gov.cn/html/LYSZF/202311/0169960829047183.html",
+          "snippet": "1980年,张占祥高中毕业以后,到南门一位美术讲师。1986年,他被幸运,阳光的金线直达水的深度,彼时人鱼共舞的涟漪颤栗成为恒久的涌动。"
+        },
+        {
+          "title": "https://news.qq.com/rain/a/20200725A0WNDT00",
+          "url": "https://news.qq.com/rain/a/20200725A0WNDT00",
+          "snippet": ""
+        },
+        {
+          "title": "https://www.unesco.org/zh/articles/zhiqingniandeyi...",
+          "url": "https://www.unesco.org/zh/articles/zhiqingniandeyifengxin",
+          "snippet": ""
+        },
+        {
+          "title": "https://www.shenzhenmuseum.com/abnewsdetail?resId=...",
+          "url": "https://www.shenzhenmuseum.com/abnewsdetail?resId=8afcc80c4e064dceb368d3935e4610dd&clazzName=CmsInformation",
+          "snippet": ""
+        },
+        {
+          "title": "http://www.chinawatchnet.com/Encyclopedias/146/153...",
+          "url": "http://www.chinawatchnet.com/Encyclopedias/146/1534.html",
+          "snippet": ""
+        },
+        {
+          "title": "Untitled",
+          "url": "https://nobleresearch.org/Content/siteimages/Editorial/11_Xuchen%20Zhang-JMHP.pdf",
+          "snippet": "Page 1."
+        },
+        {
+          "title": "【微历史】9个改变历史进程的小人物",
+          "url": "http://www.xinhuanet.com/politics/2015-11/06/c_128400526.htm",
+          "snippet": "一个小小的侍医，一个下意识的投掷动作，却救了自己的大王，而他的大王在此后的数年间平灭了六国，结束了中国500多年诸侯纷争的局面，建立了中国历史上第一个 ..."
+        },
+        {
+          "title": "https://view.inews.qq.com/a/20200723A0BDA500",
+          "url": "https://view.inews.qq.com/a/20200723A0BDA500",
+          "snippet": ""
+        },
+        {
+          "title": "历史上有哪些小人物改变了历史走向，然后突然消失了？ - 文化",
+          "url": "https://culture.china.com/history2014/11159882/20171108/31639941.html",
+          "snippet": "原标题：历史上有哪些小人物改变了历史走向，然后突然消失了？ 先问个问题，在重要历史事件中出现的那些，曾经发挥过重要作用的人，都是名人吗？"
+        },
+        {
+          "title": "社会责任的分量",
+          "url": "https://www.ckgsb.edu.cn/userfiles/doc/ck_magazine_spec_200901.pdf",
+          "snippet": "1995年，陈文生飞往美国加州大学进修，其后在美国负责组织. 中国企业到美的展览、交流、合作等事务。1999年他回国，在深圳加. 入了中国欧美进出口公司并创办了欧美商务公司。"
+        },
+        {
+          "title": "20th Century & Contemporary Art Evening Sale in ...",
+          "url": "https://www.dist.phillips.com/content/web/auctions/HK010322/HK010322_zh_2.pdf",
+          "snippet": "在一個具象藝術占主導的世界裡，米凱拉·伊爾伍德—丹那巨大的色彩抽象的世界極具震攝人心魄的. 氣質，猶如在混沌中追求的沉思， 將她並置於包括雷切爾·瓊斯和托克瓦斯·戴森 ..."
+        },
+        {
+          "title": "https://guides.lib.utexas.edu/az.php?q=Neoster%20G...",
+          "url": "https://guides.lib.utexas.edu/az.php?q=Neoster%20Global%20Inc%20Reviews",
+          "snippet": "No information is available for this page."
+        },
+        {
+          "title": "有哪些名不见经传的小人物，改变了历史的走向？ - 小轲Kk ...",
+          "url": "https://www.zhihu.com/question/659532185/answer/20282745203",
+          "snippet": "两个小混混影响一座城甚至全中国的历史走向，这个故事不知道大家听过没？ 庄炳昌出生于山东，童年时期饱受之苦，所以激发了他投身农业的决心。"
+        },
+        {
+          "title": "https://www.burlington.com/search?q=贝宁BBCom%20esim...",
+          "url": "https://www.burlington.com/search?q=%E8%B4%9D%E5%AE%81BBCom%20esim%E5%8D%A1%E8%B4%AD%E4%B9%B0%F0%9F%94%B4TG%E2%9C%88%EF%B8%8F@bige_sim%F0%9F%94%B4%E3%80%90%E7%8E%B0%E8%B4%A7%E4%BE%9B%E5%BA%94%E3%80%91%E3%80%90%E4%BD%8E%E4%BB%B7%E6%89%B9%E5%8F%91%E3%80%91",
+          "snippet": "No information is available for this page."
+        }
+      ]
+    },
+    "V1_fix_hypotheses": {
+      "hypotheses_prompt": "你是一个知识渊博的推理助手。请根据以下谜题的约束条件，推测谜题中涉及的可搜索实体名称。\n\n重要：输出的是谜题的中间实体（物质名、人名、地名、作品名等具体名词），而不是最终答案。\n- 如果问题问\"哪个年份\"，应输出该事件涉及的具体物质/人物名称，而非年份\n- 如果问题问\"哪个朝代\"，应输出该事物/人物的具体名称，而非朝代名\n- 如果问题问\"哪家公司\"，应输出创始人的名字或相关产品名，而非公司名\n\n谜题：在一次意外中，一位爱好研究的小人物发现了一种能够改变历史的物质。这一物质极大地推动了生命健康的发展，被某个遥远大陆上的无数国家广泛应用。这位小人物的名字总让人联想到一位住在绿色山脉的人物。这位小人物的作品在中国的那一年正式投产？\n\n输出一个JSON字符串数组，包含5个可搜索的中间实体名称，覆盖不同方向。只输出JSON数组，不要其他文字。\n\n示例：[\"青霉素\",\"链霉素\",\"四环素\",\"磺胺\",\"红霉素\"]\n\nJSON数组：",
+      "hypotheses_raw": "[\"屠呦呦\",\"青蒿素\",\"青蒿\",\"疟疾\",\"非洲\"]",
+      "hypotheses": [
+        "屠呦呦",
+        "青蒿素",
+        "青蒿",
+        "疟疾",
+        "非洲"
+      ],
+      "constraints": [
+        "意外",
+        "爱好研究的小人物",
+        "改变历史的物质",
+        "名字联想到住在绿色山脉的人物",
+        "作品在中国正式投产"
+      ],
+      "constraints_str": "意外 爱好研究的小人物 改变历史的物质 名字联想到住在绿色山脉的人物 作品在中国正式投产",
+      "queries": [
+        "屠呦呦 意外 爱好研究的小人物 改变历史的物质 名字联想到住在绿色山脉的人物 作品在中国正式投产",
+        "青蒿素 意外 爱好研究的小人物 改变历史的物质 名字联想到住在绿色山脉的人物 作品在中国正式投产",
+        "青蒿 意外 爱好研究的小人物 改变历史的物质 名字联想到住在绿色山脉的人物 作品在中国正式投产",
+        "疟疾 意外 爱好研究的小人物 改变历史的物质 名字联想到住在绿色山脉的人物 作品在中国正式投产",
+        "非洲 意外 爱好研究的小人物 改变历史的物质 名字联想到住在绿色山脉的人物 作品在中国正式投产"
+      ],
+      "search_detail": [
+        {
+          "entity": "屠呦呦 意外 爱好研究的小人物 改变历史的物质 名字联想到住在绿色山脉的人物 作品在中国正式投产",
+          "query": "屠呦呦 意外 爱好研究的小人物 改变历史的物质 名字联想到住在绿色山脉的人物 作品在中国正式投产",
+          "n_results": 5,
+          "n_new": 5,
+          "wall_s": 19.2,
+          "top3": [
+            {
+              "title": "【共和国勋章获得者屠呦呦】《科技日报》：扛得住190次失败",
+              "snippet": "1969年年初，刚过38岁的屠呦呦已经在卫生部中医研究院(现中国中医科学院)中药研究所工作了快14年。 ... 1972年7月，屠呦呦等3名科研人员住进了北京 ...",
+              "url": "http://www.natcm.gov.cn/hudongjiaoliu/guanfangweixin/2019-09-30/11162.html"
+            },
+            {
+              "title": "屠呦呦：心中有国家造福无国界",
+              "snippet": "高中毕业，屠呦呦考取北京大学医学院药学系；大学毕业后，专精现代生药学的她被分配到中医研究院中药研究所；工作不久，她自愿脱产学习中医药，走进祖国传统医药 ...",
+              "url": "https://www.nhc.gov.cn/xcs/ghgmy/201909/5a5edf10701143f884b302111bce8ef3.shtml"
+            },
+            {
+              "title": "屠呦呦- 維基百科，自由的百科全書",
+              "snippet": "屠呦呦（1930年12月30日—），中國藥物化學家，浙江寧波人，中國共產黨黨員，中國中醫科學院終身研究員兼首席研究員，中國中醫科學院中藥研究所青蒿素研究中心主任，博士研究生 ...",
+              "url": "https://zh.wikipedia.org/wiki/%E5%B1%A0%E5%91%A6%E5%91%A6"
+            }
+          ]
+        },
+        {
+          "entity": "青蒿素 意外 爱好研究的小人物 改变历史的物质 名字联想到住在绿色山脉的人物 作品在中国正式投产",
+          "query": "青蒿素 意外 爱好研究的小人物 改变历史的物质 名字联想到住在绿色山脉的人物 作品在中国正式投产",
+          "n_results": 5,
+          "n_new": 4,
+          "wall_s": 20.3,
+          "top3": [
+            {
+              "title": "屠呦呦致信新华社：青蒿素是怎么发现的-高校科技",
+              "snippet": "调研中，2015年诺贝尔生理学或医学奖、2016年度国家最高科学技术奖得主，86岁的中国中医科学院（中药研究所）终身研究员、青蒿素研究中心主任屠呦呦给新华社 ...",
+              "url": "https://www.edu.cn/rd/special_topic/nobel/201706/t20170628_1535178.shtml"
+            },
+            {
+              "title": "屠呦呦：青蒿素是传统中医药送给世界人民的礼物",
+              "snippet": "青蒿素的发现是集体发掘中药的成功范例，由此获奖是中国科学事业、中医中药走向世界的一个荣誉。”这是5日晚间，刚刚摘取2015年诺贝尔生理学或医学奖的中国女药学家屠呦呦， ...",
+              "url": "https://kjc.gdmu.edu.cn/info/1022/1095.htm"
+            },
+            {
+              "title": "【青蒿素問世50周年！今天，感謝屠呦呦！】瘧疾是全世界最嚴重 ...",
+              "snippet": "20世紀60年代，北京中藥研究所的科研 人員屠呦呦在翻閱中醫藥古籍時，發現了一段有關瘧疾 治療的記載，之後，經過上百種中藥篩選，數百次失敗 ，以及親身人體 ...",
+              "url": "https://www.facebook.com/CCTV.CH/videos/%E9%9D%92%E8%92%BF%E7%B4%A0%E5%95%8F%E4%B8%9650%E5%91%A8%E5%B9%B4%E4%BB%8A%E5%A4%A9%E6%84%9F%E8%AC%9D%E5%B1%A0%E5%91%A6%E5%91%A6/575942570228021/"
+            }
+          ]
+        },
+        {
+          "entity": "青蒿 意外 爱好研究的小人物 改变历史的物质 名字联想到住在绿色山脉的人物 作品在中国正式投产",
+          "query": "青蒿 意外 爱好研究的小人物 改变历史的物质 名字联想到住在绿色山脉的人物 作品在中国正式投产",
+          "n_results": 5,
+          "n_new": 2,
+          "wall_s": 23.5,
+          "top3": [
+            {
+              "title": "屠呦呦致信新华社：青蒿素是怎么发现的-高校科技",
+              "snippet": "调研中，2015年诺贝尔生理学或医学奖、2016年度国家最高科学技术奖得主，86岁的中国中医科学院（中药研究所）终身研究员、青蒿素研究中心主任屠呦呦给新华社 ...",
+              "url": "https://www.edu.cn/rd/special_topic/nobel/201706/t20170628_1535178.shtml"
+            },
+            {
+              "title": "【环球人物】屠呦呦：用一株小草改变世界",
+              "snippet": "青蒿在中国民间又称作臭蒿和苦蒿，属菊科一年生草本植物，在中国南北方都 ... 可以说，屠呦呦对青蒿的研究和发现，是青蒿素得以诞生的关键因素。",
+              "url": "https://news.pku.edu.cn/mtbdnew/284-112136.htm"
+            },
+            {
+              "title": "屠呦呦：一提青蒿素眼睛就亮",
+              "snippet": "屠呦呦是新中国培养的第一代大学生，1955年毕业于北京大学医学院药学系，同年到中药研究所工作,后脱产两年半参加卫生部委托中医研究院举办的“西医学习中医班 ...",
+              "url": "http://www.natcm.gov.cn/xinxifabu/meitibaodao/2019-09-26/11103.html"
+            }
+          ]
+        },
+        {
+          "entity": "疟疾 意外 爱好研究的小人物 改变历史的物质 名字联想到住在绿色山脉的人物 作品在中国正式投产",
+          "query": "疟疾 意外 爱好研究的小人物 改变历史的物质 名字联想到住在绿色山脉的人物 作品在中国正式投产",
+          "n_results": 5,
+          "n_new": 5,
+          "wall_s": 17.8,
+          "top3": [
+            {
+              "title": "中国故事｜一叶青蒿连中非",
+              "snippet": "作为全球重大传染病，疟疾曾是中国流行历史最久、影响范围最广、危害最严重的重大传染病之一。 20世纪70年代以来，中国疟疾防控和救治能力显著提升。",
+              "url": "http://www.news.cn/world/20240830/5e60dc8c0c1c4d2e99ae5056cd71cf42/c.html"
+            },
+            {
+              "title": "https://news.qq.com/rain/a/20210819A01BAV00",
+              "snippet": "",
+              "url": "https://news.qq.com/rain/a/20210819A01BAV00"
+            },
+            {
+              "title": "Search results for Helmet",
+              "snippet": "Not able to find what you're looking for? Use the internal search functionality from Harley-Davidson to find the products or information you're looking for.",
+              "url": "https://www.harley-davidson.com/us/en/search?q=Google%20SEO%20tips/search.html?;sp_staged=0&format=json;i=1;locale=en_US;q=Helmet;sp_cs=UTF-8"
+            }
+          ]
+        },
+        {
+          "entity": "非洲 意外 爱好研究的小人物 改变历史的物质 名字联想到住在绿色山脉的人物 作品在中国正式投产",
+          "query": "非洲 意外 爱好研究的小人物 改变历史的物质 名字联想到住在绿色山脉的人物 作品在中国正式投产",
+          "n_results": 5,
+          "n_new": 4,
+          "wall_s": 14.3,
+          "top3": [
+            {
+              "title": "https://guides.lib.utexas.edu/az.php?q=Neoster%20G...",
+              "snippet": "No information is available for this page.",
+              "url": "https://guides.lib.utexas.edu/az.php?q=Neoster%20Global%20Inc%20Reviews"
+            },
+            {
+              "title": "将废金属组合成雕塑西非艺术家化腐朽为神奇【2024.10.31 八 ...",
+              "snippet": "将废金属组合成雕塑西非艺术家化腐朽为神奇】 贝宁金属雕塑家埃尔梅达将废弃金属化为艺术品，希望能让人们从中发现废品的潜力。",
+              "url": "https://www.youtube.com/watch?v=4PR9hIQlk9g"
+            },
+            {
+              "title": "Search",
+              "snippet": "Filters · Everything(114,849) · Academic Profile(4,147) · Courses(549) · Faculties and schools(4,445) · Unit of Study Outline(26,769) · Phonebook(13,608).",
+              "url": "https://www.sydney.edu.au/search.html"
+            }
+          ]
+        }
+      ],
+      "total_results": 20,
+      "recall": false,
+      "all_results": [
+        {
+          "title": "【共和国勋章获得者屠呦呦】《科技日报》：扛得住190次失败",
+          "url": "http://www.natcm.gov.cn/hudongjiaoliu/guanfangweixin/2019-09-30/11162.html",
+          "snippet": "1969年年初，刚过38岁的屠呦呦已经在卫生部中医研究院(现中国中医科学院)中药研究所工作了快14年。 ... 1972年7月，屠呦呦等3名科研人员住进了北京 ..."
+        },
+        {
+          "title": "屠呦呦：心中有国家造福无国界",
+          "url": "https://www.nhc.gov.cn/xcs/ghgmy/201909/5a5edf10701143f884b302111bce8ef3.shtml",
+          "snippet": "高中毕业，屠呦呦考取北京大学医学院药学系；大学毕业后，专精现代生药学的她被分配到中医研究院中药研究所；工作不久，她自愿脱产学习中医药，走进祖国传统医药 ..."
+        },
+        {
+          "title": "屠呦呦- 維基百科，自由的百科全書",
+          "url": "https://zh.wikipedia.org/wiki/%E5%B1%A0%E5%91%A6%E5%91%A6",
+          "snippet": "屠呦呦（1930年12月30日—），中國藥物化學家，浙江寧波人，中國共產黨黨員，中國中醫科學院終身研究員兼首席研究員，中國中醫科學院中藥研究所青蒿素研究中心主任，博士研究生 ..."
+        },
+        {
+          "title": "屠呦呦：青蒿素是传统中医药送给世界人民的礼物",
+          "url": "https://kjc.gdmu.edu.cn/info/1022/1095.htm",
+          "snippet": "据介绍，屠呦呦1930年出生于宁波，多年来从事中药和中西药结合研究，目前担任中国中医科学院中药研究所研究员。 ... ”中国工程院院士、中国中医科学院院长张伯礼说，屠呦呦 ..."
+        },
+        {
+          "title": "从中国科学家屠呦呦获2015年诺贝尔生理或医学奖说起",
+          "url": "https://gibh.cas.cn/news/kxpj/202411/t20241112_7438158.html",
+          "snippet": "作者为北京中医研究院中药研究所的刘静明、倪慕云、樊菊芬和屠呦呦，以及中国科学院上海有机化学研究所的吴照华、吴毓林和周维善先生。该论文通过红外 ..."
+        },
+        {
+          "title": "屠呦呦致信新华社：青蒿素是怎么发现的-高校科技",
+          "url": "https://www.edu.cn/rd/special_topic/nobel/201706/t20170628_1535178.shtml",
+          "snippet": "调研中，2015年诺贝尔生理学或医学奖、2016年度国家最高科学技术奖得主，86岁的中国中医科学院（中药研究所）终身研究员、青蒿素研究中心主任屠呦呦给新华社 ..."
+        },
+        {
+          "title": "【青蒿素問世50周年！今天，感謝屠呦呦！】瘧疾是全世界最嚴重 ...",
+          "url": "https://www.facebook.com/CCTV.CH/videos/%E9%9D%92%E8%92%BF%E7%B4%A0%E5%95%8F%E4%B8%9650%E5%91%A8%E5%B9%B4%E4%BB%8A%E5%A4%A9%E6%84%9F%E8%AC%9D%E5%B1%A0%E5%91%A6%E5%91%A6/575942570228021/",
+          "snippet": "20世紀60年代，北京中藥研究所的科研 人員屠呦呦在翻閱中醫藥古籍時，發現了一段有關瘧疾 治療的記載，之後，經過上百種中藥篩選，數百次失敗 ，以及親身人體 ..."
+        },
+        {
+          "title": "【环球人物】屠呦呦：用一株小草改变世界",
+          "url": "https://news.pku.edu.cn/mtbdnew/284-112136.htm",
+          "snippet": "青蒿在中国民间又称作臭蒿和苦蒿,属菊科一年生草本植物,在中国南北方都很常见。 青蒿素是由中国人发明的, 中国陆续通过论文向世界公布了青蒿素的整个发明 ..."
+        },
+        {
+          "title": "屠呦呦：一提青蒿素眼睛就亮",
+          "url": "http://www.natcm.gov.cn/xinxifabu/meitibaodao/2019-09-26/11103.html",
+          "snippet": "屠呦呦是新中国培养的第一代大学生，1955年毕业于北京大学医学院药学系，同年到中药研究所工作,后脱产两年半参加卫生部委托中医研究院举办的“西医学习中医班 ..."
+        },
+        {
+          "title": "[人民日报]屠呦呦打开一扇崭新的窗户",
+          "url": "https://www.most.gov.cn/ztzl/tyy/mtbd/201510/t20151006_121879.html",
+          "snippet": "“青蒿素是传统中医药送给世界人民的礼物。” 10月5日，中国中医科学院研究员屠呦呦获得2015年诺贝尔生理学或医学奖。一时间，各大新闻网站、朋友圈被这 ..."
+        },
+        {
+          "title": "青蒿素- 維基百科，自由的百科全書",
+          "url": "https://zh.wikipedia.org/wiki/%E9%9D%92%E8%92%BF%E7%B4%A0",
+          "snippet": "青蒿素（INN：artemisinin）也稱黃花蒿素，是從菊科蒿屬植物黃花蒿（Artemisia annua）中分離得到的倍半萜類化合物，具有抗瘧作用。青蒿素及其衍生物是現今所有藥物中起效最快 ..."
+        },
+        {
+          "title": "中国故事｜一叶青蒿连中非",
+          "url": "http://www.news.cn/world/20240830/5e60dc8c0c1c4d2e99ae5056cd71cf42/c.html",
+          "snippet": "作为全球重大传染病，疟疾曾是中国流行历史最久、影响范围最广、危害最严重的重大传染病之一。 20世纪70年代以来，中国疟疾防控和救治能力显著提升。"
+        },
+        {
+          "title": "https://news.qq.com/rain/a/20210819A01BAV00",
+          "url": "https://news.qq.com/rain/a/20210819A01BAV00",
+          "snippet": ""
+        },
+        {
+          "title": "Search results for Helmet",
+          "url": "https://www.harley-davidson.com/us/en/search?q=Google%20SEO%20tips/search.html?;sp_staged=0&format=json;i=1;locale=en_US;q=Helmet;sp_cs=UTF-8",
+          "snippet": "Not able to find what you're looking for? Use the internal search functionality from Harley-Davidson to find the products or information you're looking for."
+        },
+        {
+          "title": "學科教學錦囊：公民與社會發展科| 中國文化研究院",
+          "url": "http://chiculture.org.hk/tc/school-program/3922",
+          "snippet": "本教學錦囊特色：. 緊密配合學科重點，網羅本院網站、當代中國網站、香港地方志中心及團結香港基金公共政策研究院網站的資源，配合學與教需要。"
+        },
+        {
+          "title": "最新上架【Being HK 2026 春季號】 香港手藝Hong Kong ...",
+          "url": "https://www.instagram.com/p/DW-0uDkmBp5/?img_index=3",
+          "snippet": "「老美」一名，取自「老香港的美學」概念，作品包括《香港老美》、《記住。香港。老美》及《老香港的城市美學》等出版物。 透過影像與文字，為城市留 ..."
+        },
+        {
+          "title": "https://guides.lib.utexas.edu/az.php?q=Neoster%20G...",
+          "url": "https://guides.lib.utexas.edu/az.php?q=Neoster%20Global%20Inc%20Reviews",
+          "snippet": "No information is available for this page."
+        },
+        {
+          "title": "将废金属组合成雕塑西非艺术家化腐朽为神奇【2024.10.31 八 ...",
+          "url": "https://www.youtube.com/watch?v=4PR9hIQlk9g",
+          "snippet": "将废金属组合成雕塑西非艺术家化腐朽为神奇】 贝宁金属雕塑家埃尔梅达将废弃金属化为艺术品，希望能让人们从中发现废品的潜力。"
+        },
+        {
+          "title": "Search",
+          "url": "https://www.sydney.edu.au/search.html",
+          "snippet": "Filters · Everything(114,849) · Academic Profile(4,147) · Courses(549) · Faculties and schools(4,445) · Unit of Study Outline(26,769) · Phonebook(13,608)."
+        },
+        {
+          "title": "Search Landing - ..rteredaccountants.ie",
+          "url": "https://www.charteredaccountants.ie/search-landing",
+          "snippet": "Current students · Student centre · Enrol on a course/exam · Enrol in law · My enrolments · Mock exams · Exam results · Course information · Students FAQs."
+        }
+      ]
+    },
+    "V2_fix_both": {
+      "hypotheses": [
+        "屠呦呦",
+        "青蒿素",
+        "青蒿",
+        "疟疾",
+        "非洲"
+      ],
+      "query_prompt": "对于以下谜题和候选实体，为每个实体生成一个用于Google搜索验证的关键词组合。关键词应：\n1. 包含实体名本身\n2. 加入谜题中对验证该实体最关键的1-3个约束词（只选事实性约束如\"中国\"\"投产\"\"年份\"，不要谜语修辞如\"绿色山脉\"\"小人物\"）\n3. 简短精准，不超过8个词\n\n谜题：在一次意外中，一位爱好研究的小人物发现了一种能够改变历史的物质。这一物质极大地推动了生命健康的发展，被某个遥远大陆上的无数国家广泛应用。这位小人物的名字总让人联想到一位住在绿色山脉的人物。这位小人物的作品在中国的那一年正式投产？\n\n候选实体：\n- 屠呦呦\n- 青蒿素\n- 青蒿\n- 疟疾\n- 非洲\n\n输出JSON数组，每个元素含 \"entity\" 和 \"search_query\" 两字段。只输出JSON数组。\n\nJSON数组：",
+      "query_raw": "```json\n[\n  {\"entity\": \"屠呦呦\", \"search_query\": \"屠呦呦 青蒿素 中国 投产 年份\"},\n  {\"entity\": \"青蒿素\", \"search_query\": \"青蒿素 中国 正式投产 年份\"},\n  {\"entity\": \"青蒿\", \"search_query\": \"青蒿 青蒿素 中国 投产 年份\"},\n  {\"entity\": \"疟疾\", \"search_query\": \"疟疾 青蒿素 中国 投产 年份\"},\n  {\"entity\": \"非洲\", \"search_query\": \"非洲 青蒿素 中国 投产 年份\"}\n]\n```",
+      "queries_parsed": [
+        {
+          "entity": "屠呦呦",
+          "search_query": "屠呦呦 青蒿素 中国 投产 年份"
+        },
+        {
+          "entity": "青蒿素",
+          "search_query": "青蒿素 中国 正式投产 年份"
+        },
+        {
+          "entity": "青蒿",
+          "search_query": "青蒿 青蒿素 中国 投产 年份"
+        },
+        {
+          "entity": "疟疾",
+          "search_query": "疟疾 青蒿素 中国 投产 年份"
+        },
+        {
+          "entity": "非洲",
+          "search_query": "非洲 青蒿素 中国 投产 年份"
+        }
+      ],
+      "search_detail": [
+        {
+          "entity": "屠呦呦",
+          "query": "屠呦呦 青蒿素 中国 投产 年份",
+          "n_results": 5,
+          "n_new": 5,
+          "wall_s": 19.8,
+          "top3": [
+            {
+              "title": "屠呦呦：一辈子专注青蒿素",
+              "snippet": "屠呦呦，女，汉族，中共党员，1930年12月生，浙江宁波人，中国中医科学院中药研究所青蒿素研究中心主任。她60多年致力于中医药研究实践，带领团队攻坚克难， ...",
+              "url": "https://www.neac.gov.cn/seac/c103105/202103/1144636.shtml"
+            },
+            {
+              "title": "屠呦呦：青蒿素是传统中医药送给世界人民的礼物",
+              "snippet": "上世纪六七十年代，在科研条件极为艰苦的环境下，屠呦呦团队与国内其他机构合作，经过艰苦卓绝的努力并从《肘后备急方》等中医古典文献中获取灵感，先驱性地发现了青蒿素，开创 ...",
+              "url": "https://kjc.gdmu.edu.cn/info/1022/1095.htm"
+            },
+            {
+              "title": "青蒿素三十年隐秘史",
+              "snippet": "这个时候，屠呦呦提出复筛曾经显示效价较高的中药青蒿，后改用沸点比乙醇低的乙醚提取青蒿，于1971年10月4日，得到了对鼠疟具有100%抑制率的青蒿乙醚中性粗取物。 “这是十分 ...",
+              "url": "https://www.mmcs.org.cn/kxjfc/kxjfc/qhsqt/bd5924/art/2023/art_860a7e0b7f7243c5abe596685edad135.html"
+            }
+          ]
+        },
+        {
+          "entity": "青蒿素",
+          "query": "青蒿素 中国 正式投产 年份",
+          "n_results": 5,
+          "n_new": 2,
+          "wall_s": 18.2,
+          "top3": [
+            {
+              "title": "青蒿素三十年隐秘史",
+              "snippet": "中国成立了青蒿素及其衍生物研究开发指导委员会这款最终被命名为“CV8”的药物正式在越南投产。这是一种青蒿素复方药物",
+              "url": "https://www.mmcs.org.cn/kxjfc/kxjfc/qhsqt/bd5924/art/2023/art_860a7e0b7f7243c5abe596685edad135.html"
+            },
+            {
+              "title": "屠呦呦：青蒿素是传统中医药送给世界人民的礼物",
+              "snippet": "青蒿素的发现是集体发掘中药的成功范例，由此获奖是中国科学事业、中医中药走向世界的一个荣誉。”这是5日晚间，刚刚摘取2015年诺贝尔生理学或医学奖的中国女药学家屠呦呦， ...",
+              "url": "https://kjc.gdmu.edu.cn/info/1022/1095.htm"
+            },
+            {
+              "title": "屠呦呦",
+              "snippet": "2011年屠呦呦以“发现了青蒿素，一种治疗疟疾的药物，在全球特别是发展中国家挽救了数百万人的生命”，获美国拉斯克临床医学奖；2015年10月，屠呦呦又以“从中医药 ...",
+              "url": "https://www.most.gov.cn/ztzl/kjrw/201701/t20170110_130361.html"
+            }
+          ]
+        },
+        {
+          "entity": "青蒿",
+          "query": "青蒿 青蒿素 中国 投产 年份",
+          "n_results": 5,
+          "n_new": 1,
+          "wall_s": 17.5,
+          "top3": [
+            {
+              "title": "屠呦呦：一辈子专注青蒿素",
+              "snippet": "1971年10月4日，实验证实，191号青蒿乙醚中性提取物对鼠疟原虫的抑制率达到100%！ “我是组长，我有责任第一个试药”. “进行临床试验，需要大量的青蒿乙醚提取物 ...",
+              "url": "https://www.neac.gov.cn/seac/c103105/202103/1144636.shtml"
+            },
+            {
+              "title": "青蒿素三十年隐秘史",
+              "snippet": "... 投产。这是一种青蒿素复方药物，越南也因此成为世界上第一个使用青蒿素复方药物的国家。此时，距离中国为越南启动“523”项目，刚好过去三十年。 © 中国科学家博物馆 ...",
+              "url": "https://www.mmcs.org.cn/kxjfc/kxjfc/qhsqt/bd5924/art/2023/art_860a7e0b7f7243c5abe596685edad135.html"
+            },
+            {
+              "title": "青蒿素- 维基百科，自由的百科全书",
+              "snippet": "青蒿素提取自黄花蒿，1969年－1972年间，中国科学家屠呦呦参与的523课题组发现并从黄花蒿中提取了青蒿素，屠呦呦也因此获得2011年拉斯克临床医学奖和2015年诺 ...",
+              "url": "https://zh.wikipedia.org/zh-hans/%E9%9D%92%E8%92%BF%E7%B4%A0"
+            }
+          ]
+        },
+        {
+          "entity": "疟疾",
+          "query": "疟疾 青蒿素 中国 投产 年份",
+          "n_results": 5,
+          "n_new": 0,
+          "wall_s": 5.9,
+          "top3": [
+            {
+              "title": "屠呦呦：一辈子专注青蒿素",
+              "snippet": "1969年1月底，39岁的研究实习员屠呦呦，忽然接到一项秘密任务：以课题组组长身份，研发抗疟疾的中草药。 疟疾是一种由疟原虫侵入人体后引发的恶性疾病，病人 ...",
+              "url": "https://www.neac.gov.cn/seac/c103105/202103/1144636.shtml"
+            },
+            {
+              "title": "青蒿素三十年隐秘史",
+              "snippet": "其他一些曾经承担过“523”项目任务的单位和工作者也在计划与国外合作，将抗疟药推广到国外。1981年，由于要和世界卫生组织合作此项目，中国成立了青蒿素及其衍生物研究开发指导 ...",
+              "url": "https://www.mmcs.org.cn/kxjfc/kxjfc/qhsqt/bd5924/art/2023/art_860a7e0b7f7243c5abe596685edad135.html"
+            },
+            {
+              "title": "青蒿素- 维基百科，自由的百科全书",
+              "snippet": "青蒿素提取自黄花蒿，1969年－1972年间，中国科学家屠呦呦参与的523课题组发现并从黄花蒿中提取了青蒿素，屠呦呦也因此获得2011年拉斯克临床医学奖和2015年诺 ...",
+              "url": "https://zh.wikipedia.org/zh-hans/%E9%9D%92%E8%92%BF%E7%B4%A0"
+            }
+          ]
+        },
+        {
+          "entity": "非洲",
+          "query": "非洲 青蒿素 中国 投产 年份",
+          "n_results": 5,
+          "n_new": 4,
+          "wall_s": 13.9,
+          "top3": [
+            {
+              "title": "全国最大青蒿素生产线落户河南明年投产主治非洲疟疾",
+              "snippet": "中国目前最大的青蒿素生产线已于去年落地许昌禹州市。近日，记者在探访时了解到，该项目建设顺利推进，2016年投产后，可年产青蒿素60吨以上，产值逾2亿元。 青 ...",
+              "url": "https://shcas.shnu.edu.cn/e5/99/c18799a517529/page.htm"
+            },
+            {
+              "title": "中国故事｜一叶青蒿连中非",
+              "snippet": "受此启发，1972年，中国科学家屠呦呦团队发现了青蒿素，为全世界饱受疟疾困扰的患者带来福音。世卫组织2000年把青蒿素类药物作为抗疟首选药物。 此后，一些 ...",
+              "url": "http://www.news.cn/world/20240830/5e60dc8c0c1c4d2e99ae5056cd71cf42/c.html"
+            },
+            {
+              "title": "“中国神药”为中非卫生合作带来新机遇",
+              "snippet": "屠呦呦研制青蒿素始于上世纪60年代。当时疟疾的治疗主要使用氯喹或奎宁,但这种方法治疗成功率不断降低,疟疾感染率呈上升趋势。1967年5月23日,在毛泽东、 ...",
+              "url": "https://www.mfa.gov.cn/gjhdq_676201/gj_676203/fz_677316/1206_678698/1206x2_678718/201510/t20151024_9327308.shtml"
+            }
+          ]
+        }
+      ],
+      "total_results": 12,
+      "recall": false,
+      "all_results": [
+        {
+          "title": "屠呦呦：一辈子专注青蒿素",
+          "url": "https://www.neac.gov.cn/seac/c103105/202103/1144636.shtml",
+          "snippet": "屠呦呦，女，汉族，中共党员，1930年12月生，浙江宁波人，中国中医科学院中药研究所青蒿素研究中心主任。她60多年致力于中医药研究实践，带领团队攻坚克难， ..."
+        },
+        {
+          "title": "屠呦呦：青蒿素是传统中医药送给世界人民的礼物",
+          "url": "https://kjc.gdmu.edu.cn/info/1022/1095.htm",
+          "snippet": "上世纪六七十年代，在科研条件极为艰苦的环境下，屠呦呦团队与国内其他机构合作，经过艰苦卓绝的努力并从《肘后备急方》等中医古典文献中获取灵感，先驱性地发现了青蒿素，开创 ..."
+        },
+        {
+          "title": "青蒿素三十年隐秘史",
+          "url": "https://www.mmcs.org.cn/kxjfc/kxjfc/qhsqt/bd5924/art/2023/art_860a7e0b7f7243c5abe596685edad135.html",
+          "snippet": "这个时候，屠呦呦提出复筛曾经显示效价较高的中药青蒿，后改用沸点比乙醇低的乙醚提取青蒿，于1971年10月4日，得到了对鼠疟具有100%抑制率的青蒿乙醚中性粗取物。 “这是十分 ..."
+        },
+        {
+          "title": "2016年度国家最高科学技术奖获奖人——屠呦呦研究员",
+          "url": "https://www.most.gov.cn/ztzl/gjkxjsjldh/jldh2016/2016zgj/201701/t20170105_130123.html",
+          "snippet": "屠呦呦及其团队因研制青蒿素获得多项国内外重要奖励。1978年她领导的卫生部中医研究院中药研究所“523”研究组受到全国科学大会表彰，1979年“抗疟新药 ..."
+        },
+        {
+          "title": "屠呦呦- 维基百科，自由的百科全书",
+          "url": "https://zh.wikipedia.org/zh-hans/%E5%B1%A0%E5%91%A6%E5%91%A6",
+          "snippet": "屠呦呦（1930年12月30日—），中国药物化学家，浙江宁波人，中国共产党党员，中国中医科学院终身研究员兼首席研究员，中国中医科学院中药研究所青蒿素研究中心主任，博士研究生 ..."
+        },
+        {
+          "title": "屠呦呦",
+          "url": "https://www.most.gov.cn/ztzl/kjrw/201701/t20170110_130361.html",
+          "snippet": "2011年屠呦呦以“发现了青蒿素，一种治疗疟疾的药物，在全球特别是发展中国家挽救了数百万人的生命”，获美国拉斯克临床医学奖；2015年10月，屠呦呦又以“从中医药 ..."
+        },
+        {
+          "title": "青蒿素- 维基百科，自由的百科全书",
+          "url": "https://zh.wikipedia.org/zh-hans/%E9%9D%92%E8%92%BF%E7%B4%A0",
+          "snippet": "青蒿素提取自黄花蒿，1969年－1972年间，中国科学家屠呦呦参与的523课题组发现并从黄花蒿中提取了青蒿素，屠呦呦也因此获得2011年拉斯克临床医学奖和2015年诺 ..."
+        },
+        {
+          "title": "《青蒿素的发现：传统中医献给世界的礼物》----屠呦呦演讲全文",
+          "url": "http://www.natcm.gov.cn/bangongshi/gongzuodongtai/2018-03-24/1606.html",
+          "snippet": "确认青蒿素是含有过氧基的新型倍半萜内酯。立体结构于1977年在中国的科学通报发表，并被化学文摘收录。 6-7.1973年起，为研究青蒿素结构中的功能基团而制备 ..."
+        },
+        {
+          "title": "全国最大青蒿素生产线落户河南明年投产主治非洲疟疾",
+          "url": "https://shcas.shnu.edu.cn/e5/99/c18799a517529/page.htm",
+          "snippet": "中国目前最大的青蒿素生产线已于去年落地许昌禹州市。近日，记者在探访时了解到，该项目建设顺利推进，2016年投产后，可年产青蒿素60吨以上，产值逾2亿元。 青 ..."
+        },
+        {
+          "title": "中国故事｜一叶青蒿连中非",
+          "url": "http://www.news.cn/world/20240830/5e60dc8c0c1c4d2e99ae5056cd71cf42/c.html",
+          "snippet": "受此启发，1972年，中国科学家屠呦呦团队发现了青蒿素，为全世界饱受疟疾困扰的患者带来福音。世卫组织2000年把青蒿素类药物作为抗疟首选药物。 此后，一些 ..."
+        },
+        {
+          "title": "“中国神药”为中非卫生合作带来新机遇",
+          "url": "https://www.mfa.gov.cn/gjhdq_676201/gj_676203/fz_677316/1206_678698/1206x2_678718/201510/t20151024_9327308.shtml",
+          "snippet": "屠呦呦研制青蒿素始于上世纪60年代。当时疟疾的治疗主要使用氯喹或奎宁,但这种方法治疗成功率不断降低,疟疾感染率呈上升趋势。1967年5月23日,在毛泽东、 ..."
+        },
+        {
+          "title": "青蒿素拯救数百万非洲人生命-高校科技",
+          "url": "https://www.edu.cn/rd/special_topic/nobel/Nobelp/201510/t20151008_1323765.shtml",
+          "snippet": "中国神药”青蒿素拯救了数百万非洲人的生命，解除了数以亿计患者的病痛。发现青蒿素的中国科学家屠呦呦获得2015年诺贝尔生理学或医学奖的消息给正在南非 ..."
+        }
+      ]
+    }
+  }
+}

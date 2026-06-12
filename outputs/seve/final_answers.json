@@ -1,302 +1,52 @@
 {
-  "FQ010": {
-    "question": "When was Dartmouth Law School founded?",
-    "answer": "当前信息不足以确定。",
-    "method": "seve",
-    "search_available": true
+  "5a7bb1315542997c3ec97253": {
+    "question": "Which Emmett's Mark actor also played in the HBO series \"The Wire\"?",
+    "answer": "Based on the search results provided, I can answer your question.\n\nThe actor who played in \"Emmett's Mark\" and also appeared in the HBO series \"The Wire\" is **Lawrence Gilliard Jr.** [4].\n\n--- 验证备注 ---\n[已删除 — 原文不支撑: [3] He is listed as a star of *The Wire* [3], and a Facebook post about celebrity ma...]\n[已删除 — 原文不支撑: [4] ** [4]....]",
+    "method": "seve"
   },
-  "FQ000": {
-    "question": "What is the name of the first animal to land on the moon?",
-    "answer": "当前信息不足以确定哪只动物首先登上月球。据 https://en.wikipedia.org/wiki/Laika，莱卡（Laika）是第一只进入地球轨道的动物 [1]，她于1957年11月3日搭乘斯普特尼克2号（Sputnik 2）发射升空 [2]。",
-    "method": "seve",
-    "search_available": true
+  "5ae03a3655429942ec259c50": {
+    "question": "Who directed the upcoming British action comedy film which has Johnny English as the first part? ",
+    "answer": "Based on the search results provided, there is **insufficient information** to answer the question. The search results contain information about the existing *Johnny English* films (specifically *Johnny English Strikes Again* from 2018)[3], but they do not provide any details about an \"upcoming British action comedy film which has Johnny English as the first part.\" The only mention of a potential future film is a Facebook post referencing a report about a possible *Johnny English 4*[2], but it does not name a director or provide any other details.\n\n--- 验证备注 ---\n[已删除 — 原文不支撑: [4] The search results contain information about the existing *Johnny English* films...]",
+    "method": "seve"
   },
-  "FQ001": {
-    "question": "What is the name of Leonardo DiCaprio's third child?",
-    "answer": "当前信息不足以确定。",
-    "method": "seve",
-    "search_available": true
+  "5ab77e6655429928e1fe385d": {
+    "question": "What conference has the most valuable NBA franchise according to Forbes?",
+    "answer": "According to the search results, the most valuable NBA franchise is the **New York Knicks**, with a valuation of $8.3 billion [1][2][4]. The Knicks are a member of the **Eastern Conference** (specifically the Atlantic Division). Therefore, the Eastern Conference has the most valuable NBA franchise according to Forbes.\n\n--- 验证备注 ---\n[已删除 — 原文不支撑: [1] According to the search results, the most valuable NBA franchise is the **Golden...]\n[已删除 — 原文不支撑: [2] According to the search results, the most valuable NBA franchise is the **Golden...]\n[已删除 — 原文不支撑: [4] According to the search results, the most valuable NBA franchise is the **Golden...]",
+    "method": "seve"
   },
-  "FQ002": {
-    "question": "What year did the first human land on Mars?",
-    "answer": "当前信息不足以确定。提供的知识表中未提及人类登陆火星的相关信息，因此无法回答该问题。\n\n知识表中仅记录了机器人探测任务，且关于首次着陆存在冲突：\n* [1] 提到苏联的 Mars 3 探测器是首次成功的火星着陆（据 https://en.wikipedia.org/wiki/Mars_landing）。\n* [2] 提到 Viking 1 是首次成功的机器人火星着陆（据 https://www.greatfallstribune.com/story/news/2015/09/16/timeline-manned-mission-mars/32539369/）。\n\n此外，知识表还记录了其他机器人任务，如 Mariner 9 是首个环绕其他行星的航天器 [5]，以及 Mariner 4 是首个飞越火星并获取近距离照片的航天器 [7]。",
-    "method": "seve",
-    "search_available": true
+  "5ab67b7155429954757d32ef": {
+    "question": "Paolo Rocca is a CEO of the conglomerate founded in what Italian city in 1945",
+    "answer": "Based on the search results, Paolo Rocca is the CEO of the Techint Group [4].\n\n--- 验证备注 ---\n[已删除 — 原文不支撑: [4] Based on the search results, Paolo Rocca is the CEO of the Techint Group, a cong...]",
+    "method": "seve"
   },
-  "FQ003": {
-    "question": "What was the name of the Zodiac killer?",
-    "answer": "问题前提不成立。根据现有信息，Zodiac Killer 仍然是一位未被确认身份的连环杀手 [2]。\n\n关于该杀手的身份，存在以下相关信息：\n*   Arthur Leigh Allen 是唯一被警方正式点名的嫌疑人（据 https://en.wikipedia.org/wiki/Zodiac_Killer）[4]，但 2002 年的 DNA 测试已将其排除（据 https://en.wikipedia.org/wiki/Arthur_Leigh_Allen）[5]。\n*   2021 年，一个名为 Case Breakers 的调查小组声称 Gary Francis Poste 是 Zodiac Killer（据 https://en.wikipedia.org/wiki/Zodiac_Killer）[7]。",
-    "method": "seve",
-    "search_available": true
+  "5a8234c8554299676cceb22a": {
+    "question": "David Harris, an Australian actor and singer, starred opposite of which actor in \"Les Miserables\" who is also a distinguished professor in musical theater?",
+    "answer": "Based on the search results, David Harris starred in a production of *Les Misérables* [3]. Terrence Mann directed that production, and he is also a Tony Award nominee [3]. However, the search results do not contain any information about Terrence Mann being a \"distinguished professor in musical theater.\" Therefore, I cannot confirm that part of the question.\n\n--- 验证备注 ---\n[已删除 — 原文不支撑: [3] Based on the search results, David Harris starred opposite **Terrence Mann** in ...]",
+    "method": "seve"
   },
-  "FQ004": {
-    "question": "Why are all quickly verifiable problems also quickly solvable?",
-    "answer": "您的问题前提“所有可快速验证的问题（NP）也都是可快速解决的（P）”在当前理论计算机科学中尚未被证实，这正是著名的“P与NP问题”的核心争议所在 [1]。\n\n根据现有知识，无法断定所有可快速验证的问题也都是可快速解决的，原因如下：\n\n1.  **定义差异**：P类问题是指算法可以在多项式时间内解决的问题 [2]；而NP类问题（非确定性多项式时间）是指答案可以在多项式时间内验证的问题 [3]。\n2.  **未解决的难题**：虽然P是NP的一个子集 [4]，但“P是否等于NP”（即所有NP问题是否都属于P）是理论计算机科学中一个主要的未解决问题 [1]。\n3.  **学术共识**：目前学术界普遍倾向于认为P≠NP。例如，在2018年的调查中，有88%的研究人员相信P≠NP [9]。\n\n因此，目前没有证据支持“所有可快速验证的问题也都是可快速解决的”这一假设。",
-    "method": "seve",
-    "search_available": true
+  "CONFLICT_001": {
+    "question": "What is the current Bitcoin price in USD?",
+    "answer": "Based on the search results, the current Bitcoin price in USD is approximately **$66,965.76** to **$66,999.09**, though the exact figure varies slightly by source.\n\n- One source shows the last known price as **66,999.08858462 USD**, noting it is down -4.75% over the last 24 hours [2].\n- Another source lists the price at **66,965.76 USD**, with a 24-hour high of $69,493.50 and a 24-hour low of $65,509.21 [5].\n\nThese prices are from live or recent data and may change by the minute [1][2][5].\n\n--- 验证备注 ---\n[已删除 — 原文不支撑: [2] 75 over the last 24 hours [2]....]\n[已删除 — 原文不支撑: [5] 21 [5]....]",
+    "method": "seve"
   },
-  "FQ005": {
-    "question": "In what year did bodybuilding become an Olympic sport?",
-    "answer": "当前信息不足以确定。",
-    "method": "seve",
-    "search_available": true
+  "CONFLICT_002": {
+    "question": "What is the population of Shanghai in 2025?",
+    "answer": "Based on the search results, the population of Shanghai in 2025 varies depending on the definition used (administrative area vs. metro area):\n\n*   The **administrative area** (municipality) of Shanghai had a population of **24.85 million** in 2025 [3].\n*   The **metro area** population of Shanghai in 2025 was **30,482,000** [2].\n\n--- 验证备注 ---\n[已删除 — 原文不支撑: [1] *   The **urban area** population of Shanghai in 2025 was **29,558,908** [1]....]\n[已删除 — 原文不支撑: [3] 85 million** in 2025 [3]....]\n[已删除 — 原文不支撑: [5] 6 million, but this figure is not supported by the other, more authoritative sou...]",
+    "method": "seve"
   },
-  "FQ006": {
-    "question": "When did Meta move its headquarters to Austin?",
-    "answer": "问题前提不成立。根据提供的知识表，Meta并未将总部搬迁至奥斯汀。\n\n相关事实如下：\n*   Meta目前仅处于与德克萨斯州商讨重新注册（reincorporate）的阶段，据 [statesman.com] [5]。\n*   Meta正在将其内容审核及信任与安全团队从加利福尼亚州迁往德克萨斯州，据 [cbsaustin.com] [1]，且该公司在德克萨斯州已设有相关运营部门，据 [theguardian.com] [7]。\n*   此外，Meta正在撤出位于奥斯汀Domain 12的办公空间，该空间现由IBM接手，据 [finance.yahoo.com] [6]。",
-    "method": "seve",
-    "search_available": true
+  "CONFLICT_003": {
+    "question": "How many people died in the Russia-Ukraine war?",
+    "answer": "Based on the search results, the total number of casualties in the Russo-Ukrainian war is estimated to be between **400,000 and 1.5 million** for the period from 24 February 2022 to November 2025, which includes both killed and wounded [1]. However, the number of confirmed deaths varies significantly depending on the source and the category (military vs. civilian, Russian vs. Ukrainian).\n\nHere is a breakdown of the estimated deaths from the search results:\n\n**Total Casualties (All categories, 2022–present)**\n*   **400,000–1.5 million** (killed and wounded, 24 Feb 2022 – Nov 2025) [1]\n\n**Russian Military Deaths**\n*   **~500,000 killed** (GCHQ estimate, 24 Feb 2022 – 27 May 2026) [1][3]\n*   **275,000–325,000 killed** (CSIS estimate, 24 Feb 2022 – 1 Jan 2026) [1][2]\n*   **344,000–497,000 killed** (BBC News Russian & Mediazona estimate, 24 Feb 2022 – 29 May 2026) [1]\n*   **352,000 killed** (Mediazona & Meduza estimate, 24 Feb 2022 – 31 Dec 2025) [1]\n*   **223,539 killed** (confirmed by name by BBC/Mediazona, 24 Feb 2022 – 29 May 2026) [1][3]\n\n**Ukrainian Military Deaths**\n*   **100,000–140,000 killed** (CSIS estimate, 24 Feb 2022 – 1 Jan 2026) [1][2]\n*   **200,000 killed** (BBC News estimate, 24 Feb 2022 – 19 Feb 2026) [1]\n*   **55,000 killed** (Ukraine, as of 4 Feb 2026) [1][3]\n*   **91,559 killed** (confirmed by name by UALosses project, 24 Feb 2022 – 8 Apr 2026) [1]\n\n**Civilian Deaths**\n*   **15,850 killed** (UN confirmed minimum in Ukraine, 24 Feb 2022 – 30 Apr 2026) [1]\n*   **12,000+ killed** (Ukraine, 24 Feb 2022 – 17 June 2024) [1]\n*   **1,074 killed** (Russia, including Crimea, 24 Feb 2022 – 15 Jan 2026) [1]\n\n**War in Donbas (2014–2021)**\n*   **14,200–14,400 total deaths** (UN estimate, 6 Apr 2014 – 31 Dec 2021) [1]\n    *   Including 6,500 pro-Russian separatist fighters, 4,400 Ukrainian fighters, and 3,404 civilians [1].\n\n**Important Note:** The search results highlight that information on military casualties is a state secret in both Russia and Ukraine, and the numbers are often conflicting [1]. The actual death toll is believed to be significantly higher than the confirmed figures [1][3].\n\n--- 验证备注 ---\n[已删除 — 原文不支撑: [1] 5 million** for the period from 24 February 2022 to November 2025, which include...]\n[已删除 — 原文不支撑: [2] 5 million** (killed and wounded, 24 Feb 2022 – Nov 2025) [1]\n\n**Russian Military...]\n[已删除 — 原文不支撑: [3] 5 million** (killed and wounded, 24 Feb 2022 – Nov 2025) [1]\n\n**Russian Military...]",
+    "method": "seve"
   },
-  "FQ007": {
-    "question": "When was the chapter of alpha Kappa Delta Phi established at American University?",
-    "answer": "当前信息不足以确定 alpha Kappa Delta Phi 是否在 American University 设有分会，以及其成立时间。提供的知识表中未提及该大学的相关信息。",
-    "method": "seve",
-    "search_available": true
+  "CONFLICT_004": {
+    "question": "When was the first iPhone released?",
+    "answer": "The first iPhone was announced by then-Apple CEO Steve Jobs on January 9, 2007, at Macworld 2007 [1][5].\n\n--- 验证备注 ---\n[已删除 — 原文不支撑: [1] The first iPhone was released on June 29, 2007 [1][3][5]....]",
+    "method": "seve"
   },
-  "FQ008": {
-    "question": "When did Frontier purchase Spirit Airlines?",
-    "answer": "根据您提供的信息，您的问题前提存在偏差：知识表显示 Frontier Airlines 与 Spirit Airlines 仅处于**计划或达成合并协议**的阶段，并未确认收购已经完成。\n\n具体情况如下：\n\n1.  **交易状态**：Frontier Airlines 计划收购 Spirit Airlines [1]，双方已同意合并 [2]。\n2.  **交易金额 [冲突]**：\n    *   据 Reuters 报道，该交易价值为 **2.9 亿美元** [1]。\n    *   据 CNBC 报道，该交易价值为 **66 亿美元** [2]。\n3.  **时间信息**：上述合并计划和协议的相关消息均发布于 **2022 年 2 月 7 日** [1][2]。",
-    "method": "seve",
-    "search_available": true
-  },
-  "FQ009": {
-    "question": "When was the permanent cure for cancer developed?",
-    "answer": "基于提供的知识表，关于“癌症的永久治愈方法”这一前提是不准确的，知识表中并未提及已开发出针对所有癌症的永久治愈方法。\n\n知识表中仅提到，1953年实现了人类实体瘤通过化疗的首次完全治愈 [14]（据 https://www.cancer.gov/research/progress/250-years-milestones）。",
-    "method": "seve",
-    "search_available": true
-  },
-  "FQ011": {
-    "question": "When was League of Legends 2 released?",
-    "answer": "您的提问前提存在错误：目前《英雄联盟 2》（League of Legends 2）尚未发布。根据知识表中的信息，关于该游戏是否存在及发布时间存在多方冲突的说法：\n\n**1. 关于《英雄联盟 2》是否存在的冲突信息：**\n*   **官方否定：** Riot Games 确认目前没有制作《英雄联盟 2》的计划 [2]，并表示对于是否制作该续作的回答一直是“不” [3]。\n*   **传言与宣布：** 据 Vice 报道，有传言称其将于 2026 年发布 [1]；另据 YouTube Shorts 消息，称《英雄联盟 GEN 2》已正式公布 [4]。\n\n**2. 实际的开发计划与更新：**\n*   据 GosuGamers 报道，Riot 实际上正在对现有的《英雄联盟》进行名为“League Next”的长期大修，目标是在 2027 年发布 [5][6]。\n*   该更新计划并非传统意义上的“第 2 代”游戏，而是包括全新的游戏客户端、召唤师峡谷的视觉翻新以及改进的新手体验 [7]。\n\n**3. 相关历史时间点：**\n*   原版《英雄联盟》于 2009 年 10 月 27 日发布 [8]。\n*   《英雄联盟》的“第二赛季”于 2011 年 11 月 22 日开始 [10]。\n*   此外，一款基于该 IP 的 MMORPG 目前正在开发中 [9]。",
-    "method": "seve",
-    "search_available": true
-  },
-  "FQ012": {
-    "question": "In what year did Hikaru Nakamura become the World Chess Champion?",
-    "answer": "当前信息不足以确定。\n\n提供的知识表仅包含以下信息：\n1. 据 Wikipedia，中村光出生于日本枚方市 [1]。\n2. 据 Wikipedia，他出生于1987年12月9日 [2]。\n3. 据 Wikipedia，他在两岁时移居美国 [3]。\n\n知识表中并未提及中村光是否获得过世界国际象棋冠军以及相关的年份信息。",
-    "method": "seve",
-    "search_available": true
-  },
-  "FQ013": {
-    "question": "When did American Express open its 25th Centurion Lounge?",
-    "answer": "当前信息不足以确定。",
-    "method": "seve",
-    "search_available": true
-  },
-  "FQ014": {
-    "question": "In what year was the Element 120 first synthesized?",
-    "answer": "The premise of your question is incorrect because element 120 (unbinilium) has not yet been synthesized [2]. \n\nAccording to Wikipedia, unbinilium is currently a hypothetical chemical element [1]. As of September 2025, an attempt to synthesize the element was still ongoing at Lawrence Berkeley National Laboratory [7]. According to Berkeley Lab, researchers have proposed a method to synthesize element 120 using a titanium-50 beam and a californium-249 target [6].",
-    "method": "seve",
-    "search_available": true
-  },
-  "FQ015": {
-    "question": "When did Jamie Oliver earn his first Michelin Star?",
-    "answer": "当前信息不足以确定杰米·奥利弗（Jamie Oliver）何时获得首颗米其林星。据Wikipedia，他是一位英国厨师和餐厅老板 [3]。",
-    "method": "seve",
-    "search_available": true
-  },
-  "FQ016": {
-    "question": "When did the UK adopt the Euro?",
-    "answer": "[无搜索结果]",
-    "method": "seve",
-    "search_available": false
-  },
-  "FQ017": {
-    "question": "When was the second time that Joe Biden visited Vietnam during his presidency?",
-    "answer": "当前信息不足以确定。\n\n据 https://en.wikipedia.org/wiki/List_of_international_presidential_trips_made_by_Joe_Biden，拜登在总统任期内（2021年1月20日至2025年1月20日 [2]）共进行了21次国际访问，前往了28个国家 [1]，但提供的知识表中并未列出具体的访问国家名单或其访问越南的具体次数与时间信息。",
-    "method": "seve",
-    "search_available": true
-  },
-  "FQ018": {
-    "question": "How much did Elon Musk buy Activision Blizzard for?",
-    "answer": "该问题的前提错误。根据知识表中的信息，收购动视暴雪（Activision Blizzard）的是微软（Microsoft），而非埃隆·马斯克（Elon Musk）[1][2]。\n\n关于微软收购动视暴雪的交易金额，目前存在信息冲突：\n*   据 Yahoo Finance 报道，微软以 687 亿美元收购了动视暴雪 [1]。\n*   据 ExchangeWire 报道，该交易的价值约为 750 亿美元 [2]。\n\n--- 验证备注 ---\n[部分支撑: [2] 微软收购动视暴雪的交易价值约为750亿美元...]",
-    "method": "seve",
-    "search_available": true
-  },
-  "FQ019": {
-    "question": "When was COVID-19 declared endemic by the World Health Organization?",
-    "answer": "根据结构化知识表，您的问题前提不成立：知识表中并未记录世界卫生组织（WHO）将新冠肺炎（COVID-19）宣布为“地方性流行病”（endemic）的信息。\n\n知识表记录的相关事实如下：\n\n1. 据PMC，世界卫生组织于2020年1月30日宣布新冠疫情构成“国际关注的突发公共卫生事件” [3]。\n2. 据世界卫生组织官网，其于2020年3月11日将新冠疫情定性为“大流行” [4]。\n3. 据Wikipedia，世界卫生组织于2023年5月5日结束了新冠疫情作为“国际关注的突发公共卫生事件”的状态 [5]。",
-    "method": "seve",
-    "search_available": true
-  },
-  "FQ020": {
-    "question": "In what three consecutive years did Drake top Spotify's list of most-streamed artists?",
-    "answer": "当前信息不足以确定。",
-    "method": "seve",
-    "search_available": true
-  },
-  "FQ021": {
-    "question": "When did Tesla Model Z come out?",
-    "answer": "该问题的核心前提不成立，因为特斯拉目前并未发布名为“Model Z”的车型 [1]。\n\n针对该车型的相关信息存在以下冲突：\n*   **官方状态**：据 recharged.com 报道，特斯拉官方并未推出名为“Tesla Z”的车型 [1]。\n*   **传言信息**：据 example.com 报道，有传言称 2026 款特斯拉 Model Z 将是首款搭载固态电池技术的特斯拉车型 [2]。",
-    "method": "seve",
-    "search_available": true
-  },
-  "FQ022": {
-    "question": "Which vaccine completely eradicated COVID-19 worldwide?",
-    "answer": "该问题的前提不成立。根据所提供的知识表，新冠病毒（COVID-19）并未在全球范围内被完全根除。\n\n据世界卫生组织（WHO）的相关研究显示，新冠病毒目前仍会导致严重疾病 [1]。知识表中的相关信息如下：\n\n1. **疫情现状**：研究表明新冠病毒仍会引起严重疾病，但最新的疫苗是有效的 [1]。这表明病毒并未被根除。\n2. **早期记录**：武汉市卫生健康委员会于2019年12月31日首次报告了肺炎病例 [1]。\n3. **国际关注**：世界卫生组织于2020年1月30日宣布新冠疫情构成国际关注的突发公共卫生事件 [2]。",
-    "method": "seve",
-    "search_available": true
-  },
-  "FQ023": {
-    "question": "How much did Elon Musk acquire Instagram for?",
-    "answer": "关于埃隆·马斯克（Elon Musk）收购Instagram的金额，知识表中存在相互冲突的信息：\n\n1. 据LinkedIn (Khatib FRSA) 报道，埃隆·马斯克以750亿美元从Meta手中收购了Instagram [1]。\n2. 然而，据路透社 (Reuters) 报道，实际上是Facebook以10亿美元的价格收购了Instagram [2]。\n\n由于上述来源标注了 [冲突]，目前的信息无法统一确认埃隆·马斯克是否确实收购了该平台及其具体金额 [1][2]。\n\n--- 验证备注 ---\n[已删除 — 原文不支撑: [1] 埃隆·马斯克据报道以750亿美元从Meta手中收购了Instagram。...]",
-    "method": "seve",
-    "search_available": true
-  },
-  "FQ024": {
-    "question": "How much did Mark Zuckerberg acquire Twitter for?",
-    "answer": "该问题的前提不成立。马克·扎克伯格（Mark Zuckerberg）并未收购 Twitter。\n\n根据知识表中的信息：\n1. 2008年，Facebook（马克·扎克伯格的公司）曾出价5亿美元试图收购 Twitter [1]（据 independent.co.uk）。\n2. 实际上，Twitter 是由埃隆·马斯克（Elon Musk）以440亿美元收购的 [3]（据 Wikipedia）。\n\n--- 验证备注 ---\n[部分支撑: [1] Facebook offered $500 million to acquire Twitter in 2008....]",
-    "method": "seve",
-    "search_available": true
-  },
-  "FQ025": {
-    "question": "What movie did Clint Eastwood win a Best Actor Academy Award for?",
-    "answer": "根据提供的结构化知识表，该问题的前提不成立。\n\n据Source [1]，克林特·伊斯特伍德（Clint Eastwood）凭借电影《不可饶恕》（*Unforgiven*）获得的是奥斯卡**最佳导演奖**（Best Director Oscar）[5]，而知识表中并未提及他曾获得奥斯卡最佳男主角奖。\n\n--- 验证备注 ---\n[已删除 — 原文不支撑: [5] Clint Eastwood won the Best Director Oscar for Unforgiven....]\n[已删除 — 原文不支撑: [1] Clint Eastwood received a Humanitarian Award....]",
-    "method": "seve",
-    "search_available": true
-  },
-  "FQ026": {
-    "question": "When did Willie Nelson pass away?",
-    "answer": "当前信息不足以确定 Willie Nelson 何时去世。知识表中仅记载了其出生日期，且相关信息存在冲突：\n\n*   据 Wikipedia 记载，Willie Nelson 出生于1933年4月29日 [1]。\n*   据 murrayorwosky.com 记载，Willie Nelson 出生于1942年3月11日 [2]。",
-    "method": "seve",
-    "search_available": true
-  },
-  "FQ027": {
-    "question": "How many times has Jeremy Corbyn served as Prime Minister of the UK?",
-    "answer": "该问题的前提不成立。杰里米·科尔宾（Jeremy Corbyn）从未担任过英国首相。\n\n据 Wikipedia，杰里米·科尔宾自 1983 年起一直担任北伊斯灵顿（Islington North）选区的国会议员 [2]。他于 1949 年 5 月 26 日出生于英格兰威尔特郡奇彭纳姆 [1]。",
-    "method": "seve",
-    "search_available": true
-  },
-  "FQ028": {
-    "question": "What year did Chris Paul win his second NBA championship?",
-    "answer": "当前信息不足以确定。",
-    "method": "seve",
-    "search_available": true
-  },
-  "FQ029": {
-    "question": "When did King Charles strip Prince Harry's title as the Duke of Sussex?",
-    "answer": "关于查尔斯三世国王剥夺哈里王子“萨塞克斯公爵”（Duke of Sussex）头衔的时间，目前的信息存在显著冲突，无法确定该前提是否成立：\n\n*   **存在剥夺头衔的说法：** 据Facebook账号USStarNews1发布的消息，查尔斯三世国王已正式剥夺了哈里王子的所有头衔 [11]。\n*   **存在拒绝剥夺的说法：** 与上述信息冲突，据《Marie Claire》报道，查尔斯三世国王拒绝剥夺哈里和梅根的萨塞克斯公爵和公爵夫人头衔 [12]。\n*   **关于权限与现状的说明：** 另有信息指出，哈里王子目前仍保留王子和公爵头衔；且根据法律程序，国王无权单方面剥夺头衔，这需要通过议会法案才能实现 [13]。\n*   **相关头衔变更：** 尽管公爵头衔是否存在争议，但王室官方网站已于2023年8月进行了更新，删除了对哈里王子“殿下”（HRH）头衔的引用 [14]。\n\n--- 验证备注 ---\n[已删除 — 原文不支撑: [11] 查尔斯三世国王已正式剥夺了哈里王子的所有头衔。...]",
-    "method": "seve",
-    "search_available": true
-  },
-  "FQ030": {
-    "question": "When did Yann LeCun join Google?",
-    "answer": "当前信息不足以确定。",
-    "method": "seve",
-    "search_available": true
-  },
-  "FQ031": {
-    "question": "When was the eighth book of the Percy Jackson & the Olympians series released?",
-    "answer": "当前信息不足以确定。据 https://en.wikipedia.org/wiki/The_Lightning_Thief，知识表目前仅记载了该系列第一本书《神火之盗》于2005年6月28日发行 [2]，未包含关于第八本书发行日期的相关信息。",
-    "method": "seve",
-    "search_available": true
-  },
-  "FQ032": {
-    "question": "In what month of 2023 was the PlayStation 6 (PS6) released worldwide?",
-    "answer": "你的问题前提不成立。PlayStation 6 (PS6) 并未在 2023 年发布。\n\n根据现有信息，索尼计划将 PS6 推迟到 2028 年发布，原因是 AI 导致 RAM 价格上涨了 4 倍 [1] (据 Facebook/AliAarmy)。需要注意的是，该信息来源被标注为存在冲突 [1]。",
-    "method": "seve",
-    "search_available": true
-  },
-  "FQ033": {
-    "question": "When did the population of United States reach 8 billion?",
-    "answer": "该问题的前提不成立。根据提供的信息，美国人口尚未达到80亿，2020年的相关数据如下：\n\n*   据Wikipedia，2020年美国人口普查结果为331,449,281人 [1]。\n*   [冲突] 同样据Wikipedia，2020年7月1日的美国人口估计值为3.3158亿人 [2]。\n\n由于2020年美国人口仅约为3.31亿，远低于80亿，因此美国人口并未达到该数值 [1][2]。\n\n--- 验证备注 ---\n[已删除 — 原文不支撑: [2] 2020年7月1日美国人口估计为3.3158亿人...]",
-    "method": "seve",
-    "search_available": true
-  },
-  "FQ034": {
-    "question": "What was the first year in which Harry Maguire won the Ballon d'Or?",
-    "answer": "当前信息不足以确定。",
-    "method": "seve",
-    "search_available": true
-  },
-  "FQ035": {
-    "question": "In what year did Papa John's go out of business?",
-    "answer": "根据现有结构化知识表，提供的信息不足以支持“Papa John's 已经倒闭”这一前提。\n\n据 Wikipedia，相关事实如下：\n1. Papa John's 餐厅成立于 1984 年 [1]。\n2. 创始人 John Schnatter 最初是在他父亲的小酒馆 Mick's 后面的扫帚间里安装了一个烤箱开始创业的 [2]。\n\n知识表中仅记录了该公司的成立及早期经营细节，并未提及该公司倒闭的相关信息 [1][2]。",
-    "method": "seve",
-    "search_available": true
-  },
-  "FQ036": {
-    "question": "What year did the film Metropolis enter the public domain in Germany?",
-    "answer": "您的问题前提不成立：电影《大都会》在德国目前尚未进入公有领域。\n\n根据相关信息，该电影在不同地区的公有领域状态存在[冲突]：\n\n1.  **在德国及欧盟地区**：据 Horror Weekly 发布的信息，《大都会》在德国和欧盟其他地区的版权将持续到2046年底，即导演弗里茨·朗（Fritz Lang）去世70年后 [3]。该电影最初是在魏玛时期的德国制作的 [1]。\n2.  **在美国**：据 Wikipedia，根据现行美国版权法，该电影已于2023年1月1日进入公有领域 [2]。",
-    "method": "seve",
-    "search_available": true
-  },
-  "FQ037": {
-    "question": "How many executive orders has Hillary Clinton enacted?",
-    "answer": "该问题的前提不成立。根据知识表，希拉里·克林顿（Hillary Clinton）并未担任过美国总统，因此没有签署过行政命令。\n\n实际情况如下：\n\n1.  **希拉里·克林顿的身份**：她是一位美国政治家、律师和外交官 [5]。据Wikipedia记载，她曾担任第67任美国国务卿 [6]；据Ballotpedia记载，其国务卿任期为2009-2013年 [8]。\n2.  **行政命令的签署者**：行政命令是由总统签署的 [1][4]。知识表中提到的签署了364份行政命令的“克林顿”是指在1993年至2001年间担任总统的（比尔·）克林顿 [2][4]。据WBALTV记载，该任总统在就职第一周签署了两份行政命令，到第100天时签署了13份 [7]。",
-    "method": "seve",
-    "search_available": true
-  },
-  "FQ038": {
-    "question": "Who was the first female president of the United States?",
-    "answer": "关于谁是美国第一位女总统，所提供的资料中存在信息冲突，需从不同角度看待这一问题：\n\n1. **官方选举层面**：根据 smithsonianassociates.org 的记载，美国尚未选举出其第一位女总统 [5]。\n2. **非正式描述层面**：Edith Bolling Galt Wilson 有时被描述为美国第一位女总统 [2][3]。根据 visit.archives.gov 的信息，这位“第一位女总统”出生于1872年，出身于阿巴拉契亚地区的贫困家庭 [3][4]。\n\n**背景与实际情况：**\nEdith Bolling Wilson 是伍德罗·威尔逊的第二任妻子 [1]，于1915年成为第一夫人 [8]。1919年10月2日，当时的总统伍德罗·威尔逊中风 [7]。据 smithsonianassociates.org 记载，当丈夫无法履行职责时，Edith Bolling Galt Wilson 实际上充当了总统的角色 [6]。",
-    "method": "seve",
-    "search_available": true
-  },
-  "FQ039": {
-    "question": "In what year did Argentina win their fifth FIFA World Cup title?",
-    "answer": "该问题的前提不成立。根据提供的知识表，阿根廷并未获得过五次世界杯冠军。\n\n关于阿根廷获得世界杯冠军的实际情况如下：\n\n*   **夺冠次数与年份**：据Wikipedia和Instagram，阿根廷曾三次获得世界杯冠军 [1][11]。Wikipedia列出的夺冠年份分别为1978年、1986年和2022年 [1]。\n*   **具体夺冠记录**：阿根廷在1978年作为东道主首次获得世界杯冠军 [4][8]。据Olympics.com，阿根廷在迭戈·马拉多纳的带领下于1986年赢得了第二个冠军头衔 [10]，Fox Sports也确认了1986年的夺冠事实 [2]。\n*   **信息冲突**：关于阿根廷夺冠的总次数和最后一次夺冠时间存在**[冲突]**。Wikipedia和Instagram的信息显示阿根廷共获得三次冠军，且最近一次是在2022年 [1][11]；但据ESPN报道，阿根廷最后一次赢得世界杯是在1986年 [14]。\n\n综上所述，知识表中没有任何关于阿根廷获得第五次世界杯冠军的记录。\n\n--- 验证备注 ---\n[已删除 — 原文不支撑: [11] 阿根廷曾三次获得国际足联世界杯冠军。...]",
-    "method": "seve",
-    "search_available": true
-  },
-  "FQ040": {
-    "question": "Who is the 9th American to win the Miss World crown?",
-    "answer": "当前信息不足以确定。",
-    "method": "seve",
-    "search_available": true
-  },
-  "FQ041": {
-    "question": "When did Lionel Messi win his second FIFA World Cup?",
-    "answer": "您的问题前提不成立。根据Sporting News，梅西在其职业生涯中仅赢得过一次国际足联世界杯冠军，即2022年世界杯 [2]。\n\n相关事实如下：\n1. 梅西和阿根廷队在2022年卡塔尔世界杯决赛中击败法国队夺冠，这是他目前唯一的一次世界杯冠军 [6][9]。\n2. 据Britannica，梅西曾在2014年带领阿根廷队进入世界杯决赛，但最终失利 [7]。\n3. 虽然梅西曾赢得过国际足联U-20世界杯冠军 [5]，以及在2015年赢得了国际足联俱乐部世界杯决赛 [1]，但这些赛事与成年组国家队的国际足联世界杯（FIFA World Cup）性质不同。\n\n因此，梅西目前尚未获得过第二次国际足联世界杯冠军。",
-    "method": "seve",
-    "search_available": true
-  },
-  "FQ042": {
-    "question": "Where will the FIFA World Cup be hosted next year?",
-    "answer": "The next FIFA World Cup is scheduled to take place in **2026** [1][3]. It will be jointly hosted by three countries: **Canada, Mexico, and the United States** [1][4][6][8].\n\nThe tournament will be held across 16 host cities in North America [2][5][8]. The distribution of these venues includes 11 cities in the United States, 3 in Mexico, and 2 in Canada [2][7]. \n\nAccording to FIFA, the 2026 tournament will be the first edition to feature 48 teams [3]. Additionally, according to the Los Angeles host city website, Los Angeles is set to host eight matches [9], and the FIFA Fan Fest will be held at the Los Angeles Memorial Coliseum in Exposition Park [10].",
-    "method": "seve",
-    "search_available": true
-  },
-  "FQ043": {
-    "question": "By how many seats do Democrats currently control the United States Senate?",
-    "answer": "该问题的前提不成立。根据提供的知识表，目前美国参议院由共和党控制，而非民主党 [2][3]。\n\n关于参议院席位分布的具体数据存在多方说法：\n\n*   据 https://www.senate.gov/history/partydiv.htm，共和党拥有52个席位，民主党拥有48个席位 [2]。\n*   据 https://about.bgov.com/insights/congress/balance-of-power-in-the-u-s-house-and-senate/，共和党拥有53个席位，民主党拥有47个席位（其中包括两名与民主党党团会议结盟的独立人士） [3]。\n\n美国参议院共有100个席位 [1]。自1920年以来，民主党控制参议院的时间总计约为58年 [4]。\n\n--- 验证备注 ---\n[已删除 — 原文不支撑: [4] 自1920年以来，民主党控制参议院的时间约为58年。...]",
-    "method": "seve",
-    "search_available": true
-  },
-  "FQ044": {
-    "question": "Who is the X Corp.'s CEO?",
-    "answer": "关于 X Corp. 首席执行官（CEO）的身份，知识表中存在多方说法冲突 [3][6][10][11]：\n\n*   **现任说法**：据 exa.ai 提供的目录信息，Linda Yaccarino 是 X Corp. 的首席执行官 [11]。\n*   **离任/前任说法**：\n    *   **个人资料显示**：据其个人 X 账号（@lindayaX）标注，Linda Yaccarino 是 X 的**前任**首席执行官 [6]，她目前担任 eMed Population Health 的首席执行官 [4]。\n    *   **媒体报道**：据 Politico、Yahoo Finance 和 Fast Company 报道，Linda Yaccarino 在任职两年后决定辞职，并已于 7 月 9 日正式卸任 [10][15][16]。\n    *   **任期记录**：据维基百科，其担任 X Corp. 首席执行官的任期为 2023 年至 2025 年 [3]。\n\nLinda Yaccarino 最初于 2023 年 5 月 12 日被任命为 X Corp. 的首席执行官 [8]，在任期间主要负责业务运营 [9]。\n\n--- 验证备注 ---\n[部分支撑: [11] Linda Yaccarino 是 X Corp 的首席执行官。...]",
-    "method": "seve",
-    "search_available": true
-  },
-  "FQ045": {
-    "question": "How long has Elon Musk been X Corp.'s CEO?",
-    "answer": "提供的知识表不支持“Elon Musk 是 X Corp. 的 CEO”这一前提。\n\n根据现有信息：\n1. 知识表显示 Linda Yaccarino 曾担任 X 的 CEO [2]。关于她担任该职位的开始时间存在冲突：据 Entrepreneur，她于 2023 年 5 月开始担任该职位 [4]；而据 CNN，她于 2023 年 6 月接任该职位 [5]。\n2. 知识表仅明确指出 Elon Musk 是 Tesla 的 CEO [1]。\n\n因此，当前信息不足以确定 Elon Musk 是否担任过 X Corp. 的 CEO，且知识表未提供关于他担任该职位任期的任何信息。",
-    "method": "seve",
-    "search_available": true
-  },
-  "FQ046": {
-    "question": "How many years has Edward Snowden been living in Cuba?",
-    "answer": "该问题的前提错误。根据结构化知识表提供的信息，爱德华·斯诺登并未居住在古巴。\n\n实际情况如下：\n1. **前往香港与莫斯科**：据 Wikipedia，斯诺登于2013年5月飞往香港 [10]，随后于2013年6月23日抵达莫斯科谢列梅捷沃国际机场 [17]。\n2. **在俄停留情况**：据 Wikipedia，他在莫斯科机场的中转区停留了一个月 [18]。\n3. **获得居留权与公民身份**：据 Wikipedia，斯诺登于2020年10月获得了俄罗斯永久居留权 [21]，并于2022年9月获得俄罗斯公民身份 [22]。\n\n知识表中没有任何信息显示斯诺登曾在古巴居住。",
-    "method": "seve",
-    "search_available": true
-  },
-  "FQ047": {
-    "question": "How long has Kenya used a two-party system of government?",
-    "answer": "当前信息不足以确定。",
-    "method": "seve",
-    "search_available": true
-  },
-  "FQ048": {
-    "question": "Which cryptocurrency has a higher market cap than Bitcoin?",
-    "answer": "该问题的前提不成立。据 https://www.slickcharts.com/currency，比特币（Bitcoin）是市值最大的加密货币 [1]。因此，目前没有其他加密货币的市值高于比特币。",
-    "method": "seve",
-    "search_available": true
-  },
-  "FQ049": {
-    "question": "How long has Taylor Swift been a UNICEF Goodwill Ambassador?",
-    "answer": "当前信息不足以确定。",
-    "method": "seve",
-    "search_available": true
+  "CONFLICT_005": {
+    "question": "What is the approval rating of the current US president?",
+    "answer": "Based on the search results, the current US president is Donald Trump.\n\nFor historical context, the Roper Center notes that Donald Trump's highest recorded approval rating was 49% and his lowest was 29% [5].\n\n--- 验证备注 ---\n[已删除 — 原文不支撑: [2] His approval ratings from recent polls in May 2026 range from **34% to 39%** [2]...]\n[已删除 — 原文不支撑: [5] Here are the specific figures from the most recent polls listed in the CNN track...]",
+    "method": "seve"
   }
 }

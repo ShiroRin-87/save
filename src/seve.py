@@ -106,11 +106,11 @@ def verify_simple(answer: str, results: list[dict]) -> list[dict]:
     items_text = "\n\n".join(text_parts)
 
     batch_prompt = (
-        "For each numbered pair below, judge whether the source text supports "
-        "the claim. Reply with a simple list: '1: YES, 2: NO, 3: PARTIAL, ...'\n"
-        "YES = text clearly contains the claim\n"
-        "PARTIAL = partially supported but details differ\n"
-        "NO = text does not contain or contradicts the claim\n\n"
+        "For each numbered pair below, judge whether the source text supports or "
+        "is consistent with the claim. Reply: '1: YES, 2: PARTIAL, 3: NO, ...'\n"
+        "YES = meaning is consistent or substantially the same (e.g., '6 minutes' = 'six minutes')\n"
+        "PARTIAL = mostly consistent but minor detail differs\n"
+        "NO = source contradicts or contains no related information\n\n"
         f"{items_text}\n\n"
         "Verdicts:"
     )
@@ -135,8 +135,9 @@ def verify_simple(answer: str, results: list[dict]) -> list[dict]:
         if verdict == "UNKNOWN":
             try:
                 fb = generate(
-                    "Does the source text support this claim? "
-                    "Reply YES, PARTIAL, or NO.\n\n"
+                    "Is the source text consistent with this claim? "
+                    "YES=meaning substantially the same, "
+                    "PARTIAL=minor differences, NO=contradicts or unrelated.\n\n"
                     f"Claim: {it['claim'][:200]}\n"
                     f"Source: {it['original'][:300]}\n\n"
                     "Judgment:"

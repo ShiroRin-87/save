@@ -1,0 +1,26 @@
+{
+  "original": "Based on the search results, the state known as the Aloha State is **Hawaii** (also spelled Hawaiʻi).\n\nMultiple sources confirm this:\n*   The official state nickname of Hawaiʻi is \"The Aloha State\" [1].\n*   The Wikipedia article for Hawaii lists \"The Aloha State\" as its official nickname [2].\n*   A brochure from the Governor of Hawaii's office states, \"The nickname for the state of Hawai‘i is the Aloha State\" [4].\n*   The U.S. Embassy in Kosovo also refers to Hawaiʻi as \"the Aloha State\" [5].",
+  "corrected": "Based on the search results, the state known as the Aloha State is **Hawaii** (also spelled Hawaiʻi).\n\nMultiple sources confirm this:\n*   The official state nickname of Hawaiʻi is \"The Aloha State\" [1].\n*   The Wikipedia article for Hawaii lists \"The Aloha State\" as its official nickname [2].",
+  "verifications": [
+    {
+      "id": "1",
+      "verdict": "YES",
+      "claim": "Multiple sources confirm this:\n*   The official state nickname of Hawaiʻi is \"The Aloha State\" [1]."
+    },
+    {
+      "id": "2",
+      "verdict": "YES",
+      "claim": "*   The Wikipedia article for Hawaii lists \"The Aloha State\" as its official nickname [2]."
+    },
+    {
+      "id": "4",
+      "verdict": "NO",
+      "claim": "*   A brochure from the Governor of Hawaii's office states, \"The nickname for the state of Hawai‘i i"
+    },
+    {
+      "id": "5",
+      "verdict": "NO",
+      "claim": "Embassy in Kosovo also refers to Hawaiʻi as \"the Aloha State\" [5]."
+    }
+  ]
+}
